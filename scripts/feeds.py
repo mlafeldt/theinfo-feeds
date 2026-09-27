@@ -43,6 +43,7 @@ class Feed(NamedTuple):
     type: str | None  # None publishes every type
 
 
+# public/index.html links to each of these by hand; update it along with them.
 FEEDS = [
     Feed("all.xml", "The Information: All", None),
     Feed("briefings.xml", "The Information: Briefings", "Briefing"),

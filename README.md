@@ -9,6 +9,8 @@ Feeds for [The Information](https://www.theinformation.com), built from its
 | Briefings  | <https://mlafeldt.github.io/theinfo-feeds/briefings.xml> |
 | Articles   | <https://mlafeldt.github.io/theinfo-feeds/articles.xml>  |
 
+Or paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader and pick one there.
+
 ## Why
 
 Upstream serves only its latest 20 entries, briefings and articles mixed — about a day and a
@@ -28,7 +30,8 @@ three feeds from that archive into `public/`. An archived entry is replaced only
 title, content, link or authors changed, so the re-stamps above never count as edits, and
 authors are kept in alphabetical order, since upstream's own order is not stable. Only the
 archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the
-archive changed or the code did.
+archive changed or the code did. The landing page, `public/index.html`, is static and written
+by hand; a test fails if its feed links fall out of step with the feeds.
 
 Nothing is ever removed from the archive, so the script refuses a whole payload rather than
 let a bad entry in: anything that is not well-formed Atom with at least one entry, and any

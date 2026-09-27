@@ -2,6 +2,7 @@
 
 import re
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -225,6 +226,23 @@ def test_render_round_trips_entry_fields():
         assert e.content[0].value == o["content"]
         assert [a.name for a in e.authors] == o["authors"]
         assert datetime.fromisoformat(e.published) == datetime.fromisoformat(o["published"])
+
+
+# index
+
+
+def test_index_links_every_feed():
+    # public/index.html is written by hand, so it must follow any change to FEEDS.
+    found = []
+
+    class Links(HTMLParser):
+        def handle_starttag(self, tag, attrs):
+            a = dict(attrs)
+            if tag == "link" and a.get("rel") == "alternate":
+                found.append((a["type"], a["title"], a["href"]))
+
+    Links().feed((feeds.OUT_DIR / "index.html").read_text())
+    assert found == [("application/atom+xml", f.title, f"{feeds.PAGES}/{f.name}") for f in feeds.FEEDS]
 
 
 # store and summary

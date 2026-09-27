@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Information feeds</title>
+<meta name="description" content="Unofficial feeds for The Information that keep every entry, with briefings and articles split out.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e8590c' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16'/%3E%3Ccircle cx='5' cy='19' r='1.5' fill='%23e8590c'/%3E%3C/svg%3E">
+<!-- What a feed reader offers when given this page's address. Keep in step with FEEDS in scripts/feeds.py. -->
+<link rel="alternate" type="application/atom+xml" title="The Information: All" href="https://mlafeldt.github.io/theinfo-feeds/all.xml">
+<link rel="alternate" type="application/atom+xml" title="The Information: Briefings" href="https://mlafeldt.github.io/theinfo-feeds/briefings.xml">
+<link rel="alternate" type="application/atom+xml" title="The Information: Articles" href="https://mlafeldt.github.io/theinfo-feeds/articles.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=Spline+Sans+Mono:wght@500&display=swap">
+<style>
+:root {
+  --paper: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #172033;
+  --muted: #5b6578;
+  --rule: #d9dee7;
+  --signal: #e8590c;
+  --sans: "Schibsted Grotesk", system-ui, sans-serif;
+  --mono: "Spline Sans Mono", ui-monospace, monospace;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0e1522;
+    --surface: #162033;
+    --ink: #e7ecf3;
+    --muted: #9aa5b8;
+    --rule: #28344b;
+    --signal: #ff7a2f;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.55 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 12vh, 7rem) 1rem 4rem;
+}
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+a:hover { text-decoration-color: var(--signal); }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 4px; }
+
+.mark { display: block; width: 3.25rem; height: 3.25rem; margin-bottom: 2rem; color: var(--signal); }
+.mark path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 0.45s ease-out forwards; }
+.mark path:nth-of-type(2) { animation-delay: 0.18s; }
+.mark circle { transform-origin: 5px 19px; animation: pop 0.3s ease-out both; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes pop { from { transform: scale(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .mark path, .mark circle { animation: none; stroke-dashoffset: 0; }
+}
+
+h1 {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.5rem, 9vw, 4.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+h1 a { text-decoration: none; }
+h1 a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 0.06em; }
+.lede { margin: 0 0 1.75rem; max-width: 34rem; font-size: 1.1875rem; color: var(--muted); }
+
+.url {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.4rem 0.4rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 0.625rem;
+}
+.url code { flex: 1; min-width: 0; font: 500 0.875rem/1.4 var(--mono); overflow-wrap: break-word; }
+.hero .url { padding: 0.6rem 0.6rem 0.6rem 1.25rem; border: 2px solid var(--ink); border-radius: 0.875rem; }
+.hero .url code { font-size: clamp(0.95rem, 3.2vw, 1.125rem); }
+@media (max-width: 30rem) {
+  .hero .url { flex-direction: column; align-items: stretch; padding: 0.9rem 0.6rem 0.6rem; }
+  .hero .url code { padding: 0 0.5rem; }
+}
+
+button {
+  flex: none;
+  min-width: 5.25rem;
+  padding: 0.5rem 0.9rem;
+  font: 700 0.875rem/1.2 var(--sans);
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+button:hover { border-color: var(--ink); }
+.hero button { padding: 0.7rem 1rem; color: var(--paper); background: var(--ink); border-color: var(--ink); }
+button[data-copied], .hero button[data-copied] { color: #fff; background: var(--signal); border-color: var(--signal); }
+
+h2 { margin: 5rem 0 0.5rem; font-size: 1.0625rem; font-weight: 700; }
+.feeds { margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--rule); }
+.feeds li { padding: 1.75rem 0; border-top: 1px solid var(--rule); }
+h3 { margin: 0; font-size: 1.625rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+.about { margin: 0.2rem 0 1rem; color: var(--muted); }
+
+footer { margin-top: 3rem; max-width: 36rem; font-size: 0.9375rem; color: var(--muted); }
+footer p { margin: 0 0 0.75rem; }
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+<path pathLength="1" d="M4 11a9 9 0 0 1 9 9"/>
+<path pathLength="1" d="M4 4a16 16 0 0 1 16 16"/>
+<circle cx="5" cy="19" r="1.75" fill="currentColor" stroke="none"/>
+</svg>
+<h1>Better feeds for <a href="https://www.theinformation.com">The Information</a></h1>
+<p class="lede">Quick news and deep dives, each in its own feed and 500 stories deep. Paste this address into your reader to pick one:</p>
+<!-- <wbr> lets narrow screens wrap URLs after a slash rather than mid-word. -->
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/">Copy</button></div>
+</section>
+
+<h2>Or subscribe to one directly</h2>
+<ul class="feeds">
+<li>
+<h3>All</h3>
+<p class="about">Everything in <a href="https://www.theinformation.com/feed">The Information's own feed</a>, minus the phantom updates.</p>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>all.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/all.xml">Copy</button></div>
+</li>
+<li>
+<h3>Briefings</h3>
+<p class="about">The short news items.</p>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>briefings.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/briefings.xml">Copy</button></div>
+</li>
+<li>
+<h3>Articles</h3>
+<p class="about">The full-length reporting.</p>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>articles.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/articles.xml">Copy</button></div>
+</li>
+</ul>
+
+<footer>
+<p>Not affiliated with The Information. Full articles need a subscription. <a href="https://github.com/mlafeldt/theinfo-feeds">Source on GitHub</a></p>
+</footer>
+</main>
+<script>
+for (const button of document.querySelectorAll("[data-copy]")) {
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+    } catch {
+      getSelection().selectAllChildren(button.previousElementSibling);
+      return;
+    }
+    button.textContent = "Copied";
+    button.dataset.copied = "";
+    setTimeout(() => {
+      button.textContent = "Copy";
+      delete button.dataset.copied;
+    }, 1600);
+  });
+}
+</script>
+</body>
+</html>
