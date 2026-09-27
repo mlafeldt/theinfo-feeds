@@ -5,7 +5,7 @@ Feeds for [The Information](https://www.theinformation.com), built from its
 
 | Feed       | URL                                                      |
 | ---------- | -------------------------------------------------------- |
-| Everything | <https://mlafeldt.github.io/theinfo-feeds/all.xml>       |
+| All        | <https://mlafeldt.github.io/theinfo-feeds/all.xml>       |
 | Briefings  | <https://mlafeldt.github.io/theinfo-feeds/briefings.xml> |
 | Articles   | <https://mlafeldt.github.io/theinfo-feeds/articles.xml>  |
 
