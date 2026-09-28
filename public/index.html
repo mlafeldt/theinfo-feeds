@@ -127,7 +127,7 @@ footer p { margin: 0 0 0.75rem; }
 <h1>A better way to read <a href="https://www.theinformation.com">The Information</a></h1>
 <p class="lede">Quick news and deep dives, each in its own feed and 500 stories deep. Paste this address into your reader to pick one:</p>
 <!-- <wbr> lets narrow screens wrap URLs after a slash rather than mid-word. -->
-<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/">Copy</button></div>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/</code><button type="button">Copy</button></div>
 </section>
 
 <h2>Or subscribe to one directly</h2>
@@ -135,17 +135,17 @@ footer p { margin: 0 0 0.75rem; }
 <li>
 <h3>All</h3>
 <p class="about">Everything in <a href="https://www.theinformation.com/feed">The Information's own feed</a>, minus the phantom updates.</p>
-<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>all.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/all.xml">Copy</button></div>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>all.xml</code><button type="button">Copy</button></div>
 </li>
 <li>
 <h3>Briefings</h3>
 <p class="about">The short news items.</p>
-<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>briefings.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/briefings.xml">Copy</button></div>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>briefings.xml</code><button type="button">Copy</button></div>
 </li>
 <li>
 <h3>Articles</h3>
 <p class="about">The full-length reporting.</p>
-<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>articles.xml</code><button type="button" data-copy="https://mlafeldt.github.io/theinfo-feeds/articles.xml">Copy</button></div>
+<div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>articles.xml</code><button type="button">Copy</button></div>
 </li>
 </ul>
 
@@ -154,10 +154,10 @@ footer p { margin: 0 0 0.75rem; }
 </footer>
 </main>
 <script>
-for (const button of document.querySelectorAll("[data-copy]")) {
+for (const button of document.querySelectorAll(".url button")) {
   button.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(button.dataset.copy);
+      await navigator.clipboard.writeText(button.previousElementSibling.textContent);
     } catch {
       getSelection().selectAllChildren(button.previousElementSibling);
       return;
