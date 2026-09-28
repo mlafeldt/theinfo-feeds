@@ -22,9 +22,9 @@ from xml.etree import ElementTree
 import httpx
 from feedgen.feed import FeedGenerator
 
-UPSTREAM = "https://www.theinformation.com/feed"
-SITE = "https://www.theinformation.com"
 HOST = "www.theinformation.com"
+SITE = f"https://{HOST}"
+UPSTREAM = f"{SITE}/feed"
 PAGES = "https://mlafeldt.github.io/theinfo-feeds"
 USER_AGENT = "theinfo-feeds (+https://github.com/mlafeldt/theinfo-feeds)"
 
@@ -74,7 +74,7 @@ class Change(NamedTuple):
 
 
 # Upstream ids look like tag:www.theinformation.com,2005:Briefing/18111.
-ID_RE = re.compile(r"^tag:(?P<host>[^,]+),2005:(?P<type>[A-Za-z]+)/\d+$")
+ID_RE = re.compile(rf"^tag:{re.escape(HOST)},2005:(?P<type>[A-Za-z]+)/\d+$")
 ATOM = "{http://www.w3.org/2005/Atom}"
 
 
@@ -84,7 +84,8 @@ class Rejected(Exception):
 
 def fetch() -> bytes:
     attempts = 5
-    for attempt in range(1, attempts + 1):
+    attempt = 1
+    while True:
         try:
             resp = httpx.get(
                 UPSTREAM,
@@ -98,6 +99,7 @@ def fetch() -> bytes:
                 raise
             print(f"fetch attempt {attempt} failed: {e}", file=sys.stderr)
             time.sleep(5)
+            attempt += 1
 
 
 def required(e: ElementTree.Element, key: str) -> str:
@@ -141,7 +143,7 @@ def parse(payload: bytes) -> Store:
         # ids and links, sending readers to a host where no subscriber session
         # can exist. Checking every id and link against the canonical host
         # catches that and anything like it.
-        if not m or m["host"] != HOST:
+        if not m:
             raise Rejected(f"unexpected entry id: {id_!r}")
         link = next(
             (l.get("href") for l in e.findall(ATOM + "link") if l.get("rel", "alternate") == "alternate"),
@@ -173,7 +175,7 @@ def edits(old: Entry, new: Entry) -> tuple[str, ...]:
     Upstream re-stamps <updated> in bulk without touching the entries, so a new
     timestamp alone does not count as an edit.
     """
-    return tuple(k for k in ("title", "content", "link", "authors") if old[k] != new[k])
+    return tuple(k for k in new if k != "updated" and old.get(k) != new[k])
 
 
 def merge(store: Store, entries: Store) -> list[Change]:
@@ -255,6 +257,8 @@ def count(changes: list[Change]) -> str:
 
 def message(changes: list[Change]) -> str:
     """The commit message for a run: counts per type, then one line per entry."""
+    if not changes:
+        return "No changes"
     added = [c for c in changes if not c.edited]
     edited = [c for c in changes if c.edited]
     parts = []
@@ -262,8 +266,6 @@ def message(changes: list[Change]) -> str:
         parts.append(f"add {count(added)}")
     if edited:
         parts.append(f"edit {count(edited)}")
-    if not parts:
-        return "No changes"
     lines = [f"+ {c.entry['type']}: {c.entry['title']}" for c in added]
     lines += [f"~ {c.entry['type']}: {c.entry['title']} ({', '.join(c.edited)})" for c in edited]
     return ", ".join(parts).capitalize() + "\n\n" + "\n".join(lines)

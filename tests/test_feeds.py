@@ -116,9 +116,10 @@ def test_parse_rejects_entry_without_link():
         feeds.parse(atom(entry(1), xml))
 
 
-def test_parse_rejects_foreign_host_in_id():
+@pytest.mark.parametrize("host", ["info-reader-production.herokuapp.com", "wwwXtheinformation.com"])
+def test_parse_rejects_foreign_host_in_id(host):
     with pytest.raises(feeds.Rejected, match="entry id"):
-        feeds.parse(atom(entry(1), entry(2, host="info-reader-production.herokuapp.com")))
+        feeds.parse(atom(entry(1), entry(2, host=host)))
 
 
 def test_parse_rejects_foreign_host_in_link():
@@ -147,6 +148,14 @@ def test_merge_ignores_reordered_authors():
     fresh = feeds.parse(atom(entry(1, authors=("Adam", "Zoe"), updated="2026-09-21T09:00:00Z")))
     assert feeds.merge(store, fresh) == []
     assert store["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == ["Adam", "Zoe"]
+
+
+def test_merge_takes_published_correction():
+    store = feeds.parse(atom(entry(1)))
+    fresh = feeds.parse(atom(entry(1, published="2026-09-19T10:00:00Z")))
+    [change] = feeds.merge(store, fresh)
+    assert change.edited == ("published",)
+    assert store["tag:www.theinformation.com,2005:Briefing/1"]["published"] == "2026-09-19T10:00:00Z"
 
 
 @pytest.mark.parametrize(
