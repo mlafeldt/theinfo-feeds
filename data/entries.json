@@ -1231,6 +1231,17 @@
     "type": "Article",
     "updated": "2026-09-28T14:02:02Z"
   },
+  "tag:www.theinformation.com,2005:Article/17901": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Recursive self-improvement, the idea that AI models could get so good at research and development that they train themselves, without a need for human researchers, has captivated Silicon Valley. Some in the industry have suggested that the first company to achieve RSI will gain all the benefits: after all, once one company manages to cross that threshold, how could competitors still at least partly reliant on slow human labor ever hope to catch up?</p>\n\n<p>But just because the pace of RSI will be exponentially fast doesn’t mean it’s winner-takes-all, argued Anna Goldie and Azalia Mirhoseini on <a href=\"https://www.youtube.com/watch?v=-zMl-ycfhQA\">the latest episode of The Information’s AI Deep Dive</a>. They are the co-founders of Ricursive Intelligence, a year-old startup developing AI systems for designing AI chips. They previously worked at Anthropic and Google, where they led work on AlphaChip, an AI system for chip design.</p>",
+    "link": "https://www.theinformation.com/articles/recursive-self-improvement-winner-takes-all-say-founders-ricursive",
+    "published": "2026-09-28T22:30:13Z",
+    "title": "Recursive Self-Improvement Won’t Be Winner-Takes-All, Say Founders of Ricursive",
+    "type": "Article",
+    "updated": "2026-09-28T23:01:07Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -2585,5 +2596,27 @@
     "title": "AMD to Buy Fei-Fei Li’s World Labs for $8.2 Billion",
     "type": "Briefing",
     "updated": "2026-09-28T20:34:34Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18121": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Manus, the AI agent startup that recently separated from Meta Platforms, launched on Monday a new standalone app for personal agents that could compete with Meta’s Muse.</p> <p>The new app, <a href=\"https://x.com/CueAgents/status/2104589146153181192?s=20\">Cue</a>, provides each user with multiple personal AI agents. Each agent has access to its own email, phone number, ...</p>",
+    "link": "https://www.theinformation.com/briefings/manus-unveils-new-personal-agent-app-challenge-metas-muse",
+    "published": "2026-09-28T22:23:06Z",
+    "title": "Manus Unveils New Personal Agent App in Challenge to Meta’s Muse",
+    "type": "Briefing",
+    "updated": "2026-09-28T22:23:06Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18122": {
+    "authors": [
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>NinjaTech AI, an early-stage startup backed by Amazon and led by a former Google product management executive, <a href=\"https://www.businesswire.com/news/home/20260928214407/en/NinjaTech-AI-Launches-SuperNinja-Enterprise-a-Turnkey-AI-Workforce-Platform-Enterprises-Own-and-Run-Unmetered-on-Open-Weight-Model\">unveiled</a> a new product that promises to help large companies take the guesswork out of forecasting the costs of running agents around the clock to complete long-running tasks.</p> <p>The ...</p>",
+    "link": "https://www.theinformation.com/briefings/startup-ninjatech-ai-takes-aim-agent-sticker-shock",
+    "published": "2026-09-28T22:42:59Z",
+    "title": "Startup NinjaTech AI Takes Aim at Agent Sticker Shock",
+    "type": "Briefing",
+    "updated": "2026-09-28T22:44:36Z"
   }
 }
