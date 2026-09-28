@@ -1,15 +1,14 @@
 # theinfo-feeds
 
-Feeds for [The Information](https://www.theinformation.com), built from its
-[public feed](https://www.theinformation.com/feed), refreshed hourly and served from GitHub Pages:
+A better way to read [The Information](https://www.theinformation.com): quick news and deep
+dives, each in its own feed and 500 stories deep, refreshed hourly.
 
-| Feed       | URL                                                      |
-| ---------- | -------------------------------------------------------- |
-| All        | <https://mlafeldt.github.io/theinfo-feeds/all.xml>       |
-| Briefings  | <https://mlafeldt.github.io/theinfo-feeds/briefings.xml> |
-| Articles   | <https://mlafeldt.github.io/theinfo-feeds/articles.xml>  |
+Paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader to pick one, or subscribe
+directly:
 
-Or paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader and pick one there.
+- [All](https://mlafeldt.github.io/theinfo-feeds/all.xml): everything in [The Information's own feed](https://www.theinformation.com/feed), minus the phantom updates
+- [Briefings](https://mlafeldt.github.io/theinfo-feeds/briefings.xml): the short news items
+- [Articles](https://mlafeldt.github.io/theinfo-feeds/articles.xml): the full-length reporting
 
 ## Why
 
@@ -59,5 +58,5 @@ challenge page in September 2026. That rule is gone, and so is the mirror.
 ## Scope
 
 These feeds carry the **public** feed only — the same headlines and summaries upstream serves
-any visitor, with no article bodies and nothing from behind the paywall. Unofficial, not
-affiliated with or endorsed by The Information.
+any visitor, with no article bodies and nothing from behind the paywall; reading full articles
+needs a subscription. Unofficial, not affiliated with or endorsed by The Information.
