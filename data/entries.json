@@ -2552,5 +2552,27 @@
     "title": "Nvidia Authorizes $150 Billion Stock Buyback Increase, Largest In History",
     "type": "Briefing",
     "updated": "2026-09-28T15:48:47Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18118": {
+    "authors": [
+      "Jessica E. Lessin"
+    ],
+    "content": "<p>Instinct, Silicon Valley’s hot AI assistant of the moment, is hiring Ben Schwerin, an investor at Coatue Management, as its first chief business officer.</p> <p>In Schwerin, the year-old company—which Monday said it raised $1 billion at a $10-billion valuation—is getting a hot consumer tech connection ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-instinct-hires-coatues-schwerin-chief-business-officer",
+    "published": "2026-09-28T18:39:30Z",
+    "title": "Exclusive: Instinct Hires Coatue’s Schwerin as Chief Business Officer",
+    "type": "Briefing",
+    "updated": "2026-09-28T18:39:31Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18119": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Florida Attorney General James Uthmeier filed an injunction Monday asking the court to bar OpenAI from developing new AI models “without third-party approved safety guardrails” and from allowing minors to use ChatGPT. The injunction would be effective throughout Florida.</p> <p>Uthmeier called OpenAI’s ...</p>",
+    "link": "https://www.theinformation.com/briefings/florida-ag-seeks-bar-openai-developing-new-models-without-guardrails",
+    "published": "2026-09-28T18:49:00Z",
+    "title": "Florida AG Seeks to Bar OpenAI from Developing New Models Without Guardrails",
+    "type": "Briefing",
+    "updated": "2026-09-28T18:49:00Z"
   }
 }
