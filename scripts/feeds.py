@@ -29,11 +29,11 @@ PAGES = "https://mlafeldt.github.io/theinfo-feeds"
 USER_AGENT = "theinfo-feeds (+https://github.com/mlafeldt/theinfo-feeds)"
 
 ROOT = Path(__file__).resolve().parent.parent
-STORE = ROOT / "data" / "entries.json"
+ARCHIVE_PATH = ROOT / "data" / "entries.json"
 OUT_DIR = ROOT / "public"
 
-# Readers download the whole file on every poll, so the archive is published
-# only up to this many entries per feed. The store itself is never trimmed.
+# Readers download the whole file on every poll, so each feed publishes only
+# up to this many entries. The archive itself is never trimmed.
 MAX_ENTRIES = 500
 
 
@@ -52,7 +52,7 @@ FEEDS = [
 
 
 class Entry(TypedDict):
-    """One entry as data/entries.json stores it, keyed by upstream's id."""
+    """Fields shared by fresh and archived entries."""
 
     type: str
     link: str
@@ -63,11 +63,11 @@ class Entry(TypedDict):
     updated: str
 
 
-Store = dict[str, Entry]
+Entries = dict[str, Entry]  # keyed by upstream's id
 
 
 class Change(NamedTuple):
-    """An entry a run added to the store or edited in it."""
+    """An entry a run added to the archive or edited in it."""
 
     entry: Entry
     edited: tuple[str, ...]  # the fields that changed; empty for a new entry
@@ -122,11 +122,11 @@ def timestamp(e: ElementTree.Element, key: str) -> str:
     return value
 
 
-def parse(payload: bytes) -> Store:
-    """Turn an upstream payload into store entries, or reject it outright.
+def parse(payload: bytes) -> Entries:
+    """Turn an upstream payload into entries, or reject it outright.
 
     Rejecting the whole payload rather than skipping bad entries is deliberate:
-    anything that lands in the store stays there, so a partial or malformed
+    anything that lands in the archive stays there, so a partial or malformed
     feed must never get that far.
     """
     try:
@@ -137,7 +137,7 @@ def parse(payload: bytes) -> Store:
     if root.tag != ATOM + "feed" or not entries_xml:
         raise Rejected(f"not an Atom feed with entries; first 200 bytes: {payload[:200]!r}")
 
-    entries: Store = {}
+    entries: Entries = {}
     for e in entries_xml:
         id_ = required(e, "id")
         m = ID_RE.match(id_)
@@ -179,24 +179,24 @@ def edits(old: Entry, new: Entry) -> tuple[str, ...]:
     return tuple(k for k in new if k != "updated" and old.get(k) != new[k])
 
 
-def merge(store: Store, entries: Store) -> list[Change]:
-    """Fold fresh entries into the store in place and return what changed."""
+def merge(archive: Entries, entries: Entries) -> list[Change]:
+    """Fold fresh entries into the archive in place and return what changed."""
     changes = []
     for id_, new in entries.items():
-        old = store.get(id_)
+        old = archive.get(id_)
         if old is None:
             changes.append(Change(new, ()))
         elif fields := edits(old, new):
             changes.append(Change(new, fields))
         else:
             continue
-        store[id_] = new
+        archive[id_] = new
     return changes
 
 
-def render(store: Store, feed: Feed) -> bytes:
+def render(archive: Entries, feed: Feed) -> bytes:
     selected = sorted(
-        ((id_, e) for id_, e in store.items() if feed.type is None or e["type"] == feed.type),
+        ((id_, e) for id_, e in archive.items() if feed.type is None or e["type"] == feed.type),
         key=lambda item: (datetime.fromisoformat(item[1]["published"]), item[0]),
         reverse=True,
     )[:MAX_ENTRIES]
@@ -228,23 +228,23 @@ def render(store: Store, feed: Feed) -> bytes:
     return fg.atom_str(pretty=True)
 
 
-def load_store(path: Path) -> Store:
-    return json.loads(path.read_text()) if path.exists() else {}
+def load_archive(archive_path: Path) -> Entries:
+    return json.loads(archive_path.read_text()) if archive_path.exists() else {}
 
 
-def dump_store(store: Store, path: Path) -> None:
-    # Written aside and renamed into place: a half-written store would fail to
+def dump_archive(archive: Entries, archive_path: Path) -> None:
+    # Written aside and renamed into place: a half-written archive would fail to
     # load on the next run.
-    tmp = path.with_suffix(".tmp")
+    tmp = archive_path.with_suffix(".tmp")
     tmp.parent.mkdir(parents=True, exist_ok=True)
-    tmp.write_text(json.dumps(store, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
-    tmp.replace(path)
+    tmp.write_text(json.dumps(archive, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
+    tmp.replace(archive_path)
 
 
-def publish(store: Store, out_dir: Path) -> None:
+def publish(archive: Entries, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     for feed in FEEDS:
-        (out_dir / feed.name).write_bytes(render(store, feed))
+        (out_dir / feed.name).write_bytes(render(archive, feed))
 
 
 def plural(n: int, word: str) -> str:
@@ -272,20 +272,20 @@ def message(changes: list[Change]) -> str:
     return ", ".join(parts).capitalize() + "\n\n" + "\n".join(lines)
 
 
-def run(payload: bytes, store_path: Path, out_dir: Path) -> str:
+def run(payload: bytes, archive_path: Path, out_dir: Path) -> str:
     """Validate and publish a payload, then save the archive and report changes."""
     entries = parse(payload)
-    store = load_store(store_path)
-    changes = merge(store, entries)
+    archive = load_archive(archive_path)
+    changes = merge(archive, entries)
     # Render first so a failure cannot save entries the feeds cannot publish.
-    publish(store, out_dir)
-    dump_store(store, store_path)
+    publish(archive, out_dir)
+    dump_archive(archive, archive_path)
     return message(changes)
 
 
 def main() -> None:
     try:
-        result = run(fetch(), STORE, OUT_DIR)
+        result = run(fetch(), ARCHIVE_PATH, OUT_DIR)
     except Rejected as e:
         sys.exit(f"refusing to update: {e}")
     print(result)

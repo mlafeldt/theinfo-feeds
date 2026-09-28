@@ -55,8 +55,8 @@ def atom(*entries: str, xml_base: str | None = None) -> bytes:
 FEED = {feed.name: feed for feed in feeds.FEEDS}
 
 
-def rendered(store: feeds.Store, name: str) -> feedparser.FeedParserDict:
-    return feedparser.parse(feeds.render(store, FEED[name]), sanitize_html=False)
+def rendered(archive: feeds.Entries, name: str) -> feedparser.FeedParserDict:
+    return feedparser.parse(feeds.render(archive, FEED[name]), sanitize_html=False)
 
 
 # parse
@@ -132,25 +132,25 @@ def test_parse_rejects_foreign_host_in_link():
 
 
 def test_merge_reports_new_entries():
-    store = {}
-    changes = feeds.merge(store, feeds.parse(atom(entry(1), entry(2, "Article"))))
+    archive = {}
+    changes = feeds.merge(archive, feeds.parse(atom(entry(1), entry(2, "Article"))))
     assert [(c.entry["title"], c.edited) for c in changes] == [("Story 1", ()), ("Story 2", ())]
-    assert len(store) == 2
+    assert len(archive) == 2
 
 
 def test_merge_ignores_reordered_authors():
-    store = feeds.parse(atom(entry(1, authors=("Zoe", "Adam"))))
+    archive = feeds.parse(atom(entry(1, authors=("Zoe", "Adam"))))
     fresh = feeds.parse(atom(entry(1, authors=("Adam", "Zoe"), updated="2026-09-21T09:00:00Z")))
-    assert feeds.merge(store, fresh) == []
-    assert store["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == ["Adam", "Zoe"]
+    assert feeds.merge(archive, fresh) == []
+    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == ["Adam", "Zoe"]
 
 
 def test_merge_takes_published_correction():
-    store = feeds.parse(atom(entry(1)))
+    archive = feeds.parse(atom(entry(1)))
     fresh = feeds.parse(atom(entry(1, published="2026-09-19T10:00:00Z")))
-    [change] = feeds.merge(store, fresh)
+    [change] = feeds.merge(archive, fresh)
     assert change.edited == ("published",)
-    assert store["tag:www.theinformation.com,2005:Briefing/1"]["published"] == "2026-09-19T10:00:00Z"
+    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["published"] == "2026-09-19T10:00:00Z"
 
 
 @pytest.mark.parametrize(
@@ -162,21 +162,21 @@ def test_merge_takes_published_correction():
     ],
 )
 def test_merge_takes_real_edits(change):
-    store = feeds.parse(atom(entry(1)))
+    archive = feeds.parse(atom(entry(1)))
     fresh = feeds.parse(atom(entry(1, updated="2026-09-21T09:00:00Z", **change)))
-    [c] = feeds.merge(store, fresh)
+    [c] = feeds.merge(archive, fresh)
     assert c.edited == tuple(change)
-    assert store["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == "2026-09-21T09:00:00Z"
+    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == "2026-09-21T09:00:00Z"
 
 
 # render
 
 
 def test_render_splits_by_type():
-    store = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Podcast")))
+    archive = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Podcast")))
 
     def ids(name: str) -> set[str]:
-        return {e.id.rsplit(":", 1)[1] for e in rendered(store, name).entries}
+        return {e.id.rsplit(":", 1)[1] for e in rendered(archive, name).entries}
 
     assert ids("all.xml") == {"Briefing/1", "Article/2", "Podcast/3"}
     assert ids("briefings.xml") == {"Briefing/1"}
@@ -185,16 +185,16 @@ def test_render_splits_by_type():
 
 def test_render_orders_newest_first_and_caps(monkeypatch):
     monkeypatch.setattr(feeds, "MAX_ENTRIES", 3)
-    store = feeds.parse(atom(*(entry(n, published=f"2026-09-{n:02d}T10:00:00Z") for n in range(1, 8))))
-    assert len(store) == 7
-    got = [e.id.rsplit("/", 1)[1] for e in rendered(store, "all.xml").entries]
+    archive = feeds.parse(atom(*(entry(n, published=f"2026-09-{n:02d}T10:00:00Z") for n in range(1, 8))))
+    assert len(archive) == 7
+    got = [e.id.rsplit("/", 1)[1] for e in rendered(archive, "all.xml").entries]
     assert got == ["7", "6", "5"]
 
 
 def test_render_has_our_identity_and_no_cache_buster():
-    store = feeds.parse(UPSTREAM_FIXTURE)
+    archive = feeds.parse(UPSTREAM_FIXTURE)
     for feed in feeds.FEEDS:
-        out = feeds.render(store, feed)
+        out = feeds.render(archive, feed)
         assert b"cb=" not in out
         d = feedparser.parse(out)
         assert not d.bozo
@@ -207,24 +207,24 @@ def test_render_has_our_identity_and_no_cache_buster():
 
 
 def test_render_takes_feed_updated_from_newest_entry():
-    store = feeds.parse(
+    archive = feeds.parse(
         atom(entry(1, updated="2026-09-20T12:00:00Z"), entry(2, published="2026-09-19T10:00:00Z"))
     )
-    assert rendered(store, "all.xml").feed.updated == "2026-09-20T12:00:00+00:00"
+    assert rendered(archive, "all.xml").feed.updated == "2026-09-20T12:00:00+00:00"
 
 
 def test_render_keeps_sorted_author_order():
-    store = feeds.parse(atom(entry(1, authors=("Zoe", "Adam", "Mia"))))
-    [e] = rendered(store, "all.xml").entries
+    archive = feeds.parse(atom(entry(1, authors=("Zoe", "Adam", "Mia"))))
+    [e] = rendered(archive, "all.xml").entries
     assert [a.name for a in e.authors] == ["Adam", "Mia", "Zoe"]
 
 
 def test_render_round_trips_entry_fields():
-    store = feeds.parse(UPSTREAM_FIXTURE)
-    out = rendered(store, "all.xml").entries
-    assert len(out) == len(store)
+    archive = feeds.parse(UPSTREAM_FIXTURE)
+    out = rendered(archive, "all.xml").entries
+    assert len(out) == len(archive)
     for e in out:
-        o = store[e.id]
+        o = archive[e.id]
         assert e.title == o["title"]
         assert e.link == o["link"]
         assert e.content[0].value == o["content"]
@@ -256,78 +256,78 @@ def test_index_links_every_feed():
 
 
 def run_in_tmp(tmp_path: Path, payload: bytes = UPSTREAM_FIXTURE) -> tuple[str, Path, Path]:
-    archive = tmp_path / "entries.json"
+    archive_path = tmp_path / "entries.json"
     out_dir = tmp_path / "feeds"
-    return feeds.run(payload, archive, out_dir), archive, out_dir
+    return feeds.run(payload, archive_path, out_dir), archive_path, out_dir
 
 
 def test_run_publishes_fixture_and_replay_keeps_archive_bytes(tmp_path):
-    result, archive, out_dir = run_in_tmp(tmp_path)
-    store = json.loads(archive.read_text())
+    result, archive_path, out_dir = run_in_tmp(tmp_path)
+    archived_entries = json.loads(archive_path.read_text())
     assert result.startswith("Add ")
-    assert store == feeds.parse(UPSTREAM_FIXTURE)
+    assert archived_entries == feeds.parse(UPSTREAM_FIXTURE)
     for feed in feeds.FEEDS:
         published = feedparser.parse((out_dir / feed.name).read_bytes())
         assert not published.bozo
         assert {e.id for e in published.entries} == {
-            id_ for id_, e in store.items() if feed.type is None or e["type"] == feed.type
+            id_ for id_, e in archived_entries.items() if feed.type is None or e["type"] == feed.type
         }
 
-    before = archive.read_bytes()
-    assert feeds.run(UPSTREAM_FIXTURE, archive, out_dir) == "No changes"
-    assert archive.read_bytes() == before
+    before = archive_path.read_bytes()
+    assert feeds.run(UPSTREAM_FIXTURE, archive_path, out_dir) == "No changes"
+    assert archive_path.read_bytes() == before
 
 
 def test_run_rejects_whole_payload_before_touching_archive_or_feeds(tmp_path):
-    _, archive, out_dir = run_in_tmp(tmp_path)
-    before = archive.read_bytes()
+    _, archive_path, out_dir = run_in_tmp(tmp_path)
+    before = archive_path.read_bytes()
     feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
 
     with pytest.raises(feeds.Rejected, match="entry link"):
-        feeds.run(atom(entry(21), entry(22, link_host="wrong.example")), archive, out_dir)
+        feeds.run(atom(entry(21), entry(22, link_host="wrong.example")), archive_path, out_dir)
 
-    assert archive.read_bytes() == before
+    assert archive_path.read_bytes() == before
     assert {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS} == feed_bytes
 
 
 def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
-    _, archive, out_dir = run_in_tmp(tmp_path)
-    before = archive.read_bytes()
+    _, archive_path, out_dir = run_in_tmp(tmp_path)
+    before = archive_path.read_bytes()
     original_render = feeds.render
 
-    def fail_on_articles(store, feed):
+    def fail_on_articles(archive, feed):
         if feed.name == "articles.xml":
             raise ValueError("cannot render articles")
-        return original_render(store, feed)
+        return original_render(archive, feed)
 
     monkeypatch.setattr(feeds, "render", fail_on_articles)
     with pytest.raises(ValueError, match="cannot render articles"):
-        feeds.run(atom(entry(21, "Article")), archive, out_dir)
-    assert archive.read_bytes() == before
+        feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
+    assert archive_path.read_bytes() == before
 
 
 def test_run_keeps_entries_upstream_dropped(tmp_path):
-    _, archive, out_dir = run_in_tmp(tmp_path)
+    _, archive_path, out_dir = run_in_tmp(tmp_path)
 
-    assert feeds.run(atom(entry(21)), archive, out_dir).startswith("Add 1 briefing")
-    assert len(json.loads(archive.read_text())) == 21
+    assert feeds.run(atom(entry(21)), archive_path, out_dir).startswith("Add 1 briefing")
+    assert len(json.loads(archive_path.read_text())) == 21
     assert len(feedparser.parse((out_dir / "all.xml").read_bytes()).entries) == 21
 
 
 def test_run_ignores_restamped_updated(tmp_path):
-    _, archive, out_dir = run_in_tmp(tmp_path, atom(entry(1)))
-    before = archive.read_bytes()
+    _, archive_path, out_dir = run_in_tmp(tmp_path, atom(entry(1)))
+    before = archive_path.read_bytes()
 
-    assert feeds.run(atom(entry(1, updated="2026-09-21T09:00:00Z")), archive, out_dir) == "No changes"
-    assert archive.read_bytes() == before
-    assert json.loads(archive.read_text())["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == (
+    assert feeds.run(atom(entry(1, updated="2026-09-21T09:00:00Z")), archive_path, out_dir) == "No changes"
+    assert archive_path.read_bytes() == before
+    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == (
         "2026-09-20T10:00:00Z"
     )
 
 
 def test_main_reports_rejected_payload(tmp_path, monkeypatch):
     monkeypatch.setattr(feeds, "fetch", lambda: atom(entry(1, link_host="wrong.example")))
-    monkeypatch.setattr(feeds, "STORE", tmp_path / "entries.json")
+    monkeypatch.setattr(feeds, "ARCHIVE_PATH", tmp_path / "entries.json")
     monkeypatch.setattr(feeds, "OUT_DIR", tmp_path / "feeds")
 
     with pytest.raises(SystemExit, match="refusing to update: unexpected entry link"):
