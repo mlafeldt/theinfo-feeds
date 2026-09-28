@@ -17,8 +17,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import NamedTuple, TypedDict
 from urllib.parse import urlsplit
+from xml.etree import ElementTree
 
-import feedparser
 import httpx
 from feedgen.feed import FeedGenerator
 
@@ -75,6 +75,7 @@ class Change(NamedTuple):
 
 # Upstream ids look like tag:www.theinformation.com,2005:Briefing/18111.
 ID_RE = re.compile(r"^tag:(?P<host>[^,]+),2005:(?P<type>[A-Za-z]+)/\d+$")
+ATOM = "{http://www.w3.org/2005/Atom}"
 
 
 class Rejected(Exception):
@@ -99,23 +100,21 @@ def fetch() -> bytes:
             time.sleep(5)
 
 
-def required(e: feedparser.FeedParserDict, key: str):
-    # Plain dict access: FeedParserDict quietly stands in published for a
-    # missing updated, among other fallbacks.
-    value = dict.get(e, key)
+def required(e: ElementTree.Element, key: str) -> str:
+    value = (e.findtext(ATOM + key) or "").strip()
     if not value:
-        raise Rejected(f"entry {dict.get(e, 'id')!r} has no {key}")
+        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has no {key}")
     return value
 
 
-def timestamp(e: feedparser.FeedParserDict, key: str) -> str:
+def timestamp(e: ElementTree.Element, key: str) -> str:
     value = required(e, key)
     try:
         parsed = datetime.fromisoformat(value)
     except ValueError:
-        raise Rejected(f"entry {dict.get(e, 'id')!r} has invalid {key} timestamp: {value!r}") from None
+        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has invalid {key} timestamp: {value!r}") from None
     if parsed.utcoffset() is None:
-        raise Rejected(f"entry {dict.get(e, 'id')!r} has invalid {key} timestamp: {value!r}")
+        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has invalid {key} timestamp: {value!r}")
     return value
 
 
@@ -126,16 +125,16 @@ def parse(payload: bytes) -> Store:
     anything that lands in the store stays there, so a partial or malformed
     feed must never get that far.
     """
-    # Upstream's HTML is kept as-is. Sanitizing would rewrite it, and any change
-    # in the sanitizer's output would look like an edit to every stored entry.
-    d = feedparser.parse(payload, sanitize_html=False, resolve_relative_uris=False)
-    if d.bozo:
-        raise Rejected(f"malformed feed: {d.bozo_exception}; first 200 bytes: {payload[:200]!r}")
-    if d.version != "atom10" or not d.entries:
+    try:
+        root = ElementTree.fromstring(payload)
+    except ElementTree.ParseError as e:
+        raise Rejected(f"malformed feed: {e}; first 200 bytes: {payload[:200]!r}") from None
+    entries_xml = root.findall(ATOM + "entry")
+    if root.tag != ATOM + "feed" or not entries_xml:
         raise Rejected(f"not an Atom feed with entries; first 200 bytes: {payload[:200]!r}")
 
     entries: Store = {}
-    for e in d.entries:
+    for e in entries_xml:
         id_ = required(e, "id")
         m = ID_RE.match(id_)
         # On 2026-09-10 upstream rendered its Heroku origin hostname into entry
@@ -144,17 +143,24 @@ def parse(payload: bytes) -> Store:
         # catches that and anything like it.
         if not m or m["host"] != HOST:
             raise Rejected(f"unexpected entry id: {id_!r}")
-        link = required(e, "link")
+        link = next(
+            (l.get("href") for l in e.findall(ATOM + "link") if l.get("rel", "alternate") == "alternate"),
+            None,
+        )
+        if not link:
+            raise Rejected(f"entry {id_!r} has no link")
         if urlsplit(link).hostname != HOST:
             raise Rejected(f"unexpected entry link: {link!r}")
         entries[id_] = {
             "type": m["type"],
             "link": link,
             "title": required(e, "title"),
-            "content": required(e, "content")[0].value,
+            "content": required(e, "content"),
             # Upstream's author order changes from one render to the next, and
             # no order it uses reliably matches the site's byline, so sort.
-            "authors": sorted(a.name for a in e.get("authors", []) if a.get("name")),
+            "authors": sorted(
+                name for a in e.findall(ATOM + "author") if (name := (a.findtext(ATOM + "name") or "").strip())
+            ),
             "published": timestamp(e, "published"),
             "updated": timestamp(e, "updated"),
         }

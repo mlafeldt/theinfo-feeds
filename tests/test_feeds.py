@@ -112,8 +112,7 @@ def test_parse_rejects_unrenderable_timestamp(field, value):
 def test_parse_rejects_entry_without_link():
     xml = re.sub(r"<link [^>]*/>", "", entry(2))
     assert "<link" not in xml
-    # feedparser falls back to the id for a missing link, which the host check refuses.
-    with pytest.raises(feeds.Rejected, match="entry link"):
+    with pytest.raises(feeds.Rejected, match="has no link"):
         feeds.parse(atom(entry(1), xml))
 
 
