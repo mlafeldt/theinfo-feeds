@@ -20,7 +20,8 @@ These feeds keep every entry seen since 2026-09-08 (the newest 500 per feed are 
 ## How
 
 `scripts/feeds.py` fetches upstream, folds its entries into `data/entries.json` and renders all three feeds from that archive into `public/`.
-An archived entry is replaced only when its title, content, link or authors changed, so the re-stamps above never count as edits, and authors are kept in alphabetical order, since upstream's own order is not stable.
+An archived entry is replaced when any field except `updated` changes, so upstream's re-stamps never count as edits.
+Authors are kept in alphabetical order, since upstream's own order is not stable.
 Only the archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the archive changed or the code did.
 The landing page, `public/index.html`, is static and written by hand; a test fails if its feed links fall out of step with the feeds.
 

@@ -84,8 +84,7 @@ class Rejected(Exception):
 
 def fetch() -> bytes:
     attempts = 5
-    attempt = 1
-    while True:
+    for attempt in range(1, attempts + 1):
         try:
             resp = httpx.get(
                 UPSTREAM,
@@ -99,24 +98,27 @@ def fetch() -> bytes:
                 raise
             print(f"fetch attempt {attempt} failed: {e}", file=sys.stderr)
             time.sleep(5)
-            attempt += 1
+
+
+def text(e: ElementTree.Element, key: str) -> str:
+    return (e.findtext(ATOM + key) or "").strip()
 
 
 def required(e: ElementTree.Element, key: str) -> str:
-    value = (e.findtext(ATOM + key) or "").strip()
+    value = text(e, key)
     if not value:
-        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has no {key}")
+        raise Rejected(f"entry {text(e, 'id')!r} has no {key}")
     return value
 
 
 def timestamp(e: ElementTree.Element, key: str) -> str:
     value = required(e, key)
     try:
-        parsed = datetime.fromisoformat(value)
+        aware = datetime.fromisoformat(value).utcoffset() is not None
     except ValueError:
-        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has invalid {key} timestamp: {value!r}") from None
-    if parsed.utcoffset() is None:
-        raise Rejected(f"entry {e.findtext(ATOM + 'id')!r} has invalid {key} timestamp: {value!r}")
+        aware = False
+    if not aware:
+        raise Rejected(f"entry {text(e, 'id')!r} has invalid {key} timestamp: {value!r}")
     return value
 
 
@@ -146,7 +148,11 @@ def parse(payload: bytes) -> Store:
         if not m:
             raise Rejected(f"unexpected entry id: {id_!r}")
         link = next(
-            (l.get("href") for l in e.findall(ATOM + "link") if l.get("rel", "alternate") == "alternate"),
+            (
+                link_element.get("href")
+                for link_element in e.findall(ATOM + "link")
+                if link_element.get("rel", "alternate") == "alternate"
+            ),
             None,
         )
         if not link:
@@ -160,9 +166,7 @@ def parse(payload: bytes) -> Store:
             "content": required(e, "content"),
             # Upstream's author order changes from one render to the next, and
             # no order it uses reliably matches the site's byline, so sort.
-            "authors": sorted(
-                name for a in e.findall(ATOM + "author") if (name := (a.findtext(ATOM + "name") or "").strip())
-            ),
+            "authors": sorted(filter(None, (text(a, "name") for a in e.findall(ATOM + "author")))),
             "published": timestamp(e, "published"),
             "updated": timestamp(e, "updated"),
         }
@@ -175,6 +179,7 @@ def edits(old: Entry, new: Entry) -> tuple[str, ...]:
     Upstream re-stamps <updated> in bulk without touching the entries, so a new
     timestamp alone does not count as an edit.
     """
+    # A newly added field also counts as an edit for older archive entries.
     return tuple(k for k in new if k != "updated" and old.get(k) != new[k])
 
 
@@ -279,6 +284,7 @@ def main() -> None:
 
     store = load_store()
     changes = merge(store, entries)
+    # Render first so a failure cannot save entries the feeds cannot publish.
     publish(store)
     dump_store(store)
     print(message(changes))

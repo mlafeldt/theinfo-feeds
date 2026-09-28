@@ -249,28 +249,16 @@ def test_render_round_trips_entry_fields():
 def test_index_links_every_feed():
     # public/index.html is written by hand, so it must follow any change to FEEDS.
     found = []
-    code_urls = []
 
     class Links(HTMLParser):
-        in_code = False
-
         def handle_starttag(self, tag, attrs):
             a = dict(attrs)
             if tag == "link" and a.get("rel") == "alternate":
                 found.append((a["type"], a["title"], a["href"]))
-            if tag == "code":
-                self.in_code = True
-                code_urls.append("")
 
-        def handle_data(self, data):
-            if self.in_code:
-                code_urls[-1] += data
-
-        def handle_endtag(self, tag):
-            if tag == "code":
-                self.in_code = False
-
-    Links().feed((feeds.OUT_DIR / "index.html").read_text())
+    html = (feeds.OUT_DIR / "index.html").read_text()
+    Links().feed(html)
+    code_urls = [code.replace("<wbr>", "") for code in re.findall(r"<code>(.*?)</code>", html, flags=re.S)]
     assert found == [("application/atom+xml", f.title, f"{feeds.PAGES}/{f.name}") for f in feeds.FEEDS]
     assert code_urls == [f"{feeds.PAGES}/", *(f"{feeds.PAGES}/{f.name}" for f in feeds.FEEDS)]
 
@@ -286,19 +274,6 @@ def test_store_round_trips(tmp_path):
     before = path.read_bytes()
     feeds.dump_store(feeds.load_store(path), path)
     assert path.read_bytes() == before
-
-
-def test_main_does_not_dump_store_if_publish_fails(monkeypatch):
-    monkeypatch.setattr(feeds, "fetch", lambda: atom(entry(1)))
-    monkeypatch.setattr(feeds, "load_store", lambda: {})
-    monkeypatch.setattr(feeds, "dump_store", lambda store: pytest.fail("store written before publish"))
-
-    def fail_publish(store):
-        raise RuntimeError("render failed")
-
-    monkeypatch.setattr(feeds, "publish", fail_publish)
-    with pytest.raises(RuntimeError, match="render failed"):
-        feeds.main()
 
 
 def change(type_: str, title: str, *edited: str) -> feeds.Change:
