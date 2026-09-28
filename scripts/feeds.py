@@ -108,6 +108,17 @@ def required(e: feedparser.FeedParserDict, key: str):
     return value
 
 
+def timestamp(e: feedparser.FeedParserDict, key: str) -> str:
+    value = required(e, key)
+    try:
+        parsed = datetime.fromisoformat(value)
+    except ValueError:
+        raise Rejected(f"entry {dict.get(e, 'id')!r} has invalid {key} timestamp: {value!r}") from None
+    if parsed.utcoffset() is None:
+        raise Rejected(f"entry {dict.get(e, 'id')!r} has invalid {key} timestamp: {value!r}")
+    return value
+
+
 def parse(payload: bytes) -> Store:
     """Turn an upstream payload into store entries, or reject it outright.
 
@@ -144,8 +155,8 @@ def parse(payload: bytes) -> Store:
             # Upstream's author order changes from one render to the next, and
             # no order it uses reliably matches the site's byline, so sort.
             "authors": sorted(a.name for a in e.get("authors", []) if a.get("name")),
-            "published": required(e, "published"),
-            "updated": required(e, "updated"),
+            "published": timestamp(e, "published"),
+            "updated": timestamp(e, "updated"),
         }
     return entries
 
@@ -260,8 +271,8 @@ def main() -> None:
 
     store = load_store()
     changes = merge(store, entries)
-    dump_store(store)
     publish(store)
+    dump_store(store)
     print(message(changes))
 
 

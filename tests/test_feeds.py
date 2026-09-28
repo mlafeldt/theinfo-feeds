@@ -102,6 +102,13 @@ def test_parse_rejects_entry_missing_a_field(field):
         feeds.parse(atom(entry(1), xml))
 
 
+@pytest.mark.parametrize("field", ["published", "updated"])
+@pytest.mark.parametrize("value", ["2026-09-20T10:00:00", "Sun, 20 Sep 2026 10:00:00 +0000"])
+def test_parse_rejects_unrenderable_timestamp(field, value):
+    with pytest.raises(feeds.Rejected, match=field):
+        feeds.parse(atom(entry(1, **{field: value})))
+
+
 def test_parse_rejects_entry_without_link():
     xml = re.sub(r"<link [^>]*/>", "", entry(2))
     assert "<link" not in xml
@@ -256,6 +263,19 @@ def test_store_round_trips(tmp_path):
     before = path.read_bytes()
     feeds.dump_store(feeds.load_store(path), path)
     assert path.read_bytes() == before
+
+
+def test_main_does_not_dump_store_if_publish_fails(monkeypatch):
+    monkeypatch.setattr(feeds, "fetch", lambda: atom(entry(1)))
+    monkeypatch.setattr(feeds, "load_store", lambda: {})
+    monkeypatch.setattr(feeds, "dump_store", lambda store: pytest.fail("store written before publish"))
+
+    def fail_publish(store):
+        raise RuntimeError("render failed")
+
+    monkeypatch.setattr(feeds, "publish", fail_publish)
+    with pytest.raises(RuntimeError, match="render failed"):
+        feeds.main()
 
 
 def change(type_: str, title: str, *edited: str) -> feeds.Change:
