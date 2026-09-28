@@ -1,5 +1,6 @@
 /.venv/
 /public/*
 !/public/index.html
+!/public/og.png
 __pycache__/
 .pytest_cache/

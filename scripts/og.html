@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+Source of public/og.png, the link-preview image. Render it at 1200x630 with:
+
+  chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 \
+    --window-size=1200,630 --virtual-time-budget=5000 \
+    --screenshot=public/og.png "file://$PWD/scripts/og.html"
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;800&family=Spline+Sans+Mono:wght@500&display=block">
+<style>
+html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+body {
+  box-sizing: border-box;
+  padding: 88px 96px;
+  display: flex;
+  flex-direction: column;
+  background: #0e1522;
+  color: #e7ecf3;
+  font-family: "Schibsted Grotesk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+svg { width: 84px; height: 84px; color: #ff7a2f; }
+h1 {
+  margin: 44px 0 0;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+h1 span { color: #ff7a2f; }
+p {
+  margin: auto 0 0;
+  font: 500 30px/1 "Spline Sans Mono", monospace;
+  color: #9aa5b8;
+}
+</style>
+</head>
+<body>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+<path d="M4 11a9 9 0 0 1 9 9"/>
+<path d="M4 4a16 16 0 0 1 16 16"/>
+<circle cx="5" cy="19" r="1.75" fill="currentColor" stroke="none"/>
+</svg>
+<h1>A better way to read<br><span>The Information</span></h1>
+<p>mlafeldt.github.io/theinfo-feeds</p>
+</body>
+</html>

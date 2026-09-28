@@ -11,6 +11,7 @@ on:
     paths:
       - data/**
       - public/index.html
+      - public/og.png
       - scripts/**
       - tests/**
       - pyproject.toml
@@ -45,8 +46,8 @@ jobs:
       - name: Test
         run: uv run --locked pytest
 
-      # Only the archive and public/index.html are committed; the feeds in
-      # public/ are rendered from the archive on every run.
+      # Only the archive, public/index.html and public/og.png are committed;
+      # the feeds in public/ are rendered from the archive on every run.
       # Pushes made with GITHUB_TOKEN do not trigger workflows, so the push
       # trigger above cannot loop.
       - name: Update feeds

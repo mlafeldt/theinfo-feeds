@@ -23,7 +23,7 @@ These feeds keep every entry seen since 2026-09-08 (the newest 500 per feed are 
 An archived entry is replaced when any field except `updated` changes, so upstream's re-stamps never count as edits.
 Authors are kept in alphabetical order, since upstream's own order is not stable.
 Only the archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the archive changed or the code did.
-The landing page, `public/index.html`, is static and written by hand; a test fails if its feed links fall out of step with the feeds.
+The landing page, `public/index.html`, and its link-preview image, `public/og.png` (rendered from `scripts/og.html`), are static and made by hand; a test fails if the page's feed links fall out of step with the feeds.
 
 Nothing is ever removed from the archive, so the script refuses a whole payload rather than let a bad entry in: anything that is not well-formed Atom with at least one entry, and any entry whose id or link points somewhere other than `www.theinformation.com`.
 The latter happened on 2026-09-10, when upstream briefly rendered its Heroku origin hostname into entry links and ids, pointing readers at a host where no subscriber can sign in.
