@@ -228,11 +228,11 @@ def render(store: Store, feed: Feed) -> bytes:
     return fg.atom_str(pretty=True)
 
 
-def load_store(path: Path = STORE) -> Store:
+def load_store(path: Path) -> Store:
     return json.loads(path.read_text()) if path.exists() else {}
 
 
-def dump_store(store: Store, path: Path = STORE) -> None:
+def dump_store(store: Store, path: Path) -> None:
     # Written aside and renamed into place: a half-written store would fail to
     # load on the next run.
     tmp = path.with_suffix(".tmp")
@@ -241,7 +241,7 @@ def dump_store(store: Store, path: Path = STORE) -> None:
     tmp.replace(path)
 
 
-def publish(store: Store, out_dir: Path = OUT_DIR) -> None:
+def publish(store: Store, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     for feed in FEEDS:
         (out_dir / feed.name).write_bytes(render(store, feed))
@@ -272,18 +272,23 @@ def message(changes: list[Change]) -> str:
     return ", ".join(parts).capitalize() + "\n\n" + "\n".join(lines)
 
 
-def main() -> None:
-    try:
-        entries = parse(fetch())
-    except Rejected as e:
-        sys.exit(f"refusing to update: {e}")
-
-    store = load_store()
+def run(payload: bytes, store_path: Path, out_dir: Path) -> str:
+    """Validate and publish a payload, then save the archive and report changes."""
+    entries = parse(payload)
+    store = load_store(store_path)
     changes = merge(store, entries)
     # Render first so a failure cannot save entries the feeds cannot publish.
-    publish(store)
-    dump_store(store)
-    print(message(changes))
+    publish(store, out_dir)
+    dump_store(store, store_path)
+    return message(changes)
+
+
+def main() -> None:
+    try:
+        result = run(fetch(), STORE, OUT_DIR)
+    except Rejected as e:
+        sys.exit(f"refusing to update: {e}")
+    print(result)
 
 
 if __name__ == "__main__":
