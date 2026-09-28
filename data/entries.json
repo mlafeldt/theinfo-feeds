@@ -2497,5 +2497,60 @@
     "title": "Anthropic’s Amodei to Dine With Trump at White House",
     "type": "Briefing",
     "updated": "2026-09-27T18:47:41Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18113": {
+    "authors": [
+      "Grace Kay"
+    ],
+    "content": "<p>SpaceX launched its Starship rocket into orbit on Monday morning in a historic first for the company.</p> <p>It was the 14th test flight of the massive rocket ship but the first that has reached orbit. The rocket released 26 of&nbsp; SpaceX’s’s new Starlink V3 satellites about 10 minutes after reaching ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-launches-starship-orbit-first-time",
+    "published": "2026-09-28T15:21:46Z",
+    "title": "SpaceX Launches Starship Into Orbit For The First Time",
+    "type": "Briefing",
+    "updated": "2026-09-28T15:22:32Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18114": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms is launching a new division to sell its AI tools to businesses, tapping MongoDB Chief Executive Chirantan Desai to lead the unit as chief enterprise platform officer.</p> <p>In a <a href=\"https://x.com/finkd/status/2104550613149163600\">post</a> on X Monday, Meta CEO Mark Zuckerberg said the new division, called Meta Enterprise Platform, will focus ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-taps-mongodb-ceo-lead-new-enterprise-ai-division",
+    "published": "2026-09-28T15:42:24Z",
+    "title": "Meta Taps MongoDB CEO to Lead  New Enterprise AI Division",
+    "type": "Briefing",
+    "updated": "2026-09-28T15:42:24Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18115": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>LiveRamp, which helps advertisers use customer data to target and measure ads, said Monday it is expanding its partnership with OpenAI so advertisers can target their ads in ChatGPT based on customer data they collect, a feature already available with Google and Meta.</p> <p>ChatGPT currently matches ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-liveramp-expands-openai-partnership-let-brands-target-chatgpt-ads",
+    "published": "2026-09-28T15:43:37Z",
+    "title": "Exclusive: LiveRamp Expands OpenAI Partnership to Let Brands Target ChatGPT Ads",
+    "type": "Briefing",
+    "updated": "2026-09-28T15:43:37Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18116": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia on Monday released new software and hardware products to prevent hacking incidents such as the breach in July of Hugging Face and other companies by OpenAI’s AI. Other AI developers such as Anthropic and Google have disclosed similar hacking incidents involving their AI agents, which took ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-releases-products-stop-ai-going-rogue",
+    "published": "2026-09-28T15:47:05Z",
+    "title": "Nvidia Releases Products To Stop AI From Going Rogue",
+    "type": "Briefing",
+    "updated": "2026-09-28T15:47:05Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18117": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia’s board approved adding $150 billion to its stock repurchase program, bringing the total amount currently authorized to $235 billion.</p> <p>Nvidia said it is the largest stock buyback authorization increase in history, and said it expects to buy back all of that $235 billion in stock by the end ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-authorizes-150-billion-stock-buyback-increase-largest-history",
+    "published": "2026-09-28T15:48:47Z",
+    "title": "Nvidia Authorizes $150 Billion Stock Buyback Increase, Largest In History",
+    "type": "Briefing",
+    "updated": "2026-09-28T15:48:47Z"
   }
 }
