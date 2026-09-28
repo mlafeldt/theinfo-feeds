@@ -148,11 +148,7 @@ def parse(payload: bytes) -> Store:
         if not m:
             raise Rejected(f"unexpected entry id: {id_!r}")
         link = next(
-            (
-                link_element.get("href")
-                for link_element in e.findall(ATOM + "link")
-                if link_element.get("rel", "alternate") == "alternate"
-            ),
+            (el.get("href") for el in e.findall(ATOM + "link") if el.get("rel", "alternate") == "alternate"),
             None,
         )
         if not link:
