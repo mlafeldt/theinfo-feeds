@@ -1423,6 +1423,19 @@
     "type": "Article",
     "updated": "2026-09-29T16:41:02Z"
   },
+  "tag:www.theinformation.com,2005:Article/17907": {
+    "authors": [
+      "Alix Coutures",
+      "Catherine Perloff"
+    ],
+    "content": "<p>Google has been paying roughly 100 digital publishers for how much their content contributes to AI-powered answers to search and other products, according to people familiar with tests. The pilot program signals a further shift by the company toward paying publishers for content that shows up in its powerful search engine.</p>\n\n<p>Google has historically taken the attitude that it shouldn’t pay publishers whose content answers users’ queries, on the grounds that the questions direct traffic to their websites. But the advent of AI-powered summaries, called AI Overviews, has drastically reduced the amount of traffic Google’s search refers to websites, prompting widespread complaints about Google, including lawsuits from some publishers.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/google-paying-100-digital-publishers-ai-overviews",
+    "published": "2026-09-29T23:09:16Z",
+    "title": "Google Is Paying About 100 Digital Publishers for AI Overviews",
+    "type": "Article",
+    "updated": "2026-09-29T23:09:42Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -2918,8 +2931,19 @@
     "content": "<p>Google is in the process of joining Apache Ossie, a software industry group with members such as Snowflake and Nvidia that is trying to make it easier for AI tools to access data from applications and databases, according to a company spokesperson.</p> <p>The search and cloud provider will ...</p>",
     "link": "https://www.theinformation.com/briefings/google-joins-industry-group-working-help-ai-better-understand-data",
     "published": "2026-09-29T20:42:44Z",
-    "title": "Google Joining Industry Group Working to Help AI Better Understand Data",
+    "title": "Google, Microsoft Join Industry Group to Standardize Enterprise Data For AI",
     "type": "Briefing",
-    "updated": "2026-09-29T20:45:43Z"
+    "updated": "2026-09-29T23:06:51Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18134": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>President Donald Trump <a href=\"https://truthsocial.com/@realDonaldTrump/posts/117356435739432952?status_id=117356435739432952&attachment_id=117356434517531231\">announced</a> on Tuesday that leading AI companies had agreed to non-binding commitments on AI safety provisions, including internal controls on model alignment and external auditing. The “White House Accord on Super Intelligence,” which Trump posted on Truth Social, was ...</p>",
+    "link": "https://www.theinformation.com/briefings/president-trump-announces-white-house-ai-accord",
+    "published": "2026-09-29T22:36:52Z",
+    "title": "President Trump Announces ‘Super Intelligence’ Accord, Renames AI",
+    "type": "Briefing",
+    "updated": "2026-09-29T22:49:15Z"
   }
 }
