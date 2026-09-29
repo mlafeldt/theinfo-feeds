@@ -10,7 +10,6 @@ The archive is written deterministically, so a run that learns nothing new
 leaves it byte-identical and the workflow commits nothing.
 """
 
-import html
 import json
 import re
 import sys
@@ -278,15 +277,12 @@ def render(archive: Entries, feed: Feed) -> bytes:
     for id_, e in selected:
         fe = fg.add_entry(order="append")
         fe.id(id_)
-        fe.title(e["title"])
+        lbl = label(e, feed)
+        fe.title(f"{e['title']} [{lbl}]" if lbl else e["title"])
         fe.link(href=e["link"], rel="alternate", type="text/html")
-        content = e["content"]
-        if lbl := label(e, feed):
-            # Readers show the start of the content as a snippet under the
-            # title, so this reads like the label above the site's headline.
-            content = f"<p>[{html.escape(lbl)}]</p>{content}"
+        fe.content(e["content"], type="html")
+        if lbl:
             fe.category(term=lbl)
-        fe.content(content, type="html")
         for author in e["authors"]:
             fe.author(name=author)
         fe.published(e["published"])

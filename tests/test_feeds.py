@@ -293,10 +293,10 @@ def test_render_round_trips_entry_fields():
     assert len(out) == len(archive)
     for e in out:
         o = archive[e.id]
-        assert e.title == o["title"]
+        suffix = " [Briefing]" if o["type"] == "Briefing" else ""
+        assert e.title == o["title"] + suffix
         assert e.link == o["link"]
-        # Parsed entries carry no article labels; briefings are labelled by type.
-        assert e.content[0].value == ("<p>[Briefing]</p>" if o["type"] == "Briefing" else "") + o["content"]
+        assert e.content[0].value == o["content"]
         assert [a.name for a in e.authors] == o["authors"]
         assert datetime.fromisoformat(e.published) == datetime.fromisoformat(o["published"])
 
@@ -306,21 +306,21 @@ def test_render_labels_what_the_feed_does_not_say():
     archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Q&A"
     archive["tag:www.theinformation.com,2005:Article/3"]["label"] = None
 
-    def labels(name: str) -> dict[str, tuple[str, list[str]]]:
+    def labels(name: str) -> dict[str, tuple[str, str, list[str]]]:
         return {
-            e.id.rsplit(":", 1)[1]: (e.content[0].value, [t.term for t in e.get("tags", [])])
+            e.id.rsplit(":", 1)[1]: (e.title, e.content[0].value, [t.term for t in e.get("tags", [])])
             for e in rendered(archive, name).entries
         }
 
     assert labels("all.xml") == {
-        "Briefing/1": ("<p>[Briefing]</p><p>Body</p>", ["Briefing"]),
-        "Article/2": ("<p>[Q&amp;A]</p><p>Body</p>", ["Q&A"]),
-        "Article/3": ("<p>Body</p>", []),
+        "Briefing/1": ("Story 1 [Briefing]", "<p>Body</p>", ["Briefing"]),
+        "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
+        "Article/3": ("Story 3", "<p>Body</p>", []),
     }
-    assert labels("briefings.xml") == {"Briefing/1": ("<p>Body</p>", [])}
+    assert labels("briefings.xml") == {"Briefing/1": ("Story 1", "<p>Body</p>", [])}
     assert labels("articles.xml") == {
-        "Article/2": ("<p>[Q&amp;A]</p><p>Body</p>", ["Q&A"]),
-        "Article/3": ("<p>Body</p>", []),
+        "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
+        "Article/3": ("Story 3", "<p>Body</p>", []),
     }
 
 
