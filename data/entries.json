@@ -1339,6 +1339,18 @@
     "type": "Article",
     "updated": "2026-09-28T14:02:02Z"
   },
+  "tag:www.theinformation.com,2005:Article/17900": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>Making a vendor recommendation for a major IT initiative can be paralyzing. Every company promises a “seamless” user experience and “robust” APIs, but buyers typically lack visibility into real-world implementation and operations until after they’ve already made a decision.</p>\n\n<p>As a result, many tech leaders default to recommendations from people in their networks, or even avoid making a change at all, preferring to stick with the “devil they know” over risking the unknown.</p>\n\n<p>Google Gemini can help you quickly research vendor products, services, and features, going beyond the marketing materials to surface real-world insights about implementation, integration, and total cost of ownership.</p>\n\n<p><strong>Step 1: Vent Your Frustrations</strong></p>\n\n<p>Open up a new chat in Gemini and list off everything that is driving you mad about your current product or platform so Gemini has comprehensive context about the problem you are looking to solve. If you’re looking for a new cloud vendor, the problem might be unpredictable costs, or it might be unacceptable levels of latency. Those are two very different problems, and each might be best solved by two different vendors.</p>\n\n<p>Don’t sugar-coat here. Mention user adoption issues, unhelpful account managers, broken integrations, and anything else that has you considering a change. If Gemini knows what’s currently going wrong, it will be better equipped to make best-fit recommendations.</p>\n\n<p><strong>Step 2: Generate Recommendations</strong></p>\n\n<p>Give Gemini some basic background information about your company and what technology you’re looking to replace. Include your frustrations from Step 1.</p>\n\n<p>Here’s a sample prompt:</p>\n\n<p><em>I am the CIO at [company]. We are currently evaluating vendor options to [replatform our intranet]. Right now, we use [vendor], but we are looking to switch because [we are unhappy with limited functionality and account support]. Suggest additional vendor options to consider and include descriptions of their product and services and key features.</em></p>\n\n<p>Gemini will evaluate the scope of the change you are looking to make, consider your specific context, and offer several options. If you explain that you lead the IT department at a global supply chain company with 14,000 employees, for example, Gemini will account for organization-specific considerations like mobile access and integration with shift-scheduling systems.</p>\n\n<p>Review Gemini’s initial shortlist to identify top contenders, eliminate any obvious mismatches, and move forward with your finalists.</p>\n\n<p><strong>Step 3: Dig Deeper</strong></p>\n\n<p>Gemini’s initial responses will focus on the hero features and selling points of several options, drawing from various sources, including vendors’ own marketing materials. This means you may need to continue the conversation to fully address potential friction points like integration, pricing issues, and scalability challenges.</p>\n\n<p>Follow up with Gemini, this time asking it to take a more skeptical look at your top choices. Here, you can ask pointed questions about specific details and more fully explore likely total costs. You can even prompt Gemini to scour the web for user reviews, helping you to discover stories from previous customers who had subpar experiences.</p>\n\n<p>Try prompts like these:</p>\n\n<p><em>What are some of the known integration challenges when connecting [Vendor] to [System A] and [System B]?</em></p>\n\n<p><em>Summarize the three most common complaints that enterprise IT teams express about [Vendor’s] technical performance or customer service.</em></p>\n\n<p><em>What is the realistic enterprise deployment timeline for [Vendor], as opposed to their estimated sales timeline? Are there any configuration issues I should watch out for?</em></p>\n\n<p>By asking these types of questions, you can push Gemini to go beyond generic feature lists and give you more granular information that gets you closer to a decision.</p>\n\n<p><strong>Step 4: Compare and Contrast</strong></p>\n\n<p>Chat with Gemini for a bit. Go back-and-forth until you feel like you have a comprehensive understanding of the benefits and potential tradeoffs for each vendor, including how each will fit with your existing environment.</p>\n\n<p>Then, ask Gemini to summarize its findings in a structured table. Try this prompt:</p>\n\n<p><em>Create a matrix comparing [Vendor A] and [Vendor B] across deployment timeline, integration complexity, and potential friction points.</em></p>\n\n<p>Gemini will generate a clean table that helps you cut through the weeds of your sprawling research session, take a big-picture view of your options, and more clearly how vendors compare with one another on your most important criteria.</p>\n\n<p>You and your team will still need to make the final recommendation to your leadership team. But now, you will have the real-world information you need to help you make (and defend) your choice.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/use-google-gemini-research-vendor-products-services-features",
+    "published": "2026-09-29T18:00:15Z",
+    "title": "Use Google Gemini to Research Vendor Products, Services, and Features",
+    "type": "Article",
+    "updated": "2026-09-29T18:00:15Z"
+  },
   "tag:www.theinformation.com,2005:Article/17901": {
     "authors": [
       "Rocket Drew"
@@ -2863,5 +2875,28 @@
     "title": "Meta Adapts Muse Agent For Small Businesses",
     "type": "Briefing",
     "updated": "2026-09-29T16:09:50Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18131": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>OpenAI is in early talks with investors to raise a pre-IPO round and is targeting raising $30 billion, according to a person familiar with the matter.</p> <p>The ChatGPT maker could seek a valuation around $1.4 trillion, though it hasn’t signed a term sheet yet with any investor, the person said.</p> <p>The ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-early-talks-raise-30-billion-ipo",
+    "published": "2026-09-29T17:57:43Z",
+    "title": "OpenAI in Early Talks to Raise $30 Billion Before an IPO",
+    "type": "Briefing",
+    "updated": "2026-09-29T17:57:54Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18132": {
+    "authors": [
+      "Rocket Drew",
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>OpenAI announced its new agent product called “Dots” at its annual Developer Day on Tuesday, jumping into the increasingly crowded market for AI assistants</p> <p>The announcement, which confirmed The Information’s <a href=\"https://www.theinformation.com/newsletters/ai-agenda/openai-develops-features-counter-grok-bot-mulls-response-metas-muse\">reporting</a> this month that OpenAI was working on a productivity-focused agent, follows ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-announces-dots-agents-devday",
+    "published": "2026-09-29T18:07:38Z",
+    "title": "OpenAI Announces ‘Dots’ Agents at DevDay",
+    "type": "Briefing",
+    "updated": "2026-09-29T18:07:38Z"
   }
 }
