@@ -18,10 +18,10 @@ These feeds keep every entry seen since 2026-09-08 (the newest 500 per feed are 
 - entries re-stamped in bulk: unrelated briefings, some a day apart in publication, converge on one `<updated>` value while their title, summary and authors stay byte-identical
 - author lists that come back in a different order from one render to the next
 
-Upstream's feed names no category either, while the site shows a label above each article's headline: its newsletter, such as AI Agenda or The Briefing, or a kicker such as Exclusive or Opinion.
+Upstream's feed names no category either, while the site shows a label above each article's headline: its newsletter, such as AI Agenda or The Briefing, a kicker such as Exclusive or Opinion, or Partner Content for sponsored articles.
 These feeds append the label to each article's title, as in `OpenAI Math Result Stokes Data-Sharing Concerns [AI Agenda]`, and add it as an Atom `<category>` for readers that filter on one. The content stays as upstream wrote it.
 Briefing titles get `[Briefing]` in the All feed, where they mix with articles.
-Articles the site shows no label for, sponsored ones among them, get none.
+Articles the site shows no label for get none.
 
 ## How
 
@@ -29,6 +29,7 @@ Articles the site shows no label for, sponsored ones among them, get none.
 Published entry links still point to `www.theinformation.com`, where subscribers can sign in.
 An archived entry is replaced when any field except `updated` changes, so upstream's re-stamps never count as edits.
 Each new article's page is fetched once, five seconds apart to space requests to the origin, for the `articleSection` in its JSON-LD; the label is kept in the archive, through later edits.
+Partner articles are the exception: their JSON-LD names no section, but their byline, The Information Partnerships, is in the feed too, so they get Partner Content without a fetch.
 Authors are kept in alphabetical order, since upstream's own order is not stable.
 Only the archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the archive changed or the code did.
 The landing page, `public/index.html`, and its link-preview image, `public/og.png` (rendered from `scripts/og.html`), are static and made by hand; a test fails if the page's feed links fall out of step with the feeds.

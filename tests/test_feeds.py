@@ -224,7 +224,7 @@ def test_page_label_reads_real_page():
         (("Q&A",), "Q&A"),
         # What the page says for an article the site shows no label for.
         (("technology",), None),
-        # What the page says for sponsored articles.
+        # What the page says for partner articles, which their byline labels instead.
         ((), None),
     ],
 )
@@ -418,6 +418,17 @@ def test_run_labels_new_articles_once(tmp_path, pages):
     )
     assert pages.fetched == [source_link]
     assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["link"] == link
+
+
+def test_run_labels_partner_articles_by_byline(tmp_path, pages):
+    payload = atom(entry(2, "Article", authors=("The Information Partnerships",)))
+
+    result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
+    assert result == "Add 1 article\n\n+ Article: [Partner Content] Story 2"
+    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Article/2"]["label"] == (
+        "Partner Content"
+    )
+    assert pages.fetched == []
 
 
 def test_run_labels_articles_archived_before_labels(tmp_path, pages):

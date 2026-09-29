@@ -44,6 +44,10 @@ MAX_ENTRIES = 500
 # hundred.
 PAGE_PACE = 5
 
+# The byline of sponsored articles, and the label the site shows them with.
+PARTNER_AUTHOR = "The Information Partnerships"
+PARTNER_LABEL = "Partner Content"
+
 
 class Feed(NamedTuple):
     name: str
@@ -208,8 +212,15 @@ def source_url(link: str) -> str:
 
 
 def label_articles(archive: Entries) -> None:
-    """Fetch the label of every archived article that has none yet, in place."""
+    """Label every archived article that has no label yet, in place."""
     todo = [e for e in archive.values() if e["type"] == "Article" and "label" not in e]
+    # The site labels partner articles too, but their JSON-LD names no section;
+    # their byline, the same in the feed, tells them apart without a fetch.
+    for e in todo:
+        if PARTNER_AUTHOR in e["authors"]:
+            e["label"] = PARTNER_LABEL
+            print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
+    todo = [e for e in todo if "label" not in e]
     for i, e in enumerate(todo):
         if i:
             time.sleep(PAGE_PACE)
