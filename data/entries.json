@@ -1242,6 +1242,17 @@
     "type": "Article",
     "updated": "2026-09-28T23:01:07Z"
   },
+  "tag:www.theinformation.com,2005:Article/17903": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Mark Zuckerberg is on a roll. Fresh off his triumphant rollout of the Muse personal agent, he signaled his commitment to selling AI to companies by announcing the poaching of CJ Desai, MongoDB’s CEO, as head of a newly created Meta Enterprise Platform business. Desai has had a long career in enterprise software, at companies including ServiceNow and Cloudflare before MongoDB, making him a significant hire.&nbsp;</p><p>We still don’t know exactly how expansive Meta Platforms’ ambitions are for enterprise. Will Zuckerberg use some of its data center capacity to go into the neocloud business? <a href=\"https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/\">Zuckerberg’s announcement</a>—and Desai’s own background—suggest Meta is more interested in selling AI agents and software to businesses. Whatever the case, Zuckerberg must have made a good case to Desai about the scope of his ambitions. Desai only joined MongoDB last November, and presumably he wouldn’t have bolted without a very good reason (and/or a big paycheck). It’s a pity he couldn’t have negotiated a better title than chief enterprise platform officer, however.</p>",
+    "link": "https://www.theinformation.com/articles/metas-mongodb-ceo-poach",
+    "published": "2026-09-29T00:01:13Z",
+    "title": "Meta’s MongoDB CEO Poach",
+    "type": "Article",
+    "updated": "2026-09-29T00:07:59Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -2618,5 +2629,16 @@
     "title": "Startup NinjaTech AI Takes Aim at Agent Sticker Shock",
     "type": "Briefing",
     "updated": "2026-09-28T22:44:36Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18123": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>OpenAI has decided not to release the AI model that it had intended to release as GPT-6.1 Astra due to its results on safety tests, a spokesperson said Monday.</p> <p>The model performed worse than GPT-6 Astra—OpenAI’s newest model, released earlier this month—on tests measuring whether it pursues ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-will-ship-gpt-6-1-astra-due-safety-concerns",
+    "published": "2026-09-28T23:53:11Z",
+    "title": "OpenAI Will Not Ship GPT-6.1 Astra Due to Safety Concerns",
+    "type": "Briefing",
+    "updated": "2026-09-28T23:53:11Z"
   }
 }
