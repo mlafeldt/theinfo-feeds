@@ -302,9 +302,10 @@ def test_render_round_trips_entry_fields():
 
 
 def test_render_labels_what_the_feed_does_not_say():
-    archive = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Article")))
+    archive = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Article"), entry(4, "Article")))
     archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Q&A"
     archive["tag:www.theinformation.com,2005:Article/3"]["label"] = None
+    archive["tag:www.theinformation.com,2005:Article/4"]["label"] = "The Information Finance"
 
     def labels(name: str) -> dict[str, tuple[str, str, list[str]]]:
         return {
@@ -316,11 +317,13 @@ def test_render_labels_what_the_feed_does_not_say():
         "Briefing/1": ("Story 1 [Briefing]", "<p>Body</p>", ["Briefing"]),
         "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
         "Article/3": ("Story 3", "<p>Body</p>", []),
+        "Article/4": ("Story 4 [Finance]", "<p>Body</p>", ["The Information Finance"]),
     }
     assert labels("briefings.xml") == {"Briefing/1": ("Story 1", "<p>Body</p>", [])}
     assert labels("articles.xml") == {
         "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
         "Article/3": ("Story 3", "<p>Body</p>", []),
+        "Article/4": ("Story 4 [Finance]", "<p>Body</p>", ["The Information Finance"]),
     }
 
 
@@ -507,6 +510,10 @@ def change(type_: str, title: str, *edited: str) -> feeds.Change:
         (
             [feeds.Change({"type": "Article", "title": "A1", "label": "AI Agenda"}, ())],
             "Add 1 article\n\n+ Article: [AI Agenda] A1",
+        ),
+        (
+            [feeds.Change({"type": "Article", "title": "A1", "label": "The Information Finance"}, ())],
+            "Add 1 article\n\n+ Article: [Finance] A1",
         ),
         (
             [change("Briefing", "B1", "title", "authors"), change("Briefing", "B2")],

@@ -20,6 +20,7 @@ These feeds keep every entry seen since 2026-09-08 (the newest 500 per feed are 
 
 Upstream's feed names no category either, while the site shows a label above each article's headline: its newsletter, such as AI Agenda or The Briefing, a kicker such as Exclusive or Opinion, or Partner Content for sponsored articles.
 These feeds append the label to each article's title, as in `OpenAI Math Result Stokes Data-Sharing Concerns [AI Agenda]`, and add it as an Atom `<category>` for readers that filter on one. The content stays as upstream wrote it.
+Titles drop the site's own name from a label, as in `[Finance]` for The Information Finance; the category keeps it whole.
 Briefing titles get `[Briefing]` in the All feed, where they mix with articles.
 Articles the site shows no label for get none.
 

@@ -263,6 +263,15 @@ def label(e: Entry, feed: Feed) -> str | None:
     return e["type"] if feed.type is None else None
 
 
+def short(lbl: str) -> str:
+    """A label as titles show it, without the site's name every feed already has.
+
+    Some newsletters carry it, as in "The Information Finance". Categories
+    keep the label whole.
+    """
+    return lbl.removeprefix("The Information ")
+
+
 def render(archive: Entries, feed: Feed) -> bytes:
     selected = sorted(
         ((id_, e) for id_, e in archive.items() if feed.type is None or e["type"] == feed.type),
@@ -287,7 +296,7 @@ def render(archive: Entries, feed: Feed) -> bytes:
         fe = fg.add_entry(order="append")
         fe.id(id_)
         lbl = label(e, feed)
-        fe.title(f"{e['title']} [{lbl}]" if lbl else e["title"])
+        fe.title(f"{e['title']} [{short(lbl)}]" if lbl else e["title"])
         fe.link(href=e["link"], rel="alternate", type="text/html")
         fe.content(e["content"], type="html")
         if lbl:
@@ -330,7 +339,7 @@ def count(changes: list[Change]) -> str:
 
 def line(c: Change) -> str:
     e = c.entry
-    lbl = f"[{e['label']}] " if e.get("label") else ""
+    lbl = f"[{short(e['label'])}] " if e.get("label") else ""
     return f"{e['type']}: {lbl}{e['title']}"
 
 
