@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Information feeds</title>
-<meta name="description" content="Unofficial feeds for The Information that keep every entry, with briefings and articles split out.">
+<meta name="description" content="Unofficial feeds for The Information: briefings and articles, 500 stories deep, with article labels and Atom categories.">
 <!-- Link previews in chat apps and social sites. -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mlafeldt.github.io/theinfo-feeds/">
 <meta property="og:title" content="A better way to read The Information">
-<meta property="og:description" content="Quick news and deep dives, each in its own feed and 500 stories deep.">
+<meta property="og:description" content="Quick news and deep dives, 500 stories deep, with article labels and Atom categories for filtering.">
 <meta property="og:image" content="https://mlafeldt.github.io/theinfo-feeds/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -82,7 +82,8 @@ h1 {
 }
 h1 a { text-decoration: none; }
 h1 a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 0.06em; }
-.lede { margin: 0 0 1.75rem; max-width: 34rem; font-size: 1.1875rem; color: var(--muted); }
+.lede { margin: 0 0 1.5rem; max-width: 34rem; font-size: 1.1875rem; color: var(--muted); }
+.prompt { margin: 0 0 0.5rem; font-size: 0.9375rem; font-weight: 700; }
 
 .url {
   display: flex;
@@ -135,7 +136,8 @@ footer p { margin: 0 0 0.75rem; }
 <circle cx="5" cy="19" r="1.75" fill="currentColor" stroke="none"/>
 </svg>
 <h1>A better way to read <a href="https://www.theinformation.com">The Information</a></h1>
-<p class="lede">Quick news and deep dives, each in its own feed and 500 stories deep. Paste this address into your reader to pick one:</p>
+<p class="lede">Quick news and deep dives, each in its own feed and 500 stories deep. Article titles show labels like [AI Agenda], with Atom categories for filtering.</p>
+<p class="prompt">Paste this address into your reader to pick one:</p>
 <!-- <wbr> lets narrow screens wrap URLs after a slash rather than mid-word. -->
 <div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/</code><button type="button">Copy</button></div>
 </section>

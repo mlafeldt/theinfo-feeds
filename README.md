@@ -1,6 +1,7 @@
 # theinfo-feeds
 
 A better way to read [The Information](https://www.theinformation.com): quick news and deep dives, each in its own feed and 500 stories deep, refreshed hourly.
+Article titles show the site's labels, such as `[AI Agenda]`, and Atom categories let compatible readers filter by them.
 
 Paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader to pick one, or subscribe directly:
 
