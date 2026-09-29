@@ -471,9 +471,10 @@ def test_run_rejects_whole_payload_before_touching_archive_or_feeds(tmp_path):
     } == feed_bytes
 
 
-def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
+def test_run_renders_all_feeds_before_writing(tmp_path, monkeypatch):
     _, archive_path, out_dir = run_in_tmp(tmp_path)
     before = archive_path.read_bytes()
+    feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
     original_render = feeds.render
 
     def fail_on_articles(archive, feed):
@@ -485,6 +486,9 @@ def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
     with pytest.raises(ValueError, match="cannot render articles"):
         feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
     assert archive_path.read_bytes() == before
+    assert {
+        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
+    } == feed_bytes
 
 
 def test_run_labels_new_articles_once(tmp_path, pages):

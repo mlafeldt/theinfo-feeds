@@ -348,9 +348,10 @@ def dump_archive(archive: Entries, archive_path: Path) -> None:
 
 
 def publish(archive: Entries, out_dir: Path) -> None:
+    rendered = {feed.name: render(archive, feed) for feed in FEEDS}
     out_dir.mkdir(parents=True, exist_ok=True)
-    for feed in FEEDS:
-        (out_dir / feed.name).write_bytes(render(archive, feed))
+    for name, payload in rendered.items():
+        (out_dir / name).write_bytes(payload)
 
 
 def plural(n: int, word: str) -> str:
