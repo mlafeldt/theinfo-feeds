@@ -39,6 +39,12 @@ OUT_DIR = ROOT / "public"
 # up to this many entries. The archive itself is never trimmed.
 MAX_ENTRIES = 500
 
+# Maximum attempts per fetch, including the initial request.
+ATTEMPTS = 5
+
+# Seconds to wait before retrying a transient HTTP failure.
+RETRY_DELAY = 5
+
 # Seconds between article page fetches to avoid sending a burst to the origin.
 # A run fetches at most 20 pages, the backfill of the whole archive about a
 # hundred.
@@ -97,9 +103,19 @@ class Rejected(Exception):
     """Upstream served something we must not fold into the archive."""
 
 
-def fetch(url: str = UPSTREAM) -> bytes:
-    attempts = 5
-    for attempt in range(1, attempts + 1):
+def transient(e: httpx.HTTPError) -> bool:
+    """Whether an HTTP failure can recover on a later attempt."""
+    return (
+        not isinstance(e, httpx.HTTPStatusError)
+        or e.response.status_code in {408, 429}
+        or e.response.status_code >= 500
+    )
+
+
+def fetch(url: str) -> bytes:
+    attempt = 0
+    while True:
+        attempt += 1
         try:
             resp = httpx.get(
                 url,
@@ -108,10 +124,10 @@ def fetch(url: str = UPSTREAM) -> bytes:
             )
             return resp.raise_for_status().content
         except httpx.HTTPError as e:
-            if attempt == attempts:
+            if not transient(e) or attempt == ATTEMPTS:
                 raise
             print(f"fetch attempt {attempt} for {url} failed: {e}", file=sys.stderr)
-            time.sleep(5)
+            time.sleep(RETRY_DELAY)
 
 
 def text(e: ElementTree.Element, key: str) -> str:
@@ -400,7 +416,7 @@ def run(payload: bytes, archive_path: Path, out_dir: Path) -> str:
 
 def main() -> None:
     try:
-        result = run(fetch(), ARCHIVE_PATH, OUT_DIR)
+        result = run(fetch(UPSTREAM), ARCHIVE_PATH, OUT_DIR)
     except Rejected as e:
         sys.exit(f"refusing to update: {e}")
     print(result)

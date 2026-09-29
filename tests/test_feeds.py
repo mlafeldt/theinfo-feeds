@@ -102,6 +102,47 @@ def rendered(archive: feeds.Entries, name: str) -> feedparser.FeedParserDict:
     return feedparser.parse(feeds.render(archive, FEED[name]), sanitize_html=False)
 
 
+# fetch
+
+
+@pytest.mark.parametrize("status, attempts", [(404, 1), (403, 1), (503, 5), (429, 5)])
+def test_fetch_bounds_retries_and_skips_permanent_errors(monkeypatch, status, attempts):
+    requested = []
+    sleeps = []
+
+    def get(url, **kwargs):
+        requested.append(url)
+        return httpx.Response(status, request=httpx.Request("GET", url))
+
+    monkeypatch.setattr(httpx, "get", get)
+    monkeypatch.setattr(feeds.time, "sleep", sleeps.append)
+    with pytest.raises(httpx.HTTPStatusError):
+        feeds.fetch(feeds.UPSTREAM)
+    assert requested == [feeds.UPSTREAM] * attempts
+    assert sleeps == [5] * (attempts - 1)
+
+
+@pytest.mark.parametrize("status", [503, 408, 429, None])
+def test_fetch_recovers_from_transient_errors(monkeypatch, status):
+    requested = []
+    sleeps = []
+
+    def get(url, **kwargs):
+        requested.append(url)
+        request = httpx.Request("GET", url)
+        if len(requested) == 1:
+            if status is None:
+                raise httpx.ConnectError("connection interrupted", request=request)
+            return httpx.Response(status, request=request)
+        return httpx.Response(200, content=b"feed", request=request)
+
+    monkeypatch.setattr(httpx, "get", get)
+    monkeypatch.setattr(feeds.time, "sleep", sleeps.append)
+    assert feeds.fetch(feeds.UPSTREAM) == b"feed"
+    assert requested == [feeds.UPSTREAM, feeds.UPSTREAM]
+    assert sleeps == [5]
+
+
 # parse
 
 
