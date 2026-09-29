@@ -55,9 +55,10 @@ Add 1 article, edit 1 briefing
 $ uv run pytest
 ```
 
-Lint and format with [Ruff](https://docs.astral.sh/ruff/):
+Lint and format with [Ruff](https://docs.astral.sh/ruff/), and check types with [ty](https://docs.astral.sh/ty/):
 
 ```console
-$ uvx ruff check --fix
-$ uvx ruff format
+$ uv run ruff check --fix
+$ uv run ruff format
+$ uv run ty check
 ```
