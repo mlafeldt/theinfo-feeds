@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Information feeds</title>
-<meta name="description" content="Unofficial feeds for The Information: briefings and articles, 500 stories deep, with article labels and Atom categories.">
+<meta name="description" content="Unofficial feeds for The Information: separate feeds for briefings and articles, up to 500 stories each, with articles labeled like [AI Agenda].">
 <!-- Link previews in chat apps and social sites. -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mlafeldt.github.io/theinfo-feeds/">
 <meta property="og:title" content="A better way to read The Information">
-<meta property="og:description" content="Quick news and deep dives, 500 stories deep, with article labels and Atom categories for filtering.">
+<meta property="og:description" content="Separate feeds for briefings and articles, up to 500 stories each, with articles labeled like [AI Agenda].">
 <meta property="og:image" content="https://mlafeldt.github.io/theinfo-feeds/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -82,8 +82,9 @@ h1 {
 }
 h1 a { text-decoration: none; }
 h1 a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 0.06em; }
-.lede { margin: 0 0 1.5rem; max-width: 34rem; font-size: 1.1875rem; color: var(--muted); }
-.prompt { margin: 0 0 0.5rem; font-size: 0.9375rem; font-weight: 700; }
+.lede { margin: 0 0 2rem; max-width: 34rem; font-size: 1.1875rem; color: var(--muted); }
+.lede samp { font: 500 0.9em var(--mono); color: var(--ink); }
+.prompt { margin: 0 0 0.625rem; font-size: 0.9375rem; font-weight: 500; color: var(--muted); }
 
 .url {
   display: flex;
@@ -120,8 +121,7 @@ button[data-copied], .hero button[data-copied] { color: #fff; background: var(--
 h2 { margin: 5rem 0 0.5rem; font-size: 1.0625rem; font-weight: 700; }
 .feeds { margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--rule); }
 .feeds li { padding: 1.75rem 0; border-top: 1px solid var(--rule); }
-h3 { margin: 0; font-size: 1.625rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
-.about { margin: 0.2rem 0 1rem; color: var(--muted); }
+h3 { margin: 0 0 0.75rem; font-size: 1.625rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
 
 footer { margin-top: 3rem; max-width: 36rem; font-size: 0.9375rem; color: var(--muted); }
 footer p { margin: 0 0 0.75rem; }
@@ -136,8 +136,8 @@ footer p { margin: 0 0 0.75rem; }
 <circle cx="5" cy="19" r="1.75" fill="currentColor" stroke="none"/>
 </svg>
 <h1>A better way to read <a href="https://www.theinformation.com">The Information</a></h1>
-<p class="lede">Quick news and deep dives, each in its own feed and 500 stories deep. Article titles show labels like [AI Agenda], with Atom categories for filtering.</p>
-<p class="prompt">Paste this address into your reader to pick one:</p>
+<p class="lede">Separate feeds for briefings and articles, up to 500 stories each, with articles labeled like <samp>[AI Agenda]</samp>.</p>
+<p class="prompt">Paste into your feed reader, then pick a feed:</p>
 <!-- <wbr> lets narrow screens wrap URLs after a slash rather than mid-word. -->
 <div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/</code><button type="button">Copy</button></div>
 </section>
@@ -146,23 +146,21 @@ footer p { margin: 0 0 0.75rem; }
 <ul class="feeds">
 <li>
 <h3>All</h3>
-<p class="about">Everything in <a href="https://www.theinformation.com/feed">The Information's own feed</a>, minus the phantom updates.</p>
 <div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>all.xml</code><button type="button">Copy</button></div>
 </li>
 <li>
 <h3>Briefings</h3>
-<p class="about">The short news items.</p>
 <div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>briefings.xml</code><button type="button">Copy</button></div>
 </li>
 <li>
 <h3>Articles</h3>
-<p class="about">The full-length reporting.</p>
 <div class="url"><code>https://mlafeldt.github.io/<wbr>theinfo-feeds/<wbr>articles.xml</code><button type="button">Copy</button></div>
 </li>
 </ul>
 
 <footer>
-<p>Not affiliated with The Information. Full articles need a subscription. <a href="https://github.com/mlafeldt/theinfo-feeds">Source on GitHub</a></p>
+<p>Not affiliated with The Information. Full articles need a subscription.</p>
+<p><a href="https://github.com/mlafeldt/theinfo-feeds">Source on GitHub</a></p>
 </footer>
 </main>
 <script>

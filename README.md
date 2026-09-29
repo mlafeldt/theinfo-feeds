@@ -1,47 +1,60 @@
 # theinfo-feeds
 
-A better way to read [The Information](https://www.theinformation.com): quick news and deep dives, each in its own feed and 500 stories deep, refreshed hourly.
-Article titles show the site's labels, such as `[AI Agenda]`, and Atom categories let compatible readers filter by them.
+A better way to read [The Information](https://www.theinformation.com).
 
-Paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader to pick one, or subscribe directly:
+Separate feeds for briefings and articles, up to 500 stories each, with articles labeled like `[AI Agenda]`.
 
-- [All](https://mlafeldt.github.io/theinfo-feeds/all.xml): everything in [The Information's own feed](https://www.theinformation.com/feed), minus the phantom updates
-- [Briefings](https://mlafeldt.github.io/theinfo-feeds/briefings.xml): the short news items
-- [Articles](https://mlafeldt.github.io/theinfo-feeds/articles.xml): the full-length reporting
+Paste <https://mlafeldt.github.io/theinfo-feeds/> into your feed reader, then pick a feed. Or subscribe directly:
+
+| Feed | URL |
+| --- | --- |
+| All | <https://mlafeldt.github.io/theinfo-feeds/all.xml> |
+| Briefings | <https://mlafeldt.github.io/theinfo-feeds/briefings.xml> |
+| Articles | <https://mlafeldt.github.io/theinfo-feeds/articles.xml> |
 
 ## Why
 
 Upstream serves only its latest 20 entries, briefings and articles mixed — about a day and a half's worth.
-These feeds keep every entry seen since 2026-09-08 (the newest 500 per feed are published), offer briefings and articles separately, label each article the way the site does, and leave out the noise upstream adds between renders:
+These feeds:
 
-- a `?cb=` cache buster in the feed's id and self link that changes from fetch to fetch
-- entries re-stamped in bulk: unrelated briefings, some a day apart in publication, converge on one `<updated>` value while their title, summary and authors stay byte-identical
-- author lists that come back in a different order from one render to the next
+- keep every entry seen since 2026-09-08 and publish the newest 500 per feed
+- split briefings from articles
+- label articles, which upstream's feed doesn't
+- drop the noise upstream adds between renders:
+  - a `?cb=` cache buster in the feed's id and self link, new on every fetch
+  - entries re-stamped in bulk: unrelated briefings converge on one `<updated>` while staying byte-identical
+  - author lists in a different order on every render
 
-Upstream's feed names no category either, while the site shows a label above each article's headline: its newsletter, such as AI Agenda or The Briefing, a kicker such as Exclusive or Opinion, or Partner Content for sponsored articles.
-These feeds append the label to each article's title, as in `OpenAI Math Result Stokes Data-Sharing Concerns [AI Agenda]`, and add it as an Atom `<category>` for readers that filter on one. The content stays as upstream wrote it.
-Titles drop the site's own name from a label, as in `[Finance]` for The Information Finance; the category keeps it whole.
-Briefing titles get `[Briefing]` in the All feed, where they mix with articles.
-Articles the site shows no label for get none.
+A label is what the site shows above an article's headline: a newsletter (AI Agenda), a kicker (Exclusive), or Partner Content for sponsored articles.
+Labels are:
+
+- appended to titles, as in `OpenAI Math Result Stokes Data-Sharing Concerns [AI Agenda]`, and added as an Atom `<category>`
+- shortened in titles only: `[Finance]` for The Information Finance
+- `[Briefing]` for briefings in the All feed, where they mix with articles
+- missing where the site shows none
+- never added to the content, which stays as upstream wrote it
 
 ## How
 
-`scripts/feeds.py` fetches the feed and article pages from The Information's Heroku origin, folds the entries into `data/entries.json` and renders all three feeds from that archive into `public/`.
-Published entry links still point to `www.theinformation.com`, where subscribers can sign in.
-An archived entry is replaced when any field except `updated` changes, so upstream's re-stamps never count as edits.
-Each new article's page is fetched once, five seconds apart to space requests to the origin, for the `articleSection` in its JSON-LD; the label is kept in the archive, through later edits.
-Partner articles are the exception: their JSON-LD names no section, but their byline, The Information Partnerships, is in the feed too, so they get Partner Content without a fetch.
-Authors are kept in alphabetical order, since upstream's own order is not stable.
-Only the archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the archive changed or the code did.
-The landing page, `public/index.html`, and its link-preview image, `public/og.png` (rendered from `scripts/og.html`), are static and made by hand; a test fails if the page's feed links fall out of step with the feeds.
+`scripts/feeds.py`, run hourly:
 
-Nothing is ever removed from the archive, so the script refuses a whole payload rather than let a bad entry in: anything that is not well-formed Atom with at least one entry, and any entry whose id or link points somewhere other than `www.theinformation.com`.
-The latter happened on 2026-09-10, when upstream briefly rendered its Heroku origin hostname into entry links and ids, pointing readers at a host where no subscriber can sign in.
-A red run and stale feeds beat republishing that.
-Likewise, an article page that cannot be fetched or has no article JSON-LD fails the run, and the next run tries again.
-For the same reason, the workflow runs the tests before it lets the script near the archive.
+- fetches the feed and new article pages
+- folds entries into `data/entries.json`, the only thing committed; nothing is ever removed
+- ignores changes to `updated` alone, so re-stamps aren't edits
+- sorts authors, since upstream's order isn't stable
+- labels each new article once, from its page's JSON-LD `articleSection`, 5 s between fetches; partner articles from their byline instead
+- renders the three feeds into `public/`, redeployed when the archive or code changed
 
-Run it, and its tests, locally with [uv](https://docs.astral.sh/uv/):
+The run fails rather than publish something bad:
+
+- a payload that isn't well-formed Atom with entries
+- an entry whose id or link points to a host other than `www.theinformation.com`, as upstream served on 2026-09-10
+- an article page that can't be fetched or has no article JSON-LD
+- failing tests, which CI runs first
+
+`public/index.html` and `public/og.png` (from `scripts/og.html`) are made by hand; a test keeps the page's links in step with the feeds.
+
+Run it locally with [uv](https://docs.astral.sh/uv/):
 
 ```console
 $ uv run scripts/feeds.py
@@ -52,10 +65,8 @@ Add 1 article, edit 1 briefing
 $ uv run pytest
 ```
 
-The archive was seeded from this repo's history: it started out as a byte-for-byte mirror of upstream's feed, a workaround for a Cloudflare rule that answered feed readers with a challenge page in September 2026.
-That rule is gone, and so is the mirror.
-
 ## Scope
 
-These feeds carry the **public** feed only — the same headlines and summaries upstream serves any visitor, plus the label from each article's public page, with no article bodies and nothing from behind the paywall; reading full articles needs a subscription.
+These feeds carry the **public** feed only: the headlines and summaries upstream serves any visitor, plus labels from public article pages and bylines.
+No article bodies, nothing from behind the paywall; full articles need a subscription.
 Unofficial, not affiliated with or endorsed by The Information.
