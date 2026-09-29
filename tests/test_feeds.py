@@ -179,6 +179,16 @@ def test_parse_rejects_foreign_host_in_link():
         feeds.parse(atom(entry(1, link_host="info-reader-production.herokuapp.com")))
 
 
+@pytest.mark.parametrize("scheme", ["http", "ftp", ""])
+@pytest.mark.parametrize("type_", ["Briefing", "Article"])
+def test_parse_rejects_non_https_links(scheme, type_):
+    xml = entry(1, type_).replace(
+        'href="https:', f'href="{scheme + ":" if scheme else ""}'
+    )
+    with pytest.raises(feeds.Rejected, match="entry link"):
+        feeds.parse(atom(xml))
+
+
 # merge
 
 

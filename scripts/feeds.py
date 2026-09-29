@@ -177,7 +177,8 @@ def parse(payload: bytes) -> Entries:
         )
         if not link:
             raise Rejected(f"entry {id_!r} has no link")
-        if urlsplit(link).hostname != HOST:
+        parts = urlsplit(link)
+        if parts.scheme != "https" or parts.hostname != HOST:
             raise Rejected(f"unexpected entry link: {link!r}")
         entries[id_] = {
             "type": m["type"],
@@ -223,10 +224,8 @@ def page_label(page: str, link: str) -> str | None:
 
 
 def source_url(link: str) -> str:
-    """Fetch a canonical article from the origin without changing its public link."""
+    """The origin URL for a canonical article link."""
     parts = urlsplit(link)
-    if parts.scheme != "https" or parts.hostname != HOST:
-        raise Rejected(f"unexpected article link: {link!r}")
     return urlunsplit(("https", SOURCE_HOST, parts.path, parts.query, ""))
 
 
