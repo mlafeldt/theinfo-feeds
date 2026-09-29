@@ -30,7 +30,6 @@ SOURCE_HOST = "info-reader-production.herokuapp.com"
 SOURCE = f"https://{SOURCE_HOST}"
 UPSTREAM = f"{SOURCE}/feed"
 PAGES = "https://mlafeldt.github.io/theinfo-feeds"
-USER_AGENT = "theinfo-feeds (+https://github.com/mlafeldt/theinfo-feeds)"
 
 ROOT = Path(__file__).resolve().parent.parent
 ARCHIVE_PATH = ROOT / "data" / "entries.json"
@@ -100,7 +99,6 @@ def fetch(url: str = UPSTREAM) -> bytes:
         try:
             resp = httpx.get(
                 url,
-                headers={"User-Agent": USER_AGENT},
                 follow_redirects=True,
                 timeout=60,
             )
