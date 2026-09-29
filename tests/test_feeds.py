@@ -9,6 +9,7 @@ from xml.sax.saxutils import escape
 
 import feedparser
 import feeds
+import httpx
 import pytest
 
 UPSTREAM_FIXTURE = (Path(__file__).parent / "fixtures" / "upstream.xml").read_bytes()
@@ -29,33 +30,40 @@ def page(*sections: str) -> bytes:
 
 
 class Pages:
-    """Serves article pages in place of the site: ARTICLE_PAGE unless told otherwise."""
+    """Fakes all HTTP GET requests: ARTICLE_PAGE unless a payload is supplied."""
 
     def __init__(self):
         self.served: dict[str, bytes] = {}
         self.fetched: list[str] = []
 
-    def fetch(self, url: str = feeds.UPSTREAM) -> bytes:
-        assert url != feeds.UPSTREAM, "pass upstream payloads to run() instead"
+    def get(self, url: str, **kwargs) -> httpx.Response:
         self.fetched.append(url)
-        return self.served.get(url, ARTICLE_PAGE)
+        return httpx.Response(
+            200,
+            content=self.served.get(url, ARTICLE_PAGE),
+            request=httpx.Request("GET", url),
+        )
 
 
 @pytest.fixture(autouse=True)
 def pages(monkeypatch) -> Pages:
     # No test touches the network, or waits between page fetches.
     fake = Pages()
-    monkeypatch.setattr(feeds, "fetch", fake.fetch)
+    monkeypatch.setattr(httpx, "get", fake.get)
     monkeypatch.setattr(feeds, "PAGE_PACE", 0)
     return fake
+
+
+def id_(type_: str, n: int, host: str = feeds.HOST) -> str:
+    return f"tag:{host},2005:{type_}/{n}"
 
 
 def entry(
     n: int,
     type_: str = "Briefing",
     *,
-    host: str = "www.theinformation.com",
-    link_host: str = "www.theinformation.com",
+    host: str = feeds.HOST,
+    link_host: str = feeds.HOST,
     title: str | None = None,
     content: str = "<p>Body</p>",
     authors: tuple[str, ...] = ("Jane Doe",),
@@ -65,7 +73,7 @@ def entry(
     author_xml = "".join(f"<author><name>{escape(a)}</name></author>" for a in authors)
     return f"""
   <entry>
-    <id>tag:{host},2005:{type_}/{n}</id>
+    <id>{id_(type_, n, host)}</id>
     <published>{published}</published>
     <updated>{updated or published}</updated>
     <link rel="alternate" type="text/html" href="https://{link_host}/{type_.lower()}s/story-{n}"/>
@@ -95,10 +103,6 @@ def rendered(archive: feeds.Entries, name: str) -> feedparser.FeedParserDict:
 
 
 # parse
-
-
-def test_feed_source_uses_origin():
-    assert feeds.UPSTREAM == "https://info-reader-production.herokuapp.com/feed"
 
 
 def test_parse_real_upstream_payload():
@@ -194,7 +198,7 @@ def test_merge_ignores_reordered_authors():
         atom(entry(1, authors=("Adam", "Zoe"), updated="2026-09-21T09:00:00Z"))
     )
     assert feeds.merge(archive, fresh) == []
-    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == [
+    assert archive[id_("Briefing", 1)]["authors"] == [
         "Adam",
         "Zoe",
     ]
@@ -205,10 +209,7 @@ def test_merge_takes_published_correction():
     fresh = feeds.parse(atom(entry(1, published="2026-09-19T10:00:00Z")))
     [change] = feeds.merge(archive, fresh)
     assert change.edited == ("published",)
-    assert (
-        archive["tag:www.theinformation.com,2005:Briefing/1"]["published"]
-        == "2026-09-19T10:00:00Z"
-    )
+    assert archive[id_("Briefing", 1)]["published"] == "2026-09-19T10:00:00Z"
 
 
 @pytest.mark.parametrize(
@@ -224,19 +225,16 @@ def test_merge_takes_real_edits(change):
     fresh = feeds.parse(atom(entry(1, updated="2026-09-21T09:00:00Z", **change)))
     [c] = feeds.merge(archive, fresh)
     assert c.edited == tuple(change)
-    assert (
-        archive["tag:www.theinformation.com,2005:Briefing/1"]["updated"]
-        == "2026-09-21T09:00:00Z"
-    )
+    assert archive[id_("Briefing", 1)]["updated"] == "2026-09-21T09:00:00Z"
 
 
 def test_merge_keeps_label_through_edits():
     archive = feeds.parse(atom(entry(2, "Article")))
-    archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Dealmaker"
+    archive[id_("Article", 2)]["label"] = "Dealmaker"
     fresh = feeds.parse(atom(entry(2, "Article", title="New headline")))
     [c] = feeds.merge(archive, fresh)
     assert c.edited == ("title",)
-    assert archive["tag:www.theinformation.com,2005:Article/2"]["label"] == "Dealmaker"
+    assert archive[id_("Article", 2)]["label"] == "Dealmaker"
 
 
 # label
@@ -363,11 +361,9 @@ def test_render_labels_what_the_feed_does_not_say():
     archive = feeds.parse(
         atom(entry(1), entry(2, "Article"), entry(3, "Article"), entry(4, "Article"))
     )
-    archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Q&A"
-    archive["tag:www.theinformation.com,2005:Article/3"]["label"] = None
-    archive["tag:www.theinformation.com,2005:Article/4"]["label"] = (
-        "The Information Finance"
-    )
+    archive[id_("Article", 2)]["label"] = "Q&A"
+    archive[id_("Article", 3)]["label"] = None
+    archive[id_("Article", 4)]["label"] = "The Information Finance"
 
     def labels(name: str) -> dict[str, tuple[str, str, list[str]]]:
         return {
@@ -425,24 +421,42 @@ def test_index_links_every_feed():
 # run and summary
 
 
-def run_in_tmp(
-    tmp_path: Path, payload: bytes = UPSTREAM_FIXTURE
-) -> tuple[str, Path, Path]:
-    archive_path = tmp_path / "entries.json"
-    out_dir = tmp_path / "feeds"
-    return feeds.run(payload, archive_path, out_dir), archive_path, out_dir
+class Site:
+    """A temporary archive and its published feeds."""
+
+    def __init__(self, root: Path) -> None:
+        self.root = root
+        self.archive_path = root / "entries.json"
+        self.out_dir = root / "feeds"
+
+    def run(self, payload: bytes = UPSTREAM_FIXTURE) -> str:
+        return feeds.run(payload, self.archive_path, self.out_dir)
+
+    def archive(self) -> feeds.Entries:
+        return json.loads(self.archive_path.read_text())
+
+    def snapshot(self) -> dict[Path, bytes]:
+        return {
+            path.relative_to(self.root): path.read_bytes()
+            for path in self.root.rglob("*")
+            if path.is_file()
+        }
 
 
-def test_run_publishes_fixture_and_replay_keeps_archive_bytes(tmp_path):
-    result, archive_path, out_dir = run_in_tmp(tmp_path)
-    archived_entries = json.loads(archive_path.read_text())
-    assert result.startswith("Add ")
+@pytest.fixture
+def site(tmp_path: Path) -> Site:
+    return Site(tmp_path)
+
+
+def test_run_publishes_fixture_and_replay_keeps_bytes(site):
+    assert site.run().startswith("Add ")
+    archived_entries = site.archive()
     assert archived_entries == {
         id_: e | ({"label": "The Briefing"} if e["type"] == "Article" else {})
         for id_, e in feeds.parse(UPSTREAM_FIXTURE).items()
     }
     for feed in feeds.FEEDS:
-        published = feedparser.parse((out_dir / feed.name).read_bytes())
+        published = feedparser.parse((site.out_dir / feed.name).read_bytes())
         assert not published.bozo
         assert {e.id for e in published.entries} == {
             id_
@@ -450,31 +464,24 @@ def test_run_publishes_fixture_and_replay_keeps_archive_bytes(tmp_path):
             if feed.type is None or e["type"] == feed.type
         }
 
-    before = archive_path.read_bytes()
-    assert feeds.run(UPSTREAM_FIXTURE, archive_path, out_dir) == "No changes"
-    assert archive_path.read_bytes() == before
+    before = site.snapshot()
+    assert site.run() == "No changes"
+    assert site.snapshot() == before
 
 
-def test_run_rejects_whole_payload_before_touching_archive_or_feeds(tmp_path):
-    _, archive_path, out_dir = run_in_tmp(tmp_path)
-    before = archive_path.read_bytes()
-    feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
+def test_run_rejects_whole_payload_before_touching_archive_or_feeds(site):
+    site.run()
+    before = site.snapshot()
 
     with pytest.raises(feeds.Rejected, match="entry link"):
-        feeds.run(
-            atom(entry(21), entry(22, link_host="wrong.example")), archive_path, out_dir
-        )
+        site.run(atom(entry(21), entry(22, link_host="wrong.example")))
 
-    assert archive_path.read_bytes() == before
-    assert {
-        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
-    } == feed_bytes
+    assert site.snapshot() == before
 
 
-def test_run_renders_all_feeds_before_writing(tmp_path, monkeypatch):
-    _, archive_path, out_dir = run_in_tmp(tmp_path)
-    before = archive_path.read_bytes()
-    feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
+def test_run_renders_all_feeds_before_writing(site, monkeypatch):
+    site.run()
+    before = site.snapshot()
     original_render = feeds.render
 
     def fail_on_articles(archive, feed):
@@ -484,120 +491,97 @@ def test_run_renders_all_feeds_before_writing(tmp_path, monkeypatch):
 
     monkeypatch.setattr(feeds, "render", fail_on_articles)
     with pytest.raises(ValueError, match="cannot render articles"):
-        feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
-    assert archive_path.read_bytes() == before
-    assert {
-        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
-    } == feed_bytes
+        site.run(atom(entry(21, "Article")))
+    assert site.snapshot() == before
 
 
-def test_run_labels_new_articles_once(tmp_path, pages):
+def test_run_labels_new_articles_once(site, pages):
     link = "https://www.theinformation.com/articles/story-2"
     source_link = "https://info-reader-production.herokuapp.com/articles/story-2"
     pages.served[source_link] = page("AI Agenda")
     payload = atom(entry(1), entry(2, "Article"))
 
-    result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
-    assert (
-        result
-        == "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
+    assert site.run(payload) == (
+        "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
     )
-    archived_entries = json.loads(archive_path.read_text())
-    assert (
-        archived_entries["tag:www.theinformation.com,2005:Article/2"]["label"]
-        == "AI Agenda"
-    )
-    assert "label" not in archived_entries["tag:www.theinformation.com,2005:Briefing/1"]
+    archived_entries = site.archive()
+    assert archived_entries[id_("Article", 2)]["label"] == "AI Agenda"
+    assert "label" not in archived_entries[id_("Briefing", 1)]
 
-    assert feeds.run(
-        atom(entry(2, "Article", title="New headline")), archive_path, out_dir
-    ) == ("Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)")
+    assert site.run(atom(entry(2, "Article", title="New headline"))) == (
+        "Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)"
+    )
     assert pages.fetched == [source_link]
-    assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["link"] == link
+    assert archived_entries[id_("Article", 2)]["link"] == link
 
 
-def test_run_labels_partner_articles_by_byline(tmp_path, pages):
+def test_run_labels_partner_articles_by_byline(site, pages):
     payload = atom(entry(2, "Article", authors=("The Information Partnerships",)))
 
-    result, archive_path, _ = run_in_tmp(tmp_path, payload)
-    assert result == "Add 1 article\n\n+ Article: [Partner Content] Story 2"
-    assert json.loads(archive_path.read_text())[
-        "tag:www.theinformation.com,2005:Article/2"
-    ]["label"] == ("Partner Content")
+    assert site.run(payload) == "Add 1 article\n\n+ Article: [Partner Content] Story 2"
+    assert site.archive()[id_("Article", 2)]["label"] == "Partner Content"
     assert pages.fetched == []
 
 
-def test_run_labels_articles_archived_before_labels(tmp_path, pages):
-    _, archive_path, out_dir = run_in_tmp(tmp_path, atom(entry(1, "Article")))
-    archived_entries = json.loads(archive_path.read_text())
-    del archived_entries["tag:www.theinformation.com,2005:Article/1"]["label"]
-    archive_path.write_text(json.dumps(archived_entries))
+def test_run_labels_articles_archived_before_labels(site, pages):
+    site.run(atom(entry(1, "Article")))
+    archived_entries = site.archive()
+    del archived_entries[id_("Article", 1)]["label"]
+    site.archive_path.write_text(json.dumps(archived_entries))
 
-    assert (
-        feeds.run(atom(entry(2)), archive_path, out_dir)
-        == "Add 1 briefing\n\n+ Briefing: Story 2"
-    )
-    assert json.loads(archive_path.read_text())[
-        "tag:www.theinformation.com,2005:Article/1"
-    ]["label"] == ("The Briefing")
+    assert site.run(atom(entry(2))) == "Add 1 briefing\n\n+ Briefing: Story 2"
+    assert site.archive()[id_("Article", 1)]["label"] == "The Briefing"
     assert len(pages.fetched) == 2
 
 
-def test_run_rejects_unreadable_page_before_touching_archive_or_feeds(tmp_path, pages):
-    _, archive_path, out_dir = run_in_tmp(tmp_path)
-    before = archive_path.read_bytes()
-    feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
+def test_run_rejects_unreadable_page_before_touching_archive_or_feeds(site, pages):
+    site.run()
+    before = site.snapshot()
     pages.served["https://info-reader-production.herokuapp.com/articles/story-21"] = (
         b"<title>Just a moment...</title>"
     )
 
     with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD"):
-        feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
+        site.run(atom(entry(21, "Article")))
 
-    assert archive_path.read_bytes() == before
-    assert {
-        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
-    } == feed_bytes
+    assert site.snapshot() == before
 
 
-def test_run_keeps_entries_upstream_dropped(tmp_path):
-    _, archive_path, out_dir = run_in_tmp(tmp_path)
+def test_run_keeps_entries_upstream_dropped(site):
+    site.run()
 
-    assert feeds.run(atom(entry(21)), archive_path, out_dir).startswith(
-        "Add 1 briefing"
-    )
-    assert len(json.loads(archive_path.read_text())) == 21
-    assert len(feedparser.parse((out_dir / "all.xml").read_bytes()).entries) == 21
+    assert site.run(atom(entry(21))).startswith("Add 1 briefing")
+    assert len(site.archive()) == 21
+    assert len(feedparser.parse((site.out_dir / "all.xml").read_bytes()).entries) == 21
 
 
-def test_run_ignores_restamped_updated(tmp_path):
-    _, archive_path, out_dir = run_in_tmp(tmp_path, atom(entry(1)))
-    before = archive_path.read_bytes()
+def test_run_ignores_restamped_updated(site):
+    site.run(atom(entry(1)))
+    before = site.snapshot()
 
-    assert (
-        feeds.run(atom(entry(1, updated="2026-09-21T09:00:00Z")), archive_path, out_dir)
-        == "No changes"
-    )
-    assert archive_path.read_bytes() == before
-    assert json.loads(archive_path.read_text())[
-        "tag:www.theinformation.com,2005:Briefing/1"
-    ]["updated"] == ("2026-09-20T10:00:00Z")
+    assert site.run(atom(entry(1, updated="2026-09-21T09:00:00Z"))) == "No changes"
+    assert site.snapshot() == before
+    assert site.archive()[id_("Briefing", 1)]["updated"] == "2026-09-20T10:00:00Z"
 
 
-def test_main_reports_rejected_payload(tmp_path, monkeypatch):
-    monkeypatch.setattr(
-        feeds, "fetch", lambda: atom(entry(1, link_host="wrong.example"))
-    )
-    monkeypatch.setattr(feeds, "ARCHIVE_PATH", tmp_path / "entries.json")
-    monkeypatch.setattr(feeds, "OUT_DIR", tmp_path / "feeds")
+def test_main_reports_rejected_payload(site, pages, monkeypatch):
+    pages.served[feeds.UPSTREAM] = atom(entry(1, link_host="wrong.example"))
+    monkeypatch.setattr(feeds, "ARCHIVE_PATH", site.archive_path)
+    monkeypatch.setattr(feeds, "OUT_DIR", site.out_dir)
 
     with pytest.raises(SystemExit, match="refusing to update: unexpected entry link"):
         feeds.main()
-    assert not (tmp_path / "entries.json").exists()
+    assert pages.fetched == [feeds.UPSTREAM]
+    assert site.snapshot() == {}
 
 
-def change(type_: str, title: str, *edited: str) -> feeds.Change:
-    return feeds.Change({"type": type_, "title": title}, edited)
+def change(
+    type_: str, title: str, *edited: str, label: str | None = None
+) -> feeds.Change:
+    [e] = feeds.parse(atom(entry(1, type_, title=title))).values()
+    if type_ == "Article":
+        e["label"] = label
+    return feeds.Change(e, edited)
 
 
 @pytest.mark.parametrize(
@@ -617,24 +601,11 @@ def change(type_: str, title: str, *edited: str) -> feeds.Change:
             "Edit 1 article\n\n~ Article: A1 (content)",
         ),
         (
-            [
-                feeds.Change(
-                    {"type": "Article", "title": "A1", "label": "AI Agenda"}, ()
-                )
-            ],
+            [change("Article", "A1", label="AI Agenda")],
             "Add 1 article\n\n+ Article: [AI Agenda] A1",
         ),
         (
-            [
-                feeds.Change(
-                    {
-                        "type": "Article",
-                        "title": "A1",
-                        "label": "The Information Finance",
-                    },
-                    (),
-                )
-            ],
+            [change("Article", "A1", label="The Information Finance")],
             "Add 1 article\n\n+ Article: [Finance] A1",
         ),
         (
