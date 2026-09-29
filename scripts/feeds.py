@@ -46,27 +46,11 @@ ATTEMPTS = 5
 RETRY_DELAY = 5
 
 # Seconds between article page fetches to avoid sending a burst to the origin.
-# A run fetches at most 20 pages, the backfill of the whole archive about a
-# hundred.
 PAGE_PACE = 5
 
 # The byline of sponsored articles, and the label the site shows them with.
 PARTNER_AUTHOR = "The Information Partnerships"
 PARTNER_LABEL = "Partner Content"
-
-
-class Feed(NamedTuple):
-    name: str
-    title: str
-    type: str | None  # None publishes every type
-
-
-# public/index.html links to each of these by hand; update it along with them.
-FEEDS = [
-    Feed("all.xml", "The Information: All", None),
-    Feed("briefings.xml", "The Information: Briefings", "Briefing"),
-    Feed("articles.xml", "The Information: Articles", "Article"),
-]
 
 
 class Entry(TypedDict):
@@ -85,6 +69,23 @@ class Entry(TypedDict):
 
 
 Entries = dict[str, Entry]  # keyed by upstream's id
+
+
+class Feed(NamedTuple):
+    name: str
+    title: str
+    type: str | None  # None publishes every type
+
+    def includes(self, entry: Entry) -> bool:
+        return self.type is None or entry["type"] == self.type
+
+
+# public/index.html links to each of these by hand; update it along with them.
+FEEDS = [
+    Feed("all.xml", "The Information: All", None),
+    Feed("briefings.xml", "The Information: Briefings", "Briefing"),
+    Feed("articles.xml", "The Information: Articles", "Article"),
+]
 
 
 class Change(NamedTuple):
@@ -247,18 +248,19 @@ def source_url(link: str) -> str:
 
 def label_articles(archive: Entries) -> None:
     """Label every archived article that has no label yet, in place."""
-    todo = [e for e in archive.values() if e["type"] == "Article" and "label" not in e]
-    # The site labels partner articles too, but their JSON-LD names no section;
-    # their byline, the same in the feed, tells them apart without a fetch.
-    for e in todo:
+    pace = 0
+    for e in archive.values():
+        if e["type"] != "Article" or "label" in e:
+            continue
+        # Partner pages name no section in JSON-LD; their byline labels them
+        # without a fetch, so they do not affect pacing between page fetches.
         if PARTNER_AUTHOR in e["authors"]:
             e["label"] = PARTNER_LABEL
-            print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
-    todo = [e for e in todo if "label" not in e]
-    for i, e in enumerate(todo):
-        if i:
-            time.sleep(PAGE_PACE)
-        e["label"] = page_label(fetch(source_url(e["link"])).decode(), e["link"])
+        else:
+            if pace:
+                time.sleep(pace)
+            e["label"] = page_label(fetch(source_url(e["link"])).decode(), e["link"])
+            pace = PAGE_PACE
         print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
 
 
@@ -269,7 +271,9 @@ def edits(old: Entry, new: Entry) -> tuple[str, ...]:
     timestamp alone does not count as an edit.
     """
     # A newly added field also counts as an edit for older archive entries.
-    return tuple(k for k in new if k != "updated" and old.get(k) != new[k])
+    return tuple(
+        k for k, value in new.items() if k != "updated" and old.get(k) != value
+    )
 
 
 def merge(archive: Entries, entries: Entries) -> list[Change]:
@@ -278,41 +282,34 @@ def merge(archive: Entries, entries: Entries) -> list[Change]:
     for id_, new in entries.items():
         old = archive.get(id_)
         if old is None:
-            changes.append(Change(new, ()))
-        elif fields := edits(old, new):
-            changes.append(Change(new, fields))
-        else:
+            fields = ()
+        elif not (fields := edits(old, new)):
             continue
-        # Upstream's entries carry no label, and a fetched one is kept for good.
-        if old is not None and "label" in old:
-            new["label"] = old["label"]
-        archive[id_] = new
+        archive[id_] = merged = new if old is None else old | new
+        # Share the archived dict so labels filled in later reach message().
+        changes.append(Change(merged, fields))
     return changes
 
 
-def label(e: Entry, feed: Feed) -> str | None:
+def category(e: Entry, feed: Feed) -> str | None:
     """What to tell a feed's readers an entry is, unless the feed already says."""
     if e["type"] == "Article":
         return e.get("label")
     return e["type"] if feed.type is None else None
 
 
-def short(lbl: str) -> str:
+def short(label: str) -> str:
     """A label as titles show it, without the site's name every feed already has.
 
     Some newsletters carry it, as in "The Information Finance". Categories
     keep the label whole.
     """
-    return lbl.removeprefix("The Information ")
+    return label.removeprefix("The Information ")
 
 
 def render(archive: Entries, feed: Feed) -> bytes:
     selected = sorted(
-        (
-            (id_, e)
-            for id_, e in archive.items()
-            if feed.type is None or e["type"] == feed.type
-        ),
+        ((id_, e) for id_, e in archive.items() if feed.includes(e)),
         key=lambda item: (datetime.fromisoformat(item[1]["published"]), item[0]),
         reverse=True,
     )[:MAX_ENTRIES]
@@ -333,12 +330,12 @@ def render(archive: Entries, feed: Feed) -> bytes:
     for id_, e in selected:
         fe = fg.add_entry(order="append")
         fe.id(id_)
-        lbl = label(e, feed)
-        fe.title(f"{e['title']} [{short(lbl)}]" if lbl else e["title"])
+        label = category(e, feed)
+        fe.title(f"{e['title']} [{short(label)}]" if label else e["title"])
         fe.link(href=e["link"], rel="alternate", type="text/html")
         fe.content(e["content"], type="html")
-        if lbl:
-            fe.category(term=lbl)
+        if label:
+            fe.category(term=label)
         for author in e["authors"]:
             fe.author(name=author)
         fe.published(e["published"])
@@ -380,8 +377,9 @@ def count(changes: list[Change]) -> str:
 
 def line(c: Change) -> str:
     e = c.entry
-    lbl = f"[{short(e['label'])}] " if e.get("label") else ""
-    return f"{e['type']}: {lbl}{e['title']}"
+    label = e.get("label")
+    prefix = f"[{short(label)}] " if label else ""
+    return f"{e['type']}: {prefix}{e['title']}"
 
 
 def message(changes: list[Change]) -> str:

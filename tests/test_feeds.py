@@ -510,9 +510,7 @@ def test_run_publishes_fixture_and_replay_keeps_bytes(site):
         published = feedparser.parse((site.out_dir / feed.name).read_bytes())
         assert not published.bozo
         assert {e.id for e in published.entries} == {
-            id_
-            for id_, e in archived_entries.items()
-            if feed.type is None or e["type"] == feed.type
+            id_ for id_, e in archived_entries.items() if feed.includes(e)
         }
 
     before = site.snapshot()
