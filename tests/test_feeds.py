@@ -13,6 +13,34 @@ import pytest
 import feeds
 
 UPSTREAM_FIXTURE = (Path(__file__).parent / "fixtures" / "upstream.xml").read_bytes()
+ARTICLE_PAGE = (Path(__file__).parent / "fixtures" / "article.html").read_bytes()  # labelled "The Briefing"
+
+
+def page(*sections: str) -> bytes:
+    ld = json.dumps({"@context": "https://schema.org", "@type": "NewsArticle", "articleSection": list(sections)})
+    return f'<html><head><script type="application/ld+json">{ld}</script></head></html>'.encode()
+
+
+class Pages:
+    """Serves article pages in place of the site: ARTICLE_PAGE unless told otherwise."""
+
+    def __init__(self):
+        self.served: dict[str, bytes] = {}
+        self.fetched: list[str] = []
+
+    def fetch(self, url: str = feeds.UPSTREAM) -> bytes:
+        assert url != feeds.UPSTREAM, "pass upstream payloads to run() instead"
+        self.fetched.append(url)
+        return self.served.get(url, ARTICLE_PAGE)
+
+
+@pytest.fixture(autouse=True)
+def pages(monkeypatch) -> Pages:
+    # No test touches the network, or waits between page fetches.
+    fake = Pages()
+    monkeypatch.setattr(feeds, "fetch", fake.fetch)
+    monkeypatch.setattr(feeds, "PAGE_PACE", 0)
+    return fake
 
 
 def entry(
@@ -169,6 +197,42 @@ def test_merge_takes_real_edits(change):
     assert archive["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == "2026-09-21T09:00:00Z"
 
 
+def test_merge_keeps_label_through_edits():
+    archive = feeds.parse(atom(entry(2, "Article")))
+    archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Dealmaker"
+    fresh = feeds.parse(atom(entry(2, "Article", title="New headline")))
+    [c] = feeds.merge(archive, fresh)
+    assert c.edited == ("title",)
+    assert archive["tag:www.theinformation.com,2005:Article/2"]["label"] == "Dealmaker"
+
+
+# label
+
+
+def test_page_label_reads_real_page():
+    assert feeds.page_label(ARTICLE_PAGE.decode(), "link") == "The Briefing"
+
+
+@pytest.mark.parametrize(
+    "sections, want",
+    [
+        (("Exclusive",), "Exclusive"),
+        (("Q&A",), "Q&A"),
+        # What the page says for an article the site shows no label for.
+        (("technology",), None),
+        # What the page says for sponsored articles.
+        ((), None),
+    ],
+)
+def test_page_label(sections, want):
+    assert feeds.page_label(page(*sections).decode(), "link") == want
+
+
+def test_page_label_rejects_page_without_news_article():
+    with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD on link"):
+        feeds.page_label("<html><head><title>Just a moment...</title></head></html>", "link")
+
+
 # render
 
 
@@ -227,9 +291,33 @@ def test_render_round_trips_entry_fields():
         o = archive[e.id]
         assert e.title == o["title"]
         assert e.link == o["link"]
-        assert e.content[0].value == o["content"]
+        # Parsed entries carry no article labels; briefings are labelled by type.
+        assert e.content[0].value == ("<p>[Briefing]</p>" if o["type"] == "Briefing" else "") + o["content"]
         assert [a.name for a in e.authors] == o["authors"]
         assert datetime.fromisoformat(e.published) == datetime.fromisoformat(o["published"])
+
+
+def test_render_labels_what_the_feed_does_not_say():
+    archive = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Article")))
+    archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Q&A"
+    archive["tag:www.theinformation.com,2005:Article/3"]["label"] = None
+
+    def labels(name: str) -> dict[str, tuple[str, list[str]]]:
+        return {
+            e.id.rsplit(":", 1)[1]: (e.content[0].value, [t.term for t in e.get("tags", [])])
+            for e in rendered(archive, name).entries
+        }
+
+    assert labels("all.xml") == {
+        "Briefing/1": ("<p>[Briefing]</p><p>Body</p>", ["Briefing"]),
+        "Article/2": ("<p>[Q&amp;A]</p><p>Body</p>", ["Q&A"]),
+        "Article/3": ("<p>Body</p>", []),
+    }
+    assert labels("briefings.xml") == {"Briefing/1": ("<p>Body</p>", [])}
+    assert labels("articles.xml") == {
+        "Article/2": ("<p>[Q&amp;A]</p><p>Body</p>", ["Q&A"]),
+        "Article/3": ("<p>Body</p>", []),
+    }
 
 
 # index
@@ -265,7 +353,10 @@ def test_run_publishes_fixture_and_replay_keeps_archive_bytes(tmp_path):
     result, archive_path, out_dir = run_in_tmp(tmp_path)
     archived_entries = json.loads(archive_path.read_text())
     assert result.startswith("Add ")
-    assert archived_entries == feeds.parse(UPSTREAM_FIXTURE)
+    assert archived_entries == {
+        id_: e | ({"label": "The Briefing"} if e["type"] == "Article" else {})
+        for id_, e in feeds.parse(UPSTREAM_FIXTURE).items()
+    }
     for feed in feeds.FEEDS:
         published = feedparser.parse((out_dir / feed.name).read_bytes())
         assert not published.bozo
@@ -304,6 +395,49 @@ def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
     with pytest.raises(ValueError, match="cannot render articles"):
         feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
     assert archive_path.read_bytes() == before
+
+
+def test_run_labels_new_articles_once(tmp_path, pages):
+    link = "https://www.theinformation.com/articles/story-2"
+    pages.served[link] = page("AI Agenda")
+    payload = atom(entry(1), entry(2, "Article"))
+
+    result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
+    assert result == "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
+    archived_entries = json.loads(archive_path.read_text())
+    assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["label"] == "AI Agenda"
+    assert "label" not in archived_entries["tag:www.theinformation.com,2005:Briefing/1"]
+
+    assert feeds.run(atom(entry(2, "Article", title="New headline")), archive_path, out_dir) == (
+        "Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)"
+    )
+    assert pages.fetched == [link]
+
+
+def test_run_labels_articles_archived_before_labels(tmp_path, pages):
+    _, archive_path, out_dir = run_in_tmp(tmp_path, atom(entry(1, "Article")))
+    archived_entries = json.loads(archive_path.read_text())
+    del archived_entries["tag:www.theinformation.com,2005:Article/1"]["label"]
+    archive_path.write_text(json.dumps(archived_entries))
+
+    assert feeds.run(atom(entry(2)), archive_path, out_dir) == "Add 1 briefing\n\n+ Briefing: Story 2"
+    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Article/1"]["label"] == (
+        "The Briefing"
+    )
+    assert len(pages.fetched) == 2
+
+
+def test_run_rejects_unreadable_page_before_touching_archive_or_feeds(tmp_path, pages):
+    _, archive_path, out_dir = run_in_tmp(tmp_path)
+    before = archive_path.read_bytes()
+    feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
+    pages.served["https://www.theinformation.com/articles/story-21"] = b"<title>Just a moment...</title>"
+
+    with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD"):
+        feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
+
+    assert archive_path.read_bytes() == before
+    assert {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS} == feed_bytes
 
 
 def test_run_keeps_entries_upstream_dropped(tmp_path):
@@ -350,6 +484,10 @@ def change(type_: str, title: str, *edited: str) -> feeds.Change:
         (
             [change("Article", "A1", "content")],
             "Edit 1 article\n\n~ Article: A1 (content)",
+        ),
+        (
+            [feeds.Change({"type": "Article", "title": "A1", "label": "AI Agenda"}, ())],
+            "Add 1 article\n\n+ Article: [AI Agenda] A1",
         ),
         (
             [change("Briefing", "B1", "title", "authors"), change("Briefing", "B2")],

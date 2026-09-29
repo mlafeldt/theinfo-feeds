@@ -3,11 +3,14 @@
 Upstream only ever serves its latest 20 entries. Each run merges them into
 data/entries.json, which keeps every entry ever seen, and renders the newest
 entries from it as three Atom feeds: everything, briefings only, articles only.
+Upstream's feed names no category, so each new article's page is fetched once
+for the label the site shows above its headline, such as "AI Agenda".
 
 The archive is written deterministically, so a run that learns nothing new
 leaves it byte-identical and the workflow commits nothing.
 """
 
+import html
 import json
 import re
 import sys
@@ -15,7 +18,7 @@ import time
 from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import NamedTuple, TypedDict
+from typing import NamedTuple, NotRequired, TypedDict
 from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
@@ -36,6 +39,11 @@ OUT_DIR = ROOT / "public"
 # up to this many entries. The archive itself is never trimmed.
 MAX_ENTRIES = 500
 
+# Seconds between article page fetches. Cloudflare answers 429 after about 35
+# requests in quick succession; a run fetches at most 20 pages, the backfill
+# of the whole archive about a hundred.
+PAGE_PACE = 5
+
 
 class Feed(NamedTuple):
     name: str
@@ -52,7 +60,7 @@ FEEDS = [
 
 
 class Entry(TypedDict):
-    """Fields shared by fresh and archived entries."""
+    """Fields shared by fresh and archived entries, plus an archived article's label."""
 
     type: str
     link: str
@@ -61,6 +69,9 @@ class Entry(TypedDict):
     authors: list[str]  # sorted
     published: str  # RFC 3339, as upstream wrote it
     updated: str
+    # Articles only, once their page was fetched: the site's label, or None
+    # for an article without one. Never fetched again.
+    label: NotRequired[str | None]
 
 
 Entries = dict[str, Entry]  # keyed by upstream's id
@@ -82,12 +93,12 @@ class Rejected(Exception):
     """Upstream served something we must not fold into the archive."""
 
 
-def fetch() -> bytes:
+def fetch(url: str = UPSTREAM) -> bytes:
     attempts = 5
     for attempt in range(1, attempts + 1):
         try:
             resp = httpx.get(
-                UPSTREAM,
+                url,
                 headers={"User-Agent": USER_AGENT},
                 follow_redirects=True,
                 timeout=60,
@@ -96,7 +107,7 @@ def fetch() -> bytes:
         except httpx.HTTPError as e:
             if attempt == attempts:
                 raise
-            print(f"fetch attempt {attempt} failed: {e}", file=sys.stderr)
+            print(f"fetch attempt {attempt} for {url} failed: {e}", file=sys.stderr)
             time.sleep(5)
 
 
@@ -169,6 +180,36 @@ def parse(payload: bytes) -> Entries:
     return entries
 
 
+LD_JSON_RE = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
+
+
+def page_label(page: str, link: str) -> str | None:
+    """The label an article's page shows above its headline, if any.
+
+    The page's JSON-LD names it as articleSection: a newsletter such as
+    "AI Agenda", or a kicker such as "Exclusive" or "Opinion". An article
+    without one gets a lowercase default like "technology" instead, which is
+    not what the site shows, so it counts as none.
+    """
+    for m in LD_JSON_RE.finditer(page):
+        ld = json.loads(m[1])
+        if isinstance(ld, dict) and ld.get("@type") == "NewsArticle":
+            return next((s for s in ld.get("articleSection") or [] if s != s.lower()), None)
+    # Without it the page is not an article page as we know it: a challenge
+    # page, or a redesign this code has to learn about.
+    raise Rejected(f"no NewsArticle JSON-LD on {link}")
+
+
+def label_articles(archive: Entries) -> None:
+    """Fetch the label of every archived article that has none yet, in place."""
+    todo = [e for e in archive.values() if e["type"] == "Article" and "label" not in e]
+    for i, e in enumerate(todo):
+        if i:
+            time.sleep(PAGE_PACE)
+        e["label"] = page_label(fetch(e["link"]).decode(), e["link"])
+        print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
+
+
 def edits(old: Entry, new: Entry) -> tuple[str, ...]:
     """The fields a reader would see differ in between two versions of an entry.
 
@@ -190,8 +231,18 @@ def merge(archive: Entries, entries: Entries) -> list[Change]:
             changes.append(Change(new, fields))
         else:
             continue
+        # Upstream's entries carry no label, and a fetched one is kept for good.
+        if old is not None and "label" in old:
+            new["label"] = old["label"]
         archive[id_] = new
     return changes
+
+
+def label(e: Entry, feed: Feed) -> str | None:
+    """What to tell a feed's readers an entry is, unless the feed already says."""
+    if e["type"] == "Article":
+        return e.get("label")
+    return e["type"] if feed.type is None else None
 
 
 def render(archive: Entries, feed: Feed) -> bytes:
@@ -219,7 +270,13 @@ def render(archive: Entries, feed: Feed) -> bytes:
         fe.id(id_)
         fe.title(e["title"])
         fe.link(href=e["link"], rel="alternate", type="text/html")
-        fe.content(e["content"], type="html")
+        content = e["content"]
+        if lbl := label(e, feed):
+            # Readers show the start of the content as a snippet under the
+            # title, so this reads like the label above the site's headline.
+            content = f"<p>[{html.escape(lbl)}]</p>{content}"
+            fe.category(term=lbl)
+        fe.content(content, type="html")
         for author in e["authors"]:
             fe.author(name=author)
         fe.published(e["published"])
@@ -256,6 +313,12 @@ def count(changes: list[Change]) -> str:
     return ", ".join(plural(n, t.lower()) for t, n in sorted(types.items()))
 
 
+def line(c: Change) -> str:
+    e = c.entry
+    lbl = f"[{e['label']}] " if e.get("label") else ""
+    return f"{e['type']}: {lbl}{e['title']}"
+
+
 def message(changes: list[Change]) -> str:
     """The commit message for a run: counts per type, then one line per entry."""
     if not changes:
@@ -267,8 +330,8 @@ def message(changes: list[Change]) -> str:
         parts.append(f"add {count(added)}")
     if edited:
         parts.append(f"edit {count(edited)}")
-    lines = [f"+ {c.entry['type']}: {c.entry['title']}" for c in added]
-    lines += [f"~ {c.entry['type']}: {c.entry['title']} ({', '.join(c.edited)})" for c in edited]
+    lines = [f"+ {line(c)}" for c in added]
+    lines += [f"~ {line(c)} ({', '.join(c.edited)})" for c in edited]
     return ", ".join(parts).capitalize() + "\n\n" + "\n".join(lines)
 
 
@@ -277,6 +340,9 @@ def run(payload: bytes, archive_path: Path, out_dir: Path) -> str:
     entries = parse(payload)
     archive = load_archive(archive_path)
     changes = merge(archive, entries)
+    # Before anything is written: a page that cannot be fetched or read fails
+    # the run, and the next one tries again.
+    label_articles(archive)
     # Render first so a failure cannot save entries the feeds cannot publish.
     publish(archive, out_dir)
     dump_archive(archive, archive_path)
