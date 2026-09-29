@@ -261,6 +261,26 @@ def test_page_label(sections, want):
     assert feeds.page_label(page(*sections).decode(), "link") == want
 
 
+@pytest.mark.parametrize(
+    "sections", ["AI Agenda", 42, False, None, {}, ["AI Agenda", 42]]
+)
+def test_page_label_rejects_unexpected_sections(sections):
+    ld = json.dumps({"@type": "NewsArticle", "articleSection": sections})
+    html = f'<script type="application/ld+json">{ld}</script>'
+    with pytest.raises(feeds.Rejected, match="unexpected articleSection on link"):
+        feeds.page_label(html, "link")
+
+
+def test_page_label_allows_missing_section():
+    assert (
+        feeds.page_label(
+            '<script type="application/ld+json">{"@type":"NewsArticle"}</script>',
+            "link",
+        )
+        is None
+    )
+
+
 def test_page_label_rejects_page_without_news_article():
     with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD on link"):
         feeds.page_label(

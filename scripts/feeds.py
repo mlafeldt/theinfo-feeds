@@ -211,9 +211,12 @@ def page_label(page: str, link: str) -> str | None:
     for m in LD_JSON_RE.finditer(page):
         ld = json.loads(m[1])
         if isinstance(ld, dict) and ld.get("@type") == "NewsArticle":
-            return next(
-                (s for s in ld.get("articleSection") or [] if s != s.lower()), None
-            )
+            sections = ld.get("articleSection", [])
+            if not isinstance(sections, list) or not all(
+                isinstance(s, str) for s in sections
+            ):
+                raise Rejected(f"unexpected articleSection on {link}: {sections!r}")
+            return next((s for s in sections if s != s.lower()), None)
     # Without it the page is not an article page as we know it: a challenge
     # page, or a redesign this code has to learn about.
     raise Rejected(f"no NewsArticle JSON-LD on {link}")
