@@ -2706,5 +2706,38 @@
     "title": "Amazon Looks to Further Automate Media Buying With New Agentic Tools",
     "type": "Briefing",
     "updated": "2026-09-29T14:23:50Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18128": {
+    "authors": [
+      "Grace Kay"
+    ],
+    "content": "<p>Anthropic has agreements to pay SpaceX up to $84.5 billion to use the rocket and AI company’s Nvidia-based computing capacity through 2029, according to a confidential initial public offering prospectus <a href=\"https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29/\">reported by Reuters</a> on Tuesday. Those agreements can mostly be cancelled with a 90-day notice ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-discloses-84-5-billion-spacex-compute-agreements",
+    "published": "2026-09-29T15:24:33Z",
+    "title": "Anthropic Discloses up to $84.5 Billion in SpaceX Compute Agreements",
+    "type": "Briefing",
+    "updated": "2026-09-29T15:24:49Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18129": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>OpenAI is nearing $70 billion in annualized revenue, up around 70% from its revenue pace at the beginning of the third quarter, according to a person briefed on the numbers.</p> <p>That growth comes as the ChatGPT-maker has doubled down on selling to enterprises. OpenAI has rapidly cut the prices of ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-nears-70-billion-annualized-revenue",
+    "published": "2026-09-29T15:44:18Z",
+    "title": "OpenAI Nears $70 Billion in Annualized Revenue",
+    "type": "Briefing",
+    "updated": "2026-09-29T15:44:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18130": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms is adapting its AI agent Muse for small businesses, adding integrations with workplace software including Salesforce’s Slack, Intuit QuickBooks and Zoom.</p> <p>In a <a href=\"https://about.fb.com/news/2026/09/introducing-muse-small-business/\">blog post</a> Tuesday, the company said Muse can connect to small-business owners’ professional Instagram accounts, Facebook ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-adapts-muse-agent-small-businesses",
+    "published": "2026-09-29T16:09:50Z",
+    "title": "Meta Adapts Muse Agent For Small Businesses",
+    "type": "Briefing",
+    "updated": "2026-09-29T16:09:50Z"
   }
 }
