@@ -54,3 +54,10 @@ Add 1 article, edit 1 briefing
 ~ Briefing: … (title)
 $ uv run pytest
 ```
+
+Lint and format with [Ruff](https://docs.astral.sh/ruff/):
+
+```console
+$ uvx ruff check --fix
+$ uvx ruff format
+```

@@ -132,7 +132,9 @@ def timestamp(e: ElementTree.Element, key: str) -> str:
     except ValueError:
         aware = False
     if not aware:
-        raise Rejected(f"entry {text(e, 'id')!r} has invalid {key} timestamp: {value!r}")
+        raise Rejected(
+            f"entry {text(e, 'id')!r} has invalid {key} timestamp: {value!r}"
+        )
     return value
 
 
@@ -146,10 +148,14 @@ def parse(payload: bytes) -> Entries:
     try:
         root = ElementTree.fromstring(payload)
     except ElementTree.ParseError as e:
-        raise Rejected(f"malformed feed: {e}; first 200 bytes: {payload[:200]!r}") from None
+        raise Rejected(
+            f"malformed feed: {e}; first 200 bytes: {payload[:200]!r}"
+        ) from None
     entries_xml = root.findall(ATOM + "entry")
     if root.tag != ATOM + "feed" or not entries_xml:
-        raise Rejected(f"not an Atom feed with entries; first 200 bytes: {payload[:200]!r}")
+        raise Rejected(
+            f"not an Atom feed with entries; first 200 bytes: {payload[:200]!r}"
+        )
 
     entries: Entries = {}
     for e in entries_xml:
@@ -162,7 +168,11 @@ def parse(payload: bytes) -> Entries:
         if not m:
             raise Rejected(f"unexpected entry id: {id_!r}")
         link = next(
-            (el.get("href") for el in e.findall(ATOM + "link") if el.get("rel", "alternate") == "alternate"),
+            (
+                el.get("href")
+                for el in e.findall(ATOM + "link")
+                if el.get("rel", "alternate") == "alternate"
+            ),
             None,
         )
         if not link:
@@ -176,14 +186,18 @@ def parse(payload: bytes) -> Entries:
             "content": required(e, "content"),
             # Upstream's author order changes from one render to the next, and
             # no order it uses reliably matches the site's byline, so sort.
-            "authors": sorted(filter(None, (text(a, "name") for a in e.findall(ATOM + "author")))),
+            "authors": sorted(
+                filter(None, (text(a, "name") for a in e.findall(ATOM + "author")))
+            ),
             "published": timestamp(e, "published"),
             "updated": timestamp(e, "updated"),
         }
     return entries
 
 
-LD_JSON_RE = re.compile(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.S)
+LD_JSON_RE = re.compile(
+    r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', re.DOTALL
+)
 
 
 def page_label(page: str, link: str) -> str | None:
@@ -197,7 +211,9 @@ def page_label(page: str, link: str) -> str | None:
     for m in LD_JSON_RE.finditer(page):
         ld = json.loads(m[1])
         if isinstance(ld, dict) and ld.get("@type") == "NewsArticle":
-            return next((s for s in ld.get("articleSection") or [] if s != s.lower()), None)
+            return next(
+                (s for s in ld.get("articleSection") or [] if s != s.lower()), None
+            )
     # Without it the page is not an article page as we know it: a challenge
     # page, or a redesign this code has to learn about.
     raise Rejected(f"no NewsArticle JSON-LD on {link}")
@@ -274,7 +290,11 @@ def short(lbl: str) -> str:
 
 def render(archive: Entries, feed: Feed) -> bytes:
     selected = sorted(
-        ((id_, e) for id_, e in archive.items() if feed.type is None or e["type"] == feed.type),
+        (
+            (id_, e)
+            for id_, e in archive.items()
+            if feed.type is None or e["type"] == feed.type
+        ),
         key=lambda item: (datetime.fromisoformat(item[1]["published"]), item[0]),
         reverse=True,
     )[:MAX_ENTRIES]
@@ -318,7 +338,9 @@ def dump_archive(archive: Entries, archive_path: Path) -> None:
     # load on the next run.
     tmp = archive_path.with_suffix(".tmp")
     tmp.parent.mkdir(parents=True, exist_ok=True)
-    tmp.write_text(json.dumps(archive, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
+    tmp.write_text(
+        json.dumps(archive, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
+    )
     tmp.replace(archive_path)
 
 

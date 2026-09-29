@@ -8,16 +8,23 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 import feedparser
+import feeds
 import pytest
 
-import feeds
-
 UPSTREAM_FIXTURE = (Path(__file__).parent / "fixtures" / "upstream.xml").read_bytes()
-ARTICLE_PAGE = (Path(__file__).parent / "fixtures" / "article.html").read_bytes()  # labelled "The Briefing"
+ARTICLE_PAGE = (
+    Path(__file__).parent / "fixtures" / "article.html"
+).read_bytes()  # labelled "The Briefing"
 
 
 def page(*sections: str) -> bytes:
-    ld = json.dumps({"@context": "https://schema.org", "@type": "NewsArticle", "articleSection": list(sections)})
+    ld = json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "articleSection": list(sections),
+        }
+    )
     return f'<html><head><script type="application/ld+json">{ld}</script></head></html>'.encode()
 
 
@@ -104,7 +111,9 @@ def test_parse_real_upstream_payload():
 
 def test_parse_rejects_html_challenge_page():
     with pytest.raises(feeds.Rejected):
-        feeds.parse(b"<!DOCTYPE html><html><head><title>Just a moment...</title></head></html>")
+        feeds.parse(
+            b"<!DOCTYPE html><html><head><title>Just a moment...</title></head></html>"
+        )
 
 
 def test_parse_keeps_content_html_verbatim():
@@ -112,7 +121,9 @@ def test_parse_keeps_content_html_verbatim():
         '<p style="color:red"><a href="/org-charts/openai">OpenAI</a></p>'
         '<iframe src="https://example.com/x"></iframe>'
     )
-    [e] = feeds.parse(atom(entry(1, content=html), xml_base="https://www.theinformation.com/")).values()
+    [e] = feeds.parse(
+        atom(entry(1, content=html), xml_base="https://www.theinformation.com/")
+    ).values()
     assert e["content"] == html
 
 
@@ -129,14 +140,16 @@ def test_parse_rejects_feed_without_entries():
 
 @pytest.mark.parametrize("field", ["title", "content", "published", "updated"])
 def test_parse_rejects_entry_missing_a_field(field):
-    xml = re.sub(rf"<{field}[ >].*?</{field}>", "", entry(2), count=1, flags=re.S)
+    xml = re.sub(rf"<{field}[ >].*?</{field}>", "", entry(2), count=1, flags=re.DOTALL)
     assert f"<{field}" not in xml
     with pytest.raises(feeds.Rejected, match=f"has no {field}"):
         feeds.parse(atom(entry(1), xml))
 
 
 @pytest.mark.parametrize("field", ["published", "updated"])
-@pytest.mark.parametrize("value", ["2026-09-20T10:00:00", "Sun, 20 Sep 2026 10:00:00 +0000"])
+@pytest.mark.parametrize(
+    "value", ["2026-09-20T10:00:00", "Sun, 20 Sep 2026 10:00:00 +0000"]
+)
 def test_parse_rejects_unrenderable_timestamp(field, value):
     with pytest.raises(feeds.Rejected, match=field):
         feeds.parse(atom(entry(1, **{field: value})))
@@ -149,7 +162,9 @@ def test_parse_rejects_entry_without_link():
         feeds.parse(atom(entry(1), xml))
 
 
-@pytest.mark.parametrize("host", ["info-reader-production.herokuapp.com", "wwwXtheinformation.com"])
+@pytest.mark.parametrize(
+    "host", ["info-reader-production.herokuapp.com", "wwwXtheinformation.com"]
+)
 def test_parse_rejects_foreign_host_in_id(host):
     with pytest.raises(feeds.Rejected, match="entry id"):
         feeds.parse(atom(entry(1), entry(2, host=host)))
@@ -166,15 +181,23 @@ def test_parse_rejects_foreign_host_in_link():
 def test_merge_reports_new_entries():
     archive = {}
     changes = feeds.merge(archive, feeds.parse(atom(entry(1), entry(2, "Article"))))
-    assert [(c.entry["title"], c.edited) for c in changes] == [("Story 1", ()), ("Story 2", ())]
+    assert [(c.entry["title"], c.edited) for c in changes] == [
+        ("Story 1", ()),
+        ("Story 2", ()),
+    ]
     assert len(archive) == 2
 
 
 def test_merge_ignores_reordered_authors():
     archive = feeds.parse(atom(entry(1, authors=("Zoe", "Adam"))))
-    fresh = feeds.parse(atom(entry(1, authors=("Adam", "Zoe"), updated="2026-09-21T09:00:00Z")))
+    fresh = feeds.parse(
+        atom(entry(1, authors=("Adam", "Zoe"), updated="2026-09-21T09:00:00Z"))
+    )
     assert feeds.merge(archive, fresh) == []
-    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == ["Adam", "Zoe"]
+    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["authors"] == [
+        "Adam",
+        "Zoe",
+    ]
 
 
 def test_merge_takes_published_correction():
@@ -182,7 +205,10 @@ def test_merge_takes_published_correction():
     fresh = feeds.parse(atom(entry(1, published="2026-09-19T10:00:00Z")))
     [change] = feeds.merge(archive, fresh)
     assert change.edited == ("published",)
-    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["published"] == "2026-09-19T10:00:00Z"
+    assert (
+        archive["tag:www.theinformation.com,2005:Briefing/1"]["published"]
+        == "2026-09-19T10:00:00Z"
+    )
 
 
 @pytest.mark.parametrize(
@@ -198,7 +224,10 @@ def test_merge_takes_real_edits(change):
     fresh = feeds.parse(atom(entry(1, updated="2026-09-21T09:00:00Z", **change)))
     [c] = feeds.merge(archive, fresh)
     assert c.edited == tuple(change)
-    assert archive["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == "2026-09-21T09:00:00Z"
+    assert (
+        archive["tag:www.theinformation.com,2005:Briefing/1"]["updated"]
+        == "2026-09-21T09:00:00Z"
+    )
 
 
 def test_merge_keeps_label_through_edits():
@@ -234,7 +263,9 @@ def test_page_label(sections, want):
 
 def test_page_label_rejects_page_without_news_article():
     with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD on link"):
-        feeds.page_label("<html><head><title>Just a moment...</title></head></html>", "link")
+        feeds.page_label(
+            "<html><head><title>Just a moment...</title></head></html>", "link"
+        )
 
 
 # render
@@ -253,7 +284,9 @@ def test_render_splits_by_type():
 
 def test_render_orders_newest_first_and_caps(monkeypatch):
     monkeypatch.setattr(feeds, "MAX_ENTRIES", 3)
-    archive = feeds.parse(atom(*(entry(n, published=f"2026-09-{n:02d}T10:00:00Z") for n in range(1, 8))))
+    archive = feeds.parse(
+        atom(*(entry(n, published=f"2026-09-{n:02d}T10:00:00Z") for n in range(1, 8)))
+    )
     assert len(archive) == 7
     got = [e.id.rsplit("/", 1)[1] for e in rendered(archive, "all.xml").entries]
     assert got == ["7", "6", "5"]
@@ -276,7 +309,10 @@ def test_render_has_our_identity_and_no_cache_buster():
 
 def test_render_takes_feed_updated_from_newest_entry():
     archive = feeds.parse(
-        atom(entry(1, updated="2026-09-20T12:00:00Z"), entry(2, published="2026-09-19T10:00:00Z"))
+        atom(
+            entry(1, updated="2026-09-20T12:00:00Z"),
+            entry(2, published="2026-09-19T10:00:00Z"),
+        )
     )
     assert rendered(archive, "all.xml").feed.updated == "2026-09-20T12:00:00+00:00"
 
@@ -298,18 +334,28 @@ def test_render_round_trips_entry_fields():
         assert e.link == o["link"]
         assert e.content[0].value == o["content"]
         assert [a.name for a in e.authors] == o["authors"]
-        assert datetime.fromisoformat(e.published) == datetime.fromisoformat(o["published"])
+        assert datetime.fromisoformat(e.published) == datetime.fromisoformat(
+            o["published"]
+        )
 
 
 def test_render_labels_what_the_feed_does_not_say():
-    archive = feeds.parse(atom(entry(1), entry(2, "Article"), entry(3, "Article"), entry(4, "Article")))
+    archive = feeds.parse(
+        atom(entry(1), entry(2, "Article"), entry(3, "Article"), entry(4, "Article"))
+    )
     archive["tag:www.theinformation.com,2005:Article/2"]["label"] = "Q&A"
     archive["tag:www.theinformation.com,2005:Article/3"]["label"] = None
-    archive["tag:www.theinformation.com,2005:Article/4"]["label"] = "The Information Finance"
+    archive["tag:www.theinformation.com,2005:Article/4"]["label"] = (
+        "The Information Finance"
+    )
 
     def labels(name: str) -> dict[str, tuple[str, str, list[str]]]:
         return {
-            e.id.rsplit(":", 1)[1]: (e.title, e.content[0].value, [t.term for t in e.get("tags", [])])
+            e.id.rsplit(":", 1)[1]: (
+                e.title,
+                e.content[0].value,
+                [t.term for t in e.get("tags", [])],
+            )
             for e in rendered(archive, name).entries
         }
 
@@ -342,15 +388,26 @@ def test_index_links_every_feed():
 
     html = (feeds.OUT_DIR / "index.html").read_text()
     Links().feed(html)
-    code_urls = [code.replace("<wbr>", "") for code in re.findall(r"<code>(.*?)</code>", html, flags=re.S)]
-    assert found == [("application/atom+xml", f.title, f"{feeds.PAGES}/{f.name}") for f in feeds.FEEDS]
-    assert code_urls == [f"{feeds.PAGES}/", *(f"{feeds.PAGES}/{f.name}" for f in feeds.FEEDS)]
+    code_urls = [
+        code.replace("<wbr>", "")
+        for code in re.findall(r"<code>(.*?)</code>", html, flags=re.DOTALL)
+    ]
+    assert found == [
+        ("application/atom+xml", f.title, f"{feeds.PAGES}/{f.name}")
+        for f in feeds.FEEDS
+    ]
+    assert code_urls == [
+        f"{feeds.PAGES}/",
+        *(f"{feeds.PAGES}/{f.name}" for f in feeds.FEEDS),
+    ]
 
 
 # run and summary
 
 
-def run_in_tmp(tmp_path: Path, payload: bytes = UPSTREAM_FIXTURE) -> tuple[str, Path, Path]:
+def run_in_tmp(
+    tmp_path: Path, payload: bytes = UPSTREAM_FIXTURE
+) -> tuple[str, Path, Path]:
     archive_path = tmp_path / "entries.json"
     out_dir = tmp_path / "feeds"
     return feeds.run(payload, archive_path, out_dir), archive_path, out_dir
@@ -368,7 +425,9 @@ def test_run_publishes_fixture_and_replay_keeps_archive_bytes(tmp_path):
         published = feedparser.parse((out_dir / feed.name).read_bytes())
         assert not published.bozo
         assert {e.id for e in published.entries} == {
-            id_ for id_, e in archived_entries.items() if feed.type is None or e["type"] == feed.type
+            id_
+            for id_, e in archived_entries.items()
+            if feed.type is None or e["type"] == feed.type
         }
 
     before = archive_path.read_bytes()
@@ -382,10 +441,14 @@ def test_run_rejects_whole_payload_before_touching_archive_or_feeds(tmp_path):
     feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
 
     with pytest.raises(feeds.Rejected, match="entry link"):
-        feeds.run(atom(entry(21), entry(22, link_host="wrong.example")), archive_path, out_dir)
+        feeds.run(
+            atom(entry(21), entry(22, link_host="wrong.example")), archive_path, out_dir
+        )
 
     assert archive_path.read_bytes() == before
-    assert {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS} == feed_bytes
+    assert {
+        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
+    } == feed_bytes
 
 
 def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
@@ -411,14 +474,20 @@ def test_run_labels_new_articles_once(tmp_path, pages):
     payload = atom(entry(1), entry(2, "Article"))
 
     result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
-    assert result == "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
+    assert (
+        result
+        == "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
+    )
     archived_entries = json.loads(archive_path.read_text())
-    assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["label"] == "AI Agenda"
+    assert (
+        archived_entries["tag:www.theinformation.com,2005:Article/2"]["label"]
+        == "AI Agenda"
+    )
     assert "label" not in archived_entries["tag:www.theinformation.com,2005:Briefing/1"]
 
-    assert feeds.run(atom(entry(2, "Article", title="New headline")), archive_path, out_dir) == (
-        "Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)"
-    )
+    assert feeds.run(
+        atom(entry(2, "Article", title="New headline")), archive_path, out_dir
+    ) == ("Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)")
     assert pages.fetched == [source_link]
     assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["link"] == link
 
@@ -426,11 +495,11 @@ def test_run_labels_new_articles_once(tmp_path, pages):
 def test_run_labels_partner_articles_by_byline(tmp_path, pages):
     payload = atom(entry(2, "Article", authors=("The Information Partnerships",)))
 
-    result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
+    result, archive_path, _ = run_in_tmp(tmp_path, payload)
     assert result == "Add 1 article\n\n+ Article: [Partner Content] Story 2"
-    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Article/2"]["label"] == (
-        "Partner Content"
-    )
+    assert json.loads(archive_path.read_text())[
+        "tag:www.theinformation.com,2005:Article/2"
+    ]["label"] == ("Partner Content")
     assert pages.fetched == []
 
 
@@ -440,10 +509,13 @@ def test_run_labels_articles_archived_before_labels(tmp_path, pages):
     del archived_entries["tag:www.theinformation.com,2005:Article/1"]["label"]
     archive_path.write_text(json.dumps(archived_entries))
 
-    assert feeds.run(atom(entry(2)), archive_path, out_dir) == "Add 1 briefing\n\n+ Briefing: Story 2"
-    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Article/1"]["label"] == (
-        "The Briefing"
+    assert (
+        feeds.run(atom(entry(2)), archive_path, out_dir)
+        == "Add 1 briefing\n\n+ Briefing: Story 2"
     )
+    assert json.loads(archive_path.read_text())[
+        "tag:www.theinformation.com,2005:Article/1"
+    ]["label"] == ("The Briefing")
     assert len(pages.fetched) == 2
 
 
@@ -459,13 +531,17 @@ def test_run_rejects_unreadable_page_before_touching_archive_or_feeds(tmp_path, 
         feeds.run(atom(entry(21, "Article")), archive_path, out_dir)
 
     assert archive_path.read_bytes() == before
-    assert {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS} == feed_bytes
+    assert {
+        feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS
+    } == feed_bytes
 
 
 def test_run_keeps_entries_upstream_dropped(tmp_path):
     _, archive_path, out_dir = run_in_tmp(tmp_path)
 
-    assert feeds.run(atom(entry(21)), archive_path, out_dir).startswith("Add 1 briefing")
+    assert feeds.run(atom(entry(21)), archive_path, out_dir).startswith(
+        "Add 1 briefing"
+    )
     assert len(json.loads(archive_path.read_text())) == 21
     assert len(feedparser.parse((out_dir / "all.xml").read_bytes()).entries) == 21
 
@@ -474,15 +550,20 @@ def test_run_ignores_restamped_updated(tmp_path):
     _, archive_path, out_dir = run_in_tmp(tmp_path, atom(entry(1)))
     before = archive_path.read_bytes()
 
-    assert feeds.run(atom(entry(1, updated="2026-09-21T09:00:00Z")), archive_path, out_dir) == "No changes"
-    assert archive_path.read_bytes() == before
-    assert json.loads(archive_path.read_text())["tag:www.theinformation.com,2005:Briefing/1"]["updated"] == (
-        "2026-09-20T10:00:00Z"
+    assert (
+        feeds.run(atom(entry(1, updated="2026-09-21T09:00:00Z")), archive_path, out_dir)
+        == "No changes"
     )
+    assert archive_path.read_bytes() == before
+    assert json.loads(archive_path.read_text())[
+        "tag:www.theinformation.com,2005:Briefing/1"
+    ]["updated"] == ("2026-09-20T10:00:00Z")
 
 
 def test_main_reports_rejected_payload(tmp_path, monkeypatch):
-    monkeypatch.setattr(feeds, "fetch", lambda: atom(entry(1, link_host="wrong.example")))
+    monkeypatch.setattr(
+        feeds, "fetch", lambda: atom(entry(1, link_host="wrong.example"))
+    )
     monkeypatch.setattr(feeds, "ARCHIVE_PATH", tmp_path / "entries.json")
     monkeypatch.setattr(feeds, "OUT_DIR", tmp_path / "feeds")
 
@@ -500,7 +581,11 @@ def change(type_: str, title: str, *edited: str) -> feeds.Change:
     [
         ([], "No changes"),
         (
-            [change("Briefing", "B1"), change("Article", "A1"), change("Briefing", "B2")],
+            [
+                change("Briefing", "B1"),
+                change("Article", "A1"),
+                change("Briefing", "B2"),
+            ],
             "Add 1 article, 2 briefings\n\n+ Briefing: B1\n+ Article: A1\n+ Briefing: B2",
         ),
         (
@@ -508,11 +593,24 @@ def change(type_: str, title: str, *edited: str) -> feeds.Change:
             "Edit 1 article\n\n~ Article: A1 (content)",
         ),
         (
-            [feeds.Change({"type": "Article", "title": "A1", "label": "AI Agenda"}, ())],
+            [
+                feeds.Change(
+                    {"type": "Article", "title": "A1", "label": "AI Agenda"}, ()
+                )
+            ],
             "Add 1 article\n\n+ Article: [AI Agenda] A1",
         ),
         (
-            [feeds.Change({"type": "Article", "title": "A1", "label": "The Information Finance"}, ())],
+            [
+                feeds.Change(
+                    {
+                        "type": "Article",
+                        "title": "A1",
+                        "label": "The Information Finance",
+                    },
+                    (),
+                )
+            ],
             "Add 1 article\n\n+ Article: [Finance] A1",
         ),
         (
