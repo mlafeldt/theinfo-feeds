@@ -90,6 +90,10 @@ def rendered(archive: feeds.Entries, name: str) -> feedparser.FeedParserDict:
 # parse
 
 
+def test_feed_source_uses_origin():
+    assert feeds.UPSTREAM == "https://info-reader-production.herokuapp.com/feed"
+
+
 def test_parse_real_upstream_payload():
     entries = feeds.parse(UPSTREAM_FIXTURE)
     assert len(entries) == 20
@@ -399,7 +403,8 @@ def test_run_renders_before_saving_archive(tmp_path, monkeypatch):
 
 def test_run_labels_new_articles_once(tmp_path, pages):
     link = "https://www.theinformation.com/articles/story-2"
-    pages.served[link] = page("AI Agenda")
+    source_link = "https://info-reader-production.herokuapp.com/articles/story-2"
+    pages.served[source_link] = page("AI Agenda")
     payload = atom(entry(1), entry(2, "Article"))
 
     result, archive_path, out_dir = run_in_tmp(tmp_path, payload)
@@ -411,7 +416,8 @@ def test_run_labels_new_articles_once(tmp_path, pages):
     assert feeds.run(atom(entry(2, "Article", title="New headline")), archive_path, out_dir) == (
         "Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)"
     )
-    assert pages.fetched == [link]
+    assert pages.fetched == [source_link]
+    assert archived_entries["tag:www.theinformation.com,2005:Article/2"]["link"] == link
 
 
 def test_run_labels_articles_archived_before_labels(tmp_path, pages):
@@ -431,7 +437,9 @@ def test_run_rejects_unreadable_page_before_touching_archive_or_feeds(tmp_path, 
     _, archive_path, out_dir = run_in_tmp(tmp_path)
     before = archive_path.read_bytes()
     feed_bytes = {feed.name: (out_dir / feed.name).read_bytes() for feed in feeds.FEEDS}
-    pages.served["https://www.theinformation.com/articles/story-21"] = b"<title>Just a moment...</title>"
+    pages.served["https://info-reader-production.herokuapp.com/articles/story-21"] = (
+        b"<title>Just a moment...</title>"
+    )
 
     with pytest.raises(feeds.Rejected, match="no NewsArticle JSON-LD"):
         feeds.run(atom(entry(21, "Article")), archive_path, out_dir)

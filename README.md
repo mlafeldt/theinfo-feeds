@@ -24,9 +24,10 @@ Articles the site shows no label for, sponsored ones among them, get none.
 
 ## How
 
-`scripts/feeds.py` fetches upstream, folds its entries into `data/entries.json` and renders all three feeds from that archive into `public/`.
+`scripts/feeds.py` fetches the feed and article pages from The Information's Heroku origin, folds the entries into `data/entries.json` and renders all three feeds from that archive into `public/`.
+Published entry links still point to `www.theinformation.com`, where subscribers can sign in.
 An archived entry is replaced when any field except `updated` changes, so upstream's re-stamps never count as edits.
-Each new article's page is fetched once, five seconds apart so as not to trip the site's rate limit, for the `articleSection` in its JSON-LD; the label is kept in the archive, through later edits.
+Each new article's page is fetched once, five seconds apart to space requests to the origin, for the `articleSection` in its JSON-LD; the label is kept in the archive, through later edits.
 Authors are kept in alphabetical order, since upstream's own order is not stable.
 Only the archive is committed; the feeds are rendered afresh on every run, and redeployed whenever the archive changed or the code did.
 The landing page, `public/index.html`, and its link-preview image, `public/og.png` (rendered from `scripts/og.html`), are static and made by hand; a test fails if the page's feed links fall out of step with the feeds.

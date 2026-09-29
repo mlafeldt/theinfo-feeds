@@ -1,4 +1,4 @@
-"""Fold https://www.theinformation.com/feed into an archive and publish it as feeds.
+"""Fold The Information's public Atom feed into an archive and publish it as feeds.
 
 Upstream only ever serves its latest 20 entries. Each run merges them into
 data/entries.json, which keeps every entry ever seen, and renders the newest
@@ -19,7 +19,7 @@ from collections import Counter
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import NamedTuple, NotRequired, TypedDict
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urlunsplit
 from xml.etree import ElementTree
 
 import httpx
@@ -27,7 +27,9 @@ from feedgen.feed import FeedGenerator
 
 HOST = "www.theinformation.com"
 SITE = f"https://{HOST}"
-UPSTREAM = f"{SITE}/feed"
+SOURCE_HOST = "info-reader-production.herokuapp.com"
+SOURCE = f"https://{SOURCE_HOST}"
+UPSTREAM = f"{SOURCE}/feed"
 PAGES = "https://mlafeldt.github.io/theinfo-feeds"
 USER_AGENT = "theinfo-feeds (+https://github.com/mlafeldt/theinfo-feeds)"
 
@@ -39,9 +41,9 @@ OUT_DIR = ROOT / "public"
 # up to this many entries. The archive itself is never trimmed.
 MAX_ENTRIES = 500
 
-# Seconds between article page fetches. Cloudflare answers 429 after about 35
-# requests in quick succession; a run fetches at most 20 pages, the backfill
-# of the whole archive about a hundred.
+# Seconds between article page fetches to avoid sending a burst to the origin.
+# A run fetches at most 20 pages, the backfill of the whole archive about a
+# hundred.
 PAGE_PACE = 5
 
 
@@ -200,13 +202,21 @@ def page_label(page: str, link: str) -> str | None:
     raise Rejected(f"no NewsArticle JSON-LD on {link}")
 
 
+def source_url(link: str) -> str:
+    """Fetch a canonical article from the origin without changing its public link."""
+    parts = urlsplit(link)
+    if parts.scheme != "https" or parts.hostname != HOST:
+        raise Rejected(f"unexpected article link: {link!r}")
+    return urlunsplit(("https", SOURCE_HOST, parts.path, parts.query, ""))
+
+
 def label_articles(archive: Entries) -> None:
     """Fetch the label of every archived article that has none yet, in place."""
     todo = [e for e in archive.values() if e["type"] == "Article" and "label" not in e]
     for i, e in enumerate(todo):
         if i:
             time.sleep(PAGE_PACE)
-        e["label"] = page_label(fetch(e["link"]).decode(), e["link"])
+        e["label"] = page_label(fetch(source_url(e["link"])).decode(), e["link"])
         print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
 
 
