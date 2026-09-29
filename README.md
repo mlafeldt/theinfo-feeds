@@ -34,27 +34,17 @@ Labels are:
 - missing where the site shows none
 - never added to the content, which stays as upstream wrote it
 
-## How
+## Scope
 
-`scripts/feeds.py`, run hourly:
+These feeds carry the **public** feed only: the headlines and summaries upstream serves any visitor, plus labels from public article pages and bylines.
+No article bodies, nothing from behind the paywall; full articles need a subscription.
+Unofficial, not affiliated with or endorsed by The Information.
 
-- fetches the feed and new article pages
-- folds entries into `data/entries.json`, the only thing committed; nothing is ever removed
-- ignores changes to `updated` alone, so re-stamps aren't edits
-- sorts authors, since upstream's order isn't stable
-- labels each new article once, from its page's JSON-LD `articleSection`, 5 s between fetches; partner articles from their byline instead
-- renders the three feeds into `public/`, redeployed when the archive or code changed
+## Development
 
-The run fails rather than publish something bad:
+[`scripts/feeds.py`](scripts/feeds.py) runs hourly in GitHub Actions; its docstrings explain the rest.
 
-- a payload that isn't well-formed Atom with entries
-- an entry whose id or link points to a host other than `www.theinformation.com`, as upstream served on 2026-09-10
-- an article page that can't be fetched or has no article JSON-LD
-- failing tests, which CI runs first
-
-`public/index.html` and `public/og.png` (from `scripts/og.html`) are made by hand; a test keeps the page's links in step with the feeds.
-
-Run it locally with [uv](https://docs.astral.sh/uv/):
+Run it, and its tests, locally with [uv](https://docs.astral.sh/uv/):
 
 ```console
 $ uv run scripts/feeds.py
@@ -64,9 +54,3 @@ Add 1 article, edit 1 briefing
 ~ Briefing: … (title)
 $ uv run pytest
 ```
-
-## Scope
-
-These feeds carry the **public** feed only: the headlines and summaries upstream serves any visitor, plus labels from public article pages and bylines.
-No article bodies, nothing from behind the paywall; full articles need a subscription.
-Unofficial, not affiliated with or endorsed by The Information.
