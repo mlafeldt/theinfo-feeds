@@ -1513,13 +1513,13 @@
     "authors": [
       "Dakin Campbell"
     ],
-    "content": "<p>Bond markets are getting tough for lower-rated borrowers. One example: CleanSpark, which is developing a data center for Meta Platforms, had to offer investors big concessions to land financing earlier this month.</p>\n\n<p>That deal is among the clearest signs yet that financing the data center boom is getting expensive across the board, and investors are getting picky about which new projects they’ll back. The bank loan market too is showing signs of strain, with some lenders like Soci&eacute;t&eacute; G&eacute;n&eacute;rale, Sumitomo Mitsui Banking Corp. and Mitsubishi becoming more selective in lending to data center projects, people arranging the deals say. Those dynamics mean companies could struggle to borrow for planned data centers, jeopardizing growth plans for the broader AI industry.</p>",
+    "content": "<p>Bond markets are getting tough for lower-rated borrowers. One example: CleanSpark, which is developing a data center for Meta Platforms, had to offer investors big concessions to land financing earlier this month.</p>\n\n<p>That deal is among the clearest signs yet that financing the data center boom is getting expensive across the board, and investors are getting picky about which new projects they’ll back. The bank loan market too is showing signs of strain, with some lenders like Soci&eacute;t&eacute; G&eacute;n&eacute;rale, Sumitomo Mitsui Banking Corp. and Mitsubishi UFJ Financial Group becoming more selective in lending to data center projects, people arranging the deals say. Those dynamics mean companies could struggle to borrow for planned data centers, jeopardizing growth plans for the broader AI industry.</p>",
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/new-data-center-debt-concessions-stall-ai-build-outs",
     "published": "2026-09-30T18:53:55Z",
     "title": "Meta Data Center Deal Tests Limits of AI Debt Markets",
     "type": "Article",
-    "updated": "2026-09-30T19:50:02Z"
+    "updated": "2026-09-30T21:00:34Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -3063,5 +3063,16 @@
     "title": "Sydney Sweeney-Backed Novig Raised at $2 Billion Valuation",
     "type": "Briefing",
     "updated": "2026-09-30T19:35:49Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18138": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>Some of the largest lenders to the artificial intelligence build out are becoming more choosy about the deals they take on as market volatility and rising yields give lenders reasons to choose safer deals over more speculative ones.</p> <p>Lenders including Société Générale, Sumitomo Mitsui Banking ...</p>",
+    "link": "https://www.theinformation.com/briefings/banks-including-socgen-mufg-pull-back-data-center-loan-deals",
+    "published": "2026-09-30T20:56:29Z",
+    "title": "Banks Including SocGen, MUFG Pull Back From Data Center Loan Deals",
+    "type": "Briefing",
+    "updated": "2026-09-30T21:04:00Z"
   }
 }
