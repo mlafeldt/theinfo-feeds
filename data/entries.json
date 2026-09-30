@@ -3074,5 +3074,49 @@
     "title": "Banks Including SocGen, MUFG Pull Back From Data Center Loan Deals",
     "type": "Briefing",
     "updated": "2026-09-30T21:04:00Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18139": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>DeepSeek said Wednesday that it would open-source software tools that are customized for Huawei’s AI chips, as the Chinese AI firm steps up its efforts to use domestic semiconductors for training and running its models.</p> <p>The software tools include a Huawei-compatible version of TileLang—a ...</p>",
+    "link": "https://www.theinformation.com/briefings/deepseek-open-sources-software-tools-huawei-ai-chips",
+    "published": "2026-09-30T22:12:14Z",
+    "title": "DeepSeek Open-Sources Software Tools for Huawei AI Chips",
+    "type": "Briefing",
+    "updated": "2026-09-30T23:05:16Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18140": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms’ <a href=\"https://www.theinformation.com/newsletters/the-weekend/keeping-metas-muse-short-leash\">Muse</a> now has more than 3 million users who give the AI agent at least one prompt a week, according to internal data reviewed by The Information, giving the product a sizable active audience just weeks after its launch.</p> <p>That figure is a subset of a broader group totaling more than ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-metas-muse-tops-3-million-weekly-users",
+    "published": "2026-09-30T22:48:24Z",
+    "title": "Exclusive: Meta’s Muse Tops 3 Million Weekly Users",
+    "type": "Briefing",
+    "updated": "2026-09-30T23:05:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18141": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Google launched Gemini 4 Argon, its latest flagship AI model, touting its abilities in cybersecurity defense and coding, legal and finance work. The company hasn’t launched such a frontier model in nearly a year, prompting questions about whether it could stay in the race with Anthropic and ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-unveils-gemini-4-argon-pricing-well-rivals",
+    "published": "2026-09-30T23:03:50Z",
+    "title": "Google Unveils Gemini 4 Argon, Pricing It Well Below Rivals",
+    "type": "Briefing",
+    "updated": "2026-09-30T23:05:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18142": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft veteran Peter Lee, who for years led the company’s internal research unit, will leave the company, he announced Wednesday.</p> <p>Lee is the latest in a string of senior executive departures from Microsoft announced this year. So far this year, Office and Windows boss Rajesh Jha, Xbox CEO ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-science-president-peter-lee-step",
+    "published": "2026-09-30T23:05:42Z",
+    "title": "Microsoft Science President Peter Lee to Step Down",
+    "type": "Briefing",
+    "updated": "2026-09-30T23:05:42Z"
   }
 }
