@@ -52,6 +52,10 @@ PAGE_PACE = 5
 PARTNER_AUTHOR = "The Information Partnerships"
 PARTNER_LABEL = "Partner Content"
 
+# Labels too common to tell articles apart: titles leave them out, categories
+# keep them.
+UNTOLD_LABELS = {"Exclusive"}
+
 
 class Entry(TypedDict):
     """Fields shared by fresh and archived entries, plus an archived article's label."""
@@ -331,7 +335,8 @@ def render(archive: Entries, feed: Feed) -> bytes:
         fe = fg.add_entry(order="append")
         fe.id(id_)
         label = category(e, feed)
-        fe.title(f"{e['title']} [{short(label)}]" if label else e["title"])
+        told = label and label not in UNTOLD_LABELS
+        fe.title(f"{e['title']} [{short(label)}]" if told else e["title"])
         fe.link(href=e["link"], rel="alternate", type="text/html")
         fe.content(e["content"], type="html")
         if label:

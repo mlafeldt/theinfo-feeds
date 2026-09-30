@@ -409,12 +409,11 @@ def test_render_round_trips_entry_fields():
 
 
 def test_render_labels_what_the_feed_does_not_say():
-    archive = feeds.parse(
-        atom(entry(1), entry(2, "Article"), entry(3, "Article"), entry(4, "Article"))
-    )
+    archive = feeds.parse(atom(entry(1), *(entry(n, "Article") for n in range(2, 6))))
     archive[id_("Article", 2)]["label"] = "Q&A"
     archive[id_("Article", 3)]["label"] = None
     archive[id_("Article", 4)]["label"] = "The Information Finance"
+    archive[id_("Article", 5)]["label"] = "Exclusive"
 
     def labels(name: str) -> dict[str, tuple[str, str, list[str]]]:
         return {
@@ -431,12 +430,14 @@ def test_render_labels_what_the_feed_does_not_say():
         "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
         "Article/3": ("Story 3", "<p>Body</p>", []),
         "Article/4": ("Story 4 [Finance]", "<p>Body</p>", ["The Information Finance"]),
+        "Article/5": ("Story 5", "<p>Body</p>", ["Exclusive"]),
     }
     assert labels("briefings.xml") == {"Briefing/1": ("Story 1", "<p>Body</p>", [])}
     assert labels("articles.xml") == {
         "Article/2": ("Story 2 [Q&A]", "<p>Body</p>", ["Q&A"]),
         "Article/3": ("Story 3", "<p>Body</p>", []),
         "Article/4": ("Story 4 [Finance]", "<p>Body</p>", ["The Information Finance"]),
+        "Article/5": ("Story 5", "<p>Body</p>", ["Exclusive"]),
     }
 
 

@@ -30,6 +30,7 @@ Labels are:
 
 - appended to titles, as in `OpenAI Math Result Stokes Data-Sharing Concerns [AI Agenda]`, and added as an Atom `<category>`
 - shortened in titles only: `[Finance]` for The Information Finance
+- left out of titles, but not categories, when too common to tell articles apart: Exclusive
 - `[Briefing]` for briefings in the All feed, where they mix with articles
 - missing where the site shows none
 - never added to the content, which stays as upstream wrote it
