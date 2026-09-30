@@ -1497,6 +1497,18 @@
     "type": "Article",
     "updated": "2026-09-30T14:01:35Z"
   },
+  "tag:www.theinformation.com,2005:Article/17915": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>Bond markets are getting tough for lower-rated borrowers. One example: CleanSpark, which is developing a data center for Meta Platforms, had to offer investors big concessions to land financing earlier this month.</p>\n\n<p>That deal is among the clearest signs yet that financing the data center boom is getting expensive across the board, and investors are getting picky about which new projects they’ll back. The bank loan market too is showing signs of strain, with some lenders like Soci&eacute;t&eacute; G&eacute;n&eacute;rale, Sumitomo Mitsui Banking Corp. and Mitsubishi becoming more selective in lending to data center projects, people arranging the deals say. Those dynamics mean companies could struggle to borrow for planned data centers, jeopardizing growth plans for the broader AI industry.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/new-data-center-debt-concessions-stall-ai-build-outs",
+    "published": "2026-09-30T18:53:55Z",
+    "title": "How New Data Center Debt Concessions Could Stall AI Build-Outs",
+    "type": "Article",
+    "updated": "2026-09-30T18:54:22Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -3017,5 +3029,16 @@
     "title": "Exclusive: GPU Cloud Provider GMI Raises $668 Million From Nvidia and Others",
     "type": "Briefing",
     "updated": "2026-09-30T10:55:47Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18136": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>Apple plans to launch a smart home hub device on October 13th, Bloomberg reported.</p> <p>The hub has a roughly 6-inch square display that can sit on countertops or be mounted on walls, the news outlet reported. The device will showcase the capabilities of Apple’s overhauled Siri, which was recently ...</p>",
+    "link": "https://www.theinformation.com/briefings/apple-plans-aggressive-new-push-smart-home",
+    "published": "2026-09-30T18:49:13Z",
+    "title": "Apple Plans Aggressive New Push Into Smart Home",
+    "type": "Briefing",
+    "updated": "2026-09-30T18:49:13Z"
   }
 }
