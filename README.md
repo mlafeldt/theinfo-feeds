@@ -1,6 +1,4 @@
-# theinfo-feeds
-
-A better way to read [The Information](https://www.theinformation.com).
+# A better way to read [The Information](https://www.theinformation.com)
 
 Separate feeds for briefings and articles, up to 500 stories each, with articles labeled like `[AI Agenda]`.
 
