@@ -23,9 +23,14 @@ on:
 permissions:
   contents: read
 
+# A job GitHub never hands to a runner stays queued for up to 24 hours,
+# holding the group and blocking every later run; timeout-minutes counts only
+# once a job runs. Cancelling in progress lets the next run clear it. Runs take
+# seconds, so one rarely cuts off a healthy run, and a run cut off after its
+# push loses nothing: the next archive change redeploys.
 concurrency:
   group: feeds
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
