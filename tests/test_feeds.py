@@ -552,14 +552,14 @@ def test_run_labels_new_articles_once(site, pages):
     payload = atom(entry(1), entry(2, "Article"))
 
     assert site.run(payload) == (
-        "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: [AI Agenda] Story 2"
+        "Add 1 article, 1 briefing\n\n+ Briefing: Story 1\n+ Article: Story 2 [AI Agenda]"
     )
     archived_entries = site.archive()
     assert archived_entries[id_("Article", 2)]["label"] == "AI Agenda"
     assert "label" not in archived_entries[id_("Briefing", 1)]
 
     assert site.run(atom(entry(2, "Article", title="New headline"))) == (
-        "Edit 1 article\n\n~ Article: [AI Agenda] New headline (title)"
+        "Edit 1 article\n\n~ Article: New headline [AI Agenda] (title)"
     )
     assert pages.fetched == [source_link]
     assert archived_entries[id_("Article", 2)]["link"] == link
@@ -568,7 +568,7 @@ def test_run_labels_new_articles_once(site, pages):
 def test_run_labels_partner_articles_by_byline(site, pages):
     payload = atom(entry(2, "Article", authors=("The Information Partnerships",)))
 
-    assert site.run(payload) == "Add 1 article\n\n+ Article: [Partner Content] Story 2"
+    assert site.run(payload) == "Add 1 article\n\n+ Article: Story 2 [Partner Content]"
     assert site.archive()[id_("Article", 2)]["label"] == "Partner Content"
     assert pages.fetched == []
 
@@ -652,11 +652,11 @@ def change(
         ),
         (
             [change("Article", "A1", label="AI Agenda")],
-            "Add 1 article\n\n+ Article: [AI Agenda] A1",
+            "Add 1 article\n\n+ Article: A1 [AI Agenda]",
         ),
         (
             [change("Article", "A1", label="The Information Finance")],
-            "Add 1 article\n\n+ Article: [Finance] A1",
+            "Add 1 article\n\n+ Article: A1 [Finance]",
         ),
         (
             [change("Briefing", "B1", "title", "authors"), change("Briefing", "B2")],

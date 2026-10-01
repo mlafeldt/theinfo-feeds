@@ -49,7 +49,7 @@ Run it, and its tests, locally with [uv](https://docs.astral.sh/uv/):
 $ uv run scripts/feeds.py
 Add 1 article, edit 1 briefing
 
-+ Article: [AI Agenda] …
++ Article: … [AI Agenda]
 ~ Briefing: … (title)
 $ uv run pytest
 ```

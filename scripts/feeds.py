@@ -383,8 +383,8 @@ def count(changes: list[Change]) -> str:
 def line(c: Change) -> str:
     e = c.entry
     label = e.get("label")
-    prefix = f"[{short(label)}] " if label else ""
-    return f"{e['type']}: {prefix}{e['title']}"
+    suffix = f" [{short(label)}]" if label else ""
+    return f"{e['type']}: {e['title']}{suffix}"
 
 
 def message(changes: list[Change]) -> str:
