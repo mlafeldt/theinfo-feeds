@@ -3233,5 +3233,16 @@
     "title": "Federal Court Dismisses Publishers’ Suits Over Google’s AI Overviews",
     "type": "Briefing",
     "updated": "2026-10-01T18:24:15Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18149": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>OpenAI said it fired three safety employees for mishandling corporate information, which a person familiar with the matter said included sensitive information with an outside organization that does AI evaluations.</p> <p>“We have parted ways with three individuals for violating our policies on ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-fires-three-safety-researchers",
+    "published": "2026-10-01T19:31:26Z",
+    "title": "OpenAI Fires Three Safety Researchers",
+    "type": "Briefing",
+    "updated": "2026-10-01T19:31:26Z"
   }
 }
