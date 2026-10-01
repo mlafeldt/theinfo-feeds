@@ -1569,6 +1569,18 @@
     "type": "Article",
     "updated": "2026-10-01T14:01:40Z"
   },
+  "tag:www.theinformation.com,2005:Article/17921": {
+    "authors": [
+      "Jessica E. Lessin"
+    ],
+    "content": "<p>While interviewing Google’s Koray Kavukcuoglu last week, I had a flash of deja vu.&nbsp;</p><p>In his first sit-down since taking over as CEO of Google DeepMind, Kavukcuoglu offered some of his most detailed comments yet on where the company's robotics ambitions are headed and how they differ from the rest of the industry.</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/robotics-google-goes-android-teslas-apple",
+    "published": "2026-10-01T21:50:35Z",
+    "title": "In Robotics, Google Goes Android to Tesla’s Apple",
+    "type": "Article",
+    "updated": "2026-10-01T21:53:06Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
