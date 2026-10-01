@@ -1521,6 +1521,18 @@
     "type": "Article",
     "updated": "2026-09-30T21:00:34Z"
   },
+  "tag:www.theinformation.com,2005:Article/17918": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Tech companies may have already perfected the art of separating consumers from their money—but AI promises to take that capability to a whole new level. The latest demonstration of that is DoorDash’s Wednesday <a href=\"https://about.doordash.com/en-us/news/text-doordash\">announcement</a> that customers will soon be able to order restaurant meals and groceries by text. The new service is a result of DoorDash integrating the capabilities of its AI assistant, which is already in its app, into iMessage.&nbsp;</p><p>So if you’re like me and you like to reorder the same restaurant meal every Friday night, now you can do so with a quick text. To be honest, the convenience of this seems illusory, as DoorDash’s mobile app already makes reordering a meal as easy as pie. But the AI assistant, whether it’s in the app or outside it, is an advance. If its a chore to figure out where to order food for a special dinner from, it can suggest places. The assistant is even more handy for groceries: It can list the ingredients you need for a meal and order them.&nbsp;</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/doordash-needs-ai-assistant",
+    "published": "2026-10-01T00:00:49Z",
+    "title": "Why DoorDash Needs Its Own AI Assistant",
+    "type": "Article",
+    "updated": "2026-10-01T00:31:53Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -3118,5 +3130,16 @@
     "title": "Microsoft Science President Peter Lee to Step Down",
     "type": "Briefing",
     "updated": "2026-09-30T23:05:42Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18143": {
+    "authors": [
+      "Amir Efrati"
+    ],
+    "content": "<p>Memory maker Micron said revenue nearly quintupled to $54.2 billion in the quarter ending Sept.3, as demand for high-bandwidth memory hardware for AI chips showed no sign of slowing down.</p> <p>Micron’s gross margin nearly doubled to $86.8%, thanks to its price hikes, allowing it to generate an ...</p>",
+    "link": "https://www.theinformation.com/briefings/revenue-quintupled-ai-memory-maker-micron",
+    "published": "2026-09-30T23:46:12Z",
+    "title": "Revenue Quintupled at AI Memory Maker Micron",
+    "type": "Briefing",
+    "updated": "2026-09-30T23:46:12Z"
   }
 }
