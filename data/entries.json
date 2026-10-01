@@ -3153,5 +3153,16 @@
     "title": "Revenue Quintupled at AI Memory Maker Micron",
     "type": "Briefing",
     "updated": "2026-09-30T23:46:12Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18144": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>OpenAI said it recently identified and mitigated a “coordinated model-distillation campaign” involving individuals associated with Moonshot AI, the Chinese developer of Kimi models.</p> <p>OpenAI <a href=\"https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/\">said</a> the operators of the campaign tried to extract protected reasoning—the model’s hidden thinking process ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-accuses-moonshot-distillation-campaign",
+    "published": "2026-10-01T08:37:21Z",
+    "title": "OpenAI Accuses Moonshot of Distillation Campaign",
+    "type": "Briefing",
+    "updated": "2026-10-01T08:51:46Z"
   }
 }
