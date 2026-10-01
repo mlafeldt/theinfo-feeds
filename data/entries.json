@@ -3210,5 +3210,28 @@
     "title": "Sharon AI Announces $356 Million GPU-Backed Loan",
     "type": "Briefing",
     "updated": "2026-10-01T16:32:01Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18147": {
+    "authors": [
+      "Julia Hornstein",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia and SoftBank have each made the final $10 billion investment in each of their $30 billion pledges to OpenAI’s last funding round, according to a person with knowledge of the investments and a statement from SoftBank.</p> <p>OpenAI in March said it had $122 billion in commitments in a round that ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-nvidia-softbank-make-final-20-billion-investment-openais-last-round",
+    "published": "2026-10-01T18:15:57Z",
+    "title": "Exclusive: Nvidia, SoftBank Make Final $20 Billion Investment in OpenAI’s Last Round",
+    "type": "Briefing",
+    "updated": "2026-10-01T18:15:57Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18148": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>A federal judge on Wednesday <a href=\"https://storage.courtlistener.com/recap/gov.uscourts.dcd.284823/gov.uscourts.dcd.284823.32.0.pdf\">dismissed</a> lawsuits from education technology company Chegg and Penske Media, the owner of Rolling Stone, Variety and other publications, which had alleged Google had violated antitrust law when its AI Overviews summaries used their content. The court rejected the ...</p>",
+    "link": "https://www.theinformation.com/briefings/federal-court-dismisses-publishers-suits-googles-ai-overviews",
+    "published": "2026-10-01T18:24:15Z",
+    "title": "Federal Court Dismisses Publishers’ Suits Over Google’s AI Overviews",
+    "type": "Briefing",
+    "updated": "2026-10-01T18:24:15Z"
   }
 }
