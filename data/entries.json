@@ -3188,5 +3188,27 @@
     "title": "OpenAI Accuses Moonshot of Distillation Campaign",
     "type": "Briefing",
     "updated": "2026-10-01T08:51:46Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18145": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>Data center infrastructure provider Accelevation’s shares were trading down roughly 5% on Thursday morning, as the stock continued to sink following its initial public offering earlier this week.</p> <p>The company on Sept. 29 raised $540 million, moving ahead with the offering even as some <a href=\"https://www.theinformation.com/articles/wall-street-silicon-valley-split-ais-price-tag\"> ...</a></p>",
+    "link": "https://www.theinformation.com/briefings/data-center-infra-provider-accelevation-sinks-post-ipo-trading",
+    "published": "2026-10-01T16:28:01Z",
+    "title": "Data Center Infra Provider Accelevation Sinks In Post-IPO Trading",
+    "type": "Briefing",
+    "updated": "2026-10-01T16:28:01Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18146": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>Australian neocloud Sharon AI has secured $356 million through its first loan backed by its graphics processing units, making it the latest cloud provider to finance their expansion by borrowing against chips and cash flows from customer contracts. The senior secured facility carries an interest ...</p>",
+    "link": "https://www.theinformation.com/briefings/sharon-ai-announces-356-million-gpu-backed-loan",
+    "published": "2026-10-01T16:32:01Z",
+    "title": "Sharon AI Announces $356 Million GPU-Backed Loan",
+    "type": "Briefing",
+    "updated": "2026-10-01T16:32:01Z"
   }
 }
