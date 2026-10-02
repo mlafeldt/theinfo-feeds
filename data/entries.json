@@ -1593,6 +1593,20 @@
     "type": "Article",
     "updated": "2026-10-01T21:53:06Z"
   },
+  "tag:www.theinformation.com,2005:Article/17923": {
+    "authors": [
+      "Jing Yang",
+      "Juro Osawa",
+      "Qianer Liu"
+    ],
+    "content": "<p>In Beijing’s Haidian District, a bustling hub for local universities and tech companies, six out of the roughly 30 tenants in one run-of-the-mill office building are all in the same business, according to one occupant of the building: selling Chinese customers access to Anthropic’s Claude and other models from U.S. AI companies.</p>\n\n<p>They’re not supposed to do that. Anthropic doesn’t offer its services in China for national security reasons, but the demand for Claude tokens is off the charts. The company has been among the most vocal in accusing Chinese AI labs of extracting its models’ capabilities in what it has called an “industrial-scale, covert campaign” aided by fake or stolen accounts, credit cards and identities.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/chinas-token-resellers-create-anthropic-gray-market",
+    "published": "2026-10-02T13:00:37Z",
+    "title": "How China’s Token Resellers Create an Anthropic Gray Market",
+    "type": "Article",
+    "updated": "2026-10-02T13:01:07Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
