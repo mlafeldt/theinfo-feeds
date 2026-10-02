@@ -3361,5 +3361,27 @@
     "title": "Amazon Pledges To Give Up NDAs, Give Back $1 Billion To Communities In Data-Center Buildout",
     "type": "Briefing",
     "updated": "2026-10-02T14:20:28Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18155": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>AI cloud company Lambda said it has secured its first delayed draw term loan at over $1 billion to purchase more than 30,000 Nvidia graphics processing units. The fixed-rate facility carries an interest rate of 6.78%.</p> <p>Privately held Lambda said in an announcement late on Thursday the facility ...</p>",
+    "link": "https://www.theinformation.com/briefings/lambda-secures-1-billion-gpu-loan",
+    "published": "2026-10-02T17:17:07Z",
+    "title": "Lambda Secures $1 Billion GPU Loan",
+    "type": "Briefing",
+    "updated": "2026-10-02T17:17:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18156": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Anchorage Digital, the first federally chartered U.S. digital-asset bank, has cut 17% of jobs, CEO Nathan McCauley told employees this week, according to people familiar with the matter.</p> <p>Anchorage, which provides crypto custody and issues stablecoins, including Tether’s new U.S. stablecoin USAT ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-crypto-custodian-anchorage-digital-lays-17-staff",
+    "published": "2026-10-02T17:49:11Z",
+    "title": "Exclusive: Crypto Custodian Anchorage Digital Lays Off 17% Staff",
+    "type": "Briefing",
+    "updated": "2026-10-02T17:49:11Z"
   }
 }
