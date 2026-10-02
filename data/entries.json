@@ -3301,5 +3301,16 @@
     "title": "Neocloud Backed by Chinese Tech Giants Files for IPO",
     "type": "Briefing",
     "updated": "2026-10-02T09:08:04Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18153": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft on Thursday launched speech-generating AI that the company says is both cheaper and more accurate than competing models from the likes of ElevenLabs, SpaceXAI and Google. Microsoft aims to produce voice models to power features such as transcribing conference calls in its Teams app or ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-debuts-voice-ai-compete-elevenlabs",
+    "published": "2026-10-02T11:15:48Z",
+    "title": "Microsoft Debuts Voice AI to Compete with ElevenLabs",
+    "type": "Briefing",
+    "updated": "2026-10-02T11:15:48Z"
   }
 }
