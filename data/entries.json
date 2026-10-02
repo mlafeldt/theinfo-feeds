@@ -3287,8 +3287,19 @@
     "content": "<p>U.S. authorities arrested a California man on Thursday for smuggling more than $300 million worth of servers containing restricted Nvidia AI chips to China. Greg Lui, the owner of Earthmade Computer Inc, a privately held company based in San Gabriel Valley, allegedly worked with conspirators ...</p>",
     "link": "https://www.theinformation.com/briefings/california-man-arrested-smuggling-nvidia-chips-china",
     "published": "2026-10-02T07:55:00Z",
-    "title": "California Man Arrested for Smuggling Nvidia Chips to China",
+    "title": "U.S. Arrests Man for Smuggling Nvidia Chips to China",
     "type": "Briefing",
-    "updated": "2026-10-02T08:05:02Z"
+    "updated": "2026-10-02T09:05:27Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18152": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>Infinigence AI, a Chinese provider of AI cloud infrastructure, has filed confidentially for an initial public offering in Hong Kong to raise several hundred million U.S. dollars, Bloomberg reported.</p> <p>The Shanghai-based company is currently valued at 14.3 billion yuan ($2.1 billion). It has raised ...</p>",
+    "link": "https://www.theinformation.com/briefings/neocloud-backed-chinese-tech-giants-files-ipo",
+    "published": "2026-10-02T09:00:04Z",
+    "title": "Neocloud Backed by Chinese Tech Giants Files for IPO",
+    "type": "Briefing",
+    "updated": "2026-10-02T09:08:04Z"
   }
 }
