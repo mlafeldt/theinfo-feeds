@@ -1703,6 +1703,18 @@
     "type": "Article",
     "updated": "2026-10-05T13:08:12Z"
   },
+  "tag:www.theinformation.com,2005:Article/17937": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>The idea that <b>Anthropic</b>, <b>OpenAI</b> and other AI companies could “embed” researchers from outside safety groups into their operations has been <a href=\"https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence\">all the rage</a> in recent weeks. But the devil is in the details.</p><p>AI safety researchers worry that embedded evaluators won’t have the access they need to provide meaningful oversight.</p><p>“I've become very cynical over the last three years” from “repeatedly seeing how people promise stuff and then don’t follow up on it,” said <b>Marius Hobbhahn</b>, CEO of <b>Apollo Research</b>, which has evaluated the safety of AI models from OpenAI, Anthropic and other companies.</p><p>Outside evaluators who report on the dangerous capabilities and unwanted behaviors of new AI models have become crucial in recent years, but their findings are only as good as their access. AI companies can withhold relevant information from the evaluators or redact their public findings. For example, an AI company could hypothetically tell an evaluator, “Well, we gave you all the access you asked for,” but meanwhile used a second cluster of AI chips the evaluator didn’t know about, said Hobbhahn.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/wrong-ai-safety-testing-fix",
+    "published": "2026-10-05T14:00:58Z",
+    "title": "What’s Wrong With AI Safety Testing, and How to Fix It",
+    "type": "Article",
+    "updated": "2026-10-05T14:01:39Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
