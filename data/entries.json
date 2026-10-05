@@ -1701,9 +1701,9 @@
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/meta-microsoft-work-wean-staff-anthropics-claude",
     "published": "2026-10-05T18:14:35Z",
-    "title": "Meta and Microsoft Push to Kick Their Claude Habits",
+    "title": "Microsoft Slashes Internal Claude Spending by a Third",
     "type": "Article",
-    "updated": "2026-10-05T20:17:19Z"
+    "updated": "2026-10-05T22:41:51Z"
   },
   "tag:www.theinformation.com,2005:Article/17934": {
     "authors": [
@@ -3572,5 +3572,16 @@
     "title": "Nvidia Is Rethinking Its Revenue-Sharing Deals with Cloud Firms",
     "type": "Briefing",
     "updated": "2026-10-05T21:56:05Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18163": {
+    "authors": [
+      "Jing Yang"
+    ],
+    "content": "<p>Singapore-based DayOne Data Centers on Monday filed for an initial public offering on the Nasdaq Stock Market, a signal of optimism about the IPO market. A string of companies have postponed plans to go public in recent weeks due to choppy market conditions.</p> <p>DayOne, which mainly operates data ...</p>",
+    "link": "https://www.theinformation.com/briefings/dayone-data-centers-files-nasdaq-ipo-amid-market-uncertainty",
+    "published": "2026-10-05T22:47:54Z",
+    "title": "DayOne Data Centers Files for Nasdaq IPO amid Market Uncertainty",
+    "type": "Briefing",
+    "updated": "2026-10-05T22:47:54Z"
   }
 }
