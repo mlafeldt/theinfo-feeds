@@ -1741,6 +1741,18 @@
     "type": "Article",
     "updated": "2026-10-05T14:01:39Z"
   },
+  "tag:www.theinformation.com,2005:Article/17939": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Last week, OpenAI <a href=\"https://www.theinformation.com/briefings/openai-will-ship-gpt-6-1-astra-due-safety-concerns\">scrapped</a> the model it had slated to release as GPT-6.1 Astra due to test results showing that it was deceptive and otherwise misaligned.</p>\n\n<p>“I think it’s about time,” said Stuart Russell, the computer science professor at the University of California, Berkeley, who co-authored the leading textbook on AI.</p>",
+    "label": "TITV",
+    "link": "https://www.theinformation.com/articles/aligning-ai-human-goals-might-impossible-says-ai-prof-stuart-russell",
+    "published": "2026-10-05T21:53:51Z",
+    "title": "Aligning AI With Human Goals Might Be Impossible, Says AI Prof. Stuart Russell",
+    "type": "Article",
+    "updated": "2026-10-05T21:54:16Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -3538,5 +3550,27 @@
     "title": "OpenAI Expands Visual Ads in ChatGPT and Moves to Help Advertisers Measure Their Impact",
     "type": "Briefing",
     "updated": "2026-10-05T20:56:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18161": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Reflection AI, a 2-year old Nvidia-backed startup, announced its first open-weight model, adding to a collection of U.S. competitors aiming to catch up to the performance of similarly free models from China.</p> <p>In its announcement Monday, Reflection said it is still evaluating and testing the ...</p>",
+    "link": "https://www.theinformation.com/briefings/reflection-ai-announces-first-open-source-model-beam",
+    "published": "2026-10-05T21:22:36Z",
+    "title": "Reflection AI Announces First Open Source Model, Beam",
+    "type": "Briefing",
+    "updated": "2026-10-05T21:25:45Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18162": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia is reconsidering the structure of an initiative it announced earlier this summer, the AI Compute Partnership, to provide credit support to AI cloud providers that rent out Nvidia chips, in exchange for a cut of those rental revenues, <a href=\"https://www.theinformation.com/articles/jensen-huangs-son-in-law-became-one-trusted-executives\">The Information reported Monday</a>. People involved in the ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-rethinking-revenue-sharing-deals-cloud-firms",
+    "published": "2026-10-05T21:56:05Z",
+    "title": "Nvidia Is Rethinking Its Revenue-Sharing Deals with Cloud Firms",
+    "type": "Briefing",
+    "updated": "2026-10-05T21:56:05Z"
   }
 }
