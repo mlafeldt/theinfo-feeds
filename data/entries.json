@@ -3527,5 +3527,16 @@
     "title": "OpenAI Sent Letter to New York City Council Recommending Safeguards Against AI Risk",
     "type": "Briefing",
     "updated": "2026-10-05T15:48:34Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18160": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>OpenAI said Monday that it will test a new visual ad format that uses images to show how products and services could fit into people’s lives. The ads will first appear while users generate images in ChatGPT, labeled and kept separate from the image being created. Testing begins later this month ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-expands-visual-ads-chatgpt-moves-help-advertisers-measure-impact",
+    "published": "2026-10-05T20:56:11Z",
+    "title": "OpenAI Expands Visual Ads in ChatGPT and Moves to Help Advertisers Measure Their Impact",
+    "type": "Briefing",
+    "updated": "2026-10-05T20:56:11Z"
   }
 }
