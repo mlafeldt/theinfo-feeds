@@ -3676,5 +3676,16 @@
     "title": "Exclusive: Star Goldman Sachs Banker Dunlevie to Co-Lead Tech Banking",
     "type": "Briefing",
     "updated": "2026-10-06T18:07:20Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18168": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Anthropic said it is expanding and restructuring its cybersecurity access programs to enable more cyberdefenders to use its most advanced Claude models to secure their systems against potential AI attacks.</p> <p>Under the changes, announced Tuesday, all members of Anthropic’s Cyber Verification ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-expands-cyberdefenders-access-top-models",
+    "published": "2026-10-06T19:06:20Z",
+    "title": "Anthropic Expands Cyberdefenders’ Access to Top Models",
+    "type": "Briefing",
+    "updated": "2026-10-06T19:06:20Z"
   }
 }
