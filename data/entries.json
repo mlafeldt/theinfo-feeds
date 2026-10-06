@@ -1778,6 +1778,18 @@
     "type": "Article",
     "updated": "2026-10-06T13:01:22Z"
   },
+  "tag:www.theinformation.com,2005:Article/17941": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>It won’t be any surprise to people with human intelligence that Monday’s <b>New York City Council</b> hearing on the risks of AI was as theatrical as a Broadway show. What was more surprising was what the AI researchers testified about how AI research is evolving, and what that means for their job.</p><p>For those who missed it, the city council heard testimony from three AI lab whistleblowers: <b>Jacob Coxon</b>, formerly of <b>Anthropic </b>and<b> OpenAI</b>; <b>Alex Turner</b>, formerly of <b>Google DeepMind</b>; and <b>Daniel Kokotajlo</b>, formerly of OpenAI. Afterwards, they heard from representatives of the AI labs. We’ll get to that lower down.</p><p>One of the most interesting parts of the whistleblowers’ testimony related to the AI research process. Coxon and Kokotajlo each said that researchers at the labs have lately been letting AI drive the process of writing code and research. Researchers check AI’s work less frequently, they said.</p><p>The labs might not agree with that exact characterization, although their representatives weren’t asked about it at the hearing. But the labs have been the first to say that AI has greatly accelerated the process of AI research. Anthropic even said in a report last month that, as of August, AI was leading more than a quarter of model research and development at the company.&nbsp;</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/ai-whistleblowers-say-researchers-checking-ai-less-frequently",
+    "published": "2026-10-06T14:00:41Z",
+    "title": "AI Whistleblowers Say Researchers Are Checking AI Less Frequently",
+    "type": "Article",
+    "updated": "2026-10-06T14:01:22Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -3630,5 +3642,16 @@
     "title": "Ellison-Controlled Skydance Completes Warner Bros. Discovery Acquisition",
     "type": "Briefing",
     "updated": "2026-10-06T12:55:29Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18166": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Uber is to pay $2.3 billion in cash to buy ezCater, a firm that handles catering and meals in workplaces, the ridehailing and food delivery giant said on Tuesday.</p> <p>EzCater’s service offers businesses a way to order from restaurants across the country, including for meetings and events. The ...</p>",
+    "link": "https://www.theinformation.com/briefings/uber-buy-catering-firm-2-3-billion",
+    "published": "2026-10-06T13:23:50Z",
+    "title": "Uber to Buy Catering Firm for $2.3 Billion",
+    "type": "Briefing",
+    "updated": "2026-10-06T13:23:50Z"
   }
 }
