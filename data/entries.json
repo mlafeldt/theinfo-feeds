@@ -3831,11 +3831,11 @@
     "authors": [
       "Aaron Holmes"
     ],
-    "content": "<p>Microsoft on Wednesday unveiled updates to Windows software and hardware that will allow Windows PCs to run more AI models locally, which the company said would bring down the cost of using Copilot and other AI agents for customers.</p> <p>The new announcements are part of Microsoft’s effort to make ...</p>",
+    "content": "<p>Microsoft on Wednesday unveiled its latest effort to run AI in PCs powered by its Windows software, rather than running the AI in the cloud, which the company said would bring down costs for customers.</p> <p>The announcement is Microsoft’s response to <a href=\"http://theinformation.com/articles/apple-stumbled-ai-hardware-success-mac\">Apple’s Mac Mini, which has become a hit with AI ...</a></p>",
     "link": "https://www.theinformation.com/briefings/microsoft-debuts-new-windows-pcs-features-powered-on-device-ai",
     "published": "2026-10-07T18:21:24Z",
-    "title": "Microsoft Debuts New Windows PCs, Features Powered by On-Device AI",
+    "title": "Microsoft Debuts Nvidia-Powered PCs with On-Device AI, Following Apple’s Breakout Hit",
     "type": "Briefing",
-    "updated": "2026-10-07T18:39:07Z"
+    "updated": "2026-10-07T19:42:15Z"
   }
 }
