@@ -3755,5 +3755,16 @@
     "title": "SpaceX Seeks to Raise $40 Billion From Apollo to Buy Nvidia Chips",
     "type": "Briefing",
     "updated": "2026-10-07T01:05:14Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18173": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Anjney Midha, a former general partner at Andreessen Horowitz, and former executives at Google, Apple and Nvidia have launched a company that aims to make it easier and more affordable for smaller companies or startups to access such compute. The move comes as <a href=\"https://www.theinformation.com/articles/microsoft-cloud-providers-tighten-grip-gpus-pressuring-ai-customers?rc=c48ukx\">Microsoft and other cloud providers ...</a></p>",
+    "link": "https://www.theinformation.com/briefings/former-google-nvidia-execs-launch-company-ease-gpu-crunch",
+    "published": "2026-10-07T12:00:40Z",
+    "title": "Former Google, Nvidia Execs Launch Company to Ease GPU Crunch",
+    "type": "Briefing",
+    "updated": "2026-10-07T12:00:41Z"
   }
 }
