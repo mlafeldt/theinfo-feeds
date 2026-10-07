@@ -1863,6 +1863,18 @@
     "type": "Article",
     "updated": "2026-10-07T14:02:13Z"
   },
+  "tag:www.theinformation.com,2005:Article/17950": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>Sriram Krishnan, a key AI adviser to President Donald Trump who left the White House in June, is raising an AI-focused venture fund, according to three people familiar with the matter. The fund will target raising around $500 million to invest in growth- and later-stage companies, the people said.</p>\n\n<p>Before joining the Trump administration, Krishnan worked for tech companies including Microsoft and Twitter. He later became a general partner at Andreessen Horowitz, where he helped launch the venture firm’s London office. At the White House, Krishnan worked under AI and crypto czar David Sacks on the administration’s AI policy, helping to spearhead its <a href=\"https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf\">AI action plan</a>, released in July 2025.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/ex-trump-ai-adviser-sriram-krishnan-targets-raising-500-million-venture-fund",
+    "published": "2026-10-07T19:08:44Z",
+    "title": "Ex-Trump AI Adviser Sriram Krishnan Targets Raising a $500 Million Venture Fund",
+    "type": "Article",
+    "updated": "2026-10-07T19:09:03Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -3814,5 +3826,16 @@
     "title": "Musk Says SpaceX Will Sometimes Use Rival Models to Power Grok Bot",
     "type": "Briefing",
     "updated": "2026-10-07T14:22:25Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18175": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft on Wednesday unveiled updates to Windows software and hardware that will allow Windows PCs to run more AI models locally, which the company said would bring down the cost of using Copilot and other AI agents for customers.</p> <p>The new announcements are part of Microsoft’s effort to make ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-debuts-new-windows-pcs-features-powered-on-device-ai",
+    "published": "2026-10-07T18:21:24Z",
+    "title": "Microsoft Debuts New Windows PCs, Features Powered by On-Device AI",
+    "type": "Briefing",
+    "updated": "2026-10-07T18:39:07Z"
   }
 }
