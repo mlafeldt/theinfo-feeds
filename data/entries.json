@@ -3733,5 +3733,27 @@
     "title": "HubSpot Lays Off 7% of Workforce, Says It’s Not Because of AI",
     "type": "Briefing",
     "updated": "2026-10-06T22:45:28Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18171": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Less than a month after OpenAI <a href=\"https://www.theinformation.com/newsletters/ai-agenda/openai-math-result-stokes-data-sharing-concerns\">set off a mathematics firestorm</a> by announcing it had solved one of the field’s most challenging problems, the AI company dropped more than 700 new research papers detailing results on a range of math subjects.</p> <p>The new results were produced by an unreleased AI model ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-publishes-700-new-math-papers-ai-made-solutions",
+    "published": "2026-10-07T00:35:25Z",
+    "title": "OpenAI Publishes Over 700 New Math Papers with AI-Made Solutions",
+    "type": "Briefing",
+    "updated": "2026-10-07T00:35:25Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18172": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>SpaceX, the AI and rocket company led by Elon Musk, is seeking to raise $40 billion to buy Nvidia chips in a financing round led by Apollo Global Management, the Financial Times reported on Tuesday.</p> <p>The deal is expected to close in 2027 and consist of around $10 billion in bank loans and $30 ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-seeks-raise-40-billion-apollo-buy-nvidia-chips",
+    "published": "2026-10-07T01:05:14Z",
+    "title": "SpaceX Seeks to Raise $40 Billion From Apollo to Buy Nvidia Chips",
+    "type": "Briefing",
+    "updated": "2026-10-07T01:05:14Z"
   }
 }
