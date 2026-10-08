@@ -1863,6 +1863,18 @@
     "type": "Article",
     "updated": "2026-10-07T14:02:13Z"
   },
+  "tag:www.theinformation.com,2005:Article/17949": {
+    "authors": [
+      "Catherine Perloff"
+    ],
+    "content": "<p>Earlier this year, officials at Mississippi electric utility Entergy had some worrisome news for Amazon: It was going to have to start kicking the company’s Mississippi-based data centers off the grid during peak times to ensure it could support other customers, according to two people with knowledge of the situation.</p>\n\n<p>Amazon’s cloud unit, Amazon Web Services, operates one data center near Jackson, Miss., which it is expanding, and it is building two more data center facilities in the same general area, making the state an important region in its data center buildout. Utilities rarely kick off major customers, but Entergy’s message, which hasn’t been previously reported, reflects how soaring demand for power from AI cloud operators is forcing power companies to take unprecedented measures to balance the needs of their various customers.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/amazon-rewired-data-centers-mississippi-power-warning",
+    "published": "2026-10-08T14:33:24Z",
+    "title": "How Amazon Rewired Its Data Centers After Mississippi Power Warning",
+    "type": "Article",
+    "updated": "2026-10-08T14:33:49Z"
+  },
   "tag:www.theinformation.com,2005:Article/17950": {
     "authors": [
       "Leo Schwartz"
@@ -1898,6 +1910,18 @@
     "title": "Shroud of Secrecy Cloaks Star Investor Behind Cognition, Ramp",
     "type": "Article",
     "updated": "2026-10-08T13:04:16Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17955": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Mathematicians are likely feeling the kind of anxiety that software engineers have experienced for months in the wake of <b>OpenAI</b> release on Tuesday of a whopping 722 research papers with AI-created solutions to a range of problems across math subjects.&nbsp;</p><p>AI’s success solving ultra-difficult math problems—even though it still makes mistakes doing simple math—is due to several factors. Solutions to math problems can often be verified, much like software code, and there’s a lot of overlap between mathematics and the work that AI researchers do (and which these researchers are trying to automate in pursuit of <a href=\"https://www.theinformation.com/newsletters/ai-agenda/google-deepmind-exec-says-unprecedented-capex-actually-bet-rsi?rc=c48ukx\">RSI</a>).</p><p>And with enough computing resources, the AI can essentially do the heavy-duty number crunching that would take humans years to do, and it doesn’t give up. One mathematician who is part of a group advising OpenAI on how to publicly disclose its math breakthroughs told me that they refer to these abilities as brute force and stamina.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/openai-beat-math",
+    "published": "2026-10-08T15:00:50Z",
+    "title": "How OpenAI Beat Math",
+    "type": "Article",
+    "updated": "2026-10-08T15:01:34Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
