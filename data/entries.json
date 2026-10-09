@@ -4056,5 +4056,16 @@
     "title": "SpaceX Announces Plans That Could Take Aim at Major Mobile Carriers",
     "type": "Briefing",
     "updated": "2026-10-08T23:22:44Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18186": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Anthropic said Thursday it is launching new programs to support cybersecurity for critical infrastructure and open-source software.</p> <p>In a blog post, Anthropic said it would offer threat research, on-site engineers, and access to its frontier Claude models to infrastructure operators as part of ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-announces-broader-cyber-defense-program",
+    "published": "2026-10-09T01:02:13Z",
+    "title": "Anthropic Announces Broader Cyber Defense Program",
+    "type": "Briefing",
+    "updated": "2026-10-09T01:02:13Z"
   }
 }
