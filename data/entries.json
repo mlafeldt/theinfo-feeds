@@ -1947,6 +1947,43 @@
     "type": "Article",
     "updated": "2026-10-08T18:14:40Z"
   },
+  "tag:www.theinformation.com,2005:Article/17957": {
+    "authors": [
+      "Phoebe Liu",
+      "Valida Pau"
+    ],
+    "content": "<p>Nvidia plans to invest in d-Matrix, a seven-year-old developer of server chips for AI that aims to compete with Nvidia, according to three people with knowledge of the deal.</p>\n\n<p>The planned investment is part of Nvidia’s effort to make its technology compatible with rival chip designers and bring them into its dominant hardware ecosystem, even as it has <a href=\"https://www.theinformation.com/newsletters/ai-infrastructure/nvidias-share-ai-inference-chip-market-appears-rising?rc=c48ukx\">made recent market-share gains against nearly all of them</a>.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/nvidia-invest-chip-rival-d-matrix-challengers-choose-partnership",
+    "published": "2026-10-08T23:24:14Z",
+    "title": "Nvidia to Invest in Chip Rival d-Matrix as Its Challengers Choose Partnership",
+    "type": "Article",
+    "updated": "2026-10-08T23:54:55Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17958": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Here’s a news flash: The quasi-revenue numbers for OpenAI that got wide circulation last week were off— <i>way off</i>.&nbsp; Instead of $70 billion in annualized revenue, as we and others reported, OpenAI is generating closer to $50 billion in annualized revenue (sometimes shortened to ARR). A <a href=\"https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a?syn-25a6b1a6=1\">Financial Times</a> report of the lower number on Thursday proved such a shock to investors that stocks of chip firms and neoclouds, including Nvidia, CoreWeave, Nebius and others, fell on the news, <a href=\"https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html\">CNBC reported</a>.</p><p>The cause of this debacle is complicated. But it’s a reminder that we all rely too much on annualized revenue as a way to track a company’s performance. It’s become a standard measure for AI companies because their revenue has been growing by leaps and bounds, making the more common quarterly reports seem a little quaint in their backward-looking nature. But taking one month’s revenue and multiplying it by 12, as is the standard way these annualized-revenue numbers are calculated, is a poor substitute for a fuller picture of a company’s performance. (This isn’t a new issue—<a href=\"https://www.theinformation.com/articles/why-tech-run-rates-should-raise-eyebrows?shared=7ecc86360633c28a&amp;rc=9byxri\">see this 2020 story </a>on the subject.)</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/openai-arr-snafu-highlights-flawed-metric",
+    "published": "2026-10-09T00:00:47Z",
+    "title": "OpenAI ARR Snafu Highlights Flawed Metric",
+    "type": "Article",
+    "updated": "2026-10-09T00:07:19Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17959": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Semiconductor M&amp;A has been humming. One of the next deals could be for Eliyan, whose technology allows separate chips inside an AI system to talk to one another more quickly and efficiently.&nbsp;</p><p>The five-year-old startup, valued at $1 billion in July, has notified some of its investors in the last few days that it received a takeover bid, according to people familiar with the matter. It has been working with an investment bank since the summer and is likely to aim for a valuation of $3 billion, according to some of the people.&nbsp;</p><p>Softbank-owned Arm, an existing investor, held early talks about potentially buying Eliyan, but it didn’t make a bid and would be unlikely to do so at that valuation, said a person familiar with the matter.</p>",
+    "label": "Dealmaker",
+    "link": "https://www.theinformation.com/articles/networking-startup-eliyan-draws-takeover-interest-held-early-talks-arm",
+    "published": "2026-10-09T00:15:46Z",
+    "title": "Networking Startup Eliyan Draws Takeover Interest, Held Early Talks With Arm",
+    "type": "Article",
+    "updated": "2026-10-09T00:16:41Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4008,5 +4045,16 @@
     "title": "OpenAI’s Annualized Revenue Neared $50 Billion, Lower Than Past Reports",
     "type": "Briefing",
     "updated": "2026-10-08T22:59:38Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18185": {
+    "authors": [
+      "Grace Kay"
+    ],
+    "content": "<p>SpaceX plans to compete with major US wireless carriers like Verizon and AT&amp;T. The company <a href=\"https://www.spacex.com/updates#starlink-mobile-spectrum\">announced</a> on Thursday that it plans to acquire a nationwide portfolio of low-band wireless spectrum and that it had received approval from the Federal Communications Commission for a next-generation ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-announces-plans-take-aim-major-mobile-carriers",
+    "published": "2026-10-08T23:22:44Z",
+    "title": "SpaceX Announces Plans That Could Take Aim at Major Mobile Carriers",
+    "type": "Briefing",
+    "updated": "2026-10-08T23:22:44Z"
   }
 }
