@@ -2021,6 +2021,18 @@
     "type": "Article",
     "updated": "2026-10-10T15:03:47Z"
   },
+  "tag:www.theinformation.com,2005:Article/17965": {
+    "authors": [
+      "Ann Davis Vaughan"
+    ],
+    "content": "<p>Why is Anthropic driving its partners to speed up the <a href=\"https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers?rc=c48ukx\">$530 billion of data center leasing deals it has signed</a>?&nbsp;</p><p>It’s simple: Every server Anthropic plugs in sooner to run its products could be wildly profitable, according to fresh analysis of upcoming AI data center sites, including one Anthropic will rent outside Baton Rouge, La.</p>",
+    "label": "AI Infrastructure",
+    "link": "https://www.theinformation.com/articles/attractive-economics-behind-anthropic-data-center-sprint",
+    "published": "2026-10-11T15:01:22Z",
+    "title": "The Attractive Economics Behind Anthropic Data Center Sprint",
+    "type": "Article",
+    "updated": "2026-10-11T15:01:56Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
