@@ -31,6 +31,9 @@ SOURCE = f"https://{SOURCE_HOST}"
 UPSTREAM = f"{SOURCE}/feed"
 PAGES = "https://mlafeldt.github.io/theinfo-feeds"
 
+# Entry hosts accepted from upstream, all rewritten to HOST.
+ENTRY_HOSTS = {HOST, SOURCE_HOST}
+
 ROOT = Path(__file__).resolve().parent.parent
 ARCHIVE_PATH = ROOT / "data" / "entries.json"
 OUT_DIR = ROOT / "public"
@@ -100,7 +103,7 @@ class Change(NamedTuple):
 
 
 # Upstream ids look like tag:www.theinformation.com,2005:Briefing/18111.
-ID_RE = re.compile(rf"^tag:{re.escape(HOST)},2005:(?P<type>[A-Za-z]+)/\d+$")
+ID_RE = re.compile(r"^tag:(?P<host>[^,]+),2005:(?P<type>[A-Za-z]+)/\d+$")
 ATOM = "{http://www.w3.org/2005/Atom}"
 
 
@@ -182,11 +185,12 @@ def parse(payload: bytes) -> Entries:
     for e in entries_xml:
         id_ = required(e, "id")
         m = ID_RE.match(id_)
-        # On 2026-09-10 upstream rendered its Heroku origin hostname into entry
-        # ids and links, sending readers to a host where no subscriber session
-        # can exist. Checking every id and link against the canonical host
-        # catches that and anything like it.
-        if not m:
+        # Upstream sometimes serves entries rendered for its Heroku origin, as
+        # first seen on 2026-09-10, whose links send readers to a host where
+        # no subscriber session can exist. Nothing else in them differs, so
+        # they are taken as rendered for the canonical host; any other host is
+        # refused.
+        if not m or m["host"] not in ENTRY_HOSTS:
             raise Rejected(f"unexpected entry id: {id_!r}")
         link = next(
             (
@@ -199,11 +203,11 @@ def parse(payload: bytes) -> Entries:
         if not link:
             raise Rejected(f"entry {id_!r} has no link")
         parts = urlsplit(link)
-        if parts.scheme != "https" or parts.hostname != HOST:
+        if parts.scheme != "https" or parts.netloc not in ENTRY_HOSTS:
             raise Rejected(f"unexpected entry link: {link!r}")
-        entries[id_] = {
+        entries[id_.replace(m["host"], HOST, 1)] = {
             "type": m["type"],
-            "link": link,
+            "link": rehost(link, HOST),
             "title": required(e, "title"),
             "content": required(e, "content"),
             # Upstream's author order changes from one render to the next, and
@@ -244,10 +248,9 @@ def page_label(page: str, link: str) -> str | None:
     raise Rejected(f"no NewsArticle JSON-LD on {link}")
 
 
-def source_url(link: str) -> str:
-    """The origin URL for a canonical article link."""
-    parts = urlsplit(link)
-    return urlunsplit(("https", SOURCE_HOST, parts.path, parts.query, ""))
+def rehost(link: str, host: str) -> str:
+    """The same link on another of upstream's hosts."""
+    return urlunsplit(urlsplit(link)._replace(netloc=host))
 
 
 def label_articles(archive: Entries) -> None:
@@ -263,7 +266,8 @@ def label_articles(archive: Entries) -> None:
         else:
             if pace:
                 time.sleep(pace)
-            e["label"] = page_label(fetch(source_url(e["link"])).decode(), e["link"])
+            page = fetch(rehost(e["link"], SOURCE_HOST))
+            e["label"] = page_label(page.decode(), e["link"])
             pace = PAGE_PACE
         print(f"label {e['label']!r}: {e['link']}", file=sys.stderr)
 

@@ -208,16 +208,28 @@ def test_parse_rejects_entry_without_link():
 
 
 @pytest.mark.parametrize(
-    "host", ["info-reader-production.herokuapp.com", "wwwXtheinformation.com"]
+    "host", ["wwwXtheinformation.com", "info-reader-production.herokuapp.com.evil"]
 )
 def test_parse_rejects_foreign_host_in_id(host):
     with pytest.raises(feeds.Rejected, match="entry id"):
         feeds.parse(atom(entry(1), entry(2, host=host)))
 
 
-def test_parse_rejects_foreign_host_in_link():
+@pytest.mark.parametrize(
+    "host",
+    ["wrong.example", "www.theinformation.com:8443", "user@www.theinformation.com"],
+)
+def test_parse_rejects_foreign_host_in_link(host):
     with pytest.raises(feeds.Rejected, match="entry link"):
-        feeds.parse(atom(entry(1, link_host="info-reader-production.herokuapp.com")))
+        feeds.parse(atom(entry(1, link_host=host)))
+
+
+def test_parse_takes_heroku_host_as_canonical():
+    # What upstream serves from its cache after rendering for the Heroku origin.
+    heroku = feeds.SOURCE_HOST
+    assert feeds.parse(
+        atom(entry(1), entry(2, "Article", host=heroku, link_host=heroku))
+    ) == feeds.parse(atom(entry(1), entry(2, "Article")))
 
 
 @pytest.mark.parametrize("scheme", ["http", "ftp", ""])
