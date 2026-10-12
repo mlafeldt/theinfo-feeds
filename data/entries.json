@@ -2084,6 +2084,18 @@
     "type": "Article",
     "updated": "2026-10-12T17:43:29Z"
   },
+  "tag:www.theinformation.com,2005:Article/17973": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>The small agency within the Commerce Department tasked with testing new AI models appears to be getting a refresh.</p>\n\n<p>In September, the Trump administration began the process of restructuring the Center for Advancing Innovation and Standards for Super Intelligence so that three of its senior officials report directly to the White House, according to a White House official.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/trump-administration-plans-move-ai-testing-agency-officials-white-house",
+    "published": "2026-10-12T18:36:42Z",
+    "title": "Trump Administration Plans to Move AI Testing Agency Officials to White House",
+    "type": "Article",
+    "updated": "2026-10-12T18:37:08Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4266,5 +4278,16 @@
     "title": "Meta Unveils New AI Models to Challenge OpenAI and Anthropic",
     "type": "Briefing",
     "updated": "2026-10-12T17:31:53Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18196": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Dating app company Bumble is in advanced talks to be taken private by a holding company founded recently by former Sequoia’s partner Ravi Gupta, the Wall Street Journal reported Monday.</p> <p>A deal would value Bumble at roughly $1 billion, a steep premium to its last market cap of around $300 million ...</p>",
+    "link": "https://www.theinformation.com/briefings/bumble-talks-go-private-sequoia-partner-guptas-new-venture",
+    "published": "2026-10-12T19:03:21Z",
+    "title": "Bumble in Talks to Go Private With Sequoia Partner Gupta’s New Venture",
+    "type": "Briefing",
+    "updated": "2026-10-12T19:03:21Z"
   }
 }
