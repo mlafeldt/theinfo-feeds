@@ -31,6 +31,12 @@ SOURCE = f"https://{SOURCE_HOST}"
 UPSTREAM = f"{SOURCE}/feed"
 PAGES = "https://mlafeldt.github.io/theinfo-feeds"
 
+# Upstream caches rendered entries across request hosts, so a feed rendered
+# first for its Heroku origin serves that hostname in ids and links to every
+# reader until the cache turns over. Asking for the canonical host, as
+# Cloudflare does, keeps our fetches from causing that.
+UPSTREAM_HEADERS = {"Host": HOST}
+
 # Entry hosts accepted from upstream, all rewritten to HOST.
 ENTRY_HOSTS = {HOST, SOURCE_HOST}
 
@@ -120,13 +126,14 @@ def transient(e: httpx.HTTPError) -> bool:
     )
 
 
-def fetch(url: str) -> bytes:
+def fetch(url: str, headers: dict[str, str] | None = None) -> bytes:
     attempt = 0
     while True:
         attempt += 1
         try:
             resp = httpx.get(
                 url,
+                headers=headers,
                 follow_redirects=True,
                 timeout=60,
             )
@@ -266,6 +273,8 @@ def label_articles(archive: Entries) -> None:
         else:
             if pace:
                 time.sleep(pace)
+            # Fetched without UPSTREAM_HEADERS: asked for the canonical host,
+            # pages redirect to it, which is behind Cloudflare.
             page = fetch(rehost(e["link"], SOURCE_HOST))
             e["label"] = page_label(page.decode(), e["link"])
             pace = PAGE_PACE
@@ -423,7 +432,7 @@ def run(payload: bytes, archive_path: Path, out_dir: Path) -> str:
 
 def main() -> None:
     try:
-        result = run(fetch(UPSTREAM), ARCHIVE_PATH, OUT_DIR)
+        result = run(fetch(UPSTREAM, UPSTREAM_HEADERS), ARCHIVE_PATH, OUT_DIR)
     except Rejected as e:
         sys.exit(f"refusing to update: {e}")
     print(result)

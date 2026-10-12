@@ -34,10 +34,14 @@ class Pages:
 
     def __init__(self):
         self.served: dict[str, bytes] = {}
-        self.fetched: list[str] = []
+        self.requests: list[tuple[str, dict[str, str] | None]] = []
+
+    @property
+    def fetched(self) -> list[str]:
+        return [url for url, _ in self.requests]
 
     def get(self, url: str, **kwargs) -> httpx.Response:
-        self.fetched.append(url)
+        self.requests.append((url, kwargs.get("headers")))
         return httpx.Response(
             200,
             content=self.served.get(url, ARTICLE_PAGE),
@@ -635,6 +639,21 @@ def test_main_reports_rejected_payload(site, pages, monkeypatch):
         feeds.main()
     assert pages.fetched == [feeds.UPSTREAM]
     assert site.snapshot() == {}
+
+
+def test_main_sends_canonical_host_for_feed_only(site, pages, monkeypatch):
+    source_link = "https://info-reader-production.herokuapp.com/articles/story-1"
+    pages.served[feeds.UPSTREAM] = atom(entry(1, "Article"))
+    monkeypatch.setattr(feeds, "ARCHIVE_PATH", site.archive_path)
+    monkeypatch.setattr(feeds, "OUT_DIR", site.out_dir)
+
+    feeds.main()
+    # Pages redirect to the canonical host when asked for it, which is behind
+    # Cloudflare.
+    assert pages.requests == [
+        (feeds.UPSTREAM, {"Host": "www.theinformation.com"}),
+        (source_link, None),
+    ]
 
 
 def change(
