@@ -2070,6 +2070,20 @@
     "type": "Article",
     "updated": "2026-10-12T14:01:21Z"
   },
+  "tag:www.theinformation.com,2005:Article/17970": {
+    "authors": [
+      "Dakin Campbell",
+      "Julia Hornstein",
+      "Phoebe Liu"
+    ],
+    "content": "<p>As startups scramble to get access to AI servers, more venture capital firms are finding ways to secure compute on their behalf.</p>\n\n<p>Andreessen Horowitz, which two years ago <a href=\"https://www.theinformation.com/articles/andreessen-horowitz-is-building-a-stash-of-more-than-20-000-gpus-to-win-ai-deals\">set up a cluster of 20,000 graphics processing units</a> for its startups, is in talks to expand its offering, potentially via two data center companies it has backed, according to people familiar with its plans. Meanwhile, General Catalyst is building a data center to supply compute for its startups, said two other people. And several other VC funds have used brokers to find sought-after chips for their companies.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/andreessen-horowitz-general-catalyst-race-secure-chips-startups-need",
+    "published": "2026-10-12T17:42:44Z",
+    "title": "Andreessen Horowitz, General Catalyst Race to Secure the Chips Their Startups Need",
+    "type": "Article",
+    "updated": "2026-10-12T17:43:29Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4241,5 +4255,16 @@
     "title": "Microsoft Debuts New Homegrown AI Chip, Plans to Deploy Multiple Gigawatts Next Year",
     "type": "Briefing",
     "updated": "2026-10-12T13:47:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18195": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms unveiled two new AI models, Muse Wonder and Muse Wonder Full, on Monday as it seeks to strengthen its position in the competitive AI race.</p> <p>CEO Mark Zuckerberg announced the models on Threads, describing them as significantly larger and more advanced than the company’s most recent ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-unveils-new-ai-models-challenge-openai-anthropic",
+    "published": "2026-10-12T17:31:53Z",
+    "title": "Meta Unveils New AI Models to Challenge OpenAI and Anthropic",
+    "type": "Briefing",
+    "updated": "2026-10-12T17:31:53Z"
   }
 }
