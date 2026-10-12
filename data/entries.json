@@ -2045,6 +2045,18 @@
     "type": "Article",
     "updated": "2026-10-11T22:07:49Z"
   },
+  "tag:www.theinformation.com,2005:Article/17967": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>In the summer of 2025, Microsoft was fielding customer complaints that its AI assistant, Copilot, was buggy and not good enough at automating work in Excel or PowerPoint. In response, Charles Lamanna, then a Microsoft president and rising star within the giant firm, went to CEO Satya Nadella with a bold proposal: <a href=\"https://www.theinformation.com/org-charts/microsoft\">Microsoft</a> needed to consider paying for AI models from Anthropic to make Copilot work better.</p>\n\n<p>“At the time, that was heresy,” Lamanna said in an interview.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/microsofts-new-office-chief-fixed-copilot-won-nadella",
+    "published": "2026-10-12T13:01:04Z",
+    "title": "How Microsoft’s New Office Chief Fixed Copilot and Won Over Nadella",
+    "type": "Article",
+    "updated": "2026-10-12T13:08:09Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
