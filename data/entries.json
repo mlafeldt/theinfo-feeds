@@ -2108,6 +2108,18 @@
     "type": "Article",
     "updated": "2026-10-12T17:43:29Z"
   },
+  "tag:www.theinformation.com,2005:Article/17972": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>Companies have spent the past few years figuring out how to put AI to work. In 2026, some are confronting a bigger question: What should a company look like when AI can understand context, coordinate work and act across systems?</p>\n\n<p><em>The Information</em>’s Co-Executive Editor Amir Efrati sat down with leaders from three companies at the forefront of this shift to discuss how agentic AI is changing how companies work and operate.</p> <ul>\n<li>Owen Jennings, Business Lead &amp; Executive Officer, Block</li> <li>Stephanie Cohen, Chief Strategy Officer, Cloudflare</li> <li>Surabhi Gupta, CTO, Klaviyo</li> </ul> <p><strong>Redesigning the operating model</strong></p>\n\n<p>Block and Cloudflare offered two ways to rethink the operating model. For Cloudflare, Stephanie Cohen said the company had to rethink the work itself, not simply add AI tools onto existing processes.</p>\n\n<p>“If we didn’t redesign how work was done, we weren’t going to actually change what went on at Cloudflare,” she said. “The only way for us to redesign the factory floor was to get rid of whole functions.”</p>\n\n<p>At Block, the answer was to rebuild its functional model so engineering, product, design and sales teams work across Square, Cash App and Afterpay on shared capabilities. Owen Jennings said the change came about when AI agents became capable of writing production code in complex systems, prompting the company to ask how work should move when agents can share company context with humans.</p>\n\n<p>“We said, based on where the tools are now and based on where we think it’s going, what functions do we need at the company? How do we want to organize?” recalled Jennings.</p>\n\n<p>The shift is showing up in customer experiences, with Square and Cash App surfacing tools, insights or actions at the right moment, rather than relying on static, one-size-fits-all surfaces. Block shipped about three times as many Square features in the first half of 2026 as a year earlier, he said.</p>\n\n<p>“There’s a lot of conversation around automating things for the sake of it,” said Jennings. “For us, it’s about building useful stuff for customers.”</p>\n\n<p><strong>Humans still matter</strong></p>\n\n<p>Companies leaning hardest into agents aren’t necessarily trying to replace humans. Cloudflare hired 1,111 interns this year, including AI-native talent who Cohen said worked on “everything,” including old-fashioned automation no one had made time to build.</p>\n\n<p>“By teaching them the company and allowing them to have access to our system, they’ve shown us a million ways that what we were doing didn’t make sense,” she said.</p>\n\n<p>Block has also built a workspace for working alongside agents. Buzz, an open source tool the company has released for people and AI agents, gives each agent its own identity, permissions and context.</p>\n\n<p>“The idea is not to remove people from the loop, but to make agent work visible and steerable so humans can focus on judgment, taste and customer understanding,” Jennings said.</p>\n\n<p>Klaviyo wants engineers closer to customer outcomes rather than assigned tickets.</p>\n\n<p>“One of the things we’ve found very effective is having the engineers sit side-by-side with the partner functions, and have them become domain experts,” said Klaviyo’s Surabhi Gupta.</p>\n\n<p>Cloudflare runs hands-on workshops that are deliberately low-pressure, and names an AI “champion” on each team, typically someone already experimenting.</p>\n\n<p>“It’s easier to ask a peer than to ask someone else who you feel like is not gonna understand why you don’t know how to do everything,” Cohen said.</p>\n\n<p>Companies also need infrastructure connecting agents to systems, data and context. Cohen described Cloudflare’s approach as a “harness”: a layer connecting AI models with security, systems of record, company context and employee identities, while letting the company switch models as needed.</p>\n\n<p>“Part of the problem is people started with the hammer and were like, ‘here’s this hammer, build this house.’ The reality is you have to design the house,” said Cohen.</p>\n\n<p><strong>The new metrics</strong></p>\n\n<p>Agentic AI is also creating new metrics to measure success. At Block, development velocity—the pace that new features are shipped—has become a key metric. Gupta says Klaviyo measures this too, as well as cost and hours saved as a result of agents.</p>\n\n<p>One metric no one on the panel could predict: headcount, though Cohen felt optimistic about growth.</p>\n\n<p>“My guess is we’ll have more employees [in five years],” she said. “The human world is human-shaped, and humans want to interact with more humans.”</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/rebuilding-companies-agentic-era",
+    "published": "2026-10-13T20:12:42Z",
+    "title": "Rebuilding Companies for the Agentic Era",
+    "type": "Article",
+    "updated": "2026-10-13T20:12:42Z"
+  },
   "tag:www.theinformation.com,2005:Article/17973": {
     "authors": [
       "Leo Schwartz"
@@ -4409,5 +4421,38 @@
     "title": "Apple Launches Home Hub Product",
     "type": "Briefing",
     "updated": "2026-10-13T16:42:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18200": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>JPMorgan CFO Jeremy Barnum said on Tuesday that the bank is carefully monitoring its AI exposure as the capital expenditure demands of the AI buildout grow. He noted that lenders generally need to keep tabs on direct and indirect exposure to AI infrastructure spending, as well as other factors ...</p>",
+    "link": "https://www.theinformation.com/briefings/jpmorgan-closely-tracking-ai-exposure-cfo-says",
+    "published": "2026-10-13T20:38:35Z",
+    "title": "JPMorgan Closely Tracking Its AI Exposure, CFO Says",
+    "type": "Briefing",
+    "updated": "2026-10-13T20:38:35Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18201": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>JPMorgan said it’s blocking external AI agents like Meta’s Muse and Instinct from accessing client accounts.</p> <p>“We’re not going to allow just any outside agent to come in inside the company because that’s just too risky for clients and for JPMorgan,” said Jamie Dimon, CEO of the bank, on its ...</p>",
+    "link": "https://www.theinformation.com/briefings/jpmorgan-blocks-external-ai-agents-accessing-client-accounts",
+    "published": "2026-10-13T20:53:57Z",
+    "title": "JPMorgan Blocks External AI Agents From Accessing Client Accounts",
+    "type": "Briefing",
+    "updated": "2026-10-13T20:53:58Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18202": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Character.ai, a five-year-old startup that lets users create and interact with AI-powered personas, on Monday said it <a href=\"https://blog.character.ai/an-update-on-character-ai/\">filed for Chapter 11 bankruptcy</a> after encountering “significant legal, regulatory, and operational headwinds.” The startup said Disney, which will serve as the initial bidder in ...</p>",
+    "link": "https://www.theinformation.com/briefings/character-ai-files-bankruptcy-citing-costs-litigation",
+    "published": "2026-10-13T21:04:24Z",
+    "title": "Character.ai Files For Bankruptcy, Citing Costs and Litigation",
+    "type": "Briefing",
+    "updated": "2026-10-13T21:04:24Z"
   }
 }
