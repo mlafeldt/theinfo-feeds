@@ -4325,5 +4325,16 @@
     "title": "Exclusive: Microsoft Reorganizes Azure Cloud Unit Amid AI Overhaul",
     "type": "Briefing",
     "updated": "2026-10-13T03:42:27Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18198": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>Anthropic is in the final stages of talks with NTT Data Group to build its first data center in Japan, Nikkei reported. The facility is expected to have a total power intake capacity of up to 500 megawatts, which would make it one of Japan’s largest data centers.</p> <p>Construction costs for the ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-build-first-data-center-japan",
+    "published": "2026-10-13T09:48:16Z",
+    "title": "Anthropic to Build First Data Center in Japan",
+    "type": "Briefing",
+    "updated": "2026-10-13T09:54:18Z"
   }
 }
