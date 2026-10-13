@@ -1303,6 +1303,18 @@
     "type": "Article",
     "updated": "2026-09-26T15:04:12Z"
   },
+  "tag:www.theinformation.com,2005:Article/17895": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>For the last three years, AI labs like OpenAI, Anthropic and xAI have sucked up a lot of investor attention—as well as nosebleed valuations. Now a growing number of startups that make apps, agents or other software powered by AI are fetching valuations of $20 billion or higher.&nbsp;</p><p>Applied Intuition, a maker of software to train self-driving vehicles, is slated to join this club. Applied Intuition has received investment offers that would value it at least $30 billion, according to people who have spoken to company leaders. The offers are likely to encourage the company to raise at least $1 billion in the next few months, they said.&nbsp;</p>",
+    "label": "Dealmaker",
+    "link": "https://www.theinformation.com/articles/applied-intuition-fields-offers-30-billion-valuation-2",
+    "published": "2026-10-13T13:30:51Z",
+    "title": "Applied Intuition Fields Offers at $30 Billion Valuation",
+    "type": "Article",
+    "updated": "2026-10-13T13:31:36Z"
+  },
   "tag:www.theinformation.com,2005:Article/17896": {
     "authors": [
       "Ann Davis Vaughan"
@@ -2131,6 +2143,18 @@
     "title": "Researchers Need to Learn How AI Makes Decisions, Says Goodfire’s Tom McGrath",
     "type": "Article",
     "updated": "2026-10-13T01:13:59Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17978": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Neoclouds and so-called inference providers that help app developers run open source models are trying to differentiate themselves in a very crowded market.&nbsp;</p><p>For instance, one such neocloud, <b>Prime Intellect</b>, which was valued at $1 billion in an equity financing in July, is buying a startup to help it make open models run faster and more cheaply on its <b>Nvidia</b> servers, compared to its rivals.&nbsp;&nbsp;</p><p>Prime Intellect, based in San Francisco, is acquiring <b>Moondream</b>, a young developer of open-source models that has fewer than 10 employees, according to Prime Intellect co-founder and CEO <b>Vincent Weisser</b>. (Weisser wouldn’t share the terms of the deal, but Moondream has raised $4.5 million in funding.)&nbsp;</p><p>San Francisco- and Seattle-based Moondream is best known for an open-source vision-language model for analyzing and understanding images, like identifying boxes in an image of a warehouse or ads in a livestream. But Prime Intellect is largely acquiring the startup for its employees’ skills in writing software to make models run more efficiently, Weisser said.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/neocloud-prime-intellect-acquires-startup-speed-inference",
+    "published": "2026-10-13T14:00:51Z",
+    "title": "Neocloud Prime Intellect Acquires Startup To Speed Up Inference",
+    "type": "Article",
+    "updated": "2026-10-13T14:01:30Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
