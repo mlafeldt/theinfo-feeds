@@ -2108,6 +2108,18 @@
     "type": "Article",
     "updated": "2026-10-13T00:07:17Z"
   },
+  "tag:www.theinformation.com,2005:Article/17976": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>To understand the decision-making of AI, developers often look at the text that models produce as they reason through problems. But these “chains of thought” are increasingly hard to read, which is prompting AI developers to consider other approaches. One alternative, known as “mechanistic interpretability,” seeks to explain the inner workings of AI models, rather than just relying on their outward behavior.</p>\n\n<p>Leading AI companies have formed mechanistic interpretability teams in recent years, and the field has <a href=\"https://www.theinformation.com/newsletters/ai-agenda/the-startups-helping-businesses-decode-ai-decisions\">spawned several startups</a>, the most prominent of which is Goodfire AI, whose chief scientist Tom McGrath joined the latest episode of AI Deep Dive. (<a href=\"https://www.youtube.com/watch?v=vqB8Qgl2E0s\">The full episode is available here</a>.)</p>",
+    "label": "TITV",
+    "link": "https://www.theinformation.com/articles/researchers-need-learn-ai-makes-decisions-says-goodfires-tom-mcgrath",
+    "published": "2026-10-13T00:43:58Z",
+    "title": "Researchers Need to Learn How AI Makes Decisions, Says Goodfire’s Tom McGrath",
+    "type": "Article",
+    "updated": "2026-10-13T01:13:59Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4301,5 +4313,17 @@
     "title": "Bumble in Talks to Go Private With Sequoia Partner Gupta’s New Venture",
     "type": "Briefing",
     "updated": "2026-10-12T19:03:21Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18197": {
+    "authors": [
+      "Aaron Holmes",
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>Microsoft is overhauling the leadership of its Azure cloud business, cloud chief Scott Guthrie told staff Monday, as the company moves to consolidate units and reorient itself around AI.</p> <p>As part of the reorg, Arun Ulag, who previously oversaw Azure’s database products, will now also oversee ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-microsoft-reorganizes-azure-cloud-unit-amid-ai-overhaul",
+    "published": "2026-10-13T00:59:55Z",
+    "title": "Exclusive: Microsoft Reorganizes Azure Cloud Unit Amid AI Overhaul",
+    "type": "Briefing",
+    "updated": "2026-10-13T01:02:45Z"
   }
 }
