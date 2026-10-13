@@ -2194,6 +2194,32 @@
     "type": "Article",
     "updated": "2026-10-13T18:16:47Z"
   },
+  "tag:www.theinformation.com,2005:Article/17980": {
+    "authors": [
+      "Aaron Holmes",
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>Microsoft has discussed making significant cost reductions in its Azure cloud-server-rental unit, according to a person with direct knowledge of the situation. Girish Bablani, president of Azure, in recent weeks told senior leaders in his group, which has about 11,500 employees, to come up with ideas to reduce costs at least 20%, though it isn’t clear if such a reduction would include layoffs, according to the person.</p>\n\n<p>The discussion comes even as Azure’s revenue growth has accelerated, a sign of how heavily <a href=\"https://www.theinformation.com/org-charts/microsoft\">Microsoft’s</a> data center spending is weighing on its finances.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/microsoft-cloud-president-asks-leaders-find-20-cost-cuts",
+    "published": "2026-10-13T21:42:44Z",
+    "title": "Microsoft Cloud President Asks Leaders to Find 20% Cost Cuts",
+    "type": "Article",
+    "updated": "2026-10-13T22:08:32Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17982": {
+    "authors": [
+      "Amir Efrati",
+      "Valida Pau"
+    ],
+    "content": "<p>OpenAI, which is trying to develop a substantial cybersecurity business, is in early talks to buy Trail of Bits, a startup that finds and fixes vulnerabilities in open-source software, according to people familiar with the matter.</p>\n\n<p>The size of the potential deal couldn’t be learned. OpenAI has&nbsp;sometimes paid in the <a href=\"https://www.theinformation.com/articles/openai-agrees-buy-ai-healthcare-app-100-million?rc=zjctrx\">low hundreds of millions of dollars</a> in the form of stock to acquire small startups, though it sometimes pays less.&nbsp;Discussions are ongoing and the deal could fall apart, said the people.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/openai-early-talks-buy-security-startup-trail-bits",
+    "published": "2026-10-13T22:07:44Z",
+    "title": "OpenAI in Early Talks to Buy Security Startup Trail of Bits",
+    "type": "Article",
+    "updated": "2026-10-13T22:07:58Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4454,5 +4480,16 @@
     "title": "Character.ai Files For Bankruptcy, Citing Costs and Litigation",
     "type": "Briefing",
     "updated": "2026-10-13T21:04:24Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18203": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>An OpenAI employee, Abdulrahman Alfozan, has been arrested in connection with a hidden listening device uncovered at one of the company’s San Francisco offices, the Justice Department said on Tuesday. The employee, who has been terminated, was charged with “using or endeavoring to use an ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-employee-arrested-allegedly-installing-office-listening-device",
+    "published": "2026-10-13T21:22:50Z",
+    "title": "OpenAI Employee Arrested For Allegedly Installing Office Listening Device",
+    "type": "Briefing",
+    "updated": "2026-10-13T21:32:52Z"
   }
 }
