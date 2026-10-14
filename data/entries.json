@@ -4565,12 +4565,12 @@
     "authors": [
       "Claudia Chong"
     ],
-    "content": "<p>Data center operator AirTrunk is postponing a planned initial public offering of a real estate investment trust in Singapore to next year as higher interest rates and volatile markets dampen investor demand, Bloomberg reported.</p> <p>The Sydney-headquartered company, which is backed by Blackstone, had ...</p>",
+    "content": "<p>Data center operator AirTrunk is postponing a planned initial public offering of a real estate investment trust in Singapore to next year as higher interest rates and volatile markets dampen investor demand, <a href=\"https://www.bloomberg.com/news/articles/2026-10-13/data-center-operator-airtrunk-is-said-to-delay-1-5-billion-ipo?srnd=phx-technology\">Bloomberg reported.</a></p> <p>The Sydney-headquartered company, which is backed by Blackstone, had ...</p>",
     "link": "https://www.theinformation.com/briefings/blackstone-backed-airtrunk-postpones-reit-ipo-amid-market-volatility",
     "published": "2026-10-14T09:29:17Z",
     "title": "Blackstone-Backed AirTrunk Postpones REIT IPO Amid Market Volatility",
     "type": "Briefing",
-    "updated": "2026-10-14T09:29:17Z"
+    "updated": "2026-10-14T21:28:56Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18208": {
     "authors": [
@@ -4598,12 +4598,12 @@
     "authors": [
       "Julia Hornstein"
     ],
-    "content": "<p>Anduril Industries is in talks to allow employees to sell their shares in a tender that would value the autonomous munitions maker at about $90 billion, according to a report from Bloomberg. Employees would be able to sell shares at $94.80 each in the tender, which would be capped at roughly ...</p>",
+    "content": "<p>Anduril Industries is in talks to allow employees to sell their shares in a tender that would value the autonomous munitions maker at about $90 billion, <a href=\"https://www.bloomberg.com/news/articles/2026-10-14/anduril-in-talks-to-sell-insider-shares-at-roughly-90-billion-valuation?srnd=undefined\">according to Bloomberg.</a> Employees would be able to sell shares at $94.80 each in the tender, which would be capped at roughly $1.3 billion and ...</p>",
     "link": "https://www.theinformation.com/briefings/anduril-talks-employee-share-sale-90-billion-valuation",
     "published": "2026-10-14T19:23:03Z",
     "title": "Anduril in Talks for Employee Share Sale at $90 Billion Valuation",
     "type": "Briefing",
-    "updated": "2026-10-14T19:23:03Z"
+    "updated": "2026-10-14T21:30:35Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18211": {
     "authors": [
@@ -4615,5 +4615,16 @@
     "title": "OpenAI’s Computing Lead Sachin Katti to Depart In November",
     "type": "Briefing",
     "updated": "2026-10-14T19:37:02Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18212": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>Morgan Stanley CEO Ted Pick said on Wednesday that he expects the AI buildout will encounter bottlenecks and periods of overbuilding, but investment will continue at a massive scale over the next several years.</p> <p>Pick also said during Morgan Stanley’s third-quarter earnings call that the bank’s ...</p>",
+    "link": "https://www.theinformation.com/briefings/morgan-stanley-ceo-expects-another-decade-major-ai-investment",
+    "published": "2026-10-14T21:17:48Z",
+    "title": "Morgan Stanley CEO Expects Another Decade of Major AI Investment",
+    "type": "Briefing",
+    "updated": "2026-10-14T21:29:43Z"
   }
 }
