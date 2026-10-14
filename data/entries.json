@@ -4528,6 +4528,17 @@
     "type": "Briefing",
     "updated": "2026-10-13T21:32:52Z"
   },
+  "tag:www.theinformation.com,2005:Briefing/18204": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia and ChipAgents, a startup that helps customers automate chip design, on Wednesday released a benchmark that measures how different AI models perform at the task.</p> <p>Anthropic’s Fable 5.1 powered the best-performing AI agent in the newly released evaluation but only scored 16.6% on the test, ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-nvidia-chipagents-launch-evaluation-ai-powered-chip-design",
+    "published": "2026-10-14T15:10:46Z",
+    "title": "Exclusive: Nvidia and ChipAgents Launch Evaluation For AI-Powered Chip Design",
+    "type": "Briefing",
+    "updated": "2026-10-14T15:10:46Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/18205": {
     "authors": [
       "Kevin McLaughlin"
