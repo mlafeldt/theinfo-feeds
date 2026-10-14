@@ -4593,5 +4593,27 @@
     "title": "OpenAI Accuses Former Employee of Taking Confidential Information to Apple",
     "type": "Briefing",
     "updated": "2026-10-14T18:13:21Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18210": {
+    "authors": [
+      "Julia Hornstein"
+    ],
+    "content": "<p>Anduril Industries is in talks to allow employees to sell their shares in a tender that would value the autonomous munitions maker at about $90 billion, according to a report from Bloomberg. Employees would be able to sell shares at $94.80 each in the tender, which would be capped at roughly ...</p>",
+    "link": "https://www.theinformation.com/briefings/anduril-talks-employee-share-sale-90-billion-valuation",
+    "published": "2026-10-14T19:23:03Z",
+    "title": "Anduril in Talks for Employee Share Sale at $90 Billion Valuation",
+    "type": "Briefing",
+    "updated": "2026-10-14T19:23:03Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18211": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Sachin Katti, vice president of compute strategy at OpenAI, said Wednesday he was leaving the role on November 15 after about a year at OpenAI. Katti, who joined OpenAI after four years at Intel, announced that he would be “<a href=\"https://x.com/sk7037/status/2110401792811159643\">moving on to build something new</a>” in a post on X.</p> <p>During Katti’s time in ...</p>",
+    "link": "https://www.theinformation.com/briefings/openais-computing-lead-sachin-katti-depart-november",
+    "published": "2026-10-14T19:37:02Z",
+    "title": "OpenAI’s Computing Lead Sachin Katti to Depart In November",
+    "type": "Briefing",
+    "updated": "2026-10-14T19:37:02Z"
   }
 }
