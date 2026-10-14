@@ -4503,5 +4503,27 @@
     "title": "OpenAI Employee Arrested For Allegedly Installing Office Listening Device",
     "type": "Briefing",
     "updated": "2026-10-13T21:32:52Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18205": {
+    "authors": [
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>Anthropic has struck an agreement to license technology and hire some engineers from Opaque Systems, a five-year-old startup that sells software for securing confidential data for use with AI agents, according to an Anthropic spokesperson.</p> <p>The Anthropic spokesperson didn’t have a comment on the ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-strikes-licensing-acqui-hire-deal-ai-security-startup",
+    "published": "2026-10-14T07:24:18Z",
+    "title": "Anthropic Strikes Licensing, Acqui-Hire Deal With AI Security Startup",
+    "type": "Briefing",
+    "updated": "2026-10-14T07:24:19Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18206": {
+    "authors": [
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>Microsoft has discussed making significant cost reductions in its Azure cloud unit, The Information <a href=\"https://www.theinformation.com/articles/microsoft-cloud-president-asks-leaders-find-20-cost-cuts?rc=eqgjah\">reported</a> late Tuesday. Girish Bablani, president of Microsoft’s Azure cloud unit, recently told senior leaders in his group to think about ideas for reducing costs by at least 20%, according to a ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-explores-ways-cut-costs-azure-cloud-unit",
+    "published": "2026-10-14T07:52:37Z",
+    "title": "Microsoft Explores Ways to Cut Costs in Azure Cloud Unit",
+    "type": "Briefing",
+    "updated": "2026-10-14T07:52:37Z"
   }
 }
