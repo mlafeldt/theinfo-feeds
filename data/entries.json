@@ -4753,5 +4753,16 @@
     "title": "TSMC to Add a New 3nm Fab as AI Orders Pile up",
     "type": "Briefing",
     "updated": "2026-10-15T09:07:19Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18218": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Anthropic has now begun embedding AI evaluators within the company to assess and publish reports on safety practices and risks, Anthropic <a href=\"https://www.anthropic.com/news/an-update-on-independent-evaluators\">said</a> in a blog post on Thursday. They’ll use company computers, office space and have access to internal tools and systems.</p> <p>The details follow Anthropic CEO ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-says-ai-evaluators-can-now-work-company",
+    "published": "2026-10-15T19:37:29Z",
+    "title": "Anthropic Says AI Evaluators Can Now Work at Company",
+    "type": "Briefing",
+    "updated": "2026-10-15T19:37:29Z"
   }
 }
