@@ -2304,6 +2304,30 @@
     "type": "Article",
     "updated": "2026-10-15T15:05:16Z"
   },
+  "tag:www.theinformation.com,2005:Article/17991": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>As OpenAI has jockeyed with Anthropic to win over developers with new models and tools this year, its advertising business at times has seemed like an afterthought. Not anymore.</p>\n\n<p>Over the last few months, the company has unleashed a flurry of new products and tools to court advertisers, even as it has cut ad rates. That’s helped lure a lot more advertisers, new data show. The company has also gone on a hiring spree. Nearly half of the roughly 140 OpenAI employees working on ads joined between July and September, according to Crustdata, which tracks employees’ public profiles. Meta Platforms, where ad chief Dave Dugan spent 12 years, is the biggest source of talent.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/openais-accelerates-ad-sprint-meta-hires-slashed-prices",
+    "published": "2026-10-15T18:30:58Z",
+    "title": "OpenAI Accelerates Ad Sprint With Meta Hires, Slashed Prices",
+    "type": "Article",
+    "updated": "2026-10-15T18:50:32Z"
+  },
+  "tag:www.theinformation.com,2005:Article/17992": {
+    "authors": [
+      "Laura Bratton"
+    ],
+    "content": "<p>As companies create more applications using AI, corporate officers say demand is rising for a new type of software that stress-tests those apps, simulating how they handle network problems and other disasters that humans may not think to test for—including cyberattacks by rogue AIs.</p><p>Luis Chávez, CTO of coding assistant provider Replit, says his company uses an AI-assisted software known as a deterministic simulator, a kind of flight simulator for software. The deterministic part refers to how the simulator lets companies run the same disaster test again and again so they can try out different fixes for bugs that crop up during network failures or hacking attempts.</p><p>Traditional stress-testing methods rely on developers guessing every potential problem that may arise. Merely using today’s AI models to evaluate code often produces false alarms or fake warnings, corporate executives say.</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/ai-written-software-needs-flight-simulator",
+    "published": "2026-10-15T18:22:30Z",
+    "title": "Why AI-Written Software Needs a Flight Simulator",
+    "type": "Article",
+    "updated": "2026-10-15T18:25:32Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -4712,12 +4736,12 @@
     "authors": [
       "Juro Osawa"
     ],
-    "content": "<p>Apple is preparing to release its Apple Intelligence on-device AI service in mainland China in December, ending a lengthy wait caused by regulatory hurdles, Bloomberg reported Thursday.</p> <p>The planned release of Apple Intelligence in China, one of the iPhone-maker’s most important markets, comes ...</p>",
+    "content": "<p>Apple is preparing to release its Apple Intelligence on-device AI service in mainland China in December, ending a lengthy wait caused by regulatory hurdles, <a href=\"https://www.bloomberg.com/news/articles/2026-10-14/apple-prepares-to-debut-first-ai-features-in-china-in-december\">Bloomberg reported Thursday.</a></p> <p>The planned release of Apple Intelligence in China, one of the iPhone-maker’s most important markets, comes ...</p>",
     "link": "https://www.theinformation.com/briefings/apple-prepares-debut-apple-intelligence-china-december",
     "published": "2026-10-15T05:11:12Z",
     "title": "Apple Prepares to Debut Apple Intelligence in China in December",
     "type": "Briefing",
-    "updated": "2026-10-15T05:11:12Z"
+    "updated": "2026-10-15T18:27:41Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18217": {
     "authors": [
