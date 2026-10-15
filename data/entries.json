@@ -4662,6 +4662,17 @@
     "type": "Briefing",
     "updated": "2026-10-15T00:28:54Z"
   },
+  "tag:www.theinformation.com,2005:Briefing/18214": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Portland-based startup Mueon raised $65 million to develop a new way to arrange AI server rack components. The company says its design could fit up to ten times more computing capacity into the same amount of power as existing data center setups. This approach could ease constraints on global ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-mueon-raises-65-million-rework-data-centers-put-together",
+    "published": "2026-10-15T10:30:53Z",
+    "title": "Exclusive: Mueon Raises $65 Million to Rework How Data Centers Are Put Together",
+    "type": "Briefing",
+    "updated": "2026-10-15T10:30:53Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/18215": {
     "authors": [
       "Tiffany Li"
