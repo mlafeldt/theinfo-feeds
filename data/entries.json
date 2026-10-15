@@ -4661,5 +4661,27 @@
     "title": "Anthropic Reports $16.8 billion in Third-Quarter Revenue",
     "type": "Briefing",
     "updated": "2026-10-15T00:28:54Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18215": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Chinese AI agents took exposed credentials from a company’s source code and bypassed safeguards in an attempt to find information on mapping service Amap, according to <a href=\"https://swarmcha.se/posts/chinese-agent-fleet-full-report#response\">a report</a> on Wednesday from a group of researchers known as “swarmchasers.” Although the agents self-identified as instances of ...</p>",
+    "link": "https://www.theinformation.com/briefings/chinese-ai-agents-go-rogue-map-service",
+    "published": "2026-10-15T05:00:20Z",
+    "title": "Chinese AI Agents Go Rogue on Map Service",
+    "type": "Briefing",
+    "updated": "2026-10-15T05:00:21Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18216": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Apple is preparing to release its Apple Intelligence on-device AI service in mainland China in December, ending a lengthy wait caused by regulatory hurdles, Bloomberg reported Thursday.</p> <p>The planned release of Apple Intelligence in China, one of the iPhone-maker’s most important markets, comes ...</p>",
+    "link": "https://www.theinformation.com/briefings/apple-prepares-debut-apple-intelligence-china-december",
+    "published": "2026-10-15T05:11:12Z",
+    "title": "Apple Prepares to Debut Apple Intelligence in China in December",
+    "type": "Briefing",
+    "updated": "2026-10-15T05:11:12Z"
   }
 }
