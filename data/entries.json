@@ -4894,5 +4894,16 @@
     "title": "China Proposes Export Controls on AI Technology",
     "type": "Briefing",
     "updated": "2026-10-16T11:51:26Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18222": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft has pulled out of a planned U.K. data center Nscale was building for it, an Nscale spokesperson said, after the cloud provider faced delays accessing power to bring the site online.</p> <p>The cancellation is likely to weigh on Nscale’s planned public offering this month as <a href=\"https://www.theinformation.com/newsletters/ai-infrastructure/neocloud-shakeout-looms-nvidia-lot-lose?rc=geicgp\">investor concerns ...</a></p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays",
+    "published": "2026-10-18T20:08:27Z",
+    "title": "Microsoft Pulls Out of Nscale U.K. Data Center Following Delays",
+    "type": "Briefing",
+    "updated": "2026-10-18T20:09:26Z"
   }
 }
