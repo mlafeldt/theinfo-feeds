@@ -2437,6 +2437,19 @@
     "type": "Article",
     "updated": "2026-10-18T15:01:18Z"
   },
+  "tag:www.theinformation.com,2005:Article/18008": {
+    "authors": [
+      "Amir Efrati",
+      "Leo Schwartz"
+    ],
+    "content": "<p>Emil Michael, a senior Department of Defense official and member of President Trump’s “super intelligence” task force, vowed <a href=\"https://youtu.be/hqVzXhkBWp4\">in an interview</a> to use a range of executive tools including export controls to check the behavior of AI companies if they don’t cooperate with the government, while comparing frontier labs calling for more regulation to drunk drivers who demand someone else pull them over.</p>\n\n<p>Michael drew widespread attention as the Trump administration official leading a public feud with Anthropic, pushing for the Defense Department to label the AI company a supply chain risk after it refused to remove safety guardrails. Now, as one of the four senior administration officials leading the Super Intelligence Force that Trump announced this month, Michael is charged with serving as the government’s liaison to Anthropic and other AI companies to develop protocols for handling cyber breaches, hacks and other critical incidents.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/pentagons-emil-michael-vows-export-controls-ai-labs-cooperate-government",
+    "published": "2026-10-19T13:00:48Z",
+    "title": "Pentagon’s Emil Michael Vows Export Controls if AI Labs Don’t Cooperate With Government",
+    "type": "Article",
+    "updated": "2026-10-19T13:05:54Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
