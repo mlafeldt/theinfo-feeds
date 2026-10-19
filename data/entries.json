@@ -4928,5 +4928,16 @@
     "title": "Anthropic Commits At Least 5% of Shares to New Public Benefit Fund",
     "type": "Briefing",
     "updated": "2026-10-18T20:57:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18224": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>DeepSeek’s latest update to its affordable lightweight model, V4.1-Flash, is making a big splash in the industry because of significant improvements from the previous version that bring it closer to frontier models.</p> <p>The upgraded version released on Saturday, V4.1-Flash-1017, is delivering highly ...</p>",
+    "link": "https://www.theinformation.com/briefings/deepseeks-upgraded-v4-1-flash-model-shakes-ai-industry",
+    "published": "2026-10-19T03:52:54Z",
+    "title": "DeepSeek’s Upgraded V4.1-Flash Model Shakes Up AI Industry",
+    "type": "Briefing",
+    "updated": "2026-10-19T03:52:54Z"
   }
 }
