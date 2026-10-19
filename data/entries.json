@@ -2389,6 +2389,19 @@
     "type": "Article",
     "updated": "2026-10-16T00:38:55Z"
   },
+  "tag:www.theinformation.com,2005:Article/17999": {
+    "authors": [
+      "Juro Osawa",
+      "Qianer Liu"
+    ],
+    "content": "<p>DeepSeek is working closely with Huawei Technologies to shape the design of future AI chips, two people familiar with the matter said, in a collaboration that could help China build frontier AI models without Nvidia’s technology.</p>\n\n<p>The relationship goes beyond the kinds of conversations companies have with chip suppliers about their semiconductor road maps. Huawei engineers are incorporating DeepSeek’s requests and suggestions into design decisions, such as how models calculate and move data between processors, for chips that will come out next year and beyond, the people said. To do this work, the Huawei engineers have been stationed at DeepSeek’s offices for an extended period, one of the people said.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/deepseek-shaping-huaweis-ai-chips-growing-challenge-nvidia",
+    "published": "2026-10-19T16:00:47Z",
+    "title": "How DeepSeek Is Shaping Huawei’s AI Chips in a Growing Challenge to Nvidia",
+    "type": "Article",
+    "updated": "2026-10-19T16:01:13Z"
+  },
   "tag:www.theinformation.com,2005:Article/18002": {
     "authors": [
       "Martin Peers"
@@ -4975,5 +4988,16 @@
     "title": "Nvidia Tells Suppliers to Tap TSMC Process for Next-Generation Memory Chips",
     "type": "Briefing",
     "updated": "2026-10-19T05:01:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18226": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>Elon Musk <a href=\"https://x.com/elonmusk/status/2112089556615123114\">pledged on X</a> to give one of his SpaceX shares to every kid in America next year, and will do more such gifts in the future.</p> <p>According to estimates by the U.S. Census Bureau, about 21.1% of the U.S. population is under 18 years old, which translates to about 73 million children. At ...</p>",
+    "link": "https://www.theinformation.com/briefings/musk-plans-give-spacex-share-every-kid-america",
+    "published": "2026-10-19T16:12:31Z",
+    "title": "Musk Plans to Give a SpaceX share to “Every Kid in America”",
+    "type": "Briefing",
+    "updated": "2026-10-19T16:12:31Z"
   }
 }
