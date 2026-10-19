@@ -2450,6 +2450,18 @@
     "type": "Article",
     "updated": "2026-10-19T13:05:54Z"
   },
+  "tag:www.theinformation.com,2005:Article/18009": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>In the last month, <b>OpenAI</b>, <b>Anthropic</b> and <b>Google</b> have released more than a <i>dozen</i> new models. If you thought that pace was crazy, don’t expect things to slow down anytime soon.</p><p>Anthropic is preparing to release a new model that is better in its reasoning and intuition than the Anthropic models that are currently available commercially, according to a person who has used it. The unreleased model is especially good at discerning a person’s underlying intentions and goals even if they don’t give the model much information, such as explicitly stating those goals, the person said.&nbsp;</p><p>For instance, a person might ask the model to fix a single bug, and the model might go off and instead identify the underlying class of problems that caused the bug and ask whether it should fix the whole class of problems, said the person who has used it.</p><p>The Anthropic model is also better at thinking outside of the box rather than regurgitating common sense advice or solutions, the person said. For instance, if a user asks for advice on how to invest in stocks, rather than providing generic advice like looking at price-to-earnings ratios, the model might come up with its own creative algorithms to predict future stock performance, the person said.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/anthropic-readies-model-reads-users-intentions-better",
+    "published": "2026-10-19T14:00:42Z",
+    "title": "Anthropic Readies Model That Reads Users' Intentions Better",
+    "type": "Article",
+    "updated": "2026-10-19T14:01:23Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
