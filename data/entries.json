@@ -2545,9 +2545,9 @@
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/coreweaves-debt-binge-brought-perilous-moment-reckoning",
     "published": "2026-10-20T13:35:43Z",
-    "title": "How CoreWeave’s Debt Binge Brought a Perilous Moment of Reckoning",
+    "title": "How CoreWeave’s Debt Binge Brought a Moment of Reckoning",
     "type": "Article",
-    "updated": "2026-10-20T13:43:49Z"
+    "updated": "2026-10-20T16:22:24Z"
   },
   "tag:www.theinformation.com,2005:Article/18017": {
     "authors": [
@@ -5108,5 +5108,39 @@
     "title": "U.S. Sanctions Five Chinese Entities Linked to Google AI Trade Secret Theft",
     "type": "Briefing",
     "updated": "2026-10-20T05:59:34Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18229": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>Compute Labs, a startup founded on the vision of bringing more capital to the market for graphics processing units, has started a matchmaking service for companies looking to buy the chips and lenders willing to lend against them.</p> <p>The move comes as a range of financial firms and startups are ...</p>",
+    "link": "https://www.theinformation.com/briefings/startup-launches-financing-platform-neoclouds-others-seeking-funds-gpus",
+    "published": "2026-10-20T16:18:00Z",
+    "title": "Startup Launches Financing Platform for Neoclouds, Others Seeking Funds for GPUs",
+    "type": "Briefing",
+    "updated": "2026-10-20T16:18:00Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18230": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms’ chief global affairs officer, Joel Kaplan, is set to leave the company next year, a Meta spokesperson said, after more than 15 years at the company in which he helped strengthen ties with Republicans including the Trump administration.</p> <p>Kaplan has overseen Meta’s global policy ...</p>",
+    "link": "https://www.theinformation.com/briefings/metas-global-affairs-chief-joel-kaplan-leave-2027",
+    "published": "2026-10-20T16:58:56Z",
+    "title": "Meta’s Global Affairs Chief Joel Kaplan to Leave in 2027",
+    "type": "Briefing",
+    "updated": "2026-10-20T16:58:56Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18231": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Valida Pau"
+    ],
+    "content": "<p>Salesforce said Tuesday it has agreed to buy customer engagement platform Braze for about $5.66 billion including debt.</p> <p>Braze, which was founded in 2011 and went public a decade later, is a longtime competitor of Salesforce’s Marketing Cloud product, which businesses use to communicate with ...</p>",
+    "link": "https://www.theinformation.com/briefings/salesforce-acquire-marketing-software-maker-braze-nearly-5-7-billion",
+    "published": "2026-10-20T17:02:34Z",
+    "title": "Salesforce to Acquire Marketing Software Maker Braze for Nearly $5.7 Billion",
+    "type": "Briefing",
+    "updated": "2026-10-20T17:02:34Z"
   }
 }
