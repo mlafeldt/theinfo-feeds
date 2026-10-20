@@ -5153,5 +5153,27 @@
     "title": "Enterprise Sales Veteran Mike Clayville Returns to Amazon",
     "type": "Briefing",
     "updated": "2026-10-20T18:12:37Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18233": {
+    "authors": [
+      "Abram Brown"
+    ],
+    "content": "<p>A collection of giant insurance firms bought more than $740 million of CoreWeave debt connected to a cloud-computing contract with Meta Platforms in the second quarter, highlighting how insurance money and the AI infrastructure boom are becoming intertwined.</p> <p>Those purchases were made by a group ...</p>",
+    "link": "https://www.theinformation.com/briefings/insurers-pump-740-million-coreweave-debt-tied-meta",
+    "published": "2026-10-20T19:26:23Z",
+    "title": "Insurers Pump Over $740 Million Into CoreWeave Debt Tied to Meta",
+    "type": "Briefing",
+    "updated": "2026-10-20T19:26:23Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18234": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>OpenAI is buying Orchestra Bio, a startup that builds AI agents to help biotech and pharmaceutical companies with drug development, the AI lab announced on Tuesday.</p> <p>The acquisition is an early move toward a goal <a href=\"https://www.theinformation.com/articles/ai-probably-cure-cancer-anytime-soon-scientists-say\">long-touted by OpenAI executives</a> of using the company’s technology to help with ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-buys-drug-development-company-orchestra-bio",
+    "published": "2026-10-20T19:54:39Z",
+    "title": "OpenAI Buys Drug Development Company Orchestra Bio",
+    "type": "Briefing",
+    "updated": "2026-10-20T19:54:39Z"
   }
 }
