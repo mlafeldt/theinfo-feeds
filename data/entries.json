@@ -2537,6 +2537,31 @@
     "type": "Article",
     "updated": "2026-10-20T01:09:45Z"
   },
+  "tag:www.theinformation.com,2005:Article/18016": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>In early 2023, Blackstone CEO Steve Schwarzman gathered with Jas Khaira, the company’s lead AI investor, and other top executives at the finance giant’s Park Avenue headquarters in Manhattan for a debate: Should they give billions of dollars to a little-known data center developer&mdash;CoreWeave&mdash;that they had turned down just a few months earlier? <br /> <br />CoreWeave had gotten Blackstone to return to the table after landing a multiyear, multibillion-dollar contract to sell cloud computing services to Microsoft. It needed $2.3 billion to buy Nvidia GPUs and secure a data center to house them.</p>\n\n<p>In Blackstone’s discussion of the deal, several executives in the room had deep misgivings, according to a person who attended the meeting. CoreWeave was still something of a mystery, a six-year-old, privately held firm that had generated only $16 million in revenue in the previous year. Schwarzman himself was personally worried his investment team could be making a mistake, the person said.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/coreweaves-debt-binge-brought-perilous-moment-reckoning",
+    "published": "2026-10-20T13:35:43Z",
+    "title": "How CoreWeave’s Debt Binge Brought a Perilous Moment of Reckoning",
+    "type": "Article",
+    "updated": "2026-10-20T13:43:49Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18017": {
+    "authors": [
+      "Amir Efrati",
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p><b>OpenAI</b> is bound to get a reality check soon, if it hasn’t already, on how difficult it is to “pace” AI technology, let alone getting all the frontier AI developers to agree on how to do so together.</p><p>CEO <b>Sam Altman</b> last week walked employees through three proposals the industry has discussed for how to safely develop AI, we <a href=\"https://www.theinformation.com/articles/altman-describes-three-endgames-ai-including-one-single-firm-melts-everyone-elses-gpus\">reported</a> yesterday. Those options included plans for developing an international organization akin to the <b>International Atomic Energy Agency</b>; merging the frontier labs into a single entity that would develop, test and distribute models; or a scenario, however far-fetched, in which one lab races ahead of the others and literally crushes their GPUs, ending their ability to catch up.</p><p>It goes without saying that each of those options has major issues. But we’ll say it anyway.&nbsp;</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/openais-pacing-2-0-problem-smart-smart",
+    "published": "2026-10-20T14:01:28Z",
+    "title": "OpenAI’s ‘Pacing 2.0’ Problem: How Smart Is Too Smart?",
+    "type": "Article",
+    "updated": "2026-10-20T14:02:26Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
