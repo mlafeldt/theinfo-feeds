@@ -2562,6 +2562,19 @@
     "type": "Article",
     "updated": "2026-10-20T14:02:26Z"
   },
+  "tag:www.theinformation.com,2005:Article/18019": {
+    "authors": [
+      "Phoebe Liu",
+      "Shane Burke"
+    ],
+    "content": "<p>Nvidia has become something of a central bank for companies expanding the market for its chips beyond tech giants, backstopping customers and demand. But as Nvidia-backed cloud firms come under pressure, the question is how much further it will go.</p>\n\n<p>The chipmaker has already disclosed as much as $164.5 billion in guarantees and other commitments to support new data centers, including agreements to pay landlords if tenants default on leases and promises to buy capacity, filings show, as of the company’s July quarter. That’s on top of more than $7 billion it has invested or agreed to invest directly in AI cloud providers.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/nvidia-put-170-billion-line-neoclouds",
+    "published": "2026-10-20T22:09:51Z",
+    "title": "Nvidia Has Put More Than $170 Billion on the Line for Neoclouds",
+    "type": "Article",
+    "updated": "2026-10-20T22:10:18Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -5175,5 +5188,27 @@
     "title": "OpenAI Buys Drug Development Company Orchestra Bio",
     "type": "Briefing",
     "updated": "2026-10-20T19:54:39Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18235": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>Netflix reported its slowest quarterly revenue growth in three years on Tuesday, with revenue rising 11.8% to $12.9 billion in the third quarter, in line with its own expectations.</p> <p>The streaming company now expects revenue to increase 13% to $51.5 billion for the full year, slightly below the ...</p>",
+    "link": "https://www.theinformation.com/briefings/netflix-revenue-growth-hits-three-year-low",
+    "published": "2026-10-20T21:46:12Z",
+    "title": "Netflix Revenue Growth Hits Three-Year Low",
+    "type": "Briefing",
+    "updated": "2026-10-20T21:52:53Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18236": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Elon Musk said Tuesday SpaceX and Tesla have formed special committees to explore a potential merger.</p> <p>This is the first step toward what would be the largest mergers of all-time, bringing together Musk’s sprawling empire of electric cars, rocket launch, satellite and AI businesses. Tesla ...</p>",
+    "link": "https://www.theinformation.com/briefings/musk-says-spacex-tesla-formed-committees-explore-merger",
+    "published": "2026-10-20T21:52:59Z",
+    "title": "Musk Says SpaceX, Tesla Have Formed Committees to Explore Merger",
+    "type": "Briefing",
+    "updated": "2026-10-20T21:56:45Z"
   }
 }
