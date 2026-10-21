@@ -5329,5 +5329,27 @@
     "title": "AI Finds Flaw in Popular Web Hosting Software, Sparking Global Race to Patch",
     "type": "Briefing",
     "updated": "2026-10-21T14:53:49Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18241": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms on Wednesday was ordered to pay $25 billion in penalties following a New Mexico court ruling tied to the Cambridge Analytica data scandal, according to a court judgment.</p> <p>The ruling by a New Mexico state judge said the violations could have amounted to $219.5 billion, but the judge ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-faces-25-billion-new-mexico-penalty",
+    "published": "2026-10-21T18:23:06Z",
+    "title": "Meta Faces $25 Billion New Mexico Penalty",
+    "type": "Briefing",
+    "updated": "2026-10-21T18:23:06Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18242": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia on Wednesday announced new deals with chip substrate suppliers Ibiden, Samsung Electro-Mechanics&nbsp;and Unimicron, to ensure it has enough component materials to produce more of its AI server chips in the coming years. It said the deals, which include a multibillion-dollar reservation ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-expands-deals-six-chip-component-suppliers",
+    "published": "2026-10-21T18:53:59Z",
+    "title": "Nvidia Expands Deals with Six Chip Component Suppliers",
+    "type": "Briefing",
+    "updated": "2026-10-21T18:53:59Z"
   }
 }
