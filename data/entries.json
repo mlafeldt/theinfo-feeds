@@ -5477,6 +5477,17 @@
     "type": "Briefing",
     "updated": "2026-10-22T03:03:23Z"
   },
+  "tag:www.theinformation.com,2005:Briefing/18251": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>OpenAI’s systems had multiple vulnerabilities that would allow AI agents to circumvent monitoring and take arbitrary unauthorized actions, evaluators from AI safety nonprofits METR and Redwood Research found during a three-week pilot with OpenAI from late July to early August. The nonprofits ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-numerous-vulnerabilities-ai-exploit-evaluators-find",
+    "published": "2026-10-22T15:00:53Z",
+    "title": "OpenAI Had Numerous Vulnerabilities Its AI Could Exploit, Evaluators Find",
+    "type": "Briefing",
+    "updated": "2026-10-22T15:00:53Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/18252": {
     "authors": [
       "Qianer Liu"
