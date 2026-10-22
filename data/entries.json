@@ -5464,5 +5464,16 @@
     "title": "Zuckerberg’s Wealth Tax Concerns Shaped Meta’s Stock Overhaul",
     "type": "Briefing",
     "updated": "2026-10-22T03:03:23Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18252": {
+    "authors": [
+      "Qianer Liu"
+    ],
+    "content": "<p>Israeli security firm Lava said it found 32 Nvidia Blackwell Ultra B300 chips through monitoring systems linked to the network of China Telecom, a state-owned telecommunications company. &nbsp; The B300 is one of Nvidia’s most powerful data-center chips and is barred from being sold to China by ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidias-powerful-b300-chips-spotted-chinese-state-owned-network",
+    "published": "2026-10-22T12:00:44Z",
+    "title": "Nvidia’s Powerful B300 Chips Spotted on Chinese State-Owned Network",
+    "type": "Briefing",
+    "updated": "2026-10-22T12:00:44Z"
   }
 }
