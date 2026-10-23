@@ -2789,13 +2789,13 @@
       "Jessica E. Lessin",
       "Valida Pau"
     ],
-    "content": "<p>Instacart is in talks to sell itself in a transaction that would cap the grocery delivery app’s 14-year run as a standalone company.</p>\n\n<p>Currently valued at $12 billion, Instacart has been working with an investment bank to weigh its options and held at least preliminary conversations with DoorDash and Uber, according to people familiar with the matter. The potential suitors would acquire one of Silicon Valley’s best known consumer companies, which became a lifeline for many Americans during the Covid-19 lockdown.</p>",
+    "content": "<p>Instacart is in talks to sell itself in a transaction that would cap the grocery delivery app’s 14-year run as a standalone company.</p>\n\n<p>Currently valued at $12 billion, Instacart has been working with an investment bank to weigh its options and held at least preliminary conversations with DoorDash and Uber, according to people familiar with the matter, though talks with Uber are not ongoing, according to a person close to Uber. The potential buyer would acquire one of Silicon Valley’s best known consumer companies, which became a lifeline for many Americans during the Covid-19 lockdown.</p>",
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/instacart-exploring-sale",
     "published": "2026-10-23T19:54:46Z",
     "title": "Instacart Is Exploring a Sale",
     "type": "Article",
-    "updated": "2026-10-23T20:04:12Z"
+    "updated": "2026-10-23T21:18:40Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -5655,5 +5655,27 @@
     "title": "U.S. Treasury Proposes to Widen Outbound Investment Restrictions for China and Other Countries",
     "type": "Briefing",
     "updated": "2026-10-23T08:29:36Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18257": {
+    "authors": [
+      "Laura Mandaro"
+    ],
+    "content": "<p>Instacart shares jumped 10% in the final minutes of regular stock market trading Friday following The Information’s report that the delivery app company is in talks to sell itself.</p> <p>Shares in the company closed at $56.44.</p> <p>Instacart has been working with an investment bank to weigh its options and ...</p>",
+    "link": "https://www.theinformation.com/briefings/instacart-shares-rally-10-information-reports-sale-talks",
+    "published": "2026-10-23T21:34:30Z",
+    "title": "Instacart Shares Rally 10% After The Information Reports Sale Talks",
+    "type": "Briefing",
+    "updated": "2026-10-23T21:34:30Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18258": {
+    "authors": [
+      "Catherine Perloff"
+    ],
+    "content": "<p>Amazon Web Services capacity is mostly booked up through at least next year, Amazon CEO Andy Jassy said on an Andreessen Horowitz podcast released on Friday.</p> <p>“‘26 is obviously at this point sold out. [2027] is largely sold out. We always leave a certain amount for on demand and our inference ...</p>",
+    "link": "https://www.theinformation.com/briefings/aws-sold-capacity-2028-jassy-says",
+    "published": "2026-10-23T21:59:37Z",
+    "title": "AWS Sold Out Of Capacity Into 2028, Jassy Says",
+    "type": "Briefing",
+    "updated": "2026-10-23T21:59:37Z"
   }
 }
