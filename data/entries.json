@@ -2797,6 +2797,19 @@
     "type": "Article",
     "updated": "2026-10-23T21:18:40Z"
   },
+  "tag:www.theinformation.com,2005:Article/18047": {
+    "authors": [
+      "Laura Bratton",
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>OpenAI’s efforts to undercut Anthropic on price are producing some results.</p>\n\n<p>For instance, in May, Anthropic models powered 57% of the coding work of hundreds of engineers at Rippling, an HR software firm, while OpenAI models handled 16% of that work. Since then, the situation has reversed: 52% of the coding work is now handled by OpenAI models and 18% with Anthropic ones, as the company sought to cut costs and OpenAI proved cheaper, CEO Parker Conrad said.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
+    "published": "2026-10-24T14:00:49Z",
+    "title": "Anthropic’s Margin is OpenAI’s Opportunity",
+    "type": "Article",
+    "updated": "2026-10-24T14:01:13Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
