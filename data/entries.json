@@ -2858,6 +2858,18 @@
     "type": "Article",
     "updated": "2026-10-26T13:01:29Z"
   },
+  "tag:www.theinformation.com,2005:Article/18050": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Before we get to today’s column, the big day is here: Anthropic dropped its long-awaited public&nbsp;<a href=\"https://www.theinformation.com/briefings/anthropic-publicly-files-s-1-planned-ipo\">S-1 filing Monday morning</a>. Tune in today for stories from my colleagues and me that will be breaking down the most important takeaways from the filing, such as improvements in the company’s compute efficiency, details on its spending and cash burn, and interesting new disclosures that could point to an eventual end to its unusual&nbsp;Long-Term Benefit Trust, a group of non-shareholders who advise the company on safety and social issues and can appoint a majority of its board.</p><p><i>Onto today’s column...</i></p><p>It seems like every AI startup financing these days has multiple tranches in which different investors get in at different valuations. At first, it was unusual to see just two tranches. Now we see <a href=\"https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy\">extra-hot funding rounds with three tranches or more</a>.</p><p>It’s no secret that investors aren’t thrilled about these multi-tranche rounds (specifically, the investors that can’t get in at the lower valuation). Some of them argue that the practice allows bigger venture capital firms to flex their power and force smaller VC firms into the second, more expensive tranche. They also say it allows the startup to claim a bigger valuation, even though some or most of the new capital came in at a lower price.&nbsp;</p><p>But founders and many investors tell me that the unique capital needs of AI companies, which are eternally starved of enough servers, is driving these unusual structures.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/argument-favor-tranched-rounds",
+    "published": "2026-10-26T14:21:38Z",
+    "title": "The Argument in Favor of Tranched Rounds",
+    "type": "Article",
+    "updated": "2026-10-26T14:22:53Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -5760,5 +5772,27 @@
     "title": "Meta Plans to Raise Up To $95 Billion for AI Through Equity Sales",
     "type": "Briefing",
     "updated": "2026-10-26T13:13:09Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18261": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Anthropic publicly filed a preliminary prospectus for its planning initial public offering, providing a look inside its business for the first half of this year as well as new details about its governance and more than 90 pages of risk factors.</p> <p>The S-1’s filing on Monday sets the stage for ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-publicly-files-s-1-planned-ipo",
+    "published": "2026-10-26T13:40:09Z",
+    "title": "Anthropic Publicly Files S-1 for Its Planned IPO",
+    "type": "Briefing",
+    "updated": "2026-10-26T13:40:09Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18262": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p><strong>Goldman Sachs</strong> has officially won the lead left role on Anthropic’s IPO, putting it in the top position again after the bank won the top job for SpaceX.</p> <p>Morgan Stanley is named stabilization agent for the IPO, a coveted role overseeing the early hours of trading and making sure the stock gets off ...</p>",
+    "link": "https://www.theinformation.com/briefings/goldman-sachs-lead-anthropic-ipo",
+    "published": "2026-10-26T14:22:35Z",
+    "title": "Goldman Sachs to Lead Anthropic IPO",
+    "type": "Briefing",
+    "updated": "2026-10-26T14:22:35Z"
   }
 }
