@@ -2846,6 +2846,18 @@
     "type": "Article",
     "updated": "2026-10-24T14:01:13Z"
   },
+  "tag:www.theinformation.com,2005:Article/18049": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>As AI assistants like Instinct and Meta Platforms’ Muse start to gain traction in shopping, Stripe has taken a leading position in how the agents pay. That’s putting the credit card giants on edge.</p>\n\n<p>The reason for their apprehension: Stripe in many cases is enabling AI agent purchases through&nbsp;virtual cards for one-time use, which can leave card networks with less control over the shopping and payment process, people who work closely with the card firms say. Mastercard and Visa have developed their own payment technology for agent shopping that would use customers’ existing cards, giving the card companies more visibility into who’s making what purchases. That method is still at an early stage, though.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/stripes-ai-shopping-lead-puts-card-giants-edge",
+    "published": "2026-10-26T13:01:00Z",
+    "title": "Stripe’s AI Shopping Lead Puts Card Giants on Edge",
+    "type": "Article",
+    "updated": "2026-10-26T13:01:29Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -5737,5 +5749,16 @@
     "title": "Moonshot AI Launches New Kimi K3.1 Pro Model",
     "type": "Briefing",
     "updated": "2026-10-23T23:03:08Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18260": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Meta Platforms announced plans to seek as much as $95 billion of capital through equity sales, adding to already huge fundraising plans by AI companies to fuel the data center&nbsp;boom.</p> <p>The plans include about $35 billion of underwritten public offerings, of which about $22.5 billion will be ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-plans-raise-95-billion-ai-equity-sales",
+    "published": "2026-10-26T13:13:09Z",
+    "title": "Meta Plans to Raise Up To $95 Billion for AI Through Equity Sales",
+    "type": "Briefing",
+    "updated": "2026-10-26T13:13:09Z"
   }
 }
