@@ -5805,5 +5805,16 @@
     "title": "Microsoft Offers Buyouts to 60,000 Employees",
     "type": "Briefing",
     "updated": "2026-10-26T16:04:03Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18264": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>SpaceX has agreed to pay $40 billion to lease artificial intelligence chips from an entity affiliated with Apollo Global Management.</p> <p>The arrangement will see Apollo sell debt to buy the chips, and then lease them to SpaceX, giving the latter company access to Nvidia’s cutting-edge computing ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-agrees-pay-40-billion-lease-chips-apollo",
+    "published": "2026-10-26T16:18:04Z",
+    "title": "SpaceX Agrees to Pay $40 Billion to Lease Chips from Apollo",
+    "type": "Briefing",
+    "updated": "2026-10-26T16:18:04Z"
   }
 }
