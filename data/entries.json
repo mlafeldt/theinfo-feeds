@@ -5855,5 +5855,27 @@
     "title": "DoorDash Nears Deal to Buy Instacart in $17 Billion Deal",
     "type": "Briefing",
     "updated": "2026-10-26T19:51:41Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18267": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Anthropic <a href=\"https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm#ica694c859b8e458dbf6a73f56dde9d42_2972\">said</a> its expenses in payment processing fees increased by $222 million in the first half of this year from the same period a year ago, highlighting the surging costs of processing AI-related payments as the company grew.</p> <p>The increase, highlighted as a driver in Anthropic’s overall ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-s-1-highlights-rising-payment-costs",
+    "published": "2026-10-26T21:45:36Z",
+    "title": "Anthropic S-1 Highlights Rising Payment Costs",
+    "type": "Briefing",
+    "updated": "2026-10-26T21:45:37Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18268": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>Anthropic’s seven founders said they are committed to keeping Claude free of advertising.</p> <p>Claude’s only incentive is to give people helpful answers, they said in a letter included <a href=\"https://www.theinformation.com/articles/anthropics-s-1-takeaways-giant-compute-commitments-complex-lock-ups\">in their IPO prospectus Monday</a>.</p> <p>“Once advertising becomes part of a company’s revenue targets, the pressure to ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-founders-say-will-keep-claude-free-advertising",
+    "published": "2026-10-26T21:56:50Z",
+    "title": "Anthropic Founders Say They Will Keep Claude Free of Advertising",
+    "type": "Briefing",
+    "updated": "2026-10-26T21:56:50Z"
   }
 }
