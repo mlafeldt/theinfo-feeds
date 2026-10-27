@@ -2911,6 +2911,18 @@
     "type": "Article",
     "updated": "2026-10-27T13:08:36Z"
   },
+  "tag:www.theinformation.com,2005:Article/18056": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>When <b>Anthropic</b> on Monday dropped its long-awaited initial public offering prospectus filing, a lot of the details—see our top takeaways <a href=\"https://www.theinformation.com/articles/anthropics-s-1-takeaways-giant-compute-commitments-complex-lock-ups\">here</a>—weren’t exactly new, given how much my colleagues and others <a href=\"https://www.theinformation.com/articles/anthropic-seeks-palantir-style-voting-control-seven-co-founders-ahead-ipo\">had</a> <a href=\"https://www.theinformation.com/articles/anthropic-considers-letting-shareholders-sell-ipo-departing-spacex-playbook\">previously</a> <a href=\"https://www.theinformation.com/articles/anthropics-big-charity-bill-shareholders\">reported</a> about it.</p><p>Two items stood out to me, though: how Anthropic is running its models more efficiently than before, and changes it made to its already-unusual governance structure.&nbsp;</p><p>Anthropic’s ability to generate $3.5 billion in free cash flow in the first half of 2026, from $16.3 billion in revenue, shows just how much it has improved the way it runs AI in the cloud, compared to the same period a year earlier, when it burned $1.6 billion. Specifically, Anthropic said it is generating an 85% gross profit margin from powering existing models, which doesn’t include the cost of developing new models. (If that figure rings a bell, it’s the same gross margin estimate my colleague Ann described in this column about <a href=\"https://www.theinformation.com/newsletters/ai-infrastructure/attractive-economics-behind-anthropic-data-center-sprint?rc=c48ukx\">Anthropic’s data center grab</a>, which elicited sharp questions from some AI skeptics at the time.)&nbsp;</p><p>Anthropic is doing so even as it relies almost entirely on computing it rents from cloud providers, which themselves need to generate a profit. So its IPO filing is a reality check on the AI skeptics’ longtime view that a business model founded on selling models on a pay-as-you-go, consumption basis wouldn’t be profitable.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/anthropics-85-margin-reality-check-skeptics",
+    "published": "2026-10-27T14:01:06Z",
+    "title": "Why Anthropic's 85% Margin Is a Reality Check for Skeptics",
+    "type": "Article",
+    "updated": "2026-10-27T14:01:51Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -5912,5 +5924,16 @@
     "title": "Nvidia Invests $3 Billion in Meta in Deeper AI Partnership",
     "type": "Briefing",
     "updated": "2026-10-27T08:58:26Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18270": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Meta Platforms is slightly increasing the size of its planned stock sales to fund AI investments to a total of $97.5 billion from $95 billion, the company said.</p> <p>The company is increasing the common stock offering in its fundraising plan to $25 billion from $22.5 billion, Meta said in an <a href=\"https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Pricing-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx\"> ...</a></p>",
+    "link": "https://www.theinformation.com/briefings/meta-slightly-increases-equity-fundraising-plan-97-5-billion",
+    "published": "2026-10-27T13:37:39Z",
+    "title": "Meta Slightly Increases Equity Fundraising Plan to $97.5 Billion",
+    "type": "Briefing",
+    "updated": "2026-10-27T13:37:39Z"
   }
 }
