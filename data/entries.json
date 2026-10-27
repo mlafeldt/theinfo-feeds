@@ -2923,6 +2923,18 @@
     "type": "Article",
     "updated": "2026-10-27T16:08:31Z"
   },
+  "tag:www.theinformation.com,2005:Article/18057": {
+    "authors": [
+      "Laura Bratton"
+    ],
+    "content": "<p>OpenAI is trying to chip away at Anthropic’s lead with enterprises by fashioning itself as a cheaper, more flexible provider, <a href=\"https://www.theinformation.com/articles/anthropics-margin-openais-opportunity\">Steph and I reported this weekend</a>. But Anthropic's <a href=\"https://www.theinformation.com/newsletters/ai-agenda/anthropics-85-margin-reality-check-skeptics\">impressive prospectus for an initial public offering</a>, filed Monday, shows OpenAI will need to do a lot more than that to really move the needle.</p><p>To be sure, OpenAI has done a great job getting companies like Rippling to switch to its cost-efficient models from Anthropic’s. In fact, compared to Google and Anthropic, OpenAI has released the least expensive models this year when it comes to completing tasks in evaluations run by research firm Artificial Analysis.</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/cheaper-models-win-openai-enterprise",
+    "published": "2026-10-27T18:33:50Z",
+    "title": "Why Cheaper Models Won't Win OpenAI the Enterprise",
+    "type": "Article",
+    "updated": "2026-10-27T18:36:37Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
