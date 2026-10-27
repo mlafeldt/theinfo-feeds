@@ -5958,5 +5958,16 @@
     "title": "Oracle To Start Running Google TPUs in Its Cloud",
     "type": "Briefing",
     "updated": "2026-10-27T17:42:51Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18272": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>OpenAI’s models have disproved a foundational theory within cryptography, the AI company claimed on Monday. OpenAI also announced two other breakthroughs in physics and mathematics.</p> <p>The findings come after OpenAI <a href=\"https://www.theinformation.com/newsletters/ai-agenda/openai-beat-math\">released</a> over 700 math papers earlier this month, with its AI models finding novel ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-anthropic-claim-cryptography-breakthrough-day",
+    "published": "2026-10-27T19:55:09Z",
+    "title": "OpenAI, Anthropic Claim Cryptography Breakthrough on Same Day",
+    "type": "Briefing",
+    "updated": "2026-10-27T19:55:09Z"
   }
 }
