@@ -6144,5 +6144,38 @@
     "title": "IPO Pipeline Held Back by Anthropic Listing, Says NYSE’s Martin",
     "type": "Briefing",
     "updated": "2026-10-28T18:36:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18279": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>Apple has announced its first touchscreen Mac computer, but it will come&nbsp;with a massive spike in price. The MacBook Pro with PROLED XDR Display will start at $2,899. On Tuesday, Apple introduced a new MacBook Pro with the M6 chip and no touchscreen that will start at $1,999.</p> <p>The touchscreen ...</p>",
+    "link": "https://www.theinformation.com/briefings/apple-launches-first-touchscreen-macbook",
+    "published": "2026-10-28T20:20:06Z",
+    "title": "Apple Launches First Touchscreen MacBook",
+    "type": "Briefing",
+    "updated": "2026-10-28T20:39:10Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18280": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft revenue rose 19% to $92.3 billion in the September quarter, 1 percentage point faster than the growth it reported in the second quarter. Accelerating sales in its Azure cloud unit, driven in part by server rental revenue from OpenAI, offset the slight revenue decreases in its Xbox and ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-revenue-growth-accelerates-slightly-data-centers-dampen-cash-flows",
+    "published": "2026-10-28T20:39:45Z",
+    "title": "Microsoft Revenue Growth Accelerates Slightly But Data Centers Dampen Cash Flows",
+    "type": "Briefing",
+    "updated": "2026-10-28T20:44:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18281": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google’s cloud sales surged in the latest quarter but overall revenue at parent Alphabet grew a slower-than-expected 25% to $127.6 billion, disappointing investors.</p> <p>Operating profit rose in the third quarter, but net profit declined by nearly a quarter to $26.2 billion, well below analysts’ ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-quarterly-revenue-grows-25-falls-short-expectationsgoogles-cloud-sales-surged-latest-quarter-overall-revenue-parent-alphabet-grew-slower-than-expected-25-127-6-billion-disappointing-investors-operating-profit-rose-third-quarter-net-profit-declined-nearly-quarter-26-2-billion-well-analysts-estimates-according-s-p-capital-iq-alphabets-shares-fell-nearly-9-hours-trading-google-cloud-revenue-third-quarter-doubled-year-earlier-30-7-billion-powered-demand-ai-customers-company-said-wednesday-sales-tensor-processing-unit-ai-chips-meaningfully-contributed-growth-said-information-monday-reported-google-struck-deal-sell-tpus-openai-the-day-google-announced-deal-oracle-offer-ai-chips-last-quarter-google-chief-executive-sundar-pichai-said-google-expects-vast-majority-tpu-revenues-realized-2027-googles-services-business-its-largest-includes-core-search-advertising-operation-grew-less-11-quarter-slowest-rate-since-first-quarter-last-year-reflecting-googles-enormous-spending-ai-data-centers-company-reported-negative-free-cash-flow-9-billion-marked-second-straight-quarter-negative-cash-flow-big-increase-deficit-negative-5-9-billion-previous-quarter-earlier-today-google-released-latest-model-gemini-4-carbon-said-significantly-capable-previous-model-argon-released-less-month-ago",
+    "published": "2026-10-28T20:39:45Z",
+    "title": "Google Quarterly Revenue Grows 25% But Falls Short of Expectations",
+    "type": "Briefing",
+    "updated": "2026-10-28T20:59:04Z"
   }
 }
