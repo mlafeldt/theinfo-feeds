@@ -2991,9 +2991,9 @@
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/amazon-lists-250-million-products-rival-sites-effort-battle-agents",
     "published": "2026-10-28T13:00:46Z",
-    "title": "Amazon Lists 250 Million Products From Rival Sites in Effort to Battle Agents",
+    "title": "Amazon Hedges Against AI Shopping Agents With 250 Million Outside Listings",
     "type": "Article",
-    "updated": "2026-10-28T13:01:13Z"
+    "updated": "2026-10-28T17:29:55Z"
   },
   "tag:www.theinformation.com,2005:Article/18063": {
     "authors": [
@@ -6109,5 +6109,16 @@
     "title": "Amazon Expands ‘Shop Direct’ to 250 Million Products From Rivals",
     "type": "Briefing",
     "updated": "2026-10-28T17:00:25Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18277": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google unveiled Gemini 4 Carbon, which it said is significantly more capable than the model it released less than a month ago, as the company steps up efforts to contend with the leading frontier labs.</p> <p>The back-to-back launches come after nearly a year where Google didn’t release a new flagship ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-launches-gemini-4-carbon-second-major-ai-model-month",
+    "published": "2026-10-28T17:43:40Z",
+    "title": "Google Launches Gemini 4 Carbon, Its Second Major AI Model in a Month",
+    "type": "Briefing",
+    "updated": "2026-10-28T17:43:40Z"
   }
 }
