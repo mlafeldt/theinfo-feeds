@@ -2971,6 +2971,18 @@
     "type": "Article",
     "updated": "2026-10-28T00:22:11Z"
   },
+  "tag:www.theinformation.com,2005:Article/18061": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Semiconductor component maker Onsemi has been discussing an acquisition of 16-year-old chip startup Ferric for close to $1 billion, say people familiar with the matter&mdash;a deal that reflects growing demand for technology that can manage the intense energy needs of AI chips.</p>\n\n<p>Onsemi’s talks with Ferric follow a similar acquisition by rival Analog Devices, which in May <a href=\"https://www.theinformation.com/articles/analog-devices-talks-buy-ai-power-chip-startup-1-5-billion\">agreed to pay $1.5 billion</a> to buy Empower Semiconductor, a 12-year-old startup whose devices help AI chips manage electricity more efficiently. It isn’t clear how the Onsemi deal is being structured. It could include payments to Ferric based on performance targets.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/chipmaker-onsemi-talks-buy-startup-1-billion",
+    "published": "2026-10-28T00:51:14Z",
+    "title": "Chipmaker Onsemi in Talks to Buy Startup for About $1 Billion",
+    "type": "Article",
+    "updated": "2026-10-28T00:51:59Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6005,5 +6017,16 @@
     "title": "OpenAI, Anthropic Claim Cryptography Breakthrough on Same Day",
     "type": "Briefing",
     "updated": "2026-10-27T19:55:09Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18273": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>Anthropic said it acquired Mithril Medicine, a one-person startup developing treatments for two rare forms of muscular dystrophy, a sign of the AI developer’s growing ambitions in drug discovery. The company also said it is working with Bristol Myers Squibb, BigHat Biosciences and four other ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-buys-small-drug-startup-pushes-deeper-biotech",
+    "published": "2026-10-28T00:26:34Z",
+    "title": "Anthropic Buys a Small Drug Startup as It Pushes Deeper Into Biotech",
+    "type": "Briefing",
+    "updated": "2026-10-28T00:26:34Z"
   }
 }
