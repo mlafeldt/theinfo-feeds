@@ -6000,12 +6000,12 @@
     "authors": [
       "Ryan Barwick"
     ],
-    "content": "<p>Google and Oracle <a href=\"https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure\">announced</a> a partnership that will make Google’s tensor processing units available to Oracle cloud customers, the first time the AI chips would be made available on a hyperscale cloud platform outside of Google’s.</p> <p>Oracle said in a statement Tuesday the TPUs will be available by ...</p>",
+    "content": "<p>Google will sell its tensor processing units to Oracle and OpenAI, challenging Nvidia’s hold on the AI chip market.</p> <p>OpenAI is planning to buy Google’s TPUs, The Information <a href=\"https://www.theinformation.com/articles/openai-longtime-nvidia-customer-plans-buy-googles-ai-chips\">reported</a>.</p> <p>Google on Tuesday also said it would partner with Oracle to make Google’s TPUs available to Oracle cloud ...</p>",
     "link": "https://www.theinformation.com/briefings/oracle-start-running-google-tpus-cloud",
     "published": "2026-10-27T17:42:51Z",
-    "title": "Oracle To Start Running Google TPUs in Its Cloud",
+    "title": "Google to Sell AI Chips to OpenAI, Oracle",
     "type": "Briefing",
-    "updated": "2026-10-27T21:39:56Z"
+    "updated": "2026-10-28T03:33:02Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18272": {
     "authors": [
