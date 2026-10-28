@@ -316,12 +316,14 @@ def category(e: Entry, feed: Feed) -> str | None:
 
 
 def short(label: str) -> str:
-    """A label as titles show it, without the site's name every feed already has.
+    """A label as titles show it, without the site's name every feed already has
+    or the subtitle some newsletters spell out their name with.
 
-    Some newsletters carry it, as in "The Information Finance". Categories
-    keep the label whole.
+    Some newsletters carry the site's name, as in "The Information Finance", or
+    a subtitle, as in "WTF: Women in Tech, Media and Finance". Categories keep
+    the label whole.
     """
-    return label.removeprefix("The Information ")
+    return label.removeprefix("The Information ").partition(":")[0]
 
 
 def render(archive: Entries, feed: Feed) -> bytes:
