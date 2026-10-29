@@ -3106,6 +3106,19 @@
     "type": "Article",
     "updated": "2026-10-29T12:05:58Z"
   },
+  "tag:www.theinformation.com,2005:Article/18076": {
+    "authors": [
+      "Jemima McEvoy",
+      "Tiffany Li"
+    ],
+    "content": "<p>Cryptographers who develop encryption technologies may not be sleeping very well these days.</p><p><b>OpenAI</b> and <b>Anthropic</b> both said Monday that their internal AI models had disproven the <b>Exponential Time Hypothesis</b>, a longstanding computer science theorem that predicts the minimum difficulty of solving a certain category of problems. Cryptographers had long assumed the hypothesis was true, and built other findings on the basis of that assumption.</p><p>Disproving the Exponential Time Hypothesis won’t endanger any current encryption methods, said <b>Matthew Green</b>, professor of computer science at <b>Johns Hopkins University</b> and founder of encryption startup <b>Zeutro</b>. But the finding is a big theoretical step, showing that some problems are easier to solve than cryptographers had thought.</p><p>That means cryptographers could also be wrong about other assumptions underlying core encryption methods such as <b>elliptic curve encryption</b>, a method underlying the majority of internet traffic, which would create a scramble to find new ways to keep information on the internet secure.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/encryption-siege-openai-anthropic-disprove-key-cryptography-theorem",
+    "published": "2026-10-29T14:01:06Z",
+    "title": "Encryption Under Siege? OpenAI, Anthropic Disprove Key Cryptography Theorem",
+    "type": "Article",
+    "updated": "2026-10-29T14:01:49Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6305,5 +6318,16 @@
     "title": "DoorDash Will Buy Instacart For $17 Billion",
     "type": "Briefing",
     "updated": "2026-10-29T12:29:22Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18288": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft hopes to raise as much as $25 billion in a bond sale as it looks for new methods to finance its ongoing spending on AI, according to someone with knowledge of the plans.</p> <p>The debt offering reflects how data center operators are seeking new methods to fund their massive capital ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-seeks-raise-25-billion-bond-sale",
+    "published": "2026-10-29T13:35:35Z",
+    "title": "Microsoft Seeks to Raise $25 Billion in Bond Sale",
+    "type": "Briefing",
+    "updated": "2026-10-29T13:35:35Z"
   }
 }
