@@ -3070,6 +3070,18 @@
     "type": "Article",
     "updated": "2026-10-29T00:12:09Z"
   },
+  "tag:www.theinformation.com,2005:Article/18072": {
+    "authors": [
+      "The Information Staff"
+    ],
+    "content": "<p>Artificial intelligence has thoroughly infiltrated business and politics, but it’s also starting to divide companies and investors. That was the takeaway from leaders at The Information’s WTF Summit, a gathering of senior women in the technology and finance industries this week.</p>\n\n<p>Investors are increasingly picking AI winners and losers, and favoring companies that can train models and control the chips and data centers that undergird them, said Goldman Sachs’ global <a href=\"https://www.theinformation.com/briefings/goldman-sachs-investment-banking-co-head-sees-repositioning-amid-ai-boom?rc=zjctrx\">co-head of investment banking Kim Posnett</a>. “What you’re seeing is not a change in AI sentiment,” she said, but “you’re seeing a repositioning and differentiation across the AI trade.”</p>",
+    "label": "WTF: Women in Tech, Media and Finance",
+    "link": "https://www.theinformation.com/articles/everyones-using-ai-divisions-growing-wtf-highlights",
+    "published": "2026-10-29T02:50:25Z",
+    "title": "Everyone’s Using AI But Divisions Are Growing:  WTF Highlights",
+    "type": "Article",
+    "updated": "2026-10-29T03:01:23Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6247,5 +6259,16 @@
     "title": "Shopify Adopts Agentic Payment Tech from Visa, Mastercard",
     "type": "Briefing",
     "updated": "2026-10-28T22:58:02Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18286": {
+    "authors": [
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>ServiceNow shares dropped 19% in after its third-quarter earnings, even after the IT service management software provider slightly beat its earlier revenue growth estimate for its September quarter and forecast a 2% uptick in growth for its current quarter.</p> <p>It’s the latest sign that investors ...</p>",
+    "link": "https://www.theinformation.com/briefings/servicenow-shares-drop-19-earnings-saaspocalypse-fears-persist",
+    "published": "2026-10-29T02:51:25Z",
+    "title": "ServiceNow Shares Drop 19% After Earnings As SaaSpocalypse Fears Persist",
+    "type": "Briefing",
+    "updated": "2026-10-29T02:55:14Z"
   }
 }
