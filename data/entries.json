@@ -3082,6 +3082,18 @@
     "type": "Article",
     "updated": "2026-10-29T03:01:23Z"
   },
+  "tag:www.theinformation.com,2005:Article/18073": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>For as long as there have been ads on the internet, marketing has targeted human eyeballs. But as AI agents crowd onto the web, advertisers and publishers are beginning to deliver ads only AI can see, sparking consternation among some of the agents’ developers, who fear marketers could try to sway agents to take actions without their users’ knowledge.</p>\n\n<p>The first publisher to experiment with these types of invisible ads was venerable Time magazine, which continues to generate a significant portion of its revenue from ads on Time.com. Those ads&mdash;for Ally Bank and Project Management Institute, a trade group for project managers&mdash;first showed up online in August and were developed in a partnership with Mobian, a New York&ndash;based ad tech startup. The ads were designed to give agents information about the institute’s expertise in project management and Ally Bank’s online banking services and ATM network.</p>\n\n<p>Following the ads’ debut, Time has had over 30 meetings with brands about doing similar ads for AI agents, and several new advertisers are launching them now, said Time Chief Operating Officer Mark Howard.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/publishers-adding-invisible-ads-ai-agents",
+    "published": "2026-10-29T13:00:53Z",
+    "title": "Why Publishers Are Adding Invisible Ads for AI Agents",
+    "type": "Article",
+    "updated": "2026-10-29T13:01:18Z"
+  },
   "tag:www.theinformation.com,2005:Article/18075": {
     "authors": [
       "Valida Pau"
@@ -6282,5 +6294,16 @@
     "title": "ServiceNow Shares Drop 19% After Earnings As SaaSpocalypse Fears Persist",
     "type": "Briefing",
     "updated": "2026-10-29T02:55:14Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18287": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>DoorDash is purchasing Instacart in a roughly $17 billion deal, an acquisition that would make the combined company a constant presence in the lives of shoppers who order groceries and restaurant meals online for home delivery.</p> <p>Instacart went public in 2023 and has lately seen revenue growth ...</p>",
+    "link": "https://www.theinformation.com/briefings/doordash-will-buy-instacart-17-billion",
+    "published": "2026-10-29T12:29:22Z",
+    "title": "DoorDash Will Buy Instacart For $17 Billion",
+    "type": "Briefing",
+    "updated": "2026-10-29T12:29:22Z"
   }
 }
