@@ -6572,5 +6572,27 @@
     "title": "U.S. Stocks Dive on AI Spending Fears",
     "type": "Briefing",
     "updated": "2026-10-30T22:31:39Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18301": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>OpenAI has lowered the amount of capital it is seeking from investors in its latest fundraising round by $10 billion, according to a Friday report by <a href=\"https://www.ft.com/content/7a3ad950-1b3b-4d9e-8c15-65a61ae6180f?syn-25a6b1a6=1\">The Financial Times.</a></p> <p>The company was <a href=\"https://www.bloomberg.com/news/articles/2026-09-29/openai-targets-30-billion-in-new-funding-at-1-4-trillion-value\">initially seeking</a> to raise $30 billion at a $1.4 trillion valuation. It lowered the valuation last week to ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-lowers-fundraising-target-after-decreasing-possible-valuation",
+    "published": "2026-10-31T00:33:18Z",
+    "title": "OpenAI Lowers Fundraising Target–After Decreasing Possible Valuation",
+    "type": "Briefing",
+    "updated": "2026-10-31T00:33:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18302": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>S&amp;P Global Ratings lowered its credit rating outlook on Meta Platforms to negative from stable, saying the company’s ability to monetize its fast-rising AI investments is “more limited than that of its peers.”</p> <p>The <a href=\"https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3652896\">announcement</a> Friday comes after Meta last week reported negative free cash ...</p>",
+    "link": "https://www.theinformation.com/briefings/s-p-lowers-metas-credit-outlook-amid-soaring-ai-spending",
+    "published": "2026-10-31T00:43:11Z",
+    "title": "S&P Lowers Meta’s Credit Outlook Amid Soaring AI Spending",
+    "type": "Briefing",
+    "updated": "2026-10-31T00:43:11Z"
   }
 }
