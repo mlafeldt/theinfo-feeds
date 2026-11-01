@@ -3277,6 +3277,30 @@
     "type": "Article",
     "updated": "2026-10-31T15:04:33Z"
   },
+  "tag:www.theinformation.com,2005:Article/18089": {
+    "authors": [
+      "Laura Mandaro"
+    ],
+    "content": "<p>Can Apple, Uber and Palantir turn this stock market around? It sure needs it. Worries about excessive AI spending tanked Google’s stock last week and sent the Nasdaq Composite to its worst month since March 2025. While the major indexes are still in the green for the year, a few more days like Friday’s could change that. Fortunately, we have a handful of earnings that might temper the gloom.&nbsp;</p><p>Palantir Technologies, which reports Monday, has told investors to expect an 83% jump in the third quarter from the year-ago period. That’s a slowdown from the <a href=\"https://www.theinformation.com/newsletters/the-briefing/palantirs-rocket-ship-growth?rc=zjctrx\">second quarter’s blistering 93% growth</a>. But at least investors will get a reprieve from enormous capital expenditures. Palantir only spent $22 million in capex in the first half.&nbsp;</p><p>As for Apple, it’s already warned investors that supply constraints for advanced chip manufacturing would contribute to slower revenue growth, to a range of&nbsp; 9% to 11% in the September quarter from a year ago, slower than its 16% growth in the June quarter. Apple has also forecast iPhone revenue growth in the mid-teens versus 22% in the June quarter. An improvement on that outlook could buoy the mood. On the other hand, a sharper slowdown in growth from either companies could give investors another reason to sell tech stocks.&nbsp;</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/apple-uber-elections-headline-week",
+    "published": "2026-11-01T23:00:47Z",
+    "title": "Apple, Uber and Elections Headline Week",
+    "type": "Article",
+    "updated": "2026-11-01T23:06:37Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18090": {
+    "authors": [
+      "The Information Staff"
+    ],
+    "content": "<p>At The Information’s annual WTF Summit a few days ago, women leaders from Anthropic, Google, Goldman Sachs and dozens of other companies across technology and media gathered to discuss the forces remaking those industries. Conversation topics ranged from on the state of tech M&amp;A to chip financing to the geopolitics between America and China. Across all of those talks, the VIPs had their eyes fixed on what lies ahead&mdash;perhaps no one more so than Amanda Peterson Corio, Google’s global head of data center energy. “I live in 2031,” she told attendees. Below, some scenes from one of our favorite events of the year.</p>",
+    "label": "WTF: Women in Tech, Media and Finance",
+    "link": "https://www.theinformation.com/articles/informations-wtf-summit-pictures-2",
+    "published": "2026-11-01T21:52:32Z",
+    "title": "The Information’s WTF Summit in Pictures",
+    "type": "Article",
+    "updated": "2026-11-01T22:23:04Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6653,5 +6677,27 @@
     "title": "FBI Says North Korea Behind $6.3 Billion Binance Hack",
     "type": "Briefing",
     "updated": "2026-10-31T23:17:06Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18304": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>The Trump administration declined to produce key documents related to its voluntary AI testing framework, despite an <a href=\"https://protectdemocracy.org/wp-content/uploads/2026/09/2026.09.15_PDP_v_ONCD_JSR.pdf\">agreement</a> struck in September with the nonprofit Protect Democracy Project after a Freedom of Information Act lawsuit. In a <a href=\"https://protectdemocracy.org/wp-content/uploads/2026/10/Civil-Action-No.-26-3064__Production__10.30.2026_Redacted.pdf\">letter</a> sent to the nonprofit on Friday by the White ...</p>",
+    "link": "https://www.theinformation.com/briefings/trump-administration-refuses-release-information-ai-testing-framework",
+    "published": "2026-11-01T23:09:23Z",
+    "title": "Trump Administration Refuses to Release Information on AI Testing Framework",
+    "type": "Briefing",
+    "updated": "2026-11-01T23:09:23Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18305": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Binance, the world’s largest crypto exchange, saw $5.8 billion in net outflow of assets after it resumed processing withdrawals for users on Sunday morning following a historic $6.3 billion hack.</p> <p>The net outflow figure, tracked by crypto analytics platform <a href=\"https://defillama.com/cexs\">DefiLlama</a>, represents about 3% of ...</p>",
+    "link": "https://www.theinformation.com/briefings/binance-allows-customers-resume-withdrawals-sees-5-8-billion-net-outflow",
+    "published": "2026-11-01T23:18:56Z",
+    "title": "Binance Allows Customers to Resume Withdrawals, Sees $5.8 Billion Net Outflow",
+    "type": "Briefing",
+    "updated": "2026-11-01T23:18:56Z"
   }
 }
