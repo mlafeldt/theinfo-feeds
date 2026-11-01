@@ -3229,6 +3229,30 @@
     "type": "Article",
     "updated": "2026-10-30T13:01:16Z"
   },
+  "tag:www.theinformation.com,2005:Article/18085": {
+    "authors": [
+      "Amir Efrati"
+    ],
+    "content": "<p>Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week, a reality check from a company that itself is testing AI server chips in orbit.</p><p>“Let’s explore all the terrestrial options before we go extraterrestrial,” Amanda Peterson Corio said at <a href=\"https://www.theinformation.com/articles/everyones-using-ai-divisions-growing-wtf-highlights?rc=zjctrx\">The Information’s WTF summit,</a>&nbsp; a gathering of senior women in the technology and finance industries. The comments came as SpaceX’s orbital data center plans underpin part of its roughly $1.8 trillion market capitalization.</p>",
+    "label": "AI Infrastructure",
+    "link": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
+    "published": "2026-11-01T16:30:45Z",
+    "title": "Google Energy Chief: Space Data Centers Cost Up to 100 Times More Than Those on Earth",
+    "type": "Article",
+    "updated": "2026-11-01T16:32:44Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18086": {
+    "authors": [
+      "Shane Burke"
+    ],
+    "content": "<p>As data centers have gone from obscurity to the top of voters’ minds, midterm candidates are taking a stance on the issue. The fight is most heated in races for governor, the office that has shown the most power to limit data centers on a broad scale. Whichever candidates win, more doors are likely to close on the industry, leaving it with fewer places to build and higher costs where it still can.</p>\n\n<p>In 21 of the 36 states electing a governor on Tuesday, at least one major-party nominee backs a data center moratorium, according to The Information’s analysis of candidate platforms and public statements. Both nominees back pauses in five states (Michigan, New Hampshire, Ohio, Oregon and Texas), and a candidate promising a pause is likely to win in three (Maine, New Mexico and New York), based on recent polls. In seven&nbsp;more, it could be a close race between a candidate who backs a pause and one who doesn’t (Alaska, Florida, Georgia, Iowa,&nbsp;Kansas,&nbsp;Wisconsin and Vermont). Those 15&nbsp;states are home to more than a third of the U.S. population.</p>",
+    "label": "Sunday Insights",
+    "link": "https://www.theinformation.com/articles/candidates-backing-data-center-pauses-win-15-governors-races",
+    "published": "2026-11-01T16:00:41Z",
+    "title": "Candidates Backing Data Center Pauses Could Win in Up to 15 Governor’s Races",
+    "type": "Article",
+    "updated": "2026-11-01T16:31:39Z"
+  },
   "tag:www.theinformation.com,2005:Article/18087": {
     "authors": [
       "Jyoti Mann"
