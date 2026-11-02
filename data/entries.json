@@ -3301,6 +3301,30 @@
     "type": "Article",
     "updated": "2026-11-01T22:23:04Z"
   },
+  "tag:www.theinformation.com,2005:Article/18092": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>Apple’s new CEO John Ternus wants the company to get serious about robots, but judging by Apple’s plodding progress on the first one it hopes to sell&mdash;a device with a nine-inch screen that swivels around on an arm and resembles the Pixar lamp&mdash;he could face an uphill battle.</p>\n\n<p>Apple initially began working on the robot in 2019&mdash;code-naming it J595&mdash;and had modest ambitions for it, envisioning it mostly as a device for video calls. Its robotic arm was intended to allow it to follow someone wherever they were in a room. But hopes for the robot ballooned once Apple executives began wanting to add AI capabilities to it.</p>\n\n<p>The current design for the robot envisions it using a camera and sensors to be fully aware of its environment and act autonomously, allowing it to turn on the lights when someone walks into a room&mdash;or perhaps even try to tell a cat to get off a table. It is meant to be smart enough to avoid accidentally hitting objects around it.</p>\n\n<p>Much of the hardware needed for the robot has been finished for around two years, but the software team has found it difficult to keep pace, people who have worked on the project said. The hardware team responsible for J595 has pushed to hurry up and release the product. Meanwhile, the software team has advocated for delaying its release, and for the past year, it has attempted to strip back some proposed features and focus the product on a few capabilities related to FaceTime and automating home tasks, like switching on a light.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/inside-apples-slog-create-first-robot",
+    "published": "2026-11-02T14:16:57Z",
+    "title": "Inside Apple’s Slog to Create Its First Robot",
+    "type": "Article",
+    "updated": "2026-11-02T14:17:26Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18093": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>My colleagues and I have been hearing a <a href=\"https://www.theinformation.com/articles/anthropics-margin-openais-opportunity\">lot of stories</a> about big enterprise customers renegotiating their annual contracts with model developers.&nbsp;</p><p>Traditionally, software sellers use this time as an opportunity to convince customers to increase their annual commit by, for instance, reminding them how they exceeded their usage limits this year or highlighting new features they’ve released. In the past, model developers have had success using that playbook.</p><p>This year has been a different story, though, some customers tell me. For instance, one executive at a major financial services firm said their company was hesitant to increase their spending commitment with <b>Anthropic</b>, <b>OpenAI</b> or any other model provider for a couple reasons.&nbsp;</p><p>First, this executive said, the rapid pace of model releases means enterprises want flexibility to quickly switch to whatever the best new model is, something that can change week to week.&nbsp;</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/contract-renewal-season-customers-biting",
+    "published": "2026-11-02T15:01:23Z",
+    "title": "It’s Contract Renewal Season, But Some Customers Aren’t Biting",
+    "type": "Article",
+    "updated": "2026-11-02T15:02:04Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6721,5 +6745,61 @@
     "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
     "type": "Briefing",
     "updated": "2026-11-02T10:42:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18308": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Chipmaker Marvell Technologies agreed Monday to buy laser maker Lumentum in an all-stock deal worth around $80 billion, a sign of how the AI investment boom has boosted Lumentum’s value.</p> <p>Marvell, which designs chips for data centers, networking and storage systems, is buying one of the market ...</p>",
+    "link": "https://www.theinformation.com/briefings/marvell-buy-lumentum-115-billion-all-stock-deal",
+    "published": "2026-11-02T13:08:44Z",
+    "title": "Marvell to Buy Lumentum in $80 Billion All-Stock Deal",
+    "type": "Briefing",
+    "updated": "2026-11-02T21:59:16Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18309": {
+    "authors": [
+      "Alix Coutures",
+      "Catherine Perloff"
+    ],
+    "content": "<p>OpenAI has signed deals with Magnite and PubMatic, whose software enables advertisers to place their ads on websites and other digital platforms, to fill unused ad space on ChatGPT, according to three people familiar with the deals.</p> <p>Advertisers are using Magnite and PubMatic’s software to set ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-openai-sign-deals-magnite-pubmatic-fill-unused-chatgpt-ad-space",
+    "published": "2026-11-02T15:00:48Z",
+    "title": "Exclusive: OpenAI Sign Deals With Magnite, PubMatic to Fill Unused ChatGPT Ad Space",
+    "type": "Briefing",
+    "updated": "2026-11-02T21:50:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18310": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic reported nearly $17 billion in revenue in the third quarter ending September, up 47% from the second quarter, the latest sign that its once red-hot revenue growth rate is slowing ahead of a blockbuster IPO this month.</p> <p>The AI company reported a $23.3 billion net loss for the quarter, ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropics-revenue-surged-17-billion-q3-swung-back-operating-loss",
+    "published": "2026-11-02T15:12:33Z",
+    "title": "Anthropic’s Revenue Surged to $17 Billion in Q3, Swung Back to Operating Loss",
+    "type": "Briefing",
+    "updated": "2026-11-02T15:12:33Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18311": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>Oracle filed&nbsp;to raise $20 billion through fresh debt and equity offerings on Monday&nbsp;its latest funding move as it spends heavily on AI infrastructure. The cloud and software firm is selling $10 billion worth of investment-grade bonds and $10 billion in common stock.</p> <p>Oracle shares ...</p>",
+    "link": "https://www.theinformation.com/briefings/oracle-launches-20-billion-stock-bond-sales",
+    "published": "2026-11-02T20:55:30Z",
+    "title": "Oracle Launches $20 Billion in Stock and Bond Sales",
+    "type": "Briefing",
+    "updated": "2026-11-02T21:52:53Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18312": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>SpaceX is in talks with discount carrier Boost Mobile to expand the company’s existing wireless coverage beyond its satellite network, <a href=\"https://www.washingtonpost.com/technology/2026/11/02/inside-elon-musks-plan-upend-wireless-phone-industry/\">according</a> to The Washington Post. The news outlet reported that the talks could result in either acquiring the mobile network, which is owned by EchoStar, or ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-talks-boost-mobile-expand-wireless-coverage",
+    "published": "2026-11-02T21:40:28Z",
+    "title": "SpaceX Is in Talks With Boost Mobile to Expand Wireless Coverage",
+    "type": "Briefing",
+    "updated": "2026-11-02T21:52:12Z"
   }
 }
