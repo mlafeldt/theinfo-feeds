@@ -6710,5 +6710,16 @@
     "title": "Salesforce to Buy Defense Tech Startup, Extending Acquisition Streak",
     "type": "Briefing",
     "updated": "2026-11-02T03:07:35Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18307": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>DeepSeek has unveiled a prototype of a new autonomous coding agent, as the Chinese AI lab steps up its efforts to compete with Anthropic’s Claude Code, OpenAI’s Codex and other popular coding tools.</p> <p>The DeepSeek Harness team <a href=\"https://github.com/deepseek-ai/dsh-superagent-prototype\">open-sourced</a> what it described as a “super agent” over the weekend. The ...</p>",
+    "link": "https://www.theinformation.com/briefings/deepseek-unveils-autonomous-coding-agent-prototype",
+    "published": "2026-11-02T05:55:08Z",
+    "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
+    "type": "Briefing",
+    "updated": "2026-11-02T10:42:07Z"
   }
 }
