@@ -6871,5 +6871,27 @@
     "title": "OpenAI Hires Ex-Army Secretary As Senior Advisor",
     "type": "Briefing",
     "updated": "2026-11-03T02:21:05Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18316": {
+    "authors": [
+      "Qianer Liu"
+    ],
+    "content": "<p>Nvidia has recently told some cloud computing customers to reduce their exposure to Chinese companies, according to three people familiar with the matter, potentially narrowing a key route for China’s AI developers to access advanced computing power.</p> <p>The guidance is intended in part to encourage ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-tells-cloud-clients-take-less-china-business",
+    "published": "2026-11-03T06:46:30Z",
+    "title": "Nvidia Tells Cloud Clients to Take on Less China Business",
+    "type": "Briefing",
+    "updated": "2026-11-03T09:19:46Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18317": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>China’s top economic planner said on Tuesday that the country will closely monitor the impact of AI on employment, as Beijing moves to establish safety standards and ethical guidelines covering “the whole life cycle of AI.”</p> <p>Wang Ruomeng, a senior official with the National Development and Reform ...</p>",
+    "link": "https://www.theinformation.com/briefings/china-signals-plans-broad-ai-safety-guardrails",
+    "published": "2026-11-03T09:18:55Z",
+    "title": "China Signals Plans for Broad AI Safety Guardrails",
+    "type": "Briefing",
+    "updated": "2026-11-03T09:19:46Z"
   }
 }
