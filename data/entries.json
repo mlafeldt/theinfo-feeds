@@ -3325,6 +3325,42 @@
     "type": "Article",
     "updated": "2026-11-02T15:02:04Z"
   },
+  "tag:www.theinformation.com,2005:Article/18094": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Apple’s new CEO, John Ternus, has learned from the best. The script for his first earnings call on Monday was so full of marketing palaver about Apple products, and so lacking in information, that Ternus’ predecessor, Tim Cook, must have been glowing with pride. Perhaps after seeing investors freak out last week when other big tech firms reported earnings squeezed by AI investments, Ternus was determined to bore Wall Street into submission.</p><p>Alas! Finance chief Kevan Parekh woke listeners from their Ternus-induced slumber by projecting 7% to 10% growth in revenue for the December quarter, a marked slowdown from the 12% growth in the September period. Meanwhile, he projected a drop in Apple’s gross margin, thanks to rising costs of memory. Apple shares promptly traded down, falling as much as 4% in after-hours trading. Parekh blamed limited component supplies for the expected revenue slowdown: Apple can’t make as many of its devices as it could sell. But that may not be the only explanation.&nbsp;</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/apples-slowdown",
+    "published": "2026-11-03T01:01:27Z",
+    "title": "Apple’s Slowdown",
+    "type": "Article",
+    "updated": "2026-11-03T01:10:36Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18095": {
+    "authors": [
+      "The Information Staff"
+    ],
+    "content": "<p>For an illustration of how porous U.S. restrictions on the shipment of AI chips to China can be, consider a technique that has begun to catch on among smugglers involving a key type of memory chip.</p>\n\n<p>While U.S. export regulations ban the shipment of high-bandwidth memory chips on their own to China, including from countries like South Korea, those rules have a loophole that allows the sales of those memory chips if they’re packaged together on plates with cheap server processors whose performance falls below the export restriction threshold. That’s because the computing power of the package gets determined by the server processor, not the memory chips, according to the rules.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/smugglers-get-expensive-memory-chips-china-south-korea",
+    "published": "2026-11-03T01:07:37Z",
+    "title": "How Smugglers Get Expensive Memory Chips to China from South Korea",
+    "type": "Article",
+    "updated": "2026-11-03T01:38:01Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18096": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>The ability to monitor AI models to detect what they’re trying to do and why is widely considered a crucial part of the effort to keep the technology operating safely. It’s also increasingly hard to do, said Joseph Bloom, the head of model transparency at the U.K. AI Security Institute.</p>\n\n<p>“In general, we’re seeing monitorability&mdash;in various respects or from various angles&mdash;decrease,” Bloom said on the latest episode of The Information’s AI Deep Dive, in one of the first on-the-record interviews that a member of technical staff at AISI has given. (<a href=\"https://www.youtube.com/watch?v=kV5NMaCXmqI\">The full episode is available here</a>.) The institute is one of the world’s largest government bodies focused on AI, and its work includes evaluating models from leading AI companies.</p>",
+    "label": "TITV",
+    "link": "https://www.theinformation.com/articles/ai-models-getting-harder-monitor-says-u-k-governments-joseph-bloom",
+    "published": "2026-11-03T02:03:15Z",
+    "title": "AI Models Are Getting Harder to Monitor, Says U.K. Government’s Joseph Bloom",
+    "type": "Article",
+    "updated": "2026-11-03T02:34:01Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -6801,5 +6837,39 @@
     "title": "SpaceX Is in Talks With Boost Mobile to Expand Wireless Coverage",
     "type": "Briefing",
     "updated": "2026-11-02T21:52:12Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18313": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>In Apple’s first earnings under new chief executive John Ternus, the company reported sales growth slowed in its fiscal fourth quarter.</p> <p>Total revenue for the September quarter was $114.5 billion, up from 12% from the previous year, its slowest sales growth for the year. The iPhone business ...</p>",
+    "link": "https://www.theinformation.com/briefings/apple-sales-cool",
+    "published": "2026-11-02T23:39:01Z",
+    "title": "Apple Sales Cool",
+    "type": "Briefing",
+    "updated": "2026-11-03T01:12:53Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18314": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Valida Pau"
+    ],
+    "content": "<p>Salesforce extended its recent shopping spree, <a href=\"https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-cresta/\">announcing</a> on Monday plans to acquire Cresta, a nine-year-old provider of AI-powered contact center automation software. Salesforce didn’t disclose a price but it agreed to pay $2.7 billion for Cresta, according to a person familiar with the deal.</p> <p> ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-salesforce-acquires-startup-cresta-2-7-billion",
+    "published": "2026-11-03T00:12:26Z",
+    "title": "Exclusive: Salesforce Acquires Startup Cresta for $2.7 Billion",
+    "type": "Briefing",
+    "updated": "2026-11-03T01:12:52Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18315": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>Former U.S. Army Secretary Dan Driscoll is joining OpenAI to help expand the use of the AI company’s technology in national defense and other military applications.</p> <p>The former government official, who stepped away from his Army post in September after reportedly clashing with Defense Secretary ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-hires-ex-army-secretary-senior-advisor",
+    "published": "2026-11-03T00:34:05Z",
+    "title": "OpenAI Hires Ex-Army Secretary As Senior Advisor",
+    "type": "Briefing",
+    "updated": "2026-11-03T02:21:05Z"
   }
 }
