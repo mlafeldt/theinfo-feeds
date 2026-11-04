@@ -3421,9 +3421,22 @@
     "label": "Applied AI",
     "link": "https://www.theinformation.com/articles/linkedin-swapped-openai-models-keep-server-costs-flat",
     "published": "2026-11-03T18:31:27Z",
-    "title": "LinkedIn Swapped Out OpenAI Models to Keep Its Server Costs Flat",
+    "title": "LinkedIn Swapped Out Some OpenAI Models to Keep Its Server Costs Flat",
     "type": "Article",
-    "updated": "2026-11-03T18:34:26Z"
+    "updated": "2026-11-03T19:14:43Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18102": {
+    "authors": [
+      "Jemima McEvoy",
+      "Jessica E. Lessin"
+    ],
+    "content": "<p><a href=\"https://www.theinformation.com/org-charts/uber\">Uber</a>’s President Jill Hazelbaker is joining <a href=\"https://www.theinformation.com/org-charts/openai\">OpenAI</a> as its chief corporate affairs officer, filling a role that has been empty since the start of the year.</p>\n\n<p>Hazelbaker, who is also a veteran of Google and Snap, will be responsible for global communications and brand strategy. She will attempt to stabilize a team that has had significant turnover in its senior management in recent years and a time when market jitters ahead of a potential IPO are mounting.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/ubers-jill-hazelbaker-join-openai-chief-corporate-affairs-officer",
+    "published": "2026-11-03T19:20:56Z",
+    "title": "Uber’s Jill Hazelbaker to Join OpenAI as Chief Corporate Affairs Officer",
+    "type": "Article",
+    "updated": "2026-11-03T19:29:36Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -6962,11 +6975,55 @@
     "authors": [
       "Yueqi Yang"
     ],
-    "content": "<p>Binance said a software engineer downloaded malicious code onto his work computer to complete an assignment for a bogus job interview, part of the several steps since June that eventually allowed attackers to gain access to its system to conduct a $6.3 billion hack.</p> <p>The hackers then used an “ ...</p>",
+    "content": "<p>Binance said a software engineer inadvertently downloaded malicious code onto his work computer to complete an assignment for a&nbsp;job interview, part of the several steps since June that eventually allowed attackers to gain access to its system to conduct a $6.3 billion hack. The engineer ...</p>",
     "link": "https://www.theinformation.com/briefings/binance-says-hackers-used-bogus-job-interview-ai-tool",
     "published": "2026-11-03T18:17:26Z",
     "title": "Binance Says Hackers Used Bogus Job Interview and AI Tool",
     "type": "Briefing",
-    "updated": "2026-11-03T18:17:27Z"
+    "updated": "2026-11-04T00:05:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18319": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Shopify reported that gross profit margin from its subscriptions business fell, partly as a result of higher spending on AI, sending Shopify stock tumbling 7.6%.</p> <p>The stock plunge was despite the company’s reporting 32% higher revenues of $3.7 billion for the September quarter, reflecting ...</p>",
+    "link": "https://www.theinformation.com/briefings/shopify-stock-falls-7-6-company-discloses-profit-margin-drop-due-ai",
+    "published": "2026-11-03T20:24:58Z",
+    "title": "Shopify Stock Falls 7.6% After Company Discloses Profit Margin Drop Due to AI",
+    "type": "Briefing",
+    "updated": "2026-11-04T00:05:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18320": {
+    "authors": [
+      "Jason Dean"
+    ],
+    "content": "<p>Google announced changes to its AI offerings for schools that it said will give administrators more control over the technology—but that also will require those wanting to use its search service to use an AI-enhanced version.</p> <p>Under the new policy, access to Gemini, Gemini Notebook and Google ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-gives-schools-ai-control-requires-ai-search",
+    "published": "2026-11-03T21:32:06Z",
+    "title": "Google Gives Schools More AI Control, But Requires AI for Search",
+    "type": "Briefing",
+    "updated": "2026-11-03T22:09:27Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18321": {
+    "authors": [
+      "Amir Efrati"
+    ],
+    "content": "<p>AI server chip designer Advanced Micro Devices said Tuesday that revenue in the current quarter would rise about 66% year over year, or 21&nbsp;percentage points faster than revenue grew in the third quarter. And it said revenue would grow more than 80% next year, or more than twice as fast as ...</p>",
+    "link": "https://www.theinformation.com/briefings/amd-projects-rapid-revenue-acceleration-fourth-quarter",
+    "published": "2026-11-03T22:09:57Z",
+    "title": "AMD Projects Rapid Revenue Acceleration Over the Next Year",
+    "type": "Briefing",
+    "updated": "2026-11-03T23:26:25Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18322": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Shares of Synopsys and Cadence Design Systems dropped as much as 4% on Tuesday after <a href=\"https://www.theinformation.com/articles/anthropic-touts-claudes-chip-design-skills-ipo-investors\">The Information reported</a> that Anthropic has told investors that it is using its own Claude models for engineering and design work on its custom chips.</p> <p>Anthropic’s engineers found that Claude cuts down the time ...</p>",
+    "link": "https://www.theinformation.com/briefings/synopsys-cadence-shares-drop-4-information-report",
+    "published": "2026-11-04T00:05:36Z",
+    "title": "Synopsys, Cadence Shares Drop 4% on The Information Report",
+    "type": "Briefing",
+    "updated": "2026-11-04T00:05:36Z"
   }
 }
