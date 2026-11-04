@@ -3438,6 +3438,18 @@
     "type": "Article",
     "updated": "2026-11-03T19:29:36Z"
   },
+  "tag:www.theinformation.com,2005:Article/18103": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Anyone with an interest in tech will be glued to the TV or social media tonight, monitoring the midterm elections. As my colleague Shane Burke writes below, more than 20 candidates in state governor races support a moratorium on data center development. There’s also the <a href=\"https://www.theinformation.com/articles/californians-want-texas-top-destination?rc=9byxri\">California billionaire tax,</a> Proposition 40, to track. But for those in tech fretting about the results, remember this: Nothing that happens tonight will change the relaxed antitrust regime we’ve got right now. That’s thanks to the Trump administration, not Congress.</p><p>And that means companies have got two more years to get deals done before the antitrust climate could change. That's why the tech deal scene lately has resembled that old “<a href=\"https://www.youtube.com/watch?v=MWgtO65AS_Y\">Supermarket Sweep</a>” TV game show where contestants have a limited amount of time to grab stuff off the shelves in a supermarket. We’ve seen deals such as Marvell and Lumentum on Monday, DoorDash and Instacart last week, Fox and Roku in June and many others. It’s not just tech, either (think Skydance and Warner Bros. Discovery). Overall, deals worth $2.6 trillion have been announced so far this year, according to Dealogic, 66% more than at this time last year.</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/salesforces-m-a-blitz-reflects-broader-deal-rush",
+    "published": "2026-11-04T01:01:25Z",
+    "title": "Salesforce’s M&A Blitz Reflects Broader Deal Rush",
+    "type": "Article",
+    "updated": "2026-11-04T01:08:25Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7025,5 +7037,49 @@
     "title": "Synopsys, Cadence Shares Drop 4% on The Information Report",
     "type": "Briefing",
     "updated": "2026-11-04T00:05:36Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18323": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Canva is making its first round of job cuts since it was founded in 2013, the company told staff on Tuesday. The company said 22% of its staff, or 1,271 people, will need to change roles, relocate, or lose their jobs.</p> <p>“We’re simplifying layers, consolidating overlapping responsibilities, and ...</p>",
+    "link": "https://www.theinformation.com/briefings/canva-lays-workers-ai-rollout-problems",
+    "published": "2026-11-04T00:33:20Z",
+    "title": "Canva Lays Off Workers After AI Rollout Problems",
+    "type": "Briefing",
+    "updated": "2026-11-04T06:03:08Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18324": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>Democrats celebrated sweeping electoral victories Tuesday that were projected to give them control of the U.S. Senate, House of Representatives and governor’s offices. The results could have&nbsp;potentially significant implications for the AI economy.</p> <p>The strong showings for Democrats included ...</p>",
+    "link": "https://www.theinformation.com/briefings/early-election-results-point-blue-wave",
+    "published": "2026-11-04T03:28:19Z",
+    "title": "Democrats Ride Blue Wave to Retake House and Senate",
+    "type": "Briefing",
+    "updated": "2026-11-04T04:56:20Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18325": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>Texas elected Democrats for governor and the U.S. Senate for the first time in decades, creating potential uncertainty for the state’s booming AI data center sector and its most prominent tech leader, Elon Musk.</p> <p>Gina Hinojosa, a Democratic congresswoman from the state, was projected to win the ...</p>",
+    "link": "https://www.theinformation.com/briefings/stunning-democrat-victories-texas-bring-uncertainty-data-centers-musk",
+    "published": "2026-11-04T04:41:18Z",
+    "title": "Stunning Democratic Victories in Texas Bring Uncertainty for Data Centers, Musk",
+    "type": "Briefing",
+    "updated": "2026-11-04T04:58:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18326": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Proposition 40, the California ballot initiative that would enact a one-time 5% tax on billion-dollar fortunes to fund healthcare and education in the state, was losing as of Tuesday night.</p> <p>While only about half of the votes had been counted, 56.5% of voters had voted against it, according to ...</p>",
+    "link": "https://www.theinformation.com/briefings/california-billionaire-tax-losing-polls-closed",
+    "published": "2026-11-04T06:20:31Z",
+    "title": "California Billionaire Tax Losing After Polls Closed",
+    "type": "Briefing",
+    "updated": "2026-11-04T06:20:31Z"
   }
 }
