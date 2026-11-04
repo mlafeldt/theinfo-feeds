@@ -3475,6 +3475,67 @@
     "type": "Article",
     "updated": "2026-11-04T15:03:29Z"
   },
+  "tag:www.theinformation.com,2005:Article/18106": {
+    "authors": [
+      "Shane Burke"
+    ],
+    "content": "<p>Election Day’s blue wave is set to crash into the data center industry.</p>\n\n<p>In 12 states, the winning or leading candidate for governor has called for a pause on data center development, including Alaska, Georgia, Kansas, Maine, Michigan, New Hampshire, New Mexico, New York, Ohio, Oregon, Texas and Wisconsin. And in even more states, winners have also pledged other restrictions on data centers including ratepayer protections, environmental limits and the elimination of tax incentives for building the facilities.</p>\n\n<p>And of the 24 incoming governors who did not call for a pause, 22 back at least one limit on data centers. Ratepayer protections, which would make sure households don’t shoulder the costs of increased power demand or energy infrastructure buildouts, were nearly universal: 34 of 36 winners support them. And 27 back restrictions relating to water usage or the environment.</p>",
+    "label": "Politics and Policy",
+    "link": "https://www.theinformation.com/articles/blue-wave-engulf-data-center-industry",
+    "published": "2026-11-04T17:09:44Z",
+    "title": "Blue Wave Could Engulf Data Center Industry",
+    "type": "Article",
+    "updated": "2026-11-04T18:33:02Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18107": {
+    "authors": [
+      "Anita Ramaswamy"
+    ],
+    "content": "<p>Lumentum, the optical networking component maker that Marvell Technology said on Monday it would buy, was swept up by Wednesday’s election-driven sell-off of stocks that have benefited most from the AI data center boom. But investors shouldn’t lose sight of the bigger picture&mdash;another bidder for Lumentum could emerge, or Marvell could come back and sweeten its proposal with more cash.</p>\n\n<p>Marvell’s proposed all-stock acquisition of Lumentum&mdash;which as of Tuesday valued the firm at around $80 billion&mdash;shone a spotlight on the latter’s position in a promising corner of the AI infrastructure market. Optical technology, such as the lasers Lumentum makes, moves data within and between data centers faster than the copper wiring traditionally used in these facilities. The pressures of AI computing make faster data transmission vital.</p>",
+    "label": "True Value",
+    "link": "https://www.theinformation.com/articles/lumentum-sell-off-marvell-offer-raises-chance-alternate-bid",
+    "published": "2026-11-04T18:54:45Z",
+    "title": "Lumentum Sell-Off After Marvell Offer Raises Chance of Alternate Bid",
+    "type": "Article",
+    "updated": "2026-11-04T18:55:18Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18111": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Greetings!</p><p>When it comes to letting your AI agent—such as Muse or Instinct—manage your personal finances or go shopping, your choice of bank will make a big difference. Some of the biggest banks in the U.S., like JPMorgan, are restricting AI agents’ access to consumers’ personal bank accounts, saying letting them in is too risky.&nbsp;</p><p>But some smaller banks are going in the opposite direction, giving AI assistants more access to consumer banking which they see as a potential area of growth. That includes Lead Bank, a Kansas City, Missouri-based bank that works with fintechs like Stripe, a <a href=\"https://www.theinformation.com/articles/stripes-ai-shopping-lead-puts-card-giants-edge\">major</a> payment provider for AI agent apps. Increase Bank, owned by fintech entrepreneur and early Stripe employee Darragh Buckley, is planning to offer banking for agents too, along with cards that agents can use.&nbsp;</p><p>These banks are conscious of the risks. Lead Bank allows its fintech partners to issue bank account numbers for customers, reserved for AI agents. That in turn enables the agents to perform banking tasks like moving money through ACH and wire transfers while allowing the customers to limit what the agents can do in their accounts.&nbsp;</p><p>The bank also says it has controls including transaction and spending limits and can immediately lock an agent out from the account if needed.&nbsp;</p><p>“This ensures agents can only move money within explicitly defined parameters, rather than having unrestricted access to customer funds,” a spokesperson for Lead Bank said.&nbsp;</p><p>In the case of Increase Bank, it plans to offer isolated bank accounts for agents that will be separate from the rest of the human customer's money, and the customer will be able to decide which agents can access the account. The agent would be able to access its account through an API, with Increase Bank confirming that the agent has permission.&nbsp;</p><p>“We don’t need the entire industry to coordinate banking for agents. It's sufficient to have just a small cohort of technology-forward banks” to enable agents to get bank accounts, said Buckley, who already set up a personal bank account at Increase Bank in his name for his agent.&nbsp;</p><p>Then there’s Natural, a payment startup backed by venture firm Forerunner that has raised over $40 million in total. Natural is bringing banking products such as payments and credit lines to AI agents. Natural isn’t a bank but it’s offering a way for digital wallets used by agents to hold money in an FDIC-insured account. Natural uses Column Bank to hold the money, and each wallet is a sub-ledger into customers’ individual accounts.&nbsp;</p><p>Natural in turn offers its digital wallet to AI companies to use in agents, enabling the agents to send and request money. For example, Natural works with Conduit, a startup that offers AI agents used by short-term rentals and hotels to help manage their businesses. With the digital wallets, Conduit’s agents can accept payments, pay vendors and contractors, and store money.&nbsp;</p><p>Banks are also helping agents make payments by issuing one-time use virtual cards, which helps keep the agents from accidentally splurging. Cross River Bank, which works closely with payments giant Stripe, said agent card payments powered by the bank have reached more than $40 million across over 200,000 transactions over the past three months, with airlines being the top consumer spend category.&nbsp;</p><p>Still, letting AI agents into consumer banking raises questions about liability and cybersecurity—if an agent makes a payment a customer didn’t intend, for example, it’s unclear who is on the hook for reimbursing the customer. Wells Fargo, for its part, has warned it could restrict or block some AI tools and recently <a href=\"https://www.wellsfargo.com/mobile-online-banking/updates/\">updated its terms</a> to say that if a customer uses an AI agent to access their bank accounts, the customer is responsible for the agents’ actions.&nbsp;&nbsp;</p><p>But Natural co-founder and CEO Kahlil Lalji argues that banks trying to block agents face an uphill battle. Agents with access to a user’s personal email can still see things like verification codes to log in, making them hard to keep out. In his view, banks and fintechs are better off giving agents access in a way that makes the agents’ activities easy to track and manage.&nbsp;</p><p>“The only path out is through, then give agents a scoped access to do everything that they’re going to want to do, where at least you can audit and verify that you understand what’s going on,” Lalji said. “Big banks can’t do that technologically, so their protection is close up or try and close up.” </p><article class=\"newFromOurReporters mb-32\"><h3 class=\"font-suisse-works text-headline-xs text-black font-medium\">New From Our Reporters</h3><article><a href=\"https://www.theinformation.com/articles/apollo-vastly-outspending-neoclouds-ai-chips\"><img src=\"https://tii.imgix.net/production/articles/18104/2cae01ff-8fe9-42ed-91c5-50dd9a294dbf.jpg?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18104/2cae01ff-8fe9-42ed-91c5-50dd9a294dbf.jpg?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18104/2cae01ff-8fe9-42ed-91c5-50dd9a294dbf.jpg?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18104/2cae01ff-8fe9-42ed-91c5-50dd9a294dbf.jpg?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18104/2cae01ff-8fe9-42ed-91c5-50dd9a294dbf.jpg?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/apollo-vastly-outspending-neoclouds-ai-chips\" class=\"no-underline\" style=\"text-decoration: none !important;\">Apollo Is Vastly Outspending the Neoclouds on AI Chips</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Dakin Campbell</span></div></article><article><a href=\"https://www.theinformation.com/articles/blue-wave-engulf-data-center-industry\"><img src=\"https://tii.imgix.net/production/articles/18106/8decb294-3c36-4998-9e9e-51ec95a842d3.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18106/8decb294-3c36-4998-9e9e-51ec95a842d3.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18106/8decb294-3c36-4998-9e9e-51ec95a842d3.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18106/8decb294-3c36-4998-9e9e-51ec95a842d3.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18106/8decb294-3c36-4998-9e9e-51ec95a842d3.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Politics and Policy</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/blue-wave-engulf-data-center-industry\" class=\"no-underline\" style=\"text-decoration: none !important;\">Blue Wave Could Engulf Data Center Industry</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By  Shane Burke</span></div></article><article><a href=\"https://www.theinformation.com/articles/anthropic-touts-claudes-chip-design-skills-ipo-investors\"><img src=\"https://tii.imgix.net/production/articles/18097/c73905c4-1a76-45f6-9992-6dfbef14e7b2.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18097/c73905c4-1a76-45f6-9992-6dfbef14e7b2.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18097/c73905c4-1a76-45f6-9992-6dfbef14e7b2.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18097/c73905c4-1a76-45f6-9992-6dfbef14e7b2.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18097/c73905c4-1a76-45f6-9992-6dfbef14e7b2.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Exclusive</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/anthropic-touts-claudes-chip-design-skills-ipo-investors\" class=\"no-underline\" style=\"text-decoration: none !important;\">Anthropic Touts Claude’s Chip Design Skills to IPO Investors</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Qianer Liu, Valida Pau and Phoebe Liu</span></div></article></article>",
+    "label": "The Information Finance",
+    "link": "https://www.theinformation.com/articles/smaller-banks-giving-agents-access-accounts",
+    "published": "2026-11-04T20:31:04Z",
+    "title": "How Smaller Banks Are Giving Agents Access to Accounts",
+    "type": "Article",
+    "updated": "2026-11-04T20:31:43Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18112": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Even before Wednesday’s election-driven sell-off in tech stocks, Cerebras shares had fallen sharply since its initial public offering six months ago. That’s bad news for investors who bought at the IPO as well as employees who hung on to their newly public shares.&nbsp;</p><p>But those insiders needn’t have gotten burned. Cerebras offered them the chance to sell much of their stock at various times over the past six months, which is unlike how newly public companies typically operate. The outcome holds a lesson for the employees of Anthropic, which like Cerebras <a href=\"https://www.theinformation.com/articles/anthropics-s-1-takeaways-giant-compute-commitments-complex-lock-ups?rc=zjctrx\">has instituted a staggered schedule</a> for when insiders can sell shares. The lesson: Take some money off the table as soon as you can.&nbsp;</p>",
+    "label": "Dealmaker",
+    "link": "https://www.theinformation.com/articles/cerebras-lockups-hold-lesson-anthropic-employees",
+    "published": "2026-11-04T19:51:17Z",
+    "title": "Cerebras’ Lockups Hold a Lesson for Anthropic Employees",
+    "type": "Article",
+    "updated": "2026-11-04T19:52:32Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18113": {
+    "authors": [
+      "Leo Schwartz",
+      "Nick Wingfield"
+    ],
+    "content": "<p>Democrats’ stunning victories in Tuesday’s election can at least partly be attributed to the fact that they capitalized on growing voter anxiety about AI and tech. What exactly lawmakers do with their newfound political power to address those anxieties remains to be seen, though.</p>\n\n<p>One of their biggest priorities is likely to be more regulation of data centers, since voters overwhelmingly backed state and federal candidates who supported moratoriums on their construction. But data center pauses were not the only AI issue on the ballot: AI safety also became a central talking point for prominent candidates like Michigan Democrat Abdul El-Sayed, who was elected to the Senate on Tuesday night.</p>",
+    "label": "Politics and Policy",
+    "link": "https://www.theinformation.com/articles/six-ways-blue-wave-shake-ai-crypto-tech",
+    "published": "2026-11-04T21:28:48Z",
+    "title": "Six Ways the Blue Wave Could Shake Up AI, Crypto and Tech",
+    "type": "Article",
+    "updated": "2026-11-04T21:29:15Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7122,12 +7183,12 @@
     "authors": [
       "Martin Peers"
     ],
-    "content": "<p>Stocks of neoclouds CoreWeave and Nebius both dropped on Wednesday morning, even as most tech stocks rose, a sign that investors interpreted Tuesday’s votes in favor of anti-data center candidates as particularly bad for newer cloud firms.</p> <p>In contrast, established cloud firms, Amazon, Microsoft ...</p>",
+    "content": "<p>Stocks of neoclouds CoreWeave and Nebius dropped 9.9% and 6.7% respectively on Wednesday, even as most tech stocks rose, a sign that investors interpreted Tuesday’s votes in favor of anti-data center candidates as particularly bad for newer cloud firms.</p> <p>Established cloud firms Amazon, Microsoft ...</p>",
     "link": "https://www.theinformation.com/briefings/chip-stocks-neoclouds-sell-election-results",
     "published": "2026-11-04T15:28:02Z",
     "title": "Chip Stocks and Neoclouds Sell Off on Election Results",
     "type": "Briefing",
-    "updated": "2026-11-04T15:28:02Z"
+    "updated": "2026-11-04T21:31:14Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18329": {
     "authors": [
@@ -7139,5 +7200,60 @@
     "title": "Stablecoin Issuer Circle Cuts 5% Jobs",
     "type": "Briefing",
     "updated": "2026-11-04T15:44:50Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18330": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Uber plans to more than double the number of self-driving cars operating on its platform over the next year, the company said on Wednesday as it reported third quarter results, with plans to arrange financing to build self driving fleets of cars. Uber also wants to bring in outside capital to ...</p>",
+    "link": "https://www.theinformation.com/briefings/uber-plans-invest-build-self-driving-car-availability",
+    "published": "2026-11-04T15:58:22Z",
+    "title": "Uber Plans to Invest More to Build Self-Driving Car Availability",
+    "type": "Briefing",
+    "updated": "2026-11-04T21:04:24Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18331": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>OpenAI on Wednesday said it was buying Pierre Computer Company, a three-year-old startup that builds software tools to help developers manage and review code.</p> <p>OpenAI’s coding agent Codex is already using Pierre’s open-source developer tools, including Code Storage, a service that allows ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-agrees-buy-software-startup-pierre-bolster-codex",
+    "published": "2026-11-04T17:56:42Z",
+    "title": "OpenAI Agrees to Buy Software Startup Pierre to Bolster Codex",
+    "type": "Briefing",
+    "updated": "2026-11-04T21:04:24Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18332": {
+    "authors": [
+      "Michael Roddan"
+    ],
+    "content": "<p>The Department of Justice last week subpoenaed payroll startup Rippling, seeking all documents produced during discovery in an alleged <a href=\"https://www.theinformation.com/articles/deels-combative-father-son-duo-sparked-spy-scandal\">corporate espionage</a> lawsuit the company is waging against rival startup Deel, according to court filings.</p> <p>Lawyers representing Rippling said the company received ...</p>",
+    "link": "https://www.theinformation.com/briefings/doj-seeks-documents-rippling-deel-spy-case",
+    "published": "2026-11-04T18:13:31Z",
+    "title": "DOJ Seeks Documents in Rippling, Deel Spy Case",
+    "type": "Briefing",
+    "updated": "2026-11-04T21:32:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18333": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft said last week that it spent about $5 billion less on capital expenditures in the third quarter than it had previously projected because data center capacity it was planning to rent wasn’t ready on time. Microsoft didn’t name the “third party” behind those delays, but one of them is ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-microsoft-lowered-data-center-spending-following-delays-cloud-firm-iren",
+    "published": "2026-11-04T21:05:04Z",
+    "title": "Exclusive: Microsoft Lowered Data Center Spending Following Delays By Cloud Firm Iren",
+    "type": "Briefing",
+    "updated": "2026-11-04T21:05:04Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18334": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Snap posted 14% higher revenues of $1.7 billion, but once again the growth was driven mostly by subscriptions rather than advertising where growth remains anemic at 4% for the quarter. The company swung to a net income of $56.5 million after losing $103.5 million a year earlier.</p> <p>Still, investors ...</p>",
+    "link": "https://www.theinformation.com/briefings/snap-reports-anemic-ad-growth",
+    "published": "2026-11-04T21:44:59Z",
+    "title": "Snap Reports Anemic Ad Growth",
+    "type": "Briefing",
+    "updated": "2026-11-04T21:44:59Z"
   }
 }
