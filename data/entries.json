@@ -3536,6 +3536,18 @@
     "type": "Article",
     "updated": "2026-11-04T21:29:15Z"
   },
+  "tag:www.theinformation.com,2005:Article/18114": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Voters just handed big tech a gift—and we’re not just thinking of Californians who voted against the billionaire tax proposal. (Can all <a href=\"https://www.theinformation.com/articles/billionaire-tax-refugees-flock-ritzy-nevada-lake-town?rc=9byxri\">those billionaires</a> come home now?) Wednesday’s rally in the stocks of Amazon, Microsoft, Apple and Alphabet suggests that investors see lots of upside for those tech firms from Tuesday’s Democratic victory.</p><p>The vote put a lot of people into office who are no fans of AI and data centers. By implication, any slowdown in AI data center development will disproportionately hurt neoclouds such as CoreWeave and Nebius—which haven’t built out their facilities as much as bigger and older cloud firms. Notably, both their stocks dropped sharply Wednesday. On the theory that anything that hurts your rivals is good for you, that’s good for big cloud firms Amazon, Microsoft and Google.&nbsp;</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/voters-gift-big-tech",
+    "published": "2026-11-05T01:01:02Z",
+    "title": "Voters’ Gift to Big Tech",
+    "type": "Article",
+    "updated": "2026-11-05T01:10:21Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7255,5 +7267,16 @@
     "title": "Snap Reports Anemic Ad Growth",
     "type": "Briefing",
     "updated": "2026-11-04T21:44:59Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18335": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Sequoia Capital, the venture capital firm that was an early investor in Google and YouTube and wrote the first check to Nvidia, is shutting down its London office, the company said on Wednesday.</p> <p>In a social media post, Sequoia announced a number of other changes it would be making in order to “ ...</p>",
+    "link": "https://www.theinformation.com/briefings/sequoia-closes-london-office-focus-silicon-valley",
+    "published": "2026-11-05T01:06:08Z",
+    "title": "Sequoia Closes London Office to Focus on Silicon Valley",
+    "type": "Briefing",
+    "updated": "2026-11-05T01:06:08Z"
   }
 }
