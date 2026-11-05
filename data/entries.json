@@ -3584,6 +3584,46 @@
     "type": "Article",
     "updated": "2026-11-05T15:01:33Z"
   },
+  "tag:www.theinformation.com,2005:Article/18118": {
+    "authors": [
+      "Dakin Campbell",
+      "Kevin McLaughlin",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia is looking for a faster way to get its chips turned on: old telecom company buildings.</p>\n\n<p>The chip designer has approached private equity firm Apollo Global Management about&nbsp;creating a network of small AI data centers potentially spanning 20 states across the U.S., using existing buildings of a struggling telecom firm, according to two people with direct knowledge of the effort.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/nvidias-workaround-data-center-backlash-retrofitting-old-telephone-buildings",
+    "published": "2026-11-05T19:47:06Z",
+    "title": "Nvidia’s Workaround For Data Center Backlash: Retrofitting Old Telephone Buildings",
+    "type": "Article",
+    "updated": "2026-11-05T20:41:17Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18119": {
+    "authors": [
+      "Laura Bratton"
+    ],
+    "content": "<p>After U.S. voters on Tuesday elected officials <a href=\"https://www.theinformation.com/articles/blue-wave-engulf-data-center-industry\">who are pushing to restrict data center expansion</a>, some tech executives and investors are concerned that new delays in standing up computing capacity will make existing servers for AI more expensive to run.</p><p>And if computing becomes even pricier, there’s a question of whether declines in the cost of running AI could slow down.</p><p>So far this year, the cost of running AI has been falling, even as the price of renting servers has risen. For example, OpenAI’s GPT-6.1 Sol model, released in late September, can perform comparably to a bigger OpenAI flagship model, GPT-6 Astra, when used with a high reasoning setting. Yet the newer model costs about a fifth as much on a per-task basis as the older model, research firm Artificial Analysis said. </p><p>Anthropic has touted similar efficiencies with its latest models. And that’s happening despite the fact that buying or renting Nvidia hardware <a href=\"https://www.theinformation.com/articles/nvidia-ai-chip-prices-rise-17-server-makers-tell-customers\">has gotten a lot costlier</a> this year.</p><p>As <a href=\"https://www.theinformation.com/newsletters/applied-ai/companies-prove-ai-spending-pays\">AI costs become a major concern at enterprises</a>, the price-drop trend will need to persist or else customers might pull back.</p><p>One senior executive of a private equity firm that owns and develops data centers told me this week that they believe prices of AI models will keep falling due to “token efficiencies”—the ability of AI to do more work with less compute—thanks to both hardware and software advancements.</p><p>In other words, they said, such efficiencies would help offset constraints on data center expansion. Of course, the executive is heavily incentivized to say such things, given the financial bets their company has already made.</p><p>On Wednesday, Amazon Web Services CEO Matt Garman said during an event hosted by private equity firm Blackstone that he is optimistic about the company’s data center expansion despite the election results. “We feel like we're in a pretty good spot, and I think others may have some more work to do.”</p><p>To be sure, Amazon has faced significant local resistance to some of its data center projects, and even had to drop a project in Virginia this year.</p><p>Garman didn’t comment on whether he expects server rental prices to rise further. But stock investors seemed to think so initially, based on the way they bid up shares of major cloud providers Wednesday while selling off stocks of smaller cloud providers that still need approvals for new facilities. (The major cloud providers pared back some of the gains during a selloff Thursday.)</p><p>Notably, many facilities that are supposed to come online next year have gotten some or all of the necessary state or local approvals, so the effects of the electoral backlash might have a big impact on facilities aiming to launch in 2028 and beyond.</p><p><a href=\"https://www.theinformation.com/articles/anthropics-s-1-takeaways-giant-compute-commitments-complex-lock-ups\">Anthropic’s initial public offering prospectus</a> offers another signal that the price of using its models has room to fall: the company’s gross profit margins have hovered around 85% in the first nine months of the year. (That excludes the cost of developing the models themselves.) So it may have some slack to lower prices if it needs to boost demand.</p><article class=\"newFromOurReporters mb-32\"><h3 class=\"font-suisse-works text-headline-xs text-black font-medium\">New From Our Reporters</h3><article><a href=\"https://www.theinformation.com/articles/kalshi-spinning-new-markets-big-investors\"><img src=\"https://tii.imgix.net/production/articles/18115/5cb8c2a4-fb04-4972-b4d9-b06535181ecf.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18115/5cb8c2a4-fb04-4972-b4d9-b06535181ecf.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18115/5cb8c2a4-fb04-4972-b4d9-b06535181ecf.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18115/5cb8c2a4-fb04-4972-b4d9-b06535181ecf.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18115/5cb8c2a4-fb04-4972-b4d9-b06535181ecf.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Exclusive</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/kalshi-spinning-new-markets-big-investors\" class=\"no-underline\" style=\"text-decoration: none !important;\">How a Claims Investor Got Kalshi to Open a Market on the NCAA Payout</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Michael Roddan</span></div></article><article><a href=\"https://www.theinformation.com/articles/palo-alto-networks-talks-pay-500-million-ai-security-startup\"><img src=\"https://tii.imgix.net/production/articles/18116/bc4d846f-f8da-45df-8d1f-0b767d329edb.jpg?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18116/bc4d846f-f8da-45df-8d1f-0b767d329edb.jpg?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18116/bc4d846f-f8da-45df-8d1f-0b767d329edb.jpg?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18116/bc4d846f-f8da-45df-8d1f-0b767d329edb.jpg?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18116/bc4d846f-f8da-45df-8d1f-0b767d329edb.jpg?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Exclusive</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/palo-alto-networks-talks-pay-500-million-ai-security-startup\" class=\"no-underline\" style=\"text-decoration: none !important;\">Palo Alto Networks in Talks to Pay $500 Million for AI Security Startup</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Valida Pau</span></div></article><article><a href=\"https://www.theinformation.com/articles/six-ways-blue-wave-shake-ai-crypto-tech\"><img src=\"https://tii.imgix.net/production/articles/18113/818b8e66-77b3-4e26-85b2-9444fe25dcbe.jpg?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18113/818b8e66-77b3-4e26-85b2-9444fe25dcbe.jpg?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18113/818b8e66-77b3-4e26-85b2-9444fe25dcbe.jpg?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18113/818b8e66-77b3-4e26-85b2-9444fe25dcbe.jpg?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18113/818b8e66-77b3-4e26-85b2-9444fe25dcbe.jpg?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Politics and Policy</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/six-ways-blue-wave-shake-ai-crypto-tech\" class=\"no-underline\" style=\"text-decoration: none !important;\">Six Ways the Blue Wave Could Shake Up AI, Crypto and Tech</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Leo Schwartz and Nick Wingfield</span></div></article></article><article class=\"upcomingEvents mb-32 pt-48 border-0 border-t border-solid border-grayscale-beige\"><h3 class=\"font-suisse-works text-headline-xs text-black\">Upcoming Events</h3><section class=\"event\"><div><h4 class=\"my-0 font-suisse-intl text-black font-medium text-body-lg\"><a href=\"https://www.theinformation.com/events/san-francisco-private-dinner\" style=\"text-decoration: none !important;\">Monday, November 9 — Intimate Dinner with The Information and EY Consulting in San Francisco</a></h4><p class=\"font-suisse-intl text-black text-body-lg font-light my-8\">Trust is quickly becoming the defining question of the AI era. Over dinner, Jessica Lessin, Founder &amp; Editor-in-Chief of The Information, and Whitt Butler, EY Americas Vice Chair – Consulting, will talk candidly about how leaders can build that trust and keep it. Request an invite.</p><a href=\"https://www.theinformation.com/events/san-francisco-private-dinner\" class=\"underline text-magenta font-normal text-body-md\">More details</a></div></section><section class=\"event\"><div><h4 class=\"my-0 font-suisse-intl text-black font-medium text-body-lg\"><a href=\"https://www.theinformation.com/events/the-long-road-to-an-ipo\" style=\"text-decoration: none !important;\">Tuesday, November 10 — The Long Road to an IPO</a></h4><p class=\"font-suisse-intl text-black text-body-lg font-light my-8\">Join The Information and NYSE next week for a cocktail reception and conversation on what it takes to go public, hosted by Dakin Campbell. Explore the relationships and preparation behind an IPO. Limited spots remain. Apply to attend. Sponsored by NYSE.</p><a href=\"https://www.theinformation.com/events/the-long-road-to-an-ipo\" class=\"underline text-magenta font-normal text-body-md\">More details</a></div></section></article>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/can-cheaper-ai-outrun-data-center-backlash",
+    "published": "2026-11-05T19:21:56Z",
+    "title": "Can Cheaper AI Outrun the Data Center Backlash?",
+    "type": "Article",
+    "updated": "2026-11-05T19:24:47Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18120": {
+    "authors": [
+      "Aaron Tilley",
+      "Jyoti Mann",
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Airbnb on Thursday shed new light on a secretive AI startup that founder and CEO Brian Chesky&nbsp;controls, saying the company has reached an agreement that could allow it to invest in the startup and license its technology. Chesky has so far self-funded the AI lab and plans to continue financing it, according to a person with knowledge of his plans.</p>\n\n<p>The new details, some of which were disclosed in a securities filing after Airbnb’s quarterly report, involve a startup Chesky has kept in stealth mode for much of the last year as he continues to run the short-term rental site he founded nearly two decades ago. Airbnb Chief Technology Officer Ahmad Al-Dahle, who joined Airbnb in January after running aspects of Meta’s AI organization, has been advising the startup.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/airbnb-reveals-new-details-cheskys-secretive-ai-startup",
+    "published": "2026-11-05T21:15:48Z",
+    "title": "Airbnb Reveals New Details of Chesky’s Secretive AI Startup",
+    "type": "Article",
+    "updated": "2026-11-05T21:53:50Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7336,5 +7376,60 @@
     "title": "Veteran Media Mogul John Malone Gives Up Controlling Stake in Liberty",
     "type": "Briefing",
     "updated": "2026-11-05T15:38:58Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18338": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>AI use within Anthropic may have doubled the company’s pace of AI development, a new report from AI research nonprofit METR says.</p> <p>The rate that Anthropic’s models are improving as of this October is roughly twice the rate at which they improved between March 2024 and October 2025, according to ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropics-r-d-speed-may-doubled-due-ai-researchers-find",
+    "published": "2026-11-05T18:00:50Z",
+    "title": "Anthropic’s R&D Speed May Have Doubled Due to AI, Researchers Find",
+    "type": "Briefing",
+    "updated": "2026-11-05T21:59:29Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18339": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Shares of&nbsp;Unity Software jumped 13% after the gaming ad firm reported 32% higher revenue, driven by rapid growth in a new AI-based ad offering introduced earlier this year.</p> <p>Unity projected a slightly faster rate of growth for the fourth quarter. The company, which has been long known as a ...</p>",
+    "link": "https://www.theinformation.com/briefings/unity-software-reports-strong-growth-ai-ad-business",
+    "published": "2026-11-05T18:53:00Z",
+    "title": "Unity Software Reports Strong Growth in AI Ad Business",
+    "type": "Briefing",
+    "updated": "2026-11-05T20:40:27Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18340": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Amazon unveiled a new meal delivery service powered by Uber’s&nbsp;food delivery service Uber Eats, a move that gives Uber a boost and poses a competitive threat to DoorDash.</p> <p>Amazon Prime members can order deliveries on Amazon, without a delivery fee, with the deliveries handled by Uber Eats. ...</p>",
+    "link": "https://www.theinformation.com/briefings/amazon-strikes-uber-eats-partnership",
+    "published": "2026-11-05T20:40:58Z",
+    "title": "Amazon Strikes Uber Eats Partnership",
+    "type": "Briefing",
+    "updated": "2026-11-05T20:40:58Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18341": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Anthropic <a href=\"https://claude.com/resources/articles/introducing-personal-finance-in-claude\">said</a> it is launching a personal finance feature for Claude, one of the top areas that users ask the chatbot for guidance, ahead of its planned IPO.</p> <p>Users can connect their bank accounts to Claude through Plaid to grant read-only access, meaning Claude won’t be able to move, manage or ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-launches-personal-finance-feature-claude",
+    "published": "2026-11-05T21:20:43Z",
+    "title": "Anthropic Launches Personal Finance Feature for Claude",
+    "type": "Briefing",
+    "updated": "2026-11-05T21:59:29Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18342": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Lyft’s revenue growth slowed sharply in the third quarter to 8%, while gross bookings growth also slowed to 17% from 23% in the second quarter. The company projected a further slowdown in gross bookings growth, ot etween 13% and 17%, in the fourth quarter.</p> <p>Despite the slowdown, Lyft CEO David ...</p>",
+    "link": "https://www.theinformation.com/briefings/lyft-growth-slows-8-q3",
+    "published": "2026-11-05T22:00:05Z",
+    "title": "Lyft Growth Slows to 8% in Q3",
+    "type": "Briefing",
+    "updated": "2026-11-05T22:00:05Z"
   }
 }
