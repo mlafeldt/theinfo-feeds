@@ -3648,6 +3648,18 @@
     "type": "Article",
     "updated": "2026-11-05T23:19:59Z"
   },
+  "tag:www.theinformation.com,2005:Article/18123": {
+    "authors": [
+      "Qianer Liu"
+    ],
+    "content": "<p>Taiwan Semiconductor Manufacturing Co. is considering expanding into the advanced memory chip manufacturing sector, a move that would give the world’s largest chipmaker an even bigger share of the AI hardware supply chain, according to two people with direct knowledge of the matter.</p>\n\n<p>The Taiwanese chipmaking giant recently started drawing up plans for making a specific type of advanced memory chips, 3D DRAM, at the request of Nvidia, its biggest customer, the two people said. An intense shortage of memory chips, driven by the AI hardware boom, has sent prices soaring and prompted chip designers such as <a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a> and <a href=\"https://www.theinformation.com/org-charts/apple\">Apple</a> to look for sources of additional supply. Apple earlier this year hiked prices for its devices, citing rising memory costs.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/tsmc-weighs-making-advanced-memory-chips-capture-ai-spending",
+    "published": "2026-11-06T14:01:18Z",
+    "title": "TSMC Weighs Making Advanced Memory Chips to Capture More AI Spending",
+    "type": "Article",
+    "updated": "2026-11-06T14:31:25Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7477,5 +7489,49 @@
     "title": "Jensen Huang Asked to Brief Congress Over Alleged Chinese Spy Plot",
     "type": "Briefing",
     "updated": "2026-11-06T06:20:16Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18345": {
+    "authors": [
+      "Catherine Perloff"
+    ],
+    "content": "<p>Amazon has introduced a feature to its Alexa for Shopping service where users can text the AI shopping assistant directly. The move signals how text messaging is becoming a standard communication tool for agents. Meta’s Muse and Instinct both let users interact with them via text messages, while ...</p>",
+    "link": "https://www.theinformation.com/briefings/amazon-says-shoppers-can-now-text-ai-shopping-assistant-alexa-shopping",
+    "published": "2026-11-06T15:31:38Z",
+    "title": "Amazon Says Shoppers Can Now Text With AI Shopping Assistant Alexa For Shopping",
+    "type": "Briefing",
+    "updated": "2026-11-06T19:41:04Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18346": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>The launch of futures tied to rental prices on Nvidia GPUs has hit a second snag after the CME agreed to delay its launch for another 60 days, taking any approval into January.</p> <p>The Commodity Futures Trading Commission asked the CME, the exchange behind the likely first product to be brought to ...</p>",
+    "link": "https://www.theinformation.com/briefings/gpu-futures-hopes-hit-another-roadblock-cme-delays-launch-second-time",
+    "published": "2026-11-06T15:47:23Z",
+    "title": "GPU Futures Hopes Hit Another Roadblock as CME Delays Launch for Second Time",
+    "type": "Briefing",
+    "updated": "2026-11-06T19:41:03Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18347": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft declined to renew a deal to rent cloud servers from Oracle, according to a person familiar with the situation, winding down an arrangement that the two rival cloud providers struck in 2023.</p> <p>Microsoft wound down the deal&nbsp;because the servers it was renting from Oracle were equipped ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-ends-deal-rent-cloud-servers-oracle",
+    "published": "2026-11-06T19:00:52Z",
+    "title": "Microsoft Ends Deal to Rent Cloud Servers from Oracle",
+    "type": "Briefing",
+    "updated": "2026-11-06T19:00:52Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18348": {
+    "authors": [
+      "Aaron Tilley"
+    ],
+    "content": "<p>Tesla plans to end production of the Cybertruck around the middle of next year to make room for it to build more Cybercab robotaxis, Chief Executive Elon Musk <a href=\"https://x.com/elonmusk/status/2118591788701421573\">said</a> on X late Thursday evening.</p> <p>Sales of the Cybertruck have been underwhelming. Tesla has sold only around 70,000 since it began ...</p>",
+    "link": "https://www.theinformation.com/briefings/tesla-will-discontinue-cybertruck-next-year",
+    "published": "2026-11-06T19:01:01Z",
+    "title": "Tesla Will Discontinue Cybertruck Next Year",
+    "type": "Briefing",
+    "updated": "2026-11-06T19:41:04Z"
   }
 }
