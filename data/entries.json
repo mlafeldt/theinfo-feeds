@@ -3660,6 +3660,18 @@
     "type": "Article",
     "updated": "2026-11-06T14:31:25Z"
   },
+  "tag:www.theinformation.com,2005:Article/18124": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p><a href=\"https://www.theinformation.com/org-charts/meta\">Meta Platforms</a> is taking the next steps in a plan to build a new business selling its AI products to companies.</p>\n\n<p>The company has begun forming a sales organization to sell those products to small and midsize businesses and also forge&nbsp;relationships with consulting firms and systems integrators, including Accenture, Deloitte and IBM, to help it sell and deploy AI products to corporate customers, according to a person familiar with the matter and job postings reviewed by The Information.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/meta-plans-sales-team-consulting-partnerships-win-big-companies",
+    "published": "2026-11-09T14:00:44Z",
+    "title": "Meta Plans Sales Team, Consulting Partnerships to Win Over Big Companies",
+    "type": "Article",
+    "updated": "2026-11-09T14:01:09Z"
+  },
   "tag:www.theinformation.com,2005:Article/18126": {
     "authors": [
       "Ann Davis Vaughan"
@@ -3692,9 +3704,9 @@
     "label": "Sunday Insights",
     "link": "https://www.theinformation.com/articles/ai-stock-can-market-absorb",
     "published": "2026-11-08T16:00:51Z",
-    "title": "How Much More AI Stock Can the Market Absorb?",
+    "title": "AI’s $300 Billion Stock Binge Is Testing Investors",
     "type": "Article",
-    "updated": "2026-11-08T16:16:41Z"
+    "updated": "2026-11-09T10:49:06Z"
   },
   "tag:www.theinformation.com,2005:Article/18129": {
     "authors": [
@@ -3707,6 +3719,18 @@
     "title": "Nvidia Inquiry, Anthropic, CoreWeave and Unity News Promise Big Week",
     "type": "Article",
     "updated": "2026-11-08T21:48:10Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18130": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>Shares of <b>Nvidia</b> were trading down 5% early Monday morning, a sign of the huge uncertainty now hanging over the AI chip giant in the wake of the company’s disclosure Sunday that it would investigate recent reporting that CEO <b>Jensen Huang</b> “had been the target of a foreign intelligence effort.”</p><p>Adding to the drama, Huang <a href=\"https://www.theinformation.com/briefings/nvidia-board-launching-investigation-reporting-ceo-targeted-chinese-informant?rc=9byxri\">acknowledged having had an affair,</a> saying he was “deeply sorry.” The New York Times reported last month that Huang had a “close relationship” with a Chinese businesswoman who allegedly shared intelligence with Beijing authorities. We don’t know where this will lead. But given Huang’s position as one of AI’s biggest advocates, the ripples could be felt everywhere in the sector.&nbsp;</p><p>Meanwhile, an Australian startup has come up with a new way to fight AI-enabled cybercrimes: sending an army of AI agents to pose as gullible grandmas and unsuspecting job seekers so as to lure the bad guys.</p><p><b>Apate.ai</b> is going up against a multibillion-dollar scam industry powered by thousands of workers in scam compounds, mostly in Southeast Asia. These scammers have gotten more sophisticated with the help of technology. Investigators have struggled to keep pace with ever-evolving tactics, and often only begin the chase after victims report their losses.</p><p>Apate.ai, founded in 2024, thinks it’s found a way to help tip the scales. By posing as potential victims, its army of AI agents are able to engage scammers in lengthy conversations designed partly to waste time and divert attention from real victims.&nbsp;</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/nvidia-drama-explodes-startup-tricking-scammers-using-ai-agents",
+    "published": "2026-11-09T15:01:34Z",
+    "title": "Nvidia Drama Explodes; The Startup Tricking Scammers by Using AI Agents",
+    "type": "Article",
+    "updated": "2026-11-09T15:02:18Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -7582,6 +7606,17 @@
     "type": "Briefing",
     "updated": "2026-11-06T19:41:04Z"
   },
+  "tag:www.theinformation.com,2005:Briefing/18349": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google announced a new line of AI chips the company says are more secure than previous models and equipped for heavier workloads. The new versions of its tensor processing units—the TPU 8tx and the TPU 8i Max—further expand a growing chip business that threatens to loosen Nvidia’s grip on the AI ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-announces-new-tpus-says-powerful-secure",
+    "published": "2026-11-09T13:00:48Z",
+    "title": "Google Announces New TPUs It Says Are More Powerful and Secure",
+    "type": "Briefing",
+    "updated": "2026-11-09T14:45:39Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/18350": {
     "authors": [
       "Ryan Barwick"
@@ -7648,5 +7683,16 @@
     "title": "Nvidia Board Is Launching Investigation After Reporting That CEO Targeted By Chinese Informant",
     "type": "Briefing",
     "updated": "2026-11-08T20:47:49Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18356": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Shares of Nvidia fell 6.6% in early trading in the wake of the company’s disclosure that it was opening an investigation into allegations that CEO Jensen Huang “has been the target of a foreign intelligence effort.”</p> <p>Meanwhile Nvidia rivals in the chip world, Broadcom and AMD, were both up more ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-shares-fall-6-6-broadcom-amd-rise",
+    "published": "2026-11-09T14:46:12Z",
+    "title": "Nvidia Shares Fall 6.6% as Broadcom and AMD Rise",
+    "type": "Briefing",
+    "updated": "2026-11-09T14:46:12Z"
   }
 }
