@@ -44,7 +44,7 @@ jobs:
       - uses: actions/checkout@v7
 
       # setup-uv publishes no floating major tags, only exact releases.
-      - uses: astral-sh/setup-uv@v10.2.0
+      - uses: astral-sh/setup-uv@v10.3.3
 
       # Anything feeds.py writes to the archive stays there, so a broken push
       # must not get to run against it.
