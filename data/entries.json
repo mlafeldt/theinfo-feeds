@@ -3781,6 +3781,30 @@
     "type": "Article",
     "updated": "2026-11-10T01:09:44Z"
   },
+  "tag:www.theinformation.com,2005:Article/18136": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Other countries likely haven’t yet stolen AI models from leading U.S. companies&mdash;but only for a lack of trying, said Lisa Thiergart, co-founder and CEO of Security Level 5, a startup that works with AI companies and the intelligence community to secure AI data centers. “If a nation state really wanted to steal the weights right now, they could. However, I think that they have cheaper ways to get what they need,” she said on the latest episode of AI Deep Dive. (The full episode <a href=\"https://www.youtube.com/watch?v=upszW2K6iiw\">is available here</a>.)</p>\n\n<p>The episode was recorded shortly after OpenAI accused one of its employees, a Saudi national, of hiding a recording device in an office conference room. In the interview, Thiergart said it is “pretty likely” that there are other spies in U.S. AI companies&mdash;a suspicion buttressed by recent reports from the New York Times and the Financial Times that some U.S. officials believed Nvidia CEO Jensen Huang <a href=\"https://www.theinformation.com/briefings/nvidia-board-launching-investigation-reporting-ceo-targeted-chinese-informant\">had a romantic relationship</a> with a Chinese businesswoman recruited as a spy by China’s top intelligence agency.</p>",
+    "label": "TITV",
+    "link": "https://www.theinformation.com/articles/likely-spies-ai-companies-says-security-executive-lisa-thiergart",
+    "published": "2026-11-10T03:20:10Z",
+    "title": "There Are Likely More Spies at AI Companies, Says Security Executive Lisa Thiergart",
+    "type": "Article",
+    "updated": "2026-11-10T03:50:24Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18137": {
+    "authors": [
+      "Abram Brown"
+    ],
+    "content": "<p>The intertwined fates of the world’s most valuable company, Nvidia, and its embattled CEO and co-founder, Jensen Huang, now lie in the hands of a group of Nvidia directors that includes early investors in the company, a one-time Goldman Sachs executive and a professor who’s an expert on how sea creatures swim.</p>\n\n<p>There may be no more consequential voice in the decision about Huang’s fate than that of Stephen Neal, a storied attorney who joined the board in 2019 and serves as its lead independent director. As chair of the Nvidia board’s corporate governance committee, he’s likely to take a leading role in the investigation. Neal is a longtime fixture at Cooley LLP, one of the nation’s most prominent corporate law firms. Among his prior clients is Elizabeth Holmes, the former Theranos founder and CEO, who is now in prison.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/meet-nvidia-board-members-will-decide-jensen-huangs-fate",
+    "published": "2026-11-10T03:17:46Z",
+    "title": "Meet the Nvidia Board Members Who Will Decide Jensen Huang’s Fate",
+    "type": "Article",
+    "updated": "2026-11-10T03:48:24Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -7765,5 +7789,16 @@
     "title": "President Trump Says FBI is Probing Nvidia CEO’s Relationship with Chinese National",
     "type": "Briefing",
     "updated": "2026-11-09T23:02:13Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18359": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic’s outside counsel in Canada late Monday sent banks an updated prospectus for its initial public offering and then retracted it, saying some of the details are incorrect, according to people familiar with the matter.</p> <p>The counsel in Canada first sent a copy of a filing, earlier reported ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-sent-banks-wrong-documents-launching-ipo",
+    "published": "2026-11-10T02:29:42Z",
+    "title": "Anthropic’s Outside Counsel Sent Banks Wrong Documents Before Launching IPO",
+    "type": "Briefing",
+    "updated": "2026-11-10T08:48:41Z"
   }
 }
