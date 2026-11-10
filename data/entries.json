@@ -3817,6 +3817,20 @@
     "type": "Article",
     "updated": "2026-11-10T03:48:24Z"
   },
+  "tag:www.theinformation.com,2005:Article/18138": {
+    "authors": [
+      "Catherine Perloff",
+      "Laura Bratton",
+      "Phoebe Liu"
+    ],
+    "content": "<p>While some companies are curbing employees’ AI use to contain soaring costs, many others in the tech industry are pushing ahead with full-throttle spending.</p>\n\n<p>As the chart below shows, large cloud providers including Amazon Web Services and software firms such as Palantir, Snowflake and HubSpot haven’t put firm caps on engineers’ spending as employees use AI coding tools like Anthropic’s Claude Code and OpenAI’s Codex to build apps and features. Neither have the frontier labs themselves. And venture capitalists say many of their portfolio companies are still urging employees to use as much AI as possible.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/hubspot-snowflake-others-avoiding-ai-spending-caps",
+    "published": "2026-11-10T19:16:38Z",
+    "title": "Why HubSpot, Snowflake and Others Are Avoiding AI Spending Caps",
+    "type": "Article",
+    "updated": "2026-11-10T22:01:09Z"
+  },
   "tag:www.theinformation.com,2005:Article/18139": {
     "authors": [
       "The Information Staff"
@@ -3840,6 +3854,43 @@
     "title": "Mosaic Raises Funds for Robotic Surgery",
     "type": "Article",
     "updated": "2026-11-10T15:01:42Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18141": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>For many companies, requests for proposals (RFPs) are the lifeblood of new business development.</p>\n\n<p>A winning response to an RFP can lead to massive new revenue, and potentially kick off a years-long relationship with a valuable client. But RFPs are also notoriously exhausting to navigate, with page upon page filled with dense legalese, technical specifications, and even strict formatting rules. It can take proposal teams days to simply decipher what the buyer actually wants, and missing a single requirement might lead to your bid being disqualified before it is even reviewed.</p>\n\n<p>With Google Gemini, you can rapidly synthesize lengthy requirements lists, identify how your product or service fits with the client’s needs, and generate a first draft that positions your organization for success in the selection process.</p>\n\n<p><strong>Step 1: Prepare for the Process</strong></p>\n\n<p>Imagine that a large enterprise prospect has just issued an RFP, and your team has two weeks to respond. Before anyone starts writing, you can use Gemini to quickly get a clear picture of what the buyer is asking for.</p>\n\n<p>Upload the RFP document to the Gemini Enterprise app and type this prompt:</p>\n\n<p><em>Summarize the key requirements, evaluation criteria, and deadlines of the RFP.</em></p>\n\n<p>Gemini will condense this information down to a series of bullet points, letting your team see at a glance exactly what is required of them and when. If you’re responding to an extensive RFP for IT help desk services, for example, Gemini will highlight details including the required service-level agreement (SLA), the evaluation scoring system, and key deadlines.</p>\n\n<p><strong>Step 2: Evaluate Your Offer Against the RFP</strong></p>\n\n<p>With the requirements laid out, you now need to get a better understanding of where your company’s offer stands, including any gaps that might need to be filled.</p>\n\n<p>Upload your product overview to Gemini and prompt: <em>Identify all mandatory requirements and cross-reference them with our product capabilities, highlighting any gaps.</em></p>\n\n<p>Continuing with the example of help desk services: Gemini might note that your company’s standard hours fall 30 minutes short of the prospect’s required service window, or that your target response times do not meet the requirements outlined in the RFP; however, Gemini might also note that your standard offer meets the RFP’s stipulations for cybersecurity, cloud backup, and patch management.</p>\n\n<p>With these strengths and gaps clearly outlined, your team can make an informed decision about whether to tailor your offerings to make your bid more competitive. While Gemini can highlight areas of alignment and flag discrepancies, it is ultimately up to the company’s leaders to decide how much they are willing to concede in order to win the business.</p>\n\n<p><strong>Step 3: Draft Your Response</strong></p>\n\n<p><br>Assuming your team decides to respond to the RFP, it’s now time to get a draft on the page. Rather than starting from a blank document, you can ask Gemini to build on the information it has already synthesized.</p>\n\n<p>Try this prompt:</p>\n\n<p><em>You are a proposal writer. Draft the initial content for the RFP response: (1) Write the ‘executive summary,’ emphasizing our unique value proposition based on the synthesized requirements. (2) Outline the ‘technical solution’ section, ensuring it is structured by RFP requirement and incorporates relevant product features to address the client’s specific needs.</em></p>\n\n<p>Treat Gemini’s draft as a starting point. Use follow-up prompts to adjust formatting, refine the tone, or address shortcomings, if needed. Then, manually edit the draft to ensure the final response features your team’s unique voice and strategic framing.</p>\n\n<p><strong>Step 4: Finalize Your Submission</strong></p>\n\n<p>Red tape is a familiar hallmark of the RFP process. Even if your response is a perfect fit, it might be rejected if your submission is missing certain details.</p>\n\n<p>Before submitting your response, perform a compliance check with Gemini. Type: <em>Generate a complete checklist of all required documents and information needed to finalize the RFP submission.</em></p>\n\n<p>You can use this checklist to finalize your submission. Then, ask Gemini to compare your materials to the checklist and flag any omissions.</p>\n\n<p>Success or failure will ultimately be determined by the needs of the prospect, the strength of your offer, and perhaps a bit of luck. But Gemini can help ensure that a missed checkbox doesn’t cost the company a lucrative new client relationship.</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/use-google-gemini-assist-rfp-response",
+    "published": "2026-11-10T19:10:13Z",
+    "title": "Use Google Gemini to Assist with RFP Response",
+    "type": "Article",
+    "updated": "2026-11-10T19:10:14Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18142": {
+    "authors": [
+      "Jemima McEvoy",
+      "Valida Pau"
+    ],
+    "content": "<p>OpenAI has told investors that revenue jumped nearly 50% to $10 billion in the third quarter, rebounding from a period of slower growth as demand for its more recent models and enterprise products picked up, according to a person familiar with the matter.</p>\n\n<p>The company shared some financial metrics with investors during a call on Tuesday as it <a href=\"https://www.theinformation.com/briefings/openai-secured-11-billion-targets-9-billion-fundraising\">seeks to close a new fundraising round at a $1.25 trillion valuation.</a> The growth is higher than the 17% gain in the second quarter from the first and 2.6 times steeper than the year-ago quarter.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/openai-revenue-jumps-10-billion-third-quarter",
+    "published": "2026-11-10T21:07:30Z",
+    "title": "OpenAI Revenue Jumps to $10 Billion in Third Quarter",
+    "type": "Article",
+    "updated": "2026-11-10T22:09:02Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18143": {
+    "authors": [
+      "Laura Bratton"
+    ],
+    "content": "<p>Nvidia is managing the worst hit to its reputation in its three-decade history from the revelations that its CEO Jensen Huang had an affair with a woman reportedly working for China’s spy agencies (read our latest <a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china?rc=zjctrx\">on that here</a>). But in one bright spot for the AI chip giant, there are early signs of headway in its <a href=\"https://www.theinformation.com/articles/nvidia-trying-develop-worlds-best-open-source-ai-models\">efforts to build the world’s best open-source models</a>.</p><p>Booz Allen Hamilton—the $10 billion-market capitalization government contractor—several months ago switched from primarily using Anthropic’s models to run its software for cybersecurity and defense to using Nvidia’s Nemotron models, CTO Bill Vass told me.&nbsp;</p><p>That move has resulted in significant cost savings, he said, though the company declined to share specifics. (Booz Allen spends tens of millions of dollars annually on AI, according to a person familiar with the company.)</p><p>“What we've been doing is the opposite of tokenmaxxing,” the term for using as much AI as possible, Vass said in an interview.</p><p>When it comes to actually building, rather than running, its software, Booz Allen developers still mostly use Anthropic’s Claude Code unless its customers ask them to use other coding tools, Vass said. That’s likely because Claude Code is still lauded as the best tool for software engineering. However, Vass said he is interested in having the firm’s developers use Nemotron models for coding as their capabilities improve.</p><p>Nemotron has been making inroads with contractors and government agencies in part thanks to its relationship with Palantir. The software firm and Nvidia have partnered more closely lately, as both companies have positioned themselves as suppliers of AI that can help enterprises avoid relying on frontier labs Anthropic and OpenAI. Nvidia recently signed a big deal to use Palantir’s software internally to manage its supply chain.&nbsp;</p><p>And Palantir in late June launched a product aimed at helping U.S. government agencies and enterprises use Nvidia open source models through its software. Some government customers have already switched from closed-source frontier AI models to Nemotron, Palantir CEO <a href=\"https://www.theinformation.com/newsletters/applied-ai/palantir-ceo-says-u-s-government-customers-switched-open-source-ai\">Alex Karp told me</a> this summer.&nbsp;</p><p>It’s not just big customers trying Nemotron. Open-source coding software platform Kilo Code says Nvidia’s Nemotron models accounted for nearly 17% of the roughly 50 trillion tokens processed through its software in October, up from 8% the previous month. Individual developers as well as those from small and large enterprises primarily use Kilo Code to access open source models for coding work.&nbsp;</p><p>Despite that progress, Nvidia’s models are still eclipsed by frontier models. Nemotron models accounted for just about 4% of tokens processed through OpenRouter over the past month, down slightly from a peak of 7% one week in August. OpenRouter, the Stripe-owned software that lets businesses autonomously switch between different models from one place, processes a lot more tokens than KiloCode (about 700 trillion monthly) and for a broader set of tasks than coding.</p><p>So far in November, Anthropic accounted for a higher share (31%) of OpenRouter customers’ spending than any other AI provider, while Nvidia accounted for less than 1% of spending.</p><p><b>Tokens as Benefits</b></p><p>Those OpenRouter statistics show that most companies are still spending the lion’s share of their AI budgets on Anthropic’s models. As those firms look to moderate spending, they’re diverging on whether to dictate firm token caps to their software engineers, as I laid out in <a href=\"https://www.theinformation.com/articles/hubspot-snowflake-others-avoiding-ai-spending-caps\">this story today</a> with Phoebe and Catherine.</p><p>That’s becoming a sticking point for engineers. Maria Colacurcio, the CEO of human resources software startup Syndio, said talent acquisition leaders at Syndio’s large enterprise clients have begun receiving requests from new job candidates to get higher token budgets as part of their employment packages. The requests come after the candidates are offered the job for higher or unlimited token budgets and access to the latest OpenAI and Anthropic models.</p><p>“So there's all of these sort of side addendums being created where candidates are getting basically agreements to these carve outs,” she explained.&nbsp;</p><p>Right now, these aren’t formal benefits. “Nobody‘s writing it down. It’s not really part of policy,” she said.&nbsp;</p><p><a href=\"https://www.theinformation.com/newsletters/applied-ai/can-cheaper-ai-outrun-data-center-backlash\">If AI prices stay high</a> and enterprises further restrict spending—as companies such as Apple, Microsoft, and Disney have—tokens could potentially become a formalized, coveted employee benefit.</p><article class=\"newFromOurReporters mb-32\"><h3 class=\"font-suisse-works text-headline-xs text-black font-medium\">New From Our Reporters</h3><article><a href=\"https://www.theinformation.com/articles/google-grapples-ais-hit-ads-juggernaut\"><img src=\"https://tii.imgix.net/production/articles/18135/dea39df2-b96d-47d3-bb06-e7771d7ef9d5.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18135/dea39df2-b96d-47d3-bb06-e7771d7ef9d5.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18135/dea39df2-b96d-47d3-bb06-e7771d7ef9d5.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18135/dea39df2-b96d-47d3-bb06-e7771d7ef9d5.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18135/dea39df2-b96d-47d3-bb06-e7771d7ef9d5.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/google-grapples-ais-hit-ads-juggernaut\" class=\"no-underline\" style=\"text-decoration: none !important;\">Google Grapples With AI’s Hit to Its Ads Juggernaut</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Alix Coutures</span></div></article><article><a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china\"><img src=\"https://tii.imgix.net/production/articles/18139/6c0edef0-3027-4bf2-b974-07691e0617ab.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18139/6c0edef0-3027-4bf2-b974-07691e0617ab.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18139/6c0edef0-3027-4bf2-b974-07691e0617ab.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18139/6c0edef0-3027-4bf2-b974-07691e0617ab.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18139/6c0edef0-3027-4bf2-b974-07691e0617ab.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Exclusive</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china\" class=\"no-underline\" style=\"text-decoration: none !important;\">How Jensen Huang’s Yearslong Ties to Alice Huang Enabled $7 Billion-Plus Nvidia Chip Sales to China</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By The Information Staff</span></div></article><article><a href=\"https://www.theinformation.com/articles/meet-nvidia-board-members-will-decide-jensen-huangs-fate\"><img src=\"https://tii.imgix.net/production/articles/18137/14f66e27-c7f0-47af-93bb-58559d413390.png?auto=compress,format&amp;fit=crop&amp;w=560\" srcset=\"https://tii.imgix.net/production/articles/18137/14f66e27-c7f0-47af-93bb-58559d413390.png?auto=compress,format&amp;fit=crop&amp;w=168 168w, https://tii.imgix.net/production/articles/18137/14f66e27-c7f0-47af-93bb-58559d413390.png?auto=compress,format&amp;fit=crop&amp;w=336 336w, https://tii.imgix.net/production/articles/18137/14f66e27-c7f0-47af-93bb-58559d413390.png?auto=compress,format&amp;fit=crop&amp;w=560 560w, https://tii.imgix.net/production/articles/18137/14f66e27-c7f0-47af-93bb-58559d413390.png?auto=compress,format&amp;fit=crop&amp;w=767 767w\" sizes=\"(min-width: 480px and max-width: 767px) 560px, (min-width: 768px) 168px, 100vw\" loading=\"lazy\"></a><div><span class=\"font-suisse-intl-mono text-overline-md text-black block mb-8\">Exclusive</span><h4 class=\"my-0 font-suisse-intl font-normal text-body-lg\"><a href=\"https://www.theinformation.com/articles/meet-nvidia-board-members-will-decide-jensen-huangs-fate\" class=\"no-underline\" style=\"text-decoration: none !important;\">Meet the Nvidia Board Members Who Will Decide Jensen Huang’s Fate</a></h4><span class=\"font-suisse-screen text-grayscale-gray text-byline-md mt-8 block\">By Abram Brown</span></div></article></article><article class=\"upcomingEvents mb-32 pt-48 border-0 border-t border-solid border-grayscale-beige\"><h3 class=\"font-suisse-works text-headline-xs text-black\">Upcoming Events</h3><section class=\"event\"><div><h4 class=\"my-0 font-suisse-intl text-black font-medium text-body-lg\"><a href=\"https://www.theinformation.com/events/lvs-the-informations-50-most-promising-startups\" style=\"text-decoration: none !important;\">Wednesday, November 11 — The Information’s 50 Most Promising Startups</a></h4><p class=\"font-suisse-intl text-black text-body-lg font-light my-8\">This Wednesday, unpack the 50 early-stage startups positioned to define tech’s next era. Get an insider look as The Information’s reporters reveal the companies to watch and the trends shaping tomorrow’s tech landscape.</p><a href=\"https://www.theinformation.com/events/lvs-the-informations-50-most-promising-startups\" class=\"underline text-magenta font-normal text-body-md\">More details</a></div></section></article>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/booz-allen-switches-nvidias-nemotron",
+    "published": "2026-11-10T21:14:14Z",
+    "title": "Booz Allen Switches to Nvidia’s Nemotron",
+    "type": "Article",
+    "updated": "2026-11-10T21:16:36Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -7869,5 +7920,60 @@
     "title": "SoftBank Writes Off $3.7 Billion on Advance Payments for Data Center Projects",
     "type": "Briefing",
     "updated": "2026-11-10T15:12:22Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18363": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Anthropic in the past month inked new commitments with Microsoft and Google to spend roughly $10 billion more to rent cloud servers between now and 2033 than it previously disclosed, the company said in a filing on Tuesday.</p> <p>At the same time, Anthropic said a $34.9 billion agreement to lease ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-discloses-10-billion-new-deals-microsoft-google-says-lambda-deal-may-cancelled",
+    "published": "2026-11-10T17:39:39Z",
+    "title": "Anthropic Discloses Over $10 Billion in New Deals with Microsoft, Google; Says Lambda Deal May Be Cancelled",
+    "type": "Briefing",
+    "updated": "2026-11-10T21:57:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18364": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Anthropic on Tuesday launched new workplace software applications that combine its Claude AI with tools to create and edit spreadsheets and presentations, and to take notes in video calls, bringing the AI lab into more direct competition with products such as Microsoft’s Office and Google’s ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-launches-new-workplace-software-sending-microsoft-shares-tanking",
+    "published": "2026-11-10T18:26:51Z",
+    "title": "Anthropic Launches New Workplace Software, Sending Microsoft Shares Tanking",
+    "type": "Briefing",
+    "updated": "2026-11-10T21:57:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18365": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>OpenAI has acquired the AI travel planning platform Odessia, Odessia’s founder Francis Davidson <a href=\"https://x.com/FDavidsonT/status/2120214953349263473?a=ze7F1fbFTOpzYV0sxG0&s=20\">announced</a> on Tuesday. Davidson will be joining OpenAI to focus on “the future of travel,” he said in an X post.</p> <p>Davidson founded Odessia earlier this year. The platform uses AI to help users plan and ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-acquires-ai-travel-agent-odessia",
+    "published": "2026-11-10T18:39:07Z",
+    "title": "OpenAI Acquires AI Travel Agent Odessia",
+    "type": "Briefing",
+    "updated": "2026-11-10T18:39:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18366": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>The Nvidia board on Tuesday <a href=\"https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board\">announced</a> that it had hired the law firm Wachtell, Lipton, Rosen &amp; Katz to conduct its independent investigation into the conduct of CEO Jensen Huang. The board first <a href=\"https://www.theinformation.com/briefings/nvidia-board-launching-investigation-reporting-ceo-targeted-chinese-informant\">announced</a> on Sunday that it would be initiating an investigation after reporting that Huang had ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-board-hires-wachtell-independent-investigation-ceo-relationship",
+    "published": "2026-11-10T19:35:19Z",
+    "title": "Nvidia Board Hires Wachtell for Independent Investigation of CEO Relationship",
+    "type": "Briefing",
+    "updated": "2026-11-10T21:57:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18367": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>CoreWeave reported third quarter revenue of $3.66 billion, more than double the year earlier number of $1.365 billion, but its losses also ballooned.</p> <p>CoreWeave’s net loss for the quarter jumped to $709 million, reflecting a huge increase in CoreWeave’s interest costs on its debt, to $846 million ...</p>",
+    "link": "https://www.theinformation.com/briefings/coreweave-reports-revenue-surge-huge-increase-cash-burn",
+    "published": "2026-11-10T21:58:29Z",
+    "title": "CoreWeave Reports Revenue Surge But Huge Increase in Cash Burn",
+    "type": "Briefing",
+    "updated": "2026-11-10T21:58:29Z"
   }
 }
