@@ -3781,6 +3781,18 @@
     "type": "Article",
     "updated": "2026-11-10T01:09:44Z"
   },
+  "tag:www.theinformation.com,2005:Article/18135": {
+    "authors": [
+      "Alix Coutures"
+    ],
+    "content": "<p>Cleverly CEO Nicholas Verity, whose Los Angeles business has advertised on Google for seven years, noticed an unusual pattern in Google search advertising about eight months ago. Part of the roughly $2,000 a day he set aside for Google was going unspent because not enough people were seeing or clicking on the ads to use up the budget.</p>\n\n<p>He believes that’s a result of more people researching the web on AI chatbots instead. “I want to give Google more money, but there’s that search traffic I think is going to people doing their own research in [large language models],” he said.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/google-grapples-ais-hit-ads-juggernaut",
+    "published": "2026-11-10T14:00:55Z",
+    "title": "Google Grapples With AI’s Hit to Its Ads Juggernaut",
+    "type": "Article",
+    "updated": "2026-11-10T14:09:07Z"
+  },
   "tag:www.theinformation.com,2005:Article/18136": {
     "authors": [
       "Rocket Drew"
@@ -3804,6 +3816,30 @@
     "title": "Meet the Nvidia Board Members Who Will Decide Jensen Huang’s Fate",
     "type": "Article",
     "updated": "2026-11-10T03:48:24Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18139": {
+    "authors": [
+      "The Information Staff"
+    ],
+    "content": "<p>The relationship between Nvidia CEO Jensen Huang and Alice Huang, the woman that the U.S. government reportedly identified as a Chinese intelligence asset, dates back to at least 2023, and the two have built a rapport that facilitated the shipment of at least $7.5 billion worth of <a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a>&nbsp;chips through Chinese companies&nbsp;since then, according to two people who know her.</p>\n\n<p>Alice Huang, her sister and her husband have built a labyrinth of companies spanning China and Singapore to acquire Nvidia chips, according to the people who know Alice Huang and corporate registration records. At the center of that corporate network is Shanghai Century Litong, a China-based company that was founded in June 2023 and, by October, was added to Nvidia’s list of preferred cloud partners, a status that comes with priority access to Nvidia’s chips.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
+    "published": "2026-11-10T10:41:10Z",
+    "title": "How Jensen Huang’s Yearslong Ties to Alice Huang Enabled $7 Billion-Plus Nvidia Chip Sales to China",
+    "type": "Article",
+    "updated": "2026-11-10T16:08:18Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18140": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p><b>Anthropic</b> said on Tuesday that it has launched its roadshow, a 7 to 10 day period ahead of an IPO in which a company pitches prospective institutional investors like mutual funds, pension funds and hedge funds. Interestingly, the tentative valuation the Claude-maker set, of between $1.26 trillion to $1.4 trillion, was <a href=\"https://www.theinformation.com/briefings/anthropic-sets-lower-expected-valuation-seeks-raise-64-billion-ipo\">slightly lower</a> than what investors initially expected. (And, it’s also around the $1.25 trillion valuation that <b>OpenAI</b> recently raised $11 billion at, despite the fact that Anthropic generates more revenue. That’s likely for several reasons, including that Anthropic likely wants its stock to have some wiggle room to trade up after its IPO.)</p><p>Meanwhile, the largest pure-play robotics company in the world by revenue and market cap is <b>Intuitive Surgical</b>, which makes the <b>da Vinci Surgical System</b>, a multi-armed contraption that human surgeons use on a remote-control basis to perform a variety of operations. But da Vinci was first unveiled over 25 years ago, and a new generation of robotics companies is aiming to further automate surgery by harnessing the latest advances in AI.</p><p>One such startup, <b>Mosaic Intelligence Labs</b>, has raised $47 million across two rounds of seed funding led by <b>8VC</b> and <b>Fundomo</b>, the one-year-old company told The Information exclusively.&nbsp;</p><p>Mosaic is developing a semi-autonomous catheter that can “find its own way” through a patient’s blood network during a surgery, said co-founder and CEO Ileana Pirozzi. As a human surgeon feeds the catheter into the body, the tip of the catheter will bend in different directions to travel down the correct veins and arteries.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/mosaic-raises-funds-robotic-surgery",
+    "published": "2026-11-10T15:01:17Z",
+    "title": "Mosaic Raises Funds for Robotic Surgery",
+    "type": "Article",
+    "updated": "2026-11-10T15:01:42Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -7800,5 +7836,38 @@
     "title": "Anthropic’s Outside Counsel Sent Banks Wrong Documents Before Launching IPO",
     "type": "Briefing",
     "updated": "2026-11-10T08:48:41Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18360": {
+    "authors": [
+      "Yueqi Yang"
+    ],
+    "content": "<p>Rain, a stablecoin card and payment infrastructure startup, said it is launching vaults for AI agents, which are spending accounts with budget limits for agents.</p> <p>The product, called Rain Agent Vaults, can be funded by bank transfer, card or stablecoin transfer. The money sitting in the vault can ...</p>",
+    "link": "https://www.theinformation.com/briefings/stablecoin-card-startup-rain-launches-vaults-ai-agents",
+    "published": "2026-11-10T12:30:58Z",
+    "title": "Stablecoin Card Startup Rain Launches Vaults for AI Agents",
+    "type": "Briefing",
+    "updated": "2026-11-10T15:12:23Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18361": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic set a tentative valuation for its initial public offering of between $1.26 to $1.4 trillion, slightly lower than what investors initially expected, according to an updated securities filing on Tuesday. Just last month, Anthropic was expected to go public at a valuation of $1.5 trillion ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-sets-lower-expected-valuation-seeks-raise-64-billion-ipo",
+    "published": "2026-11-10T12:17:24Z",
+    "title": "Anthropic Sets Lower than Expected Valuation, Seeks to Raise $90 Billion in IPO",
+    "type": "Briefing",
+    "updated": "2026-11-10T16:37:14Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18362": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>SoftBank wrote off $3.7 billion spent on non-refundable advance payments to secure data center equipment, reflecting a review of its data center plans, the company said in reporting its September quarter results. The writedown includes $0.9 billion written off related “to contract modifications ...</p>",
+    "link": "https://www.theinformation.com/briefings/softbank-writes-3-7-billion-advance-payments-data-center-projects",
+    "published": "2026-11-10T15:11:41Z",
+    "title": "SoftBank Writes Off $3.7 Billion on Advance Payments for Data Center Projects",
+    "type": "Briefing",
+    "updated": "2026-11-10T15:12:22Z"
   }
 }
