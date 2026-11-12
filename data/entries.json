@@ -4002,6 +4002,69 @@
     "type": "Article",
     "updated": "2026-11-12T04:46:46Z"
   },
+  "tag:www.theinformation.com,2005:Article/18159": {
+    "authors": [
+      "Jessica E. Lessin",
+      "Nick Wingfield",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia CEO and co-founder, Jensen Huang, resigned in a stunning turn of events that upends the world’s second-most-valuable company and rattles one of the foundations of the AI economy. Finance chief Colette Kress will become interim CEO, Nvidia said in a statement on Thursday morning.</p>\n\n<p>The move came three days after the board announced an independent investigation into reports that Huang was the target of a “foreign intelligence effort.” U.S. intelligence agencies reportedly concluded earlier this year that Huang had developed a close relationship with a woman they believed was spying for Beijing. Huang on Sunday also apologized to Nvidia employees for having an extramarital affair.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/nvidia-ceo-jensen-huang-resigns-creating-uncertainty-ai-sector",
+    "published": "2026-11-12T13:58:37Z",
+    "title": "Nvidia CEO Jensen Huang Resigns, Creating Uncertainty for the AI Sector",
+    "type": "Article",
+    "updated": "2026-11-12T17:03:01Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18160": {
+    "authors": [
+      "Jing Yang",
+      "Qianer Liu"
+    ],
+    "content": "<p>The network of companies tied to Alice Huang, the alleged Chinese spy in a romantic relationship with Nvidia’s former CEO Jensen Huang, recently invested in Chinese AI star DeepSeek, according to three people with direct knowledge of the matter.</p>\n\n<p>The investments were meant to forge closer ties with DeepSeek so Alice Huang’s companies could supply a steady stream of Nvidia’s advanced Blackwell chips, which are banned from sale to China, according to one of the three people. The investments, which haven’t previously been reported, illustrate the hidden yet important role Alice Huang and her companies have played in China’s AI industry.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/alice-huangs-companies-invested-deepseek-promising-nvidia-chips",
+    "published": "2026-11-12T15:00:50Z",
+    "title": "Alice Huang’s Companies Invested in DeepSeek, Promising Nvidia Chips",
+    "type": "Article",
+    "updated": "2026-11-12T16:10:24Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18161": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>As companies grow, they necessarily adopt more complex processes to align teams and manage increased volume. But over time, these processes can become cumbersome and unwieldy, creating hidden bottlenecks that slow organizations down and incentivize employees to devise manual workarounds. And often, no one person in the enterprise has the visibility needed to figure out where things are breaking down.</p>\n\n<p>A process improvement analysis can root out waste and identify solutions, but this often requires hours spent poring over dense standard operating procedures (SOPs) and unstructured stakeholder interview notes. Google Gemini can accelerate this synthesis, organizing information in a way that lets human reviewers apply their own expertise to the problem more quickly.</p>\n\n<p>Imagine you’re a consultant leading an operations engagement, for example, and your client says that its employee onboarding process is slowing down entire departments like HR and IT. Follow these steps using Google Gemini to help transform SOPs and meeting notes into a prioritized, executive-ready roadmap for improvement.</p>\n\n<p><strong>Step 1: Break Down the Existing Process</strong></p>\n\n<p>The client’s SOP and your own notes from stakeholder interviews give you plenty of information to get started. Upload your materials to Gemini and type a brief prompt:</p>\n\n<p><em>Summarize the current steps, organizational roles, and key systems involved in my client’s workflow, as outlined in the attached SOP document. Answer as a process analyst, and provide your response in the form of a numbered list.</em></p>\n\n<p>Gemini will take a lengthy client SOP and deconstruct it into a list of simple steps, helping you to more clearly see inefficiencies and potential sources of friction. For an employee onboarding process, for example, these steps might include talent acquisition and background screening, entry into the HR information system, ticket generation, hardware procurement; and Day 1 setup.</p>\n\n<p><strong>Step 2: Identify the Most Pressing Problems</strong></p>\n\n<p><br>The next step is to analyze what people inside the organization are saying. You can continue your ongoing conversation with Gemini. Try this prompt:</p>\n\n<p><em>Take a look at the attached stakeholder interviews. Examine them for frequently mentioned pain points, bottlenecks, and unnecessary manual effort. Rank the top five problems.</em></p>\n\n<p>This step will likely uncover issues that are either hidden throughout your client’s SOP document or not mentioned by it at all. For example, stakeholders might note that disconnected systems are causing background checks to stretch on for multiple days, creating a cascade of other problems like delayed ticket generation. Or, the interviews might reveal that hardware batching policies designed to save on shipping expenses are actually costing the company much more in the form of idle time for new employees.</p>\n\n<p><strong>Step 3: Draft Your Analysis</strong></p>\n\n<p>Now, you need to frame the problem for the client’s leadership team. First, spend some time adding your own thoughts to Gemini’s initial diagnosis. Then, go to the chat window and type:</p>\n\n<p><em>Provide the first draft of a current-state analysis for my client. Highlight the inefficiencies we have previously identified and quantify their business impact. Make sure the draft uses a professional, objective tone.</em></p>\n\n<p>Gemini will translate the SOP and stakeholder input into an executive-level summary, but your own expertise is still critical. Continue the conversation to fine-tune your deliverable for tone, format, and content.</p>\n\n<p><strong>Step 4: Make Your Recommendations</strong></p>\n\n<p>Along with an outline of the existing problems, your client will want a detailed plan for what to do next. Try this prompt:</p>\n\n<p><em>Create a list of the 10 most readily actionable recommendations for improving the process. Categorize these action items by the level of effort required to implement them, as well as by their potential impact.</em></p>\n\n<p>Gemini might provide low-effort/high-impact solutions like modifying certain code scripts, while also suggesting high-effort/high-impact steps like building entirely new integrations or overhauling an onboarding portal.</p>\n\n<p>This is the stage where your expertise is the most valuable. Instead of treating the recommendations as a final draft, consider them a menu of options, carefully examining Gemini’s suggestions and testing them against your own knowledge to ensure that they will realistically solve your client’s problems.</p>\n\n<p>While AI can identify logical technical solutions, it takes human instinct to read a room, identify political tensions, and anticipate where specific stakeholders are most likely to push back. By applying your own business acumen to Gemini’s analysis, you can deliver recommendations that will have a real-world impact.</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/run-process-improvement-analysis-google-gemini",
+    "published": "2026-11-12T14:27:49Z",
+    "title": "Run a Process Improvement Analysis with Google Gemini",
+    "type": "Article",
+    "updated": "2026-11-12T14:27:49Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18162": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>What a week. <b>Jensen Huang</b>, the CEO and cofounder of the world’s second-most-valuable company, <a href=\"https://www.theinformation.com/articles/nvidia-ceo-jensen-huang-resigns-creating-uncertainty-ai-sector\">resigned, Nvidia said Thursday morning</a>, after reports of extramarital affairs both with a woman alleged to have spied for Beijing as well as a woman who reported to him at <b>Nvidia</b>. Nvidia chief financial officer <b>Colette Kress</b> will become interim CEO, the company said, while it searches for a permanent successor.</p><p>Much remains uncertain, including implications for Nvidia’s business of selling advanced AI chips and for Nvidia’s aggressive investments in AI model developers and infrastructure startups that are holding up the AI economy. I’m sure we’ll be getting into all of it in the upcoming days.</p><p><i>Meanwhile…</i></p><p>It’s not only a tough week to be Huang, but it’s also a tough week to be an <b>inference provider</b>, a well-funded category of startups that help developers use open-source models at high speeds across Nvidia servers.</p><p>Most recently, <b>Fireworks</b>, one of the most heavily-funded startups in this category, <a href=\"https://www.theinformation.com/articles/new-fireworks-hack-threatens-1-billion-business\">suffered a security breach</a> that exposed customer data to hackers and has also prompted some large customers to consider ditching the service. (In a <a href=\"https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor\">note</a> to customers, <b>Notion</b>, one of Fireworks’ customers, suggested that, although the inference provider promised it was using <b>zero data retention</b>, meaning that it wouldn’t store any data from Notion after processing a request, Notion later learned that data was actually being retained.)</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/jensen-huang-out-inference-providers-screwed",
+    "published": "2026-11-12T15:15:35Z",
+    "title": "Jensen Huang Is Out; Are Inference Providers Screwed?",
+    "type": "Article",
+    "updated": "2026-11-12T15:16:22Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18163": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia’s appointment Thursday of its longtime chief financial officer Colette Kress as interim CEO will force the finance veteran to guide the business through a fraught storm of uncertainty created by the sudden resignation of former CEO Jensen Huang.</p>\n\n<p>Kress, 59, joined Nvidia in 2013, when the business was a humble supplier of chips for gamers. And while she has played an important role in guiding the company’s ascendance to an all-important place in the AI economy, she wasn’t someone who set the agenda on the company’s major decisions, according to people familiar with Kress.</p>\n\n<p>Huang had run Nvidia with total control&mdash;and never established a clear succession plan. One person familiar with Kress said Huang tended to “steamroll” her whenever the two disagreed.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/interim-nvidia-ceo-colette-kress-tried-tame-nvidias-riskiest-bets",
+    "published": "2026-11-12T16:12:15Z",
+    "title": "Interim Nvidia CEO Colette Kress Has Tried to Tame Nvidia’s Riskiest Bets",
+    "type": "Article",
+    "updated": "2026-11-12T16:43:16Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8118,5 +8181,27 @@
     "title": "United Airlines Blocks AI Agents Like Muse and Instinct From Booking Flights",
     "type": "Briefing",
     "updated": "2026-11-11T23:28:57Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18371": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>Alice Huang, the alleged Chinese spy at the <a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china\">heart of an Nvidia scandal</a>, has been barred from Singapore after local authorities determined she had provided inaccurate information during an investigation they conducted into data center company Megaspeed.</p> <p>Huang was probed for her suspected ...</p>",
+    "link": "https://www.theinformation.com/briefings/alice-huang-barred-re-entering-singapore-lying-authorities",
+    "published": "2026-11-12T15:00:50Z",
+    "title": "Alice Huang Barred from Re-Entering Singapore After Lying to Authorities",
+    "type": "Briefing",
+    "updated": "2026-11-12T15:05:49Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18372": {
+    "authors": [
+      "Kevin McLaughlin"
+    ],
+    "content": "<p>Brian Halligan, the HubSpot co-founder who stepped down as CEO in 2021 after a snowmobile accident, is back at the helm.&nbsp;HubSpot on Thursday <a href=\"https://www.hubspot.com/company-news/leadership-transition\">announced</a> that Halligan is replacing CEO Yamini Rangan, who has held that role for the past five years and is stepping down effective today.</p> <p>HubSpot, ...</p>",
+    "link": "https://www.theinformation.com/briefings/hubspot-co-founder-halligan-returning-ceo-rangan-steps",
+    "published": "2026-11-12T17:32:51Z",
+    "title": "HubSpot Co-Founder Halligan Returning as CEO as Rangan Steps Down",
+    "type": "Briefing",
+    "updated": "2026-11-12T17:52:27Z"
   }
 }
