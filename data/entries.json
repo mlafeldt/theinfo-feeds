@@ -4065,6 +4065,36 @@
     "type": "Article",
     "updated": "2026-11-12T16:43:16Z"
   },
+  "tag:www.theinformation.com,2005:Article/18164": {
+    "authors": [
+      "Dakin Campbell",
+      "Julia Hornstein",
+      "Phoebe Liu",
+      "Stephanie Palazzolo",
+      "Valida Pau"
+    ],
+    "content": "<p>In the last three years, Nvidia has emerged as <a href=\"https://www.theinformation.com/articles/nvidia-accelerates-ai-startup-investments-nears-deal-with-cloud-provider-lambda-labs?rc=zjctrx\">one of the most active backers</a> of AI startups, small cloud providers and frontier AI labs&mdash;largely thanks to CEO Jensen Huang’s unrelenting focus on ensuring continued, strong demand for its specialized AI chips. With his sudden resignation late Wednesday, that source of cash now looks at risk.</p>\n\n<p>Venture capitalists, startup founders and semiconductor executives say they expect Nvidia to pull back on its frenetic dealmaking pace, <a href=\"https://www.theinformation.com/articles/nvidias-100-billion-dealmaking-juggernaut-will-go-next?rc=zjctrx\">which totaled $140 billion</a>, including massive credit guarantees, in just two months this year. That activity includes showering cash on big chip users&mdash;Nvidia plans to put $10 billion into Anthropic’s initial public offering next week. But the most vulnerable could be the companies in the middle of funding rounds in which Nvidia is expected to invest.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/nvidias-dealmaking-binge-faces-reckoning-jensen-huangs-exit",
+    "published": "2026-11-12T19:30:36Z",
+    "title": "Nvidia’s Dealmaking Binge Faces a Reckoning After Jensen Huang’s Exit",
+    "type": "Article",
+    "updated": "2026-11-12T22:12:12Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18165": {
+    "authors": [
+      "Aaron Holmes",
+      "Amir Efrati",
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Chinese AI that anyone can download for free has become good enough to break into corporate networks, said Ariel Zeitlin, co-founder and chief technology officer of Tenzai, an Israeli startup that sells hacking software for testing corporate defenses, known as continuous penetration testing.&nbsp;</p><p>At the same time, the most advanced AI that had an early lead in cybersecurity capabilities is getting harder and costlier to improve, said Micah Hill-Smith, CEO of AI benchmarking firm Artificial Analysis. That means Chinese models won’t be far behind and makes it unlikely that any one developer pulls far ahead of its rivals.</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/free-chinese-ai-can-hack-companies-frontier-developers-face-diminishing-returns",
+    "published": "2026-11-12T18:31:33Z",
+    "title": "Free Chinese AI Can Hack Companies While Frontier Developers Face Diminishing Returns",
+    "type": "Article",
+    "updated": "2026-11-12T18:41:32Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8197,11 +8227,55 @@
     "authors": [
       "Kevin McLaughlin"
     ],
-    "content": "<p>Brian Halligan, the HubSpot co-founder who stepped down as CEO in 2021 after a snowmobile accident, is back at the helm.&nbsp;HubSpot on Thursday <a href=\"https://www.hubspot.com/company-news/leadership-transition\">announced</a> that Halligan is replacing CEO Yamini Rangan, who has held that role for the past five years and is stepping down effective today.</p> <p>HubSpot, ...</p>",
+    "content": "<p>Brian Halligan, the HubSpot co-founder who stepped down as CEO in 2021 after a snowmobile accident, is back at the helm.&nbsp;HubSpot on Thursday <a href=\"https://www.hubspot.com/company-news/leadership-transition\">announced</a> that Halligan is replacing CEO Yamini Rangan, who has held that role for the past five years and is stepping down effective today and also ...</p>",
     "link": "https://www.theinformation.com/briefings/hubspot-co-founder-halligan-returning-ceo-rangan-steps",
     "published": "2026-11-12T17:32:51Z",
     "title": "HubSpot Co-Founder Halligan Returning as CEO as Rangan Steps Down",
     "type": "Briefing",
-    "updated": "2026-11-12T17:52:27Z"
+    "updated": "2026-11-12T22:54:47Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18373": {
+    "authors": [
+      "Abram Brown"
+    ],
+    "content": "<p>Jensen Huang, who resigned as Nvidia CEO on Thursday amid a scandal over alleged affairs with several women, has hired Paul Weiss, a prominent white collar law firm, according to <a href=\"https://www.nytimes.com/live/2026/11/12/business/nvidia-jensen-huang-resigns\">The New York Times</a>.</p> <p>Huang’s resignation came four days after Nvidia’s board had announced it would investigate his ...</p>",
+    "link": "https://www.theinformation.com/briefings/ex-nvidia-ceo-huang-hires-lawyers",
+    "published": "2026-11-12T20:02:58Z",
+    "title": "Ex-Nvidia CEO Huang Hires Lawyers",
+    "type": "Briefing",
+    "updated": "2026-11-12T22:54:47Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18374": {
+    "authors": [
+      "Abram Brown"
+    ],
+    "content": "<p>Jensen Huang had affairs with at least two Nvidia employees while leading the company, Reuters <a href=\"https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/\">reports</a>.</p> <p>A day ago, the New York Times <a href=\"https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html\">reported</a> that Huang had an intimate relationship with Kimberly Powell, a Nvidia vice president who reported directly to him. Reuters on Thursday did not reveal ...</p>",
+    "link": "https://www.theinformation.com/briefings/ex-nvidia-ceo-huang-affair-second-employee",
+    "published": "2026-11-12T20:12:10Z",
+    "title": "Ex-Nvidia CEO Huang Had Affair With Second Employee",
+    "type": "Briefing",
+    "updated": "2026-11-12T20:52:37Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18375": {
+    "authors": [
+      "Jessica E. Lessin"
+    ],
+    "content": "<p>Nvidia is planning to continue&nbsp;its investigation into whether former CEO Jensen Huang “has been the target of a foreign intelligence effort” related to his affair with a person alleged to be a Chinese spy will continue, said a person familiar with the situation.</p> <p>The company is expected to ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-will-continue-investigation-former-ceo-alleged-chinese-spy",
+    "published": "2026-11-12T20:50:21Z",
+    "title": "Nvidia Will Continue Investigation Into Former CEO and Alleged Chinese Spy",
+    "type": "Briefing",
+    "updated": "2026-11-12T20:52:03Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18376": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>Elon Musk’s SpaceX and Tesla could unveil a merger as early as next month, Bloomberg reported Thursday. Combining the $1.9 trillion rocket and satellite maker with the $1.5 trillion automaker would represent&nbsp;the largest acquisition on record.</p> <p>An announcement could still slip to early 2027, ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-tesla-announce-merger-soon-december",
+    "published": "2026-11-12T21:20:31Z",
+    "title": "SpaceX and Tesla Could Announce Merger as Soon as December",
+    "type": "Briefing",
+    "updated": "2026-11-12T22:54:48Z"
   }
 }
