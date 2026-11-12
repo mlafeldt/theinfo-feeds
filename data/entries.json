@@ -3990,6 +3990,18 @@
     "type": "Article",
     "updated": "2026-11-12T00:54:18Z"
   },
+  "tag:www.theinformation.com,2005:Article/18158": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>The Commerce Department is finalizing a long-awaited rule that will prevent Chinese AI firms from remotely accessing advanced AI chips through data centers in other countries, according to two people familiar with the process. The move could help the department push back on criticism that it has acted too slowly to create policies to limit China’s access to advanced AI technologies&mdash;rules that have been opposed by influential companies such as Nvidia.</p>\n\n<p>The rule, which could be announced as soon as this month, will expand existing semiconductor-related controls from the department’s Bureau of Industry and Security and extend them to seven additional countries, including Malaysia, Singapore and Thailand, in an effort to prevent remote access and chip smuggling into China, the people said. Commerce is currently consulting with other government agencies on the rule before it can be finalized, they added.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/commerce-department-finalizing-long-awaited-ai-remote-access-rule",
+    "published": "2026-11-12T02:52:17Z",
+    "title": "Commerce Department Finalizing Long-Awaited AI Remote Access Rule",
+    "type": "Article",
+    "updated": "2026-11-12T04:46:46Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8089,12 +8101,12 @@
     "authors": [
       "Phoebe Liu"
     ],
-    "content": "<p>Nvidia’s board is preparing to oust Nvidia CEO Jensen Huang, the Wall Street Journal reported Wednesday. The board has been investigating Huang’s romantic relationship with a woman whose Chinese firm that obtained banned Nvidia chips, and which the U.S. suspected was providing information to ...</p>",
+    "content": "<p>Nvidia’s board is preparing to oust Nvidia CEO Jensen Huang, several news outlets reported, citing Trump administration officials. The board has been investigating Huang’s romantic relationship with a woman whose Chinese firm obtained banned Nvidia chips, and which the U.S. suspected was ...</p>",
     "link": "https://www.theinformation.com/briefings/report-nvidia-board-reportedly-preparing-oust-nvidia-ceo",
     "published": "2026-11-11T22:47:48Z",
-    "title": "Nvidia Board Reportedly Preparing To Oust Nvidia CEO",
+    "title": "Nvidia Board Reportedly Preparing To Oust Nvidia CEO Following Alleged Affairs",
     "type": "Briefing",
-    "updated": "2026-11-11T23:09:27Z"
+    "updated": "2026-11-12T06:54:38Z"
   },
   "tag:www.theinformation.com,2005:Briefing/18370": {
     "authors": [
