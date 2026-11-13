@@ -4077,9 +4077,9 @@
     "label": null,
     "link": "https://www.theinformation.com/articles/nvidias-dealmaking-binge-faces-reckoning-jensen-huangs-exit",
     "published": "2026-11-12T19:30:36Z",
-    "title": "Nvidia’s Dealmaking Binge Faces a Reckoning After Jensen Huang’s Exit",
+    "title": "Nscale, Firmus Deals Hinge on Nvidia Extending Investment Sprint",
     "type": "Article",
-    "updated": "2026-11-12T22:12:12Z"
+    "updated": "2026-11-13T02:53:56Z"
   },
   "tag:www.theinformation.com,2005:Article/18165": {
     "authors": [
@@ -4094,6 +4094,44 @@
     "title": "Free Chinese AI Can Hack Companies While Frontier Developers Face Diminishing Returns",
     "type": "Article",
     "updated": "2026-11-12T18:41:32Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18168": {
+    "authors": [
+      "Anita Ramaswamy"
+    ],
+    "content": "<p>While investors digest the news of <a href=\"https://www.theinformation.com/articles/nvidia-ceo-jensen-huang-resigns-creating-uncertainty-ai-sector?rc=zjctrx\">Nvidia boss Jensen Huang’s exit</a> and its implications on the <a href=\"https://www.theinformation.com/articles/nvidias-dealmaking-binge-faces-reckoning-jensen-huangs-exit?rc=zjctrx\">AI build-out</a>, they are simultaneously mulling another nebulous question: How much is Anthropic worth?</p><p>If everything goes according to plan, the market should give its answer when the company debuts on the Nasdaq exchange next week. Anthropic has set a tentative pricing range of between $1.25 trillion and $1.4 trillion, but several investors we spoke to expect it to price above that range.&nbsp;</p><p>Pricing an initial public offering above the proposed range “is a signal of underlying demand momentum, which is very important to get people excited to participate,” said Samantha Lau, chief investment officer of small- and mid-cap growth equities at AllianceBernstein.&nbsp;</p>",
+    "label": "Dealmaker",
+    "link": "https://www.theinformation.com/articles/anthropic-worth",
+    "published": "2026-11-12T23:28:37Z",
+    "title": "How Much Is Anthropic Really Worth?",
+    "type": "Article",
+    "updated": "2026-11-13T00:16:08Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18169": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Jensen Huang’s long-running Nvidia drama ended on a cliffhanger with the news of the CEO’s resignation Thursday morning. We’re going to have to wait a while for the scriptwriters to figure out the next installment of this thriller. At the moment, we’ve got far more questions than answers: What happened between Sunday, when the board said it had confidence in Huang, and Wednesday night when Huang quit (as Nvidia revealed in a securities filing today)?&nbsp;</p><p>What role did the Trump administration play in his departure? Astute watchers of the news media might have noticed that many of the numerous stories about the Wednesday night board meeting called to consider Huang’s future were at least partly written by Washington correspondents not normally reporting on Nvidia’s doings. Was the White House leaking stuff to pressure Huang to go? The answers will eventually come out, to be sure.</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/abrupt-end-nvidias-jensen-drama-leaves-unanswered-questions",
+    "published": "2026-11-13T01:01:16Z",
+    "title": "Abrupt End to Nvidia’s Jensen Drama Leaves Unanswered Questions",
+    "type": "Article",
+    "updated": "2026-11-13T01:18:42Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18170": {
+    "authors": [
+      "Claudia Chong",
+      "Jing Yang",
+      "Juro Osawa"
+    ],
+    "content": "<p>ByteDance, the Chinese owner of TikTok, is planning to buy back up to $6 billion worth of shares from existing investors at a valuation of about $400 billion, a 20% increase in the valuation used in its last buyback a year ago, according to a letter to shareholders seen by The Information and a person familiar with the plans.</p>\n\n<p>The increase in <a href=\"https://www.theinformation.com/org-charts/bytedance\">ByteDance</a>’s valuation comes after the company completed a deal with the Trump administration in January to prevent a U.S. ban of TikTok. In the deal, ByteDance sold an 80% stake in TikTok’s U.S. data security operation to an American-owned joint venture, while retaining the app’s revenue-generating operations.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/bytedance-buy-back-shares-400-billion-valuation",
+    "published": "2026-11-13T00:47:56Z",
+    "title": "ByteDance to Buy Back Shares at $400 Billion Valuation",
+    "type": "Article",
+    "updated": "2026-11-13T01:18:30Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -8277,5 +8315,16 @@
     "title": "SpaceX and Tesla Could Announce Merger as Soon as December",
     "type": "Briefing",
     "updated": "2026-11-12T22:54:48Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18377": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft said it was attempting to restore service to customers of Office, Copilot, and its Outlook email service after an outage took the applications offline for more than six hours for users across the globe on Thursday.</p> <p>The company first said it was investigating the outages shortly before ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-labors-fix-long-outage-office-outlook-copilot",
+    "published": "2026-11-13T01:57:05Z",
+    "title": "Microsoft Labors to Fix Long Outage of Office, Outlook, Copilot",
+    "type": "Briefing",
+    "updated": "2026-11-13T01:57:05Z"
   }
 }
