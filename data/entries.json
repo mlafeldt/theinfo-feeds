@@ -4133,6 +4133,20 @@
     "type": "Article",
     "updated": "2026-11-13T01:18:30Z"
   },
+  "tag:www.theinformation.com,2005:Article/18173": {
+    "authors": [
+      "Leo Schwartz",
+      "Michael Roddan",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Last weekend, all hell broke loose around Nvidia CEO Jensen Huang. <br /> <br />On Friday, his intimate relationship with a suspected Chinese spy was made public. Then Nvidia’s general counsel, Tim Teter, came to Huang’s home and asked him whether a news report about the relationship was true, according to a person briefed on the interaction. Huang told him it was. By Sunday evening, Huang had publicly apologized for the affair, and Nvidia’s board had said it would investigate his conduct. Teter had to urge directors to do so&mdash;the board, which includes executives who’ve known Huang for decades, had been reluctant to act.</p>\n\n<p>In conversations with senior Nvidia executives, Huang maintained that the affair with the woman, Alice Huang, was his only infidelity, according to people familiar with the situation. Had that been the case, perhaps he would have made it through the maelstrom.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/sex-lies-ai-chips-jensen-huangs-last-days-nvidia-ceo",
+    "published": "2026-11-13T05:24:11Z",
+    "title": "Sex, Lies and AI Chips: Jensen Huang’s Last Days as Nvidia CEO",
+    "type": "Article",
+    "updated": "2026-11-13T06:32:01Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8326,5 +8340,16 @@
     "title": "Microsoft Labors to Fix Long Outage of Office, Outlook, Copilot",
     "type": "Briefing",
     "updated": "2026-11-13T01:57:05Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18378": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>A network of companies tied to Alice Huang, the alleged Chinese spy romantically involved with Nvidia’s former CEO Jensen Huang, recently invested in Chinese AI startup DeepSeek, <a href=\"https://www.theinformation.com/articles/alice-huangs-companies-invested-deepseek-promising-nvidia-chips\">The Information reported</a>.</p> <p>The companies, Century Litong and its parent, Shanghai-listed Jiangsu Lettall Electronics, ...</p>",
+    "link": "https://www.theinformation.com/briefings/companies-linked-alice-huang-invested-deepseek",
+    "published": "2026-11-13T09:49:51Z",
+    "title": "Companies Linked to Alice Huang Invested in DeepSeek",
+    "type": "Briefing",
+    "updated": "2026-11-13T10:09:12Z"
   }
 }
