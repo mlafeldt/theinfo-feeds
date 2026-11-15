@@ -4209,6 +4209,19 @@
     "type": "Article",
     "updated": "2026-11-14T16:02:54Z"
   },
+  "tag:www.theinformation.com,2005:Article/18177": {
+    "authors": [
+      "Claudia Chong",
+      "Qianer Liu"
+    ],
+    "content": "<p>Ulanqab, a city in China’s Inner Mongolia region, used to be known for its potatoes. Now it’s where a Chinese renewable energy firm is trying out a new way to plug in AI chips that shows China’s edge in the power systems that data centers need.</p><p>Envision Energy has started using an 800-volt direct-current system to power computing workloads at its data center there, the Shanghai-based company said earlier this month. The setup, which wastes less electricity between the grid and the chips, is widely expected to become the standard way to power increasingly energy-hungry AI servers, and Envision says it is the first to run it in a functioning data center. Nvidia and its partners are still preparing the same kind of system for their next generation of AI hardware, due next year.</p>",
+    "label": "AI Infrastructure",
+    "link": "https://www.theinformation.com/articles/chinese-energy-company-outpacing-u-s-ai-power-technology",
+    "published": "2026-11-15T16:30:59Z",
+    "title": "How a Chinese Energy Company Is Outpacing the U.S. on AI Power Technology",
+    "type": "Article",
+    "updated": "2026-11-15T16:31:35Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8480,5 +8493,16 @@
     "title": "SpaceX Catches Starship’s Upper Stage for the First Time",
     "type": "Briefing",
     "updated": "2026-11-15T06:51:23Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18385": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>Jensen Huang has discussed with confidants a return as Nvidia CEO, the Financial Times <a href=\"https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1\">reported</a>, days after he resigned over reports of affairs with a suspected Chinese spy and a subordinate. One Huang ally said they were assembling a “war room” of Silicon Valley executives to lobby the board ...</p>",
+    "link": "https://www.theinformation.com/briefings/huang-weighs-nvidia-comeback-bessent-pushes-board-look-outside",
+    "published": "2026-11-15T20:19:24Z",
+    "title": "Huang Weighs Nvidia Comeback as Bessent Pushes Board to Look Outside",
+    "type": "Briefing",
+    "updated": "2026-11-15T20:32:29Z"
   }
 }
