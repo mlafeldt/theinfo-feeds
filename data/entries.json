@@ -4222,6 +4222,18 @@
     "type": "Article",
     "updated": "2026-11-15T16:31:35Z"
   },
+  "tag:www.theinformation.com,2005:Article/18178": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>If life was simple, the biggest question this week for people in tech would be where Anthropic shares open when the AI firm goes public. (Above $150 a share? See below.) Instead, we can’t rule out that more news breaks in the Nvidia drama and overwhelms Anthropic’s week in the sun. That news could be anything from reports of other women who had affairs with the now-departed CEO, Jensen Huang to developments in <a href=\"https://www.theinformation.com/briefings/huang-weighs-nvidia-comeback-bessent-pushes-board-look-outside?rc=9byxri\">the campaign</a> to <a href=\"https://www.theinformation.com/briefings/thousands-nvidia-staff-sign-petition-bring-back-huang?rc=9byxri\">bring him back.</a>&nbsp;Huang, meanwhile, has <a href=\"https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-request-jensen-huang-brief-congress-on-link-to-chinese-intelligence-asset\">agreed to testify</a> before Congress, which could happen this week.</p><p>Of course, even without such developments, Nvidia will be in the news. The AI chip designer on Tuesday is scheduled to report earnings for its third fiscal quarter, ending in late October. Those earnings will remind us all of why it is such a star company: It has projected revenue growth of around 89%, continuing a reacceleration of growth this fiscal year from last year’s “slowdown” (when revenue grew 66%). What we’ll be focused on more than the numbers will be comments from Nvidia’s interim CEO, Colette Kress. While as finance chief she’s a fixture on these calls, on Tuesday she makes her first public appearance in charge of the company since Huang’s exit.</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/nvidias-earnings-deck-anthropics-public-debut",
+    "published": "2026-11-15T23:00:54Z",
+    "title": "Nvidia’s Earnings on Deck; Anthropic’s Public Debut",
+    "type": "Article",
+    "updated": "2026-11-15T23:07:54Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8496,13 +8508,25 @@
   },
   "tag:www.theinformation.com,2005:Briefing/18385": {
     "authors": [
+      "Jessica E. Lessin",
       "Nick Wingfield"
     ],
-    "content": "<p>Jensen Huang has discussed with confidants a return as Nvidia CEO, the Financial Times <a href=\"https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1\">reported</a>, days after he resigned over reports of affairs with a suspected Chinese spy and a subordinate. One Huang ally said they were assembling a “war room” of Silicon Valley executives to lobby the board ...</p>",
+    "content": "<p>Confidantes of Jensen Huang are informally seeking to reinstate Jensen Huang as Nvidia CEO and encouraging Huang to fight to reclaim his old job, according to a person familiar with the matter.&nbsp;Others close to Huang cautioned that there is no official effort to push for Huang’s return, ...</p>",
     "link": "https://www.theinformation.com/briefings/huang-weighs-nvidia-comeback-bessent-pushes-board-look-outside",
     "published": "2026-11-15T20:19:24Z",
-    "title": "Huang Weighs Nvidia Comeback as Bessent Pushes Board to Look Outside",
+    "title": "Huang Allies Encourage Nvidia Comeback as Bessent Pushes Board to Look Outside",
     "type": "Briefing",
-    "updated": "2026-11-15T20:32:29Z"
+    "updated": "2026-11-16T00:02:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18386": {
+    "authors": [
+      "Nick Wingfield"
+    ],
+    "content": "<p>A United Launch Alliance Vulcan rocket failed about 10 minutes after lifting off from Cape Canaveral, Fla., on Sunday, destroying 40 satellites for Amazon’s Leo internet network, <a href=\"https://x.com/ulalaunch/status/2122034531658076417\">according to ULA</a>. The cause of the incident isn’t yet known,&nbsp;ULA, a joint venture of Boeing and Lockheed Martin, ...</p>",
+    "link": "https://www.theinformation.com/briefings/amazon-loses-40-leo-satellites-ula-rocket-failure",
+    "published": "2026-11-15T23:45:06Z",
+    "title": "Amazon Loses 40 Leo Satellites After ULA Rocket Failure",
+    "type": "Briefing",
+    "updated": "2026-11-15T23:45:17Z"
   }
 }
