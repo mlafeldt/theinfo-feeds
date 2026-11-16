@@ -4234,6 +4234,44 @@
     "type": "Article",
     "updated": "2026-11-15T23:07:54Z"
   },
+  "tag:www.theinformation.com,2005:Article/18180": {
+    "authors": [
+      "Rocket Drew",
+      "Stephanie Palazzolo",
+      "Valida Pau"
+    ],
+    "content": "<p>As OpenAI staff this summer scrambled to understand how its AI caused security breaches inside and outside the company, leaders including CEO Sam Altman spoke multiple times with Goodfire, an Anthropic-backed startup whose technology aims to figure out why AI models behave the way they do and how to prevent them from going rogue.</p>\n\n<p>At one point, a senior OpenAI executive floated the idea of buying the two-year-old startup for more than $5 billion or forming another kind of business partnership, according to two people familiar with the proposal. That price would have represented a steep premium to Goodfire’s private valuation of $1.25 billion in a financing it announced in February.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/openai-explored-5-billion-plus-acquisition-startup-decodes-ai-thinks",
+    "published": "2026-11-16T14:00:58Z",
+    "title": "OpenAI Explored $5 Billion–Plus Acquisition of Startup That Decodes How AI ‘Thinks’",
+    "type": "Article",
+    "updated": "2026-11-16T14:01:24Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18181": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Anthropic’s latest push into enterprise apps rattled Microsoft investors last week. Microsoft’s own internal data paints a less threatening picture, at least so far.</p>\n\n<p>Usage of Anthropic features that <a href=\"https://www.youtube.com/watch?v=F6dzjaBCBtU\">allow people to do work inside Microsoft’s Office apps with Claude</a>, such as sorting email or generating slide decks, has been falling further behind usage of Microsoft’s Copilot&nbsp;in recent months, according to internal Microsoft data described by an employee with knowledge of it. The number of weekly users of those features, known as Claude for Microsoft 365, is less than one-tenth the number of weekly users of the paid version of Copilot, Microsoft’s own AI tools, in Office, which has been growing at a much faster rate, the person said.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/microsoft-data-shows-claude-stalling-copilot-office",
+    "published": "2026-11-16T16:01:00Z",
+    "title": "Microsoft Data Shows Claude Is Stalling Against Copilot in Office",
+    "type": "Article",
+    "updated": "2026-11-16T16:01:46Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18182": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>During <b>OpenAI’s</b> talks in recent months with AI startup <b>Goodfire</b> over a possible acquisition or partnership—discussions my colleagues and I <a href=\"https://www.theinformation.com/articles/openai-explored-5-billion-plus-acquisition-startup-decodes-ai-thinks\">reported</a> this morning—OpenAI CEO <b>Sam Altman</b> was particularly interested in the work of <b>Nick Cammarata</b>, a onetime OpenAI researcher now at Goodfire who has made waves recently with new claims about how AI thinks.</p><p>Cammarata published an essay last month and a follow-up report last week that have caused quite a stir among AI researchers—with some applauding it as a potential breakthrough in our ability to understand AI models and others dismissing it as hype. The reaction goes to show that some areas of AI research are still so immature that scientists don’t even agree on what counts as good research—a fact that hasn’t prevented billion-dollar valuations for startups based on unproven AI technology.&nbsp;</p><p>Goodfire’s research specialty is known as <b>mechanistic interpretability</b>, or mech interp for short, which seeks to understand the inner workings of AI models rather than just their outward behavior. AI models are made of trillions of numbers, making them “black boxes” that a person can’t understand the way a programmer can simply read the lines of code in traditional software. As a result, it’s tricky to know how an AI model will act in new situations and to understand mistakes when they occur.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/controversial-ai-interpretability-research-caught-sam-altmans-eye",
+    "published": "2026-11-16T15:01:04Z",
+    "title": "The Controversial AI Interpretability Research that Caught Sam Altman’s Eye",
+    "type": "Article",
+    "updated": "2026-11-16T15:01:56Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -8528,5 +8566,27 @@
     "title": "Amazon Loses 40 Leo Satellites After ULA Rocket Failure",
     "type": "Briefing",
     "updated": "2026-11-15T23:45:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18387": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Shares of Chinese AI firms MiniMax and Z.ai plunged further Monday on fears that the U.S. will tighten Chinese companies’ access to export-controlled chips after the resignation of Nvidia CEO Jensen Huang.</p> <p>MiniMax shares dropped 18%, while Z.ai shares fell 13% in Hong Kong on Monday. That’s ...</p>",
+    "link": "https://www.theinformation.com/briefings/chinese-ai-stocks-plunge-fears-tougher-u-s-export-controls",
+    "published": "2026-11-16T09:57:46Z",
+    "title": "Chinese AI Stocks Plunge on Fears of Tougher U.S. Export Controls",
+    "type": "Briefing",
+    "updated": "2026-11-16T17:56:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18388": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>Blackstone Digital Infrastructure Trust on Monday said it was acquiring a 75% stake in two joint ventures with Amazon Web Services to launch its strategy of buying data centers that have long-term lease contracts with major cloud providers.</p> <p>Blackstone’s data-center focused real estate investment ...</p>",
+    "link": "https://www.theinformation.com/briefings/blackstone-data-center-trust-strikes-5-billion-deal-aws",
+    "published": "2026-11-16T16:57:11Z",
+    "title": "Blackstone Data Center Trust Strikes $5 Billion Deal With AWS",
+    "type": "Briefing",
+    "updated": "2026-11-16T17:56:17Z"
   }
 }
