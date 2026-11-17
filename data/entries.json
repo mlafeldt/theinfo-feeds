@@ -4296,6 +4296,31 @@
     "type": "Article",
     "updated": "2026-11-17T01:08:21Z"
   },
+  "tag:www.theinformation.com,2005:Article/18185": {
+    "authors": [
+      "Catherine Perloff",
+      "Ryan Barwick"
+    ],
+    "content": "<p>Even before Jensen Huang resigned as Nvidia CEO last week, AI chips from smaller rivals such as Advanced Micro Devices were starting to win converts. Huang’s departure is likely to reinforce that shift in sentiment.</p>\n\n<p>Cirrascale, a 16-year-old cloud provider that operates 25 data centers, started fielding significant interest last year from customers interested in running AI workloads on AMD’s specialized AI chip, according to CEO David Driggers. He said AMD’s chips are particularly suited for running AI models&mdash;the process known as inference&mdash;which is becoming more popular among businesses.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/amd-google-chip-away-nvidia-huang-exit-shakes-customers",
+    "published": "2026-11-17T14:00:40Z",
+    "title": "AMD and Google Chip Away at Nvidia as Huang Exit Shakes Customers",
+    "type": "Article",
+    "updated": "2026-11-17T14:01:05Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18186": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>Trillion-dollar-plus IPOs may be stealing the headlines, but for companies hoping to launch that aren’t Anthropic or SpaceX, the path to public markets looks less certain. Companies that have spent years getting IPO-ready may have to wait longer to launch as market conditions shift yet again.</p>\n\n<p>To explore how companies can prepare for an IPO in an unpredictable climate, <em>The Information</em> reporter Dakin Campbell spoke to three investment experts about the long road to going public.</p> <ul>\n<li>Kiran Choudary, chief financial officer, Rubrik</li> <li>Crystal Shen, head of West Coast capital markets, NYSE</li> <li>Kate Claassen, managing director, chairman of global internet banking, Morgan Stanley</li> </ul> <p><strong>The Road to Readiness</strong></p>\n\n<p>Successful IPOs, said Kate Claassen, should be market-ambivalent.</p>\n\n<p>“It’s more about being a successful public company on days when markets go up and when markets go down,” she said, adding that success means having alignment with investors on strategy and the metrics that point to it working.</p>\n\n<p>Kiran Choudary knows first hand how long the road can be. Rubrik began preparing for an IPO in late 2022 but didn’t go public until early 2024, after a prolonged slowdown in the IPO market. Choudary broke preparation into three stages.</p>\n\n<p>The first is business readiness: having the scale, executive team and durable growth story to appeal to investors. The second is financial and risk infrastructure, including clean audits and an audit committee. The third is the IPO process itself: working with the Securities and Exchange Commission, bankers and lawyers, and testing the waters with investors.</p>\n\n<p>“Since 2022, there’s never really been a solidly open window,” Choudary said. Instead, there have been short periods when a handful of companies go public before activity slows again. “If you want to be a public company, if your business is ready and you feel good about it, you have to find a reasonable window and go.”</p>\n\n<p><strong>The Early-Bird Advantage</strong></p>\n\n<p>More companies are staying private for longer, in part because they have the option of raising capital and growing outside the public markets. The NYSE is responding by getting involved earlier in companies’ IPO journeys, sometimes as early as Series A, giving them access to the exchange’s resources and its network of 2,400 publicly listed companies.</p>\n\n<p>“A lot of times, we’re hosting events where private issuers can get exposure to their publicly listed counterparts. That’s exposure to potential end-market customers,” said Crystal Shen. “You leave a lot on the table if you wait until the very end to engage with an exchange.”</p>\n\n<p>Investors need the same early attention, said Claassen, who advised companies to build relationships with major IPO investors years before a roadshow begins. Existing investors who know a company well are more likely to participate in its IPO and remain significant shareholders afterward.</p>\n\n<p>“Data does show that the longer an investor’s been with you, the longer they’re going to stick with you,” she said.</p>\n\n<p>Even decisions made during a company’s earliest funding rounds can have consequences much later. Shen pointed to index inclusion, which can hinge on how a company is positioned in registration statements and how much of its stock is available for public trading. Voting rights in the hands of unrestricted investors, for example, can affect eligibility for indexes such as the Russell US Equity.</p>\n\n<p>“That should shape how you structure some of your private rounds to ensure you have [the] appropriate float for index inclusion down the line,” Shen said.</p>\n\n<p><strong>The Changing IPO Landscape</strong></p>\n\n<p>As companies spend longer in private markets, raising more capital and growing larger before going public, IPOs are getting bigger. The funds investing in them are growing, too.</p>\n\n<p>“The large funds are getting larger, and it’s creating this cycle,” Shen said, noting that smaller and mid-cap funds are declining in both number and assets. That makes it harder for smaller companies to attract institutional investors. Choudary agreed, recalling that when he was a banker, software companies with $100 million to $150 million in revenue could go public.</p>\n\n<p>“In tech, I don’t think that sized company going public even exists anymore,” he said.</p>\n\n<p>The pressure doesn’t end at the IPO. Claassen said the biggest challenge is volatility between listing and the end of the lockup period, which can hit employees’ tax bills. Shen added that how companies structure tender offers, in which shares are bought from existing holders, can have repercussions later on. Those programs often let only current employees and certain early investors sell, leaving other investors and former employees to find liquidity once the company goes public. That, she said, creates pent-up supply ahead of the IPO.</p>\n\n<p>“Companies and management teams need to think about that increased level of secondary activity pre-IPO,” Shen said, “to alleviate some of those issues you’re going to have post-IPO.”</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/road-ipo-getting-longer",
+    "published": "2026-11-17T14:49:07Z",
+    "title": "Why the Road to an IPO Is Getting Longer",
+    "type": "Article",
+    "updated": "2026-11-17T14:49:08Z"
+  },
   "tag:www.theinformation.com,2005:Article/18187": {
     "authors": [
       "Rocket Drew"
@@ -4307,6 +4332,30 @@
     "title": "OpenAI’s Astra Is a Boon to Robotics, Says Nvidia Robotics Chief Deepu Talla",
     "type": "Article",
     "updated": "2026-11-17T05:34:08Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18189": {
+    "authors": [
+      "Julia Hornstein"
+    ],
+    "content": "<p><b>OpenAI’s ChatGPT</b> remembers details of its users and what they look up, while <b>Anthropic’s Claude Code</b> uses its “auto memory” to take notes on users’ preferences and feedback. A new startup thinks AI models can get even more personalized.</p><p><b>First Person Labs</b>, founded seven months ago by two PhD students in the <b>Stanford Artificial Intelligence Laboratory</b>, a research institute at the university, is developing tech to make <b>“user models,”&nbsp;</b>the term for more personalized AI models and agents trained on an individual’s data. The startup is coming out of stealth Tuesday and has raised around $10 million in a funding round led by <b>Andreessen Horowitz’s</b> infrastructure team.&nbsp;</p><p>“Any interface you talk to knows you,” <b>Ken Liu</b>, the company’s co-founder and CEO, said, adding that the company’s tech is “like a biographer—someone that follows you around and sees everything.”</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/startup-emerges-stealth-highly-personalized-ai",
+    "published": "2026-11-17T15:01:15Z",
+    "title": "A Startup Emerges From Stealth With Highly Personalized AI",
+    "type": "Article",
+    "updated": "2026-11-17T15:01:59Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18190": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>In August, OpenAI President Greg Brockman called up Denise Dresser, then the company’s chief revenue officer, with a tough message: Her time with OpenAI was coming to an end.</p>\n\n<p>Dresser, a former Slack CEO, had been in the job for only eight months, and while OpenAI had seen promising growth selling its AI to businesses, Brockman had someone else in mind for the position, who he hoped would run the sales team in a more data-driven way, said a person close to the company: Dali Rajic, president and chief operating officer of Wiz, an Israeli cybersecurity company.</p>\n\n<p>OpenAI had initially considered approaching Rajic before hiring Dresser&mdash;but had been told by a headhunter that he wanted to see Wiz through its $32 billion sale to Google, according to that person. To woo Rajic, Brockman flew to see him at his Austin, Texas, home. In the end, Brockman’s persistence paid off. On Aug. 13, the company made a dual announcement: Dresser was out, and Rajic was in. (OpenAI declined to comment on Dresser’s exit; Dresser did not respond to a request for comment.)</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/brockman-pushes-openai-toward-cybersecurity-and-showdown-ai-safety",
+    "published": "2026-11-17T16:46:30Z",
+    "title": "Brockman Pushes OpenAI Toward Cybersecurity—and a Showdown Over AI Safety",
+    "type": "Article",
+    "updated": "2026-11-17T16:46:55Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -8690,5 +8739,60 @@
     "title": "Google DeepMind Strategy Chief Jasjeet Sekhon Departs for Anthropic",
     "type": "Briefing",
     "updated": "2026-11-16T23:34:04Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18395": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>U.S. authorities have been investigating Singapore-based Megaspeed since 2024 for potential violations of restrictions on the sale of advanced chips to China, the Justice and Commerce Departments said Monday.</p> <p>The probe into Megaspeed, an Nvidia cloud partner once led by Alice Huang, an alleged ...</p>",
+    "link": "https://www.theinformation.com/briefings/u-s-probing-megaspeed-since-2024-export-control-violations",
+    "published": "2026-11-17T11:01:42Z",
+    "title": "U.S. Has Been Probing Megaspeed Since 2024 for Export Control Violations",
+    "type": "Briefing",
+    "updated": "2026-11-17T16:31:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18396": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Nvidia said Tuesday that its board of directors has established a new committee that will oversee the company’s national security policies and compliance with export controls.</p> <p>The new committee, chaired by Nvidia director Suzanne Nora Johnson, will retain independent, outside experts to provide ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-sets-national-security-export-control-oversight-committee",
+    "published": "2026-11-17T11:13:34Z",
+    "title": "Nvidia Sets Up National Security and Export Control Oversight Committee",
+    "type": "Briefing",
+    "updated": "2026-11-17T16:31:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18397": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic’s advisers have been guiding some investors that it could set the valuation of its upcoming IPO at around $1.5 trillion, implying that it could price over the expected range or increase the number of shares it sells.</p> <p>The maker of Claude has received at least six times more demand for ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-expected-price-1-4-trillion-valuation",
+    "published": "2026-11-17T15:52:06Z",
+    "title": "Anthropic Expected to Price Above $1.4 Trillion Valuation",
+    "type": "Briefing",
+    "updated": "2026-11-17T16:31:11Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18398": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Jensen Huang said Tuesday he was willing to return as Nvidia’s CEO if its board decides his return is in the best interest of Nvidia’s shareholders, employees, the company and America.</p> <p>“Since my departure, I’ve seen an outpouring of calls from Nvidia’s employees, investors, business partners, ...</p>",
+    "link": "https://www.theinformation.com/briefings/jensen-huang-would-honored-return-ceo-board-asks",
+    "published": "2026-11-17T16:31:06Z",
+    "title": "Jensen Huang: “Would Be Honored” To Return As CEO If Board Asks",
+    "type": "Briefing",
+    "updated": "2026-11-17T16:31:06Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18399": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google has announced updates to Gemini, called Tasks, that will give it more agentic features, comparable to tools already released by Meta with Muse and OpenAI with Dots. The Task features will be free.</p> <p>Gemini will now be able to call businesses, make purchases, and read and send emails, ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-unveils-agentic-tools-within-gemini",
+    "published": "2026-11-17T19:15:55Z",
+    "title": "Google Unveils More Agentic Tools Within Gemini",
+    "type": "Briefing",
+    "updated": "2026-11-17T19:15:55Z"
   }
 }
