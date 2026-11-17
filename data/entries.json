@@ -4296,6 +4296,18 @@
     "type": "Article",
     "updated": "2026-11-17T01:08:21Z"
   },
+  "tag:www.theinformation.com,2005:Article/18187": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>When OpenAI released its Astra model in September, users quickly found that it excelled at tasks that require understanding the physical world. One of those most impressed by its performance was Nvidia’s robotics chief Deepu Talla, who told The Information it is a breakthrough in efforts to create robots that can handle a wide variety of jobs.</p>\n\n<p>Astra has made it 100 times faster to create some kinds of data for training robotic AI models and could help automate the process of putting robots to work in factories, Talla said on the latest episode of AI Deep Dive. (The full episode, which was recorded before Jensen Huang stepped down as Nvidia’s CEO, <a href=\"https://www.youtube.com/watch?v=rarKwkLN-Bg\">is available here</a>.)</p>",
+    "label": "TITV",
+    "link": "https://www.theinformation.com/articles/openais-astra-boon-robotics-says-nvidia-robotics-chief-deepu-talla",
+    "published": "2026-11-17T05:03:27Z",
+    "title": "OpenAI’s Astra Is a Boon to Robotics, Says Nvidia Robotics Chief Deepu Talla",
+    "type": "Article",
+    "updated": "2026-11-17T05:34:08Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
