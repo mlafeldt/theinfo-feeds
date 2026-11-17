@@ -4197,6 +4197,18 @@
     "type": "Article",
     "updated": "2026-11-13T18:43:14Z"
   },
+  "tag:www.theinformation.com,2005:Article/18175": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>Until recently, AI adoption was the watchword in executive circles. Lately, the conversation has shifted from how companies can use AI to drive productivity to how they leverage it to drive growth and new revenue streams As the technology reshapes existing business models, executives are exploring new ways to make money from their data, develop new products and services, and rethink how their organizations operate.</p>\n\n<p>Rima Safari, U.S. data, analytics and AI practice leader at PwC US, helps the world’s largest organizations move from AI experimentation to business outcomes. The Information’s founder and editor in chief Jessica Lessin sat down with Safari to examine the opportunities and challenges facing companies as they transform their businesses.</p>\n\n<p><strong>Unearthing Revenue Channels</strong></p>\n\n<p>Safari identified two ways companies are relying on AI to drive growth. The first is using AI to analyze how existing processes and data can lead to new insights, which they can turn into new products and services to sell externally. She cited an aerospace and defense company—a PwC client—that used AI to analyze more than 30 years of airplane maintenance records, including millions of handwritten documents, in a short time frame. The company saw an opportunity to turn the findings into a product for other airlines that could help them better manage inventory and maintenance.</p>\n\n<p>“It’s one example of how companies are asking questions around how they can reimagine their businesses,” she said. “A lot of companies are looking at how they can leverage insights to help drive revenue growth.”</p>\n\n<p>The example also points to a second opportunity: using proprietary and contextually relevant data to deliver timely insights for key business decisions. Safari compared it to GPS navigation software, which uses live traffic data to recommend the best route.</p>\n\n<p>“It’s contextually relevant information at the right point in time that allows you to immediately make a decision. That is what organizations need in this agentic world,” Safari said. As companies gain access to increasingly similar frontier models, their proprietary data and ability to put it to work will become a more important source of competitive advantage.</p>\n\n<p>That makes protecting the data essential, she said.</p>\n\n<p><strong>True AI Transformation Starts With a Blank Whiteboard, Not Yesterday’s Blueprint</strong></p>\n\n<p>That sort of reimagination and transformative thinking is difficult for large enterprises, many of which have spent decades building entrenched processes. While startups are often quicker to rethink how work gets done, Safari said, established companies often fall into the trap of treating AI as another efficiency tool, asking how to automate parts of a process.</p>\n\n<p>“That should not be the question at all,” she said. “It should be: With AI, how do I reimagine this entire process?”</p>\n\n<p><strong>Rethinking Security</strong></p>\n\n<p>One very important thing companies need to rethink from a risk perspective is their security measures, which have come into sharper focus as AI agents move beyond controlled environments and start to act more independently in real-world systems. Safari said these risks have slowed adoption but are also changing how companies approach AI development.</p>\n\n<p>“Historically, organizations often prioritized experimentation and rapid development, with the expectation that security and governance could be addressed as solutions matured and scaled. That mindset is fundamentally shifting. Security can no longer be an afterthought—it needs to be embedded into the architecture and design of AI solutions from day one,” Safari said.</p>\n\n<p>Traditional security protocols were designed around human users, Safari noted, not the large number of agents now deployed.</p>\n\n<p>“As AI fundamentally transforms how enterprises operate, security frameworks must evolve alongside it. We need to rethink how we establish trust, manage access and govern an increasingly autonomous digital workforce,” she said.</p>\n\n<p><strong>Tokenomics and the Changing Workforce</strong></p>\n\n<p>Tokenomics has become a recurring concern for executives, Safari said. Companies that once celebrated AI usage through internal leaderboards are now scrutinizing spending.</p>\n\n<p>“You don’t want to use the most sophisticated models for something as simple as summarizing a document,” she said. Instead, companies are increasingly embracing a more diverse AI ecosystem with a fit-for-purpose strategy, strategically combining frontier models with open-weight and open-source alternatives to optimize for performance, cost, control and the unique requirements of each workload.</p>\n\n<p>On the workforce. Safari expects the emphasis to be on upskilling and reskilling rather than simply doing more with fewer people. As agents take on a growing share of tasks, she said employees will increasingly be responsible for orchestrating workflows involving both human colleagues and AI. Just as organizations’ data will be a competitive advantage, so too will employees who have the skills to build on that data. Safari expects technical fluency to become essential at every level of the organizational chart, including at the executive level.</p>\n\n<p>“I say every executive will need to become a builder in some capacity—not necessarily a technologist, but someone with the technical fluency to turn ideas into solutions and actively shape how their business operates,” she said.</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/pwc-ai-can-help-drive-revenue",
+    "published": "2026-11-16T19:10:57Z",
+    "title": "PwC on where AI can help drive revenue",
+    "type": "Article",
+    "updated": "2026-11-16T19:10:57Z"
+  },
   "tag:www.theinformation.com,2005:Article/18176": {
     "authors": [
       "Abram Brown"
@@ -4271,6 +4283,18 @@
     "title": "The Controversial AI Interpretability Research that Caught Sam Altman’s Eye",
     "type": "Article",
     "updated": "2026-11-16T15:01:56Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18183": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Memo to the board of Nvidia: Folks, you need to explain why you pressured Jensen Huang to resign. Otherwise, <a href=\"https://www.wsj.com/tech/the-campaign-to-bring-back-jensen-huang-as-nvidia-ceo-e91b0b2c?mod=hp_lead_pos1\">a bring-back-Jensen movement</a> will only grow and could theoretically escalate to the point where it threatens your roles on Nvidia’s board. Even <a href=\"https://www.nytimes.com/2026/11/16/us/politics/trump-jensen-huang-nvidia.html\">President Donald Trump</a> has weighed in, supporting Huang. The board could use Nvidia’s earnings update on Tuesday to provide everyone with some answers.</p><p>As quixotic as the Jensen loyalists’ effort may seem right now, some of their complaints are on the money. A letter from investors Brad Gerstner and Gavin Baker <a href=\"https://x.com/GavinSBaker/status/2121401397346521412?a=3NQwtzibzPKzjQOv_wI&amp;s=20\">posted on X</a> on Friday, for instance, made the point that there was “massive uncertainty associated with recent events surrounding” Huang’s departure. The pair were correct to say that a “slow, measured and deliberate process regarding the future leadership of Nvidia” was in everyone’s best interests.</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/nvidias-board-come-clean-huangs-resignation",
+    "published": "2026-11-17T01:01:20Z",
+    "title": "Nvidia’s Board Should Come Clean on Huang’s Resignation",
+    "type": "Article",
+    "updated": "2026-11-17T01:08:21Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -8588,5 +8612,71 @@
     "title": "Blackstone Data Center Trust Strikes $5 Billion Deal With AWS",
     "type": "Briefing",
     "updated": "2026-11-16T17:56:17Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18389": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>The Commerce Department’s Bureau of Industry and Security <a href=\"https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology\">announced</a> a long-awaited rule on Monday that restricts Chinese AI companies from accessing otherwise restricted chips through data centers, primarily in Southeast Asia. The rule comes after <a href=\"https://www.theinformation.com/articles/trump-administration-working-ai-rule-curb-chinas-remote-access-chips\">months</a> of deliberation and went through its last ...</p>",
+    "link": "https://www.theinformation.com/briefings/commerce-department-releases-remote-access-rule",
+    "published": "2026-11-16T18:13:40Z",
+    "title": "Commerce Department Releases Remote Access Rule",
+    "type": "Briefing",
+    "updated": "2026-11-16T19:24:54Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18390": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft this week is planning to debut new features in its Copilot AI software and Azure cloud service aimed at rebuffing competing products from Anthropic and other AI competitors, <a href=\"https://www.theinformation.com/articles/microsoft-data-shows-claude-stalling-copilot-office?rc=geicgp\">The Information reported</a>.</p> <p>The planned features, which Microsoft will unveil at its Ignite conference starting ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-debut-products-aimed-reducing-customers-ai-costs",
+    "published": "2026-11-16T18:38:40Z",
+    "title": "Microsoft to Debut Products Aimed at Reducing Customers’ AI Costs",
+    "type": "Briefing",
+    "updated": "2026-11-16T18:38:40Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18391": {
+    "authors": [
+      "Leo Schwartz"
+    ],
+    "content": "<p>California Attorney General Rob Bonta <a href=\"https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over\">announced</a> a lawsuit on Monday against OpenAI over an attack by a swarm of its agents against the open-source repository platform Hugging Face in July. In the 31-page <a href=\"https://oag.ca.gov/system/files/attachments/press-docs/complaint-oai-cyber.pdf\">lawsuit</a>, filed in the Superior Court of the State of California, Bonta asks for an ...</p>",
+    "link": "https://www.theinformation.com/briefings/california-sues-openai-hugging-face-attack-cybersecurity-incidents",
+    "published": "2026-11-16T19:25:24Z",
+    "title": "California Sues OpenAI Over Hugging Face Attack, Other Cybersecurity Incidents",
+    "type": "Briefing",
+    "updated": "2026-11-16T21:44:06Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18392": {
+    "authors": [
+      "Amy Dockser Marcus"
+    ],
+    "content": "<p>Gates Ventures, the private office of Bill Gates, and West Health, a group of non-profits funded by philanthropists Gary and Mary West, said on Monday that they will offer up to $15 million in philanthropic funding to scientists and researchers trying to develop AI tools to advance research for ...</p>",
+    "link": "https://www.theinformation.com/briefings/bill-gates-backs-push-advance-alzheimers-research-ai",
+    "published": "2026-11-16T21:27:07Z",
+    "title": "Bill Gates Backs Push to Advance Alzheimer’s Research With AI",
+    "type": "Briefing",
+    "updated": "2026-11-16T21:27:07Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18393": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>OpenAI said Monday&nbsp;it had signed agreements with Apollo Research, METR, Transluce and Goodfire to give the organizations access to some of OpenAI’s internal information to assess risks in its technology and practices.</p> <p>The announcement follows OpenAI’s <a href=\"https://x.com/sama/status/2098811563415150910\">commitment</a> to embed evaluators within ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-signs-agreements-embed-ai-evaluators",
+    "published": "2026-11-16T22:13:24Z",
+    "title": "OpenAI Signs Agreements to Embed AI Evaluators",
+    "type": "Briefing",
+    "updated": "2026-11-16T23:02:28Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18394": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google DeepMind’s chief strategy officer Jasjeet Sekhon has left for a role at Anthropic, he said Monday.</p> <p>“I am working to ensure that Claude practices and values epistemic rigor,” he posted on X. An Anthropic spokesperson confirmed the hire.</p> <p>Before joining Google, Sekhon worked as chief ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-deepmind-strategy-chief-jasjeet-sekhon-departs-anthropic",
+    "published": "2026-11-16T23:34:04Z",
+    "title": "Google DeepMind Strategy Chief Jasjeet Sekhon Departs for Anthropic",
+    "type": "Briefing",
+    "updated": "2026-11-16T23:34:04Z"
   }
 }
