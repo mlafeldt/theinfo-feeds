@@ -4431,6 +4431,20 @@
     "type": "Article",
     "updated": "2026-11-18T00:48:35Z"
   },
+  "tag:www.theinformation.com,2005:Article/18197": {
+    "authors": [
+      "Aaron Holmes",
+      "Leo Schwartz",
+      "Qianer Liu"
+    ],
+    "content": "<p>ByteDance is in advanced talks to spend an additional roughly $500 million on cloud services from Microsoft, primarily to use OpenAI models from Microsoft’s Azure cloud, according to two people with knowledge of the situation.</p>\n\n<p>The move to expand the Chinese firm’s already large contract with Microsoft has drawn the ire of OpenAI. The AI company has complained to Microsoft in recent months that it believes Chinese firms are “distilling” its AI, or running OpenAI models to create their own competing AI models, according to the people with knowledge of the discussions. OpenAI itself prevents most Chinese firms from using its AI, but Microsoft&mdash;which has the rights to sell OpenAI’s technology&mdash;doesn’t impose the same restrictions.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/microsoft-nears-500-million-deal-sell-ai-bytedance-irking-openai",
+    "published": "2026-11-18T14:00:51Z",
+    "title": "Microsoft Nears $500 Million Deal to Sell AI to ByteDance, Irking OpenAI",
+    "type": "Article",
+    "updated": "2026-11-18T17:29:06Z"
+  },
   "tag:www.theinformation.com,2005:Article/18198": {
     "authors": [
       "Juro Osawa",
@@ -4443,6 +4457,55 @@
     "title": "Nvidia Introduced Alibaba to Alice Huang for Workaround on U.S. Export Controls",
     "type": "Article",
     "updated": "2026-11-18T05:14:14Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18199": {
+    "authors": [
+      "Amy Dockser Marcus"
+    ],
+    "content": "<p>With all the renewed interest around the saga of Theranos, two startup founders, Omar Abudayyeh and Jonathan Gootenberg, made the tongue-in-cheek decision to plunk down about $12 for the rights to the URL: <a href=\"http://theranosbutworks.com\">theranosbutworks.com</a>.</p>\n\n<p>That URL redirects to the main website for their 16-month-old health- and blood-testing company, Helios, which is coming out of stealth on Wednesday. With just a drop of blood drawn from a small, needle-free device, Abudayyeh, 36, and Gootenberg, 35, say the company can measure over 1,000 proteins within someone’s body that provide insight into their current state of health and predictions about a person’s risk of diseases like heart failure, blood cancers and Alzheimer’s disease over the next 10 years.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/theranos-real-new-blood-testing-startup-says-can-predict-health-risks",
+    "published": "2026-11-18T16:00:58Z",
+    "title": "‘Theranos But Real’: New Blood-Testing Startup Says It Can Predict Health Risks",
+    "type": "Article",
+    "updated": "2026-11-18T18:21:21Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18200": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p><b>Craigslist</b> founder <b>Craig Newmark</b> says he’s recently become worried about AI’s potential to cause serious harm to critical infrastructure and human society. He’s considered directing some of his philanthropic funding towards organizations trying to make sure powerful AI doesn’t harm humans.</p><p>But Newmark told me he is holding back for now because he expects a tsunami of donations from newly wealthy <b>Anthropic</b> employees to such organizations, following Anthropic’s blockbuster IPO this week. These potentially outweigh what he could give, and he feels his money could have more utility elsewhere.</p><p>“Lots of people are paying lots of attention to it, so I can focus in other areas,” Newmark said in a video interview earlier this month.&nbsp;</p><p>“Now, maybe I'm being naive thinking that the people developing AI will be the most concerned about its safety,” Newmark said. If AI employees don’t donate to such groups, Newmark says he may have to call “very publicly and very loudly” for philanthropic support for AI safety in addition to his own.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/anthropics-ipo-making-philanthropist-craig-newmark-hold-back-ai-safety-donations",
+    "published": "2026-11-18T15:01:15Z",
+    "title": "Why Anthropic’s IPO Is Making Philanthropist Craig Newmark Hold Back on AI Safety Donations",
+    "type": "Article",
+    "updated": "2026-11-18T15:02:00Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18201": {
+    "authors": [
+      "Stephanie Palazzolo",
+      "Valida Pau"
+    ],
+    "content": "<p>Sierra, the AI customer support startup founded by former Salesforce co-CEO Bret Taylor, has been in talks to raise new funding at around a $30 billion valuation, according to two people with knowledge of the fundraise. That price would nearly double the $15 billion-plus valuation it received in its last round announced in May.</p>\n\n<p>The three-year old startup is discussing raising around $1.5 billion in new funding, one of the people said.&nbsp; Lightspeed Venture Partners, Greenoaks and Benchmark are in talks to invest, the person said. The talks are still early and terms could change.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/bret-taylors-sierra-talks-raise-30-billion-valuation",
+    "published": "2026-11-18T19:47:45Z",
+    "title": "Bret Taylor’s Sierra in Talks to Raise at $30 Billion Valuation",
+    "type": "Article",
+    "updated": "2026-11-18T19:53:03Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18202": {
+    "authors": [
+      "The Information Partnerships"
+    ],
+    "content": "<p>Persistent IT problems can drain employee productivity and strain help desk teams.</p>\n\n<p>And while a  one-off technology problem often amounts to little more than a nuisance, recurring problems often have a real impact on the business. Imagine, for instance, that you run IT support for your company, and employees keep reporting that their VPN connections are dropping, locking remote workers out of company systems. Even with your IT team helping one user after another, the tickets keep piling up, and the underlying issue remains unaddressed.</p>\n\n<p>Google Gemini can help IT teams sort through this information, spot patterns, and identify the root of the problem to help the organization get back to business.</p>\n\n<p><strong>Step 1: Define the Problem</strong></p>\n\n<p>First, you’ll want to use Gemini to cut through the chaos of helpdesk logs to better understand the frequency of the issue and create a consolidated dataset for further analysis. Take a screenshot of the error message that your users are getting, and export data from recent support tickets into a Google Sheet. Then, ask Gemini to compare the ticket data against the error message.</p>\n\n<p>Try this prompt:</p>\n\n<p><em>You are a Level 2 debugging specialist. Analyze the attached error screenshot to identify the exact error code or message. Using this key, review the attached support tickets from the last 60 days and find all tickets that contain the identical error message. Output the results as a table.</em></p>\n\n<p><strong>Step 2: Hunt for Root Cause</strong></p>\n\n<p>From a dataset of 500 help tickets, Gemini might identify two dozen or so dropped VPN connections, providing a table that identifies the ticket number, date, and location of each. This narrower dataset will make it easier to find out what the tickets have in common (and, therefore, what might be causing the problem).</p>\n\n<p>Your ticket export should already include each employee’s operating system, VPN client version, and location. To see what the affected employees have in common, prompt Gemini again:</p>\n\n<p><em>You are a technical data analyst. Analyze the consolidated ticket data to identify statistically significant correlations between the ‘VPN connection dropping’ issue and the following attributes: operating system, VPN client version, and user geolocation. Format the findings as a ranked list, stating the calculated confidence level for each correlation.</em></p>\n\n<p>The results of this step can be extremely revealing. For example, Gemini might note that only macOS users running a particular client version are experiencing the problem.</p>\n\n<p><strong>Step 3: Identify the Solution</strong></p>\n\n<p><br>The good news is that your helpdesk team has already solved users’ VPN problem multiple times. However, it’s likely this is the first time anyone has looked at all of these tickets together, since they were previously scattered among tickets for various one-off problems. Therefore, it’s highly possible no one in the organization knows the most common fix, even if your helpdesk has already applied that solution over and over again.</p>\n\n<p>In your Gemini chat, type:</p>\n\n<p><em>From the ‘Resolution Notes’ field of all closed tickets in the consolidated data, extract and rank the top 5 most successful, non-escalated troubleshooting actions that resolved the ‘VPN connection dropping’ issue. Output the steps as a numbered list, including the calculated frequency/success rate for each step.</em></p>\n\n<p>Gemini will identify which fixes have been tried and list their success rates. For example, Gemini might note that every resolved ticket required the user to install a new client version and clear the macOS DNS cache.</p>\n\n<p><strong>Step 4: Create a Playbook</strong></p>\n\n<p>Now that you know how often VPN connections are dropping, what is causing the problem, and how it has been fixed in the past, you can give your frontline technicians a clear, repeatable playbook for handling the issue. This will ensure that the problem gets fixed quickly, without unnecessary escalation to senior engineers.</p>\n\n<p>Gemini can quickly draft a playbook with desired content, length, and tone. Try this prompt:</p>\n\n<p><em>You are a Level 2 technical writer. Draft an updated, internal-facing knowledge base article titled ‘Resolving recurring VPN drops: root cause analysis and Tier 1 triage.’ Structure the article with two main sections: ‘Summary of root cause’ and ‘Tier 1 troubleshooting steps.’ The tone must be concise and instructional, explicitly targeting Level 1 helpdesk technicians.</em></p>\n\n<p>The playbook will give your technicians exactly the information they’ll need when the issue pops up again in the future. And a problem that previously robbed teams of hours of productive time each month will instead be resolved in minutes.</p>",
+    "label": "Partner Content",
+    "link": "https://www.theinformation.com/articles/diagnose-recurring-technical-problem-google-gemini",
+    "published": "2026-11-18T19:27:50Z",
+    "title": "How to Diagnose a Recurring Technical Problem with Google Gemini",
+    "type": "Article",
+    "updated": "2026-11-18T19:27:51Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -8970,5 +9033,39 @@
     "title": "OpenAI Model Helps Find Security Bug in Widely Used Code Language",
     "type": "Briefing",
     "updated": "2026-11-18T01:15:20Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18408": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Tencent President Martin Lau said Wednesday that Washington’s new rule barring Chinese companies from accessing Nvidia’s advanced AI chips through overseas data centers “sets everyone back in China.”</p> <p>The new rule, Lau said, will impact the training of new models, potentially pushing back the ...</p>",
+    "link": "https://www.theinformation.com/briefings/tencent-president-new-u-s-chip-rule-sets-everyone-back-china",
+    "published": "2026-11-18T14:40:54Z",
+    "title": "Tencent President: New U.S. Chip Rule “Sets Everyone Back in China”",
+    "type": "Briefing",
+    "updated": "2026-11-18T14:40:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18409": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>U.S. banks including JPMorgan and Citigroup have sought protection against violations of semiconductor export bans in a loan they are considering for Bridge Data Centres, a Singapore-based data center operator that once hosted Megaspeed, the firm at the center of the widening Jensen Huang ...</p>",
+    "link": "https://www.theinformation.com/briefings/u-s-banks-seek-loan-protections-chip-smuggling-southeast-asian-data-center-operator",
+    "published": "2026-11-18T15:12:47Z",
+    "title": "U.S. Banks Seek Loan Protections Against Chip Smuggling with Southeast Asian Data Center Operator",
+    "type": "Briefing",
+    "updated": "2026-11-18T15:12:47Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18410": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia held&nbsp;its first employee all-hands meeting without CEO Jensen Huang on Wednesday morning, with one notable executive on stage: <a href=\"https://www.theinformation.com/articles/jensen-huangs-right-hand-man-oversaw-chip-customers-including-alice-huang\">former sales chief Jay Puri</a>, according to a person at the meeting.</p> <p>The all hands also included a speech from Puri’s successor, longtime Microsoft vet Nick ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-holds-first-hands-jensen-huangs-departure",
+    "published": "2026-11-18T17:59:30Z",
+    "title": "Nvidia Holds Its First All Hands After Jensen Huang’s Departure",
+    "type": "Briefing",
+    "updated": "2026-11-18T18:26:13Z"
   }
 }
