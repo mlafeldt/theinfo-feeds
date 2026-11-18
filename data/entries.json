@@ -4304,9 +4304,9 @@
     "label": null,
     "link": "https://www.theinformation.com/articles/anthropics-vc-investors-hit-10x-returns-ipo",
     "published": "2026-11-17T21:01:11Z",
-    "title": "Anthropic’s VC Investors Hit 10X Returns in IPO",
+    "title": "Anthropic IPO Yields 10X Returns for Venture Firms",
     "type": "Article",
-    "updated": "2026-11-17T22:45:30Z"
+    "updated": "2026-11-18T04:09:13Z"
   },
   "tag:www.theinformation.com,2005:Article/18185": {
     "authors": [
@@ -4430,6 +4430,19 @@
     "title": "The Browser-Hosting Startups Cashing In on Instinct’s Growth",
     "type": "Article",
     "updated": "2026-11-18T00:48:35Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18198": {
+    "authors": [
+      "Juro Osawa",
+      "Qianer Liu"
+    ],
+    "content": "<p>Nvidia’s sales team introduced Chinese tech giant Alibaba to Alice Huang, the alleged Chinese spy involved in smuggling Nvidia chips into China, months before U.S. export controls on advanced semiconductors came into effect in 2022, according to three people with direct knowledge of the matter.</p>\n\n<p><a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a>’s introductions, which happened on two occasions across several months in 2022, helped Huang and her company land Alibaba as a customer, two of the three people said. From there on, Huang, a newcomer to the chip renting business, was able to get bank loans that helped finance the purchase of Nvidia chips, the two people said.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/nvidia-introduced-alibaba-alice-huang-workaround-u-s-export-controls",
+    "published": "2026-11-18T03:05:46Z",
+    "title": "Nvidia Introduced Alibaba to Alice Huang for Workaround on U.S. Export Controls",
+    "type": "Article",
+    "updated": "2026-11-18T05:14:14Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
