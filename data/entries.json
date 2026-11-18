@@ -4296,6 +4296,18 @@
     "type": "Article",
     "updated": "2026-11-17T01:08:21Z"
   },
+  "tag:www.theinformation.com,2005:Article/18184": {
+    "authors": [
+      "Julia Hornstein"
+    ],
+    "content": "<p>For the first two years of its existence, Anthropic was shunned by most venture capitalists, drawing instead on a mix of wealthy individuals such as former Google CEO Eric Schmidt and cloud computing companies <a href=\"https://www.theinformation.com/newsletters/the-briefing/amazon-google-win-big-anthropic-ipo\">like Google</a>.</p>\n\n<p>But even after VC firms made relatively late entries into Anthropic, a handful of them, including Spark Capital, Factorial Funds, Sound Ventures and Menlo Ventures, will hold stakes worth over 10 times their investment when Anthropic prices its IPO&nbsp;Wednesday at an expected $1.4 trillion valuation, according to people with knowledge of their investments.</p>\n\n<p>Slightly later investors, including Bessemer Venture Partners and Lightspeed Venture Partners, are slated to see billions of dollars in returns.</p>",
+    "label": null,
+    "link": "https://www.theinformation.com/articles/anthropics-vc-investors-hit-10x-returns-ipo",
+    "published": "2026-11-17T21:01:11Z",
+    "title": "Anthropic’s VC Investors Hit 10X Returns in IPO",
+    "type": "Article",
+    "updated": "2026-11-17T22:45:30Z"
+  },
   "tag:www.theinformation.com,2005:Article/18185": {
     "authors": [
       "Catherine Perloff",
@@ -4353,9 +4365,71 @@
     "label": "Exclusive",
     "link": "https://www.theinformation.com/articles/brockman-pushes-openai-toward-cybersecurity-and-showdown-ai-safety",
     "published": "2026-11-17T16:46:30Z",
-    "title": "Brockman Pushes OpenAI Toward Cybersecurity—and a Showdown Over AI Safety",
+    "title": "To Strengthen OpenAI, Brockman Goes ‘Full Management Mode’",
     "type": "Article",
-    "updated": "2026-11-17T16:46:55Z"
+    "updated": "2026-11-17T19:55:36Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18192": {
+    "authors": [
+      "Dakin Campbell"
+    ],
+    "content": "<p>A Southeast Asian data center boom has attracted billions in financing from major U.S. banks. JPMorgan and Citigroup, for instance, lent money in 2025 to a data center operator that did business with Megaspeed, a company now at the center of the scandal surrounding Nvidia and former CEO Jensen Huang.</p>\n\n<p>Now, as scrutiny of the region’s role in national security intensifies, those loans highlight an emerging risk for banks: indirect exposure to potentially problematic companies through their borrowers. Banks lending to data center operators are typically expected to vet the operators’ major customers, and the financing arrangement raises questions about how thoroughly banks examined complex ownership structures and other potential red flags in Southeast Asia.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/jpmorgan-citi-missed-megaspeed-risks-2-8-billion-data-center-loan",
+    "published": "2026-11-17T21:32:45Z",
+    "title": "How JPMorgan, Citi Missed Megaspeed Risks in a $2.8 Billion Data Center Loan",
+    "type": "Article",
+    "updated": "2026-11-17T22:02:50Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18193": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>A software launch last month that got little attention in the wider world could have big implications for Google’s burgeoning AI chip business.&nbsp;</p><p>Google late last month <a href=\"https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus?e=48754805\">announced</a> an open-source version of TorchTPU, a software layer for its tensor processing units that represents the biggest leap on the software side of the Google chip business in years.</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/googles-new-ai-chip-software-helps-battle-nvidia",
+    "published": "2026-11-17T20:49:14Z",
+    "title": "How Google’s New AI Chip Software Helps It Battle Nvidia",
+    "type": "Article",
+    "updated": "2026-11-17T20:52:05Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18194": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Well, that was embarrassing. A few hours after Nvidia’s recently departed CEO Jensen Huang issued a <a href=\"https://www.theinformation.com/briefings/jensen-huang-would-honored-return-ceo-board-asks?rc=9byxri\">plaintive statement</a> saying he’d love his job back, company chair Harvey Jones sent back a message: no chance, buddy. In an unusual appearance on the company’s earnings call Tuesday afternoon, Jones stated unequivocally that the board “does not intend to reinstate Jensen as CEO.”</p><p>Jones also added something the board didn’t say when it announced Huang’s exit last Thursday: that the exit came “after disclosure of personal behavior inconsistent with the company’s code of conduct, standards and cultural norms.” So now it’s clear: it <i>was </i>Huang’s affairs (with a subordinate and a business partner) that caused his exit, and not, for instance, <a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china?rc=9byxri\">concerns about Nvidia’s possible involvement</a> in smuggling of its chips into China. </p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/nvidias-board-rebuffs-jensen",
+    "published": "2026-11-18T01:01:04Z",
+    "title": "Nvidia’s Board Rebuffs Jensen",
+    "type": "Article",
+    "updated": "2026-11-18T01:10:51Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18195": {
+    "authors": [
+      "Phoebe Liu",
+      "Qianer Liu"
+    ],
+    "content": "<p>For years, anytime a major <a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a> customer wanted to buy chips or otherwise needed attention, they could turn to the company’s longtime former sales chief Jay Puri. That included Alice Huang, the former mistress of Jensen Huang, the Nvidia co-founder and former CEO who was pressured to resign last week by the company’s board, according to a person with knowledge of Nvidia’s operations.</p>\n\n<p>Alice Huang worked with a Chinese firm that secretly imported at least $7.5 billion of banned Nvidia AI chips into China, circumventing U.S. export restrictions, <a href=\"https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china?rc=c48ukx\">The Information reported</a>. And Puri had a personal connection to another key customer, Supermicro, a server maker whose then-senior executives were criminally indicted in March for allegedly diverting Nvidia chips to China.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/jensen-huangs-right-hand-man-oversaw-chip-customers-including-alice-huang",
+    "published": "2026-11-18T00:33:57Z",
+    "title": "Jensen Huang’s Right-Hand Man Oversaw Chip Customers—Including Alice Huang",
+    "type": "Article",
+    "updated": "2026-11-18T01:04:50Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18196": {
+    "authors": [
+      "Aaron Holmes",
+      "Valida Pau"
+    ],
+    "content": "<p>The Information’s annual list of <a href=\"https://www.theinformation.com/projects/the-information-50-2026\">50 most promising startups</a>, which we published last week, didn’t include one very young, fast-growing startup: personal agent Instinct.&nbsp;</p><p>By the time we were deep into the list’s reporting, the startup had already outgrown the list’s parameters because it had just raised $1 billion at a $10 billion valuation, as <a href=\"https://www.theinformation.com/articles/ai-agent-startup-instinct-talks-10-billion-valuation?rc=zjctrx\">we first reported</a>. But we did find out that its popularity has also boosted the fortunes of two other startups.</p>",
+    "label": "Dealmaker",
+    "link": "https://www.theinformation.com/articles/browser-hosting-startups-cashing-instincts-growth",
+    "published": "2026-11-18T00:46:32Z",
+    "title": "The Browser-Hosting Startups Cashing In on Instinct’s Growth",
+    "type": "Article",
+    "updated": "2026-11-18T00:48:35Z"
   },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
@@ -8794,5 +8868,94 @@
     "title": "Google Unveils More Agentic Tools Within Gemini",
     "type": "Briefing",
     "updated": "2026-11-17T19:15:55Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18400": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Microsoft debuted a suite of new AI models at its annual Ignite conference in San Francisco on Tuesday and said it will license the models’ weights—the settings that determine how the models answer questions—so customers can create highly customized versions for their businesses.</p> <p>The move ...</p>",
+    "link": "https://www.theinformation.com/briefings/microsoft-let-customers-customize-ai-models-weights",
+    "published": "2026-11-17T19:40:35Z",
+    "title": "Microsoft to Let Customers Customize Its AI Models’ ‘Weights’",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18401": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>Walt Disney Co. reported that operating income for its streaming operations more than doubled in the quarter ended Oct. 3, compared with a year earlier, reflecting growth in the number of subscribers as well as the quarter including an extra week compared to a year earlier.</p> <p>But this is the last ...</p>",
+    "link": "https://www.theinformation.com/briefings/disney-streaming-profits-double",
+    "published": "2026-11-17T19:55:01Z",
+    "title": "Disney Streaming Profits Double",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18402": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>Paul Christiano, a prominent AI safety researcher and member of the board that controls OpenAI, offered an alarming assessment of where the technology is heading in an interview with a popular technology podcast, saying the likelihood of humans completely losing control of AI next year is ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-director-says-reasonable-chance-ai-disaster-within-year",
+    "published": "2026-11-17T19:55:09Z",
+    "title": "OpenAI Director Says ‘Reasonable’ Chance of an AI Disaster Within a Year",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18403": {
+    "authors": [
+      "Amir Efrati",
+      "Phoebe Liu"
+    ],
+    "content": "<p>Nvidia Interim CEO Colette Kress said Tuesday that the chip designer’s revenue would rise 75% in the 12 months ending Jan. 31 2028, compared to the prior fiscal year, or 5 percentage points higher than the forecast she gave three months ago. While that figure represents a comedown from the ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-says-revenue-rose-103-first-earnings-report-since-huang-departure",
+    "published": "2026-11-17T21:34:58Z",
+    "title": "Nvidia Boosts 2027 Revenue Forecast to 75% Growth",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18404": {
+    "authors": [
+      "Laura Bratton"
+    ],
+    "content": "<p>Salesforce on Monday told employees they will have a cap on AI spending that will vary depending on their role, ranging between $100 to $1,000 a month, an employee of the software firm said. The email Salesforce sent to staffers about the change said the caps were a response&nbsp; to some ...</p>",
+    "link": "https://www.theinformation.com/briefings/salesforce-memo-details-caps-employees-ai-spending",
+    "published": "2026-11-17T21:36:36Z",
+    "title": "Salesforce Memo Details Caps on Employees’ AI Spending",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:18Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18405": {
+    "authors": [
+      "Phoebe Liu"
+    ],
+    "content": "<p>Jensen Huang resigned from his roles as Nvidia president, CEO and board member after “disclosure of personal behavior inconsistent with the company’s code of conduct, standards and cultural norms,” Harvey Jones, Nvidia’s board chair, said Tuesday during the company’s quarterly earnings call.</p> <p> ...</p>",
+    "link": "https://www.theinformation.com/briefings/nvidia-board-chair-jensen-huangs-personal-behavior-doomed-reinstated",
+    "published": "2026-11-17T23:01:43Z",
+    "title": "Nvidia Board Chair: Jensen Huang’s ‘Personal Behavior’ Doomed Him and He Won’t Be Reinstated",
+    "type": "Briefing",
+    "updated": "2026-11-17T23:01:43Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18406": {
+    "authors": [
+      "Ann Davis Vaughan"
+    ],
+    "content": "<p>Texas environmental regulators have approved an air pollution permit for Elon Musk’s SpaceX’s 1.456 gigawatt gas-fired power plant for a supercomputer planned for the Rio Grande Valley, according to a news alert from the power regulatory service Halcyon and reports this afternoon from <a href=\"https://www.politico.com/news/2026/11/17/texas-issues-air-permit-for-massive-spacex-data-center-01170758\">Politico</a> ...</p>",
+    "link": "https://www.theinformation.com/briefings/texas-clears-spacex-supercomputer-power-plant-abbott-lifts-freeze",
+    "published": "2026-11-18T00:07:31Z",
+    "title": "Texas Clears SpaceX Supercomputer Power Plant as Abbott Lifts Freeze",
+    "type": "Briefing",
+    "updated": "2026-11-18T00:07:31Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18407": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Researchers at cybersecurity startup Calif said Tuesday they found a critical vulnerability in Java, a popular programming language used by government agencies, banks, hospitals, and other companies.</p> <p>The bug would allow for an attacker to steal sensitive information from computer memory or to ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-model-helps-find-security-bug-widely-used-code-language",
+    "published": "2026-11-18T01:15:20Z",
+    "title": "OpenAI Model Helps Find Security Bug in Widely Used Code Language",
+    "type": "Briefing",
+    "updated": "2026-11-18T01:15:20Z"
   }
 }
