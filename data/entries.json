@@ -4507,6 +4507,18 @@
     "type": "Article",
     "updated": "2026-11-18T19:27:51Z"
   },
+  "tag:www.theinformation.com,2005:Article/18203": {
+    "authors": [
+      "Martin Peers"
+    ],
+    "content": "<p>We all need a break from the Nvidia soap opera, so we’re switching things up today and talking about that other drama percolating in the background—Anthropic’s public debut. The company behind Claude <a href=\"https://www.theinformation.com/briefings/anthropic-prices-ipo-83-share?rc=9byxri\">priced its initial public offering</a> on Wednesday night at $83 a share, several dollars above its preliminary pricing range, and at a level that values the whole company at around $1.5 trillion.</p><p>Seeing as this is the first top AI model developer to go public, not to mention the biggest, we’d bet the stock reaches $150 when it opens on Thursday, as everyone and their dog vies for a piece of the action. Of course, if they were smart, they’d hold back. The stock is more than likely to settle lower in the next few days, as the initial burst of exuberance dissipates. As for where the stock will trade in six months, I can’t guess. The crystal ball I ordered online got stolen en route to my apartment—<a href=\"https://www.security.org/package-theft/annual-report/\">thanks for nothing,</a> FedEx. (The Information on Thursday will livestream a two-hour video discussion on Anthropic’s valuation, tech, cybersecurity strategy, drug discovery ambitions, as well as market movements: <a href=\"https://us02web.zoom.us/webinar/register/WN_CUbkGgQwRM6NAxXQWq_NLw#/registration\">Check it out</a>, starting at 11:30 a.m. PT / 2:30 p.m. ET.)</p>",
+    "label": "The Briefing",
+    "link": "https://www.theinformation.com/articles/anthropics-public-debut-looms",
+    "published": "2026-11-19T01:01:20Z",
+    "title": "Anthropic’s Public Debut Looms",
+    "type": "Article",
+    "updated": "2026-11-19T01:10:28Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -9067,5 +9079,61 @@
     "title": "Nvidia Holds Its First All Hands After Jensen Huang’s Departure",
     "type": "Briefing",
     "updated": "2026-11-18T18:26:13Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18411": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>Palo Alto Networks plans to acquire Applied Compute, an AI startup founded by three former OpenAI researchers, for $4.5 billion in stock, the companies announced Wednesday.</p> <p>Applied Compute, which helps businesses train and run their own customized versions of open source AI models, has ...</p>",
+    "link": "https://www.theinformation.com/briefings/palo-alto-networks-acquire-ai-firm-applied-compute-4-5-billion",
+    "published": "2026-11-18T21:25:07Z",
+    "title": "Palo Alto Networks to Acquire AI Firm Applied Compute for $4.5 Billion",
+    "type": "Briefing",
+    "updated": "2026-11-18T21:52:08Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18412": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic on Wednesday said it raised $81 billion in its initial public offering after pricing the IPO at $83 a share, above its marketed range of $70 to $78 a share.</p> <p>Anthropic sold 956.4 million shares—more than the 820 million it had earlier planned—and the seven co-founders sold 23.6 million ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-prices-ipo-83-share",
+    "published": "2026-11-18T21:51:21Z",
+    "title": "Anthropic Raises $81 Billion in Upsized IPO",
+    "type": "Briefing",
+    "updated": "2026-11-19T00:33:14Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18413": {
+    "authors": [
+      "Jemima McEvoy"
+    ],
+    "content": "<p>OpenAI on Wednesday published new results highlighting the growing capabilities of its AI models in chip design, reporting significant improvements to both its in-house Jalapeño chip and Advanced Micro Devices’ flagship graphics processing unit designs.</p> <p>In a blog post, OpenAI <a href=\"https://t.co/4BNcPIqfIQ\">said</a> its models ...</p>",
+    "link": "https://www.theinformation.com/briefings/openai-says-models-accelerated-chip-design-amd-jalapeno",
+    "published": "2026-11-18T22:05:31Z",
+    "title": "OpenAI Says Its Models Accelerated Chip Design For AMD, Jalapeño",
+    "type": "Briefing",
+    "updated": "2026-11-18T22:05:31Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18414": {
+    "authors": [
+      "Jyoti Mann"
+    ],
+    "content": "<p>Meta Platforms has paused plans to issue a new class of shares that could help it raise more capital for AI spending as it contends with pending shareholder lawsuits.</p> <p>The company will not issue the <a href=\"https://www.theinformation.com/briefings/meta-creates-new-share-class-pave-way-ai-related-fundraising\">new Class C shares</a> while the legal battle plays out, it said in a court <a href=\"https://assets.bwbx.io/documents/users/iqjWHBFdfxIU/rGQ3X.CooiUA/v0\">filing</a> on Wednesday. Chief ...</p>",
+    "link": "https://www.theinformation.com/briefings/meta-pauses-new-stock-plan-amid-legal-challenge",
+    "published": "2026-11-18T23:01:04Z",
+    "title": "Meta Pauses New Stock Plan Amid Legal Challenge",
+    "type": "Briefing",
+    "updated": "2026-11-18T23:05:03Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18415": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Phoebe Liu"
+    ],
+    "content": "<p>In Nvidia’s <a href=\"https://www.theinformation.com/briefings/nvidia-holds-first-hands-jensen-huangs-departure\">all-hands meeting</a> Wednesday, interim CEO Colette Kress tried to soothe employees and prevent a potential talent exodus, according to people present at the meeting. She told employees that they can expect pay raises and more equity at the end of this year.</p> <p>Kress’ remarks come after ...</p>",
+    "link": "https://www.theinformation.com/briefings/hands-nvidia-interim-ceo-tried-reassure-employees-prevent-talent-loss",
+    "published": "2026-11-18T23:58:51Z",
+    "title": "At All Hands, Nvidia Interim CEO Tried To Reassure Employees, Prevent Talent Loss",
+    "type": "Briefing",
+    "updated": "2026-11-18T23:58:51Z"
   }
 }
