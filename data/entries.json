@@ -4532,6 +4532,57 @@
     "type": "Article",
     "updated": "2026-11-19T04:37:53Z"
   },
+  "tag:www.theinformation.com,2005:Article/18205": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Laura Bratton"
+    ],
+    "content": "<p>To justify its enormous new valuation as a public company, <a href=\"https://www.theinformation.com/org-charts/anthropic\">Anthropic</a> needs to show that it can expand quickly in other areas of business the way it did with coding. Its early efforts are showing signs of promise&mdash;and highlighting the steep challenges it faces.</p>\n\n<p>Anthropic is gaining traction with Claude Cowork, an AI tool for nontechnical business users, and persuading some customers to spend in new areas such as cybersecurity. The company is also hoping to embed itself deeper in companies’ core operations with Claude Managed Agents, a set of tools that developers can use to build and run agents without having to manage the underlying servers and other infrastructure.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/anthropic-pushing-new-products-big-discounts-justify-huge-valuation",
+    "published": "2026-11-19T14:00:37Z",
+    "title": "Anthropic Is Pushing New Products, and Big Discounts, to Justify Its Huge Valuation",
+    "type": "Article",
+    "updated": "2026-11-19T14:01:04Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18206": {
+    "authors": [
+      "Claudia Chong",
+      "Qianer Liu"
+    ],
+    "content": "<p>Moonshot AI, the Beijing-based developer of the Kimi models, has scrapped a $150 million deal to access <a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a> Blackwell chips through a data center in Indonesia, after the U.S. this week announced a rule to restrict Chinese companies from accessing advanced chips remotely, according to two people with direct knowledge of the matter.</p>\n\n<p>Moonshot signed the contract with a Southeast Asian neocloud to rent access to a sizable cluster of Blackwell Ultra B300 chips, starting from as early as next year, the people said. The B300 is one of Nvidia’s most powerful AI chips, and is barred by the U.S. government from sale to China. Chinese companies were able to access restricted Nvidia chips from data centers outside of the country, a loophole that was plugged by the rule released by the U.S. Commerce Department this week.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/chinas-moonshot-ai-scraps-150-million-deal-access-nvidia-chips-indonesia",
+    "published": "2026-11-19T10:00:35Z",
+    "title": "China’s Moonshot AI Scraps $150 Million Deal to Access Nvidia Chips in Indonesia",
+    "type": "Article",
+    "updated": "2026-11-19T10:31:05Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18207": {
+    "authors": [
+      "Stephanie Palazzolo"
+    ],
+    "content": "<p>Today is a major milestone for <b>Anthropic</b>. The five-year-old maker of <b>Claude</b> beat its archrival <b>OpenAI</b> to the public markets, and many of its employees are going to become millionaires, if not billionaires, when the company starts to trade later today. The big question is what today means for Anthropic’s future.</p><p>Before we get to that, let’s set the scene. Anthropic <a href=\"https://www.theinformation.com/briefings/anthropic-prices-ipo-83-share\">priced the offering at $83 a share</a>, well&nbsp; above its preliminary pricing range, valuing the company at about $1.5 trillion. Chances are the stock will trade significantly higher when it opens later Thursday. For employees looking to cash in, they’ll need the stock to stay higher for a while. While they can sell up to 10% of their shares on the first day of trading, they can’t sell more until the company reports its full-year 2026 earnings early next year.</p><p>Assuming the stock doesn’t tank, the sudden influx of money will help Anthropic employees buy houses and donate a big chunk of their newfound wealth to <a href=\"https://www.theinformation.com/articles/anthropic-ipo-mean-shrimp-welfare-obscure-causes\">causes like shrimp welfare</a>. Counterintuitively, though, it may also lead them to leave the very company that brought them the wealth in the first place.</p><p>You may think that employees at a company as philosophically driven as Anthropic are as bought in as the cofounders and in it for the long haul. That’s not necessarily true. At the end of the day, many of the employees, especially those who have joined more recently from big tech companies, might not be drinking the Kool-Aid as much as just trying to make a quick buck.</p>",
+    "label": "AI Agenda",
+    "link": "https://www.theinformation.com/articles/will-anthropics-ipo-lead-exodus-anthropic-employees",
+    "published": "2026-11-19T15:01:18Z",
+    "title": "Will Anthropic’s IPO Lead To An Exodus of Anthropic Employees?",
+    "type": "Article",
+    "updated": "2026-11-19T15:02:04Z"
+  },
+  "tag:www.theinformation.com,2005:Article/18209": {
+    "authors": [
+      "Kevin McLaughlin",
+      "Laura Bratton"
+    ],
+    "content": "<p>After a late summer rally, the Saaspocalypse slump in software stocks such as ServiceNow and Salesforce has returned. One reason may be signs that Anthropic’s expansion into tools outside of coding—such as tools to automate legal, finance, human resources, and sales functions, via Claude Cowork—is gaining traction with businesses, <a href=\"https://www.theinformation.com/articles/anthropic-pushing-new-products-big-discounts-justify-huge-valuation\">Kevin and I reported today</a>.</p><p>Another factor: established software-as-a-service firms are attacking each other with their own AI tools, which make it easier for them to steal customers from each other.</p><p>ServiceNow last week released a new tool that can reduce the time it takes companies to switch to its relatively new customer relationship management software from six months to six weeks. Previously ServiceNow would have needed to manually consult with a customer to figure out where their data lived in disparate systems so it could be extracted and moved onto ServiceNow’s customer relationship management software. But now the process can be automated, Paul Fipps, ServiceNow’s president of global customer operations, told me.</p><p>ServiceNow has historically made software for IT teams but it launched the CRM software less than two years ago, in an effort to woo businesses away from CRM giant Salesforce. Salesforce, meanwhile, has made a show of launching its own IT service management software and says it has poached ServiceNow customers.</p><p>Other big software-as-a-service companies are unveiling similar tools. Oracle has new AI tools to help automate switching to its enterprise resource planning software, as does rival SAP. And Workday has also released AI agents that help onboard customers to its human resources and finance software much faster.</p><p>Such tools have had limited impact so far as customers aren’t using them at a large scale, said Julie Tiegland, a global vice chair of consulting giant EY. That’s because customers must be unhappy with their big software apps and await the end of their contracts to make a change to another provider, she said.</p><p>“AI will and has lowered the cost of transition in terms of data migration,” she said, adding, “You're not switching overnight your provider just because the tools are there to make it easier to switch.”</p><p>Then there’s the threat posed by Anthropic. One reason for Claude Code‘s success is that Anthropic designed it to be simple for customers to incorporate into their existing software development processes, said Mal Vivek, CEO at Zeb, a consulting firm that works with Anthropic customers. Now, a significant percentage of Zeb’s customers are in the process of adopting Claude Managed Agents and Claude Cowork, she said.&nbsp;</p><p>Those tools include products through Claude Cowork that help businesses automate legal, finance, human resources, and sales functions. Anthropic has also launched tools that help customers build their own legal and finance agents.&nbsp;</p><p>“There was no need for a company to build a user interface specifically around Claude Code,” said Vivek. “With Claude Managed Agents, I think Anthropic saw adoption would scale quickly once they put templates for these other business functional areas directly in the hands of users, making them easier to adopt.”</p>",
+    "label": "Applied AI",
+    "link": "https://www.theinformation.com/articles/servicenow-builds-ai-weapon-target-salesforce-customers",
+    "published": "2026-11-19T18:30:52Z",
+    "title": "ServiceNow Builds an AI Weapon to Target Salesforce Customers",
+    "type": "Article",
+    "updated": "2026-11-19T18:33:50Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -9159,5 +9210,38 @@
     "title": "Exclusive: TikTok to Appear at House Meeting Over National Security Concerns",
     "type": "Briefing",
     "updated": "2026-11-19T08:59:42Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18417": {
+    "authors": [
+      "Juro Osawa"
+    ],
+    "content": "<p>Alibaba Group CEO Eddie Wu said Thursday that Washington’s new rule barring Chinese companies from accessing Nvidia’s advanced AI chips through overseas data centers “will affect next year’s products and services.”</p> <p>Alibaba&nbsp;is stepping up its effort to&nbsp;reduce its dependence on Nvidia. ...</p>",
+    "link": "https://www.theinformation.com/briefings/alibaba-ceo-warns-impact-new-u-s-chip-rule",
+    "published": "2026-11-19T15:06:38Z",
+    "title": "Alibaba CEO Warns of Impact From New U.S. Chip Rule",
+    "type": "Briefing",
+    "updated": "2026-11-19T16:57:29Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18418": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>Anthropic shares began trading at about $111.5 per share, 34% above its IPO price of $83. This gives Anthropic a market capitalization of $2 trillion on a fully diluted basis, making it one of the world’s largest companies.</p> <p>The five-year-old company completed its IPO as the world’s largest stock ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-opens-trading-111-5-passes-2-trillion-market-cap",
+    "published": "2026-11-19T16:57:59Z",
+    "title": "Anthropic Opens Trading at $111.5, Passes $2 Trillion in Market Cap",
+    "type": "Briefing",
+    "updated": "2026-11-19T16:57:59Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18419": {
+    "authors": [
+      "Ryan Barwick"
+    ],
+    "content": "<p>Google will partner with Jeff Bezos’s Blue Origin rocket company for Project Suncatcher, Google’s experimental bid to test solar-powered data centers in space, the companies announced Thursday morning.</p> <p>The partnership comes as companies including SpaceX and Starcloud are racing to build AI ...</p>",
+    "link": "https://www.theinformation.com/briefings/google-selects-bezos-blue-origin-data-center-satellite-test",
+    "published": "2026-11-19T17:17:52Z",
+    "title": "Google Selects  Bezos’ Blue Origin for Data Center Satellite Test",
+    "type": "Briefing",
+    "updated": "2026-11-19T17:45:32Z"
   }
 }
