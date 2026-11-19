@@ -4519,6 +4519,19 @@
     "type": "Article",
     "updated": "2026-11-19T01:10:28Z"
   },
+  "tag:www.theinformation.com,2005:Article/18204": {
+    "authors": [
+      "Leo Schwartz",
+      "Qianer Liu"
+    ],
+    "content": "<p>In recent months, Jeffrey Kessler, the official overseeing the U.S. Bureau of Industry and Security, has pressured staff to expedite the approval of sales of <a href=\"https://www.theinformation.com/org-charts/nvidia\">Nvidia</a>’s H200 graphics processing units to China, according to three people with knowledge of the matter. In some cases, Kessler directed staff at BIS &mdash;an agency under the Commerce Department&mdash;to approve the exports over objections from other U.S. government departments, two of those people said.</p>\n\n<p>The H200, launched in 2023, is an older generation of Nvidia chips that developers can use to train and run AI models. In December 2025, President Donald Trump approved the chip, which is a generation behind Nvidia’s mainstay Blackwell product, for sale to China, after intense lobbying from former CEO Jensen Huang. As part of the approval, Nvidia agreed to give the U.S. government a 25% cut of H200 sales to China.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/u-s-commerce-department-rushed-clear-nvidia-h200-exports-china",
+    "published": "2026-11-19T02:34:39Z",
+    "title": "U.S. Commerce Department Rushed to Clear Nvidia H200 Exports to China",
+    "type": "Article",
+    "updated": "2026-11-19T04:37:53Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -9135,5 +9148,16 @@
     "title": "At All Hands, Nvidia Interim CEO Tried To Reassure Employees, Prevent Talent Loss",
     "type": "Briefing",
     "updated": "2026-11-18T23:58:51Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18416": {
+    "authors": [
+      "Claudia Chong"
+    ],
+    "content": "<p>TikTok will attend a public roundtable with the U.S. House Select Committee on China on Dec. 15 to answer questions relating to China’s influence on its algorithm and how the company protects Americans’ data, a congressional aide said on Wednesday.</p> <p>Will Farrell, chief security officer of TikTok’ ...</p>",
+    "link": "https://www.theinformation.com/briefings/exclusive-tiktok-appear-house-meeting-national-security-concerns",
+    "published": "2026-11-19T08:51:15Z",
+    "title": "Exclusive: TikTok to Appear at House Meeting Over National Security Concerns",
+    "type": "Briefing",
+    "updated": "2026-11-19T08:59:42Z"
   }
 }
