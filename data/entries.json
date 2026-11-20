@@ -4646,6 +4646,18 @@
     "type": "Article",
     "updated": "2026-11-20T01:03:01Z"
   },
+  "tag:www.theinformation.com,2005:Article/18231": {
+    "authors": [
+      "Valida Pau"
+    ],
+    "content": "<p>On a sunny day in San Francisco last month, Anthropic Chief Financial Officer Krishna Rao and other executives huddled in the company’s downtown headquarters to brief major investors on its latest financials&mdash;and assuage concerns.</p>\n\n<p>Revenue growth in the third quarter had fallen from its torrid pace. Privately, some investors doubted that the company could go public at the $1.5 trillion valuation bandied about for months, especially as AI-related stocks took a beating.</p>\n\n<p>Throughout the month, Rao and his squad countered those concerns by highlighting growth opportunities in fields from life sciences to chip design, say people familiar with the conversations.</p>\n\n<p>As for the broader market’s jitters? Ignore it, they told investors. That turned out to be decent advice: By Thursday’s close, Anthropic was worth $1.76 trillion on a fully diluted basis.</p>",
+    "label": "Exclusive",
+    "link": "https://www.theinformation.com/articles/anthropic-upstaged-openai-road-blockbuster-ipo",
+    "published": "2026-11-20T14:18:33Z",
+    "title": "How Anthropic Upstaged OpenAI on Road to Blockbuster IPO",
+    "type": "Article",
+    "updated": "2026-11-20T15:44:09Z"
+  },
   "tag:www.theinformation.com,2005:Briefing/17998": {
     "authors": [
       "Anita Ramaswamy"
@@ -9361,5 +9373,16 @@
     "title": "White House Cyber Chief Sean Cairncross Leaving Post",
     "type": "Briefing",
     "updated": "2026-11-20T00:37:22Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18425": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>AI nonprofit METR said Friday it found that recent AI models, including OpenAI’s GPT-6 Astra, are able to complete tasks that would take a human around a full work week to do. AI capabilities have continued doubling every 3.6 months, METR said.</p> <p>METR’s time horizon measurement, which tracks AI ...</p>",
+    "link": "https://www.theinformation.com/briefings/ais-can-now-outperform-humans-week-length-tasks-ai-nonprofit-finds",
+    "published": "2026-11-20T18:00:44Z",
+    "title": "AIs Can Now Outperform Humans at Week-Length Tasks, AI Nonprofit Finds",
+    "type": "Briefing",
+    "updated": "2026-11-20T18:00:44Z"
   }
 }
