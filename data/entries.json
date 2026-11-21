@@ -9384,5 +9384,49 @@
     "title": "AIs Can Now Outperform Humans at Week-Length Tasks, AI Nonprofit Finds",
     "type": "Briefing",
     "updated": "2026-11-20T18:00:44Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18426": {
+    "authors": [
+      "Alex Eichenstein"
+    ],
+    "content": "<p>SpaceX has completed a $32 billion debt deal for access to Nvidia chips primarily at yields over 8%, Bloomberg reported.</p> <p>The steep yields, which are rarely seen in high-grade debt markets, underscore investors’ growing anxiety over returns on AI spending. Goldman Sachs and Apollo Global ...</p>",
+    "link": "https://www.theinformation.com/briefings/spacex-closes-32-billion-debt-deal-steep-yields",
+    "published": "2026-11-20T19:00:08Z",
+    "title": "SpaceX Closes $32 Billion Debt Deal at Steep Yields",
+    "type": "Briefing",
+    "updated": "2026-11-20T22:06:52Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18427": {
+    "authors": [
+      "Tiffany Li"
+    ],
+    "content": "<p>Anthropic shares fell 10% Friday, paring some of their first day of gains as a public company. After closing at a stock price of $97.17 Thursday, which was 17% above its IPO price, Anthropic shares dropped to $87 by late in the regular session Friday.</p> <p>One of its underwriting banks Morgan Stanley ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-shares-slide-banks-exercise-greenshoe",
+    "published": "2026-11-20T20:54:26Z",
+    "title": "Anthropic Shares Slide After Banks Exercise ‘Greenshoe’",
+    "type": "Briefing",
+    "updated": "2026-11-20T22:06:52Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18428": {
+    "authors": [
+      "Aaron Holmes"
+    ],
+    "content": "<p>CrowdStrike is in talks to buy the $32 billion cybersecurity firm Zscaler, <a href=\"https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler\">Bloomberg reported Friday.</a></p> <p>The deal talks are the latest in a monthlong dealmaking frenzy in cybersecurity as AI-related threats drive companies to spend more on security tools; rival security giant Palo Alto Networks ...</p>",
+    "link": "https://www.theinformation.com/briefings/crowdstrike-talks-buy-zscaler",
+    "published": "2026-11-20T22:07:23Z",
+    "title": "CrowdStrike in Talks to Buy Zscaler",
+    "type": "Briefing",
+    "updated": "2026-11-20T22:07:24Z"
+  },
+  "tag:www.theinformation.com,2005:Briefing/18429": {
+    "authors": [
+      "Rocket Drew"
+    ],
+    "content": "<p>Anthropic mathematician Levent Alpöge claimed to have solved the most famous open problem in math with help from Anthropic’s AI models, according to a <a href=\"https://alpo.ge/remark.pdf\">document on his personal website</a> that surfaced on Friday.</p> <p>Since 1859, mathematicians have attempted to prove the Riemann Hypothesis, which ...</p>",
+    "link": "https://www.theinformation.com/briefings/anthropic-mathematician-says-proved-riemann-hypothesis",
+    "published": "2026-11-20T23:24:16Z",
+    "title": "Anthropic Mathematician Says He Proved Riemann Hypothesis",
+    "type": "Briefing",
+    "updated": "2026-11-20T23:24:16Z"
   }
 }
